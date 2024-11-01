@@ -1,4 +1,4 @@
-# Install script for directory: C:/Espressif/frameworks/esp-idf-v5.3.1/components/newlib
+# Install script for directory: C:/Users/giusy/esp/v5.3.1/esp-idf/components/newlib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,11 +34,11 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-objdump.exe")
+  set(CMAKE_OBJDUMP "C:/Users/giusy/.espressif/tools/riscv32-esp-elf/esp-13.2.0_20240530/riscv32-esp-elf/bin/riscv32-esp-elf-objdump.exe")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Espressif/Example_Projects/SoftAP_with_tcp_server/softAP/build/esp-idf/newlib/port/cmake_install.cmake")
+  include("C:/Users/giusy/OneDrive/Desktop/wirelesssensingnode/SoftAP_with_tcp_server/softAP/build/esp-idf/newlib/port/cmake_install.cmake")
 endif()
 

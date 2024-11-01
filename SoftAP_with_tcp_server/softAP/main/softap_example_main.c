@@ -106,7 +106,7 @@ static void do_retransmit(const int sock)
 {
     int len;
     char rx_buffer[2048];
-
+    printf("in retrasmit function");
     do {
         len = recv(sock, rx_buffer, sizeof(rx_buffer) - 1, 0);
         if (len < 0) {
@@ -136,6 +136,7 @@ static void do_retransmit(const int sock)
 
 static void tcp_server_task(void *pvParameters)
 {
+    printf("Inside TCP Server task\n\n");
     char addr_str[128];
     int addr_family = (int)pvParameters;
     int ip_protocol = 0;
@@ -178,7 +179,7 @@ static void tcp_server_task(void *pvParameters)
     setsockopt(listen_sock, IPPROTO_IPV6, IPV6_V6ONLY, &opt, sizeof(opt));
 #endif
 
-    ESP_LOGE(TAG, "Socket created: %d", listen_sock);
+    ESP_LOGI(TAG, "Socket created: %d", listen_sock);
     /*
     ESP_LOGE(TAG, "SENDING MESSAGE");
     const char *payload = "Hello from ESP32-C6!";
@@ -232,7 +233,7 @@ static void tcp_server_task(void *pvParameters)
         }
 #endif
         ESP_LOGI(TAG, "Socket accepted ip address: %s", addr_str);
-
+        printf("Before do retransmit function\n");
         do_retransmit(sock);
 
         shutdown(sock, 0);
@@ -247,6 +248,7 @@ CLEAN_UP:
 
 void app_main(void)
 {
+    printf("----------------");
     ESP_LOGE(TAG, "+++++++++++++++++++START+++++++++++++++++++++");
     //Initialize NVS
     esp_err_t ret = nvs_flash_init();
@@ -259,7 +261,8 @@ void app_main(void)
     ESP_LOGI(TAG, "ESP_WIFI_MODE_AP");
     wifi_init_softap();
     ESP_LOGI(TAG, "wifi_init completed");
-
+    
+    printf("----------------");
     //ESP_ERROR_CHECK(esp_netif_init());
     //ESP_ERROR_CHECK(esp_event_loop_create_default());
 

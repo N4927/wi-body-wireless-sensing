@@ -19,7 +19,7 @@
 #if defined(CONFIG_EXAMPLE_IPV4)
 #define HOST_IP_ADDR CONFIG_EXAMPLE_IPV4_ADDR
 #elif defined(CONFIG_EXAMPLE_SOCKET_IP_INPUT_STDIN)
-#define HOST_IP_ADDR ""
+#define HOST_IP_ADDR "192.168.4.1"
 #endif
 
 #define PORT CONFIG_EXAMPLE_PORT
@@ -31,7 +31,7 @@ static const char *payload = "Message from ESP32 ";
 void tcp_client(void)
 {
     char rx_buffer[128];
-    char host_ip[] = HOST_IP_ADDR;
+    char host_ip[] = "192.168.4.1";             //MACRO HERE NOT WORKING 
     int addr_family = 0;
     int ip_protocol = 0;
 
@@ -60,10 +60,12 @@ void tcp_client(void)
             ESP_LOGE(TAG, "Socket unable to connect: errno %d", errno);
             break;
         }
+        printf("Successfully connected");
         ESP_LOGI(TAG, "Successfully connected");
 
         while (1) {
             int err = send(sock, payload, strlen(payload), 0);
+
             if (err < 0) {
                 ESP_LOGE(TAG, "Error occurred during sending: errno %d", errno);
                 break;

@@ -4,19 +4,19 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "C:/Espressif/frameworks/esp-idf-v5.3.1/components/bootloader/subproject"
-  "C:/Espressif/Example_Projects/SoftAP_with_tcp_server/softAP/build/bootloader"
-  "C:/Espressif/Example_Projects/SoftAP_with_tcp_server/softAP/build/bootloader-prefix"
-  "C:/Espressif/Example_Projects/SoftAP_with_tcp_server/softAP/build/bootloader-prefix/tmp"
-  "C:/Espressif/Example_Projects/SoftAP_with_tcp_server/softAP/build/bootloader-prefix/src/bootloader-stamp"
-  "C:/Espressif/Example_Projects/SoftAP_with_tcp_server/softAP/build/bootloader-prefix/src"
-  "C:/Espressif/Example_Projects/SoftAP_with_tcp_server/softAP/build/bootloader-prefix/src/bootloader-stamp"
+  "C:/Users/giusy/esp/v5.3.1/esp-idf/components/bootloader/subproject"
+  "C:/Users/giusy/OneDrive/Desktop/wirelesssensingnode/SoftAP_with_tcp_server/softAP/build/bootloader"
+  "C:/Users/giusy/OneDrive/Desktop/wirelesssensingnode/SoftAP_with_tcp_server/softAP/build/bootloader-prefix"
+  "C:/Users/giusy/OneDrive/Desktop/wirelesssensingnode/SoftAP_with_tcp_server/softAP/build/bootloader-prefix/tmp"
+  "C:/Users/giusy/OneDrive/Desktop/wirelesssensingnode/SoftAP_with_tcp_server/softAP/build/bootloader-prefix/src/bootloader-stamp"
+  "C:/Users/giusy/OneDrive/Desktop/wirelesssensingnode/SoftAP_with_tcp_server/softAP/build/bootloader-prefix/src"
+  "C:/Users/giusy/OneDrive/Desktop/wirelesssensingnode/SoftAP_with_tcp_server/softAP/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "C:/Espressif/Example_Projects/SoftAP_with_tcp_server/softAP/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "C:/Users/giusy/OneDrive/Desktop/wirelesssensingnode/SoftAP_with_tcp_server/softAP/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "C:/Espressif/Example_Projects/SoftAP_with_tcp_server/softAP/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "C:/Users/giusy/OneDrive/Desktop/wirelesssensingnode/SoftAP_with_tcp_server/softAP/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()
