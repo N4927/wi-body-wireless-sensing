@@ -25,7 +25,7 @@
 #define PORT CONFIG_EXAMPLE_PORT
 
 static const char *TAG = "example";
-static const char *payload = "Message from ESP32 ";
+static const char *payload = "Message from ESP32";
 
 
 void tcp_client(void)
