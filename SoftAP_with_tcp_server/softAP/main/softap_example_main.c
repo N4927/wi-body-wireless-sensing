@@ -1,12 +1,4 @@
-/*  WiFi softAP Example
-
-   This example code is in the Public Domain (or CC0 licensed, at your option.)
-
-   Unless required by applicable law or agreed to in writing, this
-   software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
-   CONDITIONS OF ANY KIND, either express or implied.
-*/
-//Testing
+//Julian Caredda 18.11.2024
 #include <string.h>
 #include <sys/param.h>
 #include "freertos/FreeRTOS.h"
@@ -18,31 +10,49 @@
 #include "nvs_flash.h"
 #include "esp_netif.h"
 #include "protocol_examples_common.h"
-
+#include "esp_timer.h"
 #include "lwip/err.h"
 #include "lwip/sockets.h"
 #include "lwip/sys.h"
 #include <lwip/netdb.h>
 #include "esp_mac.h"
+#include "esp_attr.h"
+#include <sys/select.h>
+#include <netinet/in.h>
 
-
-/* The examples use WiFi configuration that you can set via project configuration menu.
-
-   If you'd rather not, just change the below entries to strings with
-   the config you want - ie #define EXAMPLE_WIFI_SSID "mywifissid"
-*/
-#define EXAMPLE_ESP_WIFI_SSID      CONFIG_ESP_WIFI_SSID
-#define EXAMPLE_ESP_WIFI_PASS      CONFIG_ESP_WIFI_PASSWORD
-#define EXAMPLE_ESP_WIFI_CHANNEL   CONFIG_ESP_WIFI_CHANNEL
-#define EXAMPLE_MAX_STA_CONN       CONFIG_ESP_MAX_STA_CONN
-
-#define PORT                        CONFIG_EXAMPLE_PORT //3333
+#define TRUE                       1
+#define TAG                        "AP"
+#define EXAMPLE_ESP_WIFI_SSID      "myssid"
+#define EXAMPLE_ESP_WIFI_PASS      "mypassword"
+#define EXAMPLE_ESP_WIFI_CHANNEL   1
+#define EXAMPLE_MAX_STA_CONN       8
+#define PORT                        3333
 #define KEEPALIVE_IDLE              CONFIG_EXAMPLE_KEEPALIVE_IDLE
 #define KEEPALIVE_INTERVAL          CONFIG_EXAMPLE_KEEPALIVE_INTERVAL
 #define KEEPALIVE_COUNT             CONFIG_EXAMPLE_KEEPALIVE_COUNT
+#define LOG_OUTPUT                  0       //For displaying every log statement: 1, for max performance: 0
+#define BUFFER_SIZE                 2048    //Size of RX_Buffer in bytes
+#define MICRO_S_CONVERSION          1000000 //1 second in microseconds
+#define TIMER_PERIOD                (MICRO_S_CONVERSION * 1) //Timer period until callback function is called
 
+static int sock;
+static int client_sockets[EXAMPLE_MAX_STA_CONN] = {0};
+fd_set read_fds;
+struct timeval timeout;
 
-static const char *TAG = "wifi softAP";
+esp_timer_handle_t timer;
+static void periodic_timer_callback(void* arg);
+uint64_t time1 = 0;
+uint64_t time2 = 0;
+uint64_t timeDifference = 0;
+uint64_t totalBytesSent = 0;
+uint64_t totalBytesSent_OLD = 0;
+uint64_t totalBytesSentDifference = 0;
+double currentThroughput = 0;
+double average = 0;
+uint64_t printCounter = 0;
+double addedUpThroughput = 0;
+
 
 static void wifi_event_handler(void* arg, esp_event_base_t event_base,
                                     int32_t event_id, void* event_data)
@@ -103,49 +113,43 @@ void wifi_init_softap(void)
              EXAMPLE_ESP_WIFI_SSID, EXAMPLE_ESP_WIFI_PASS, EXAMPLE_ESP_WIFI_CHANNEL);
 }
 
-static void do_retransmit(const int sock)
+
+static void do_retransmit(void *pvParameters)
 {
+    const int sock = *(int *)pvParameters;
+    ESP_LOGI(TAG, "Socket active: %d", sock);
     int len;
-    char rx_buffer[2048];
-    printf("in retrasmit function");
+    char rx_buffer[BUFFER_SIZE];
+
     do {
+        //select();
         len = recv(sock, rx_buffer, sizeof(rx_buffer) - 1, 0);
         if (len < 0) {
             ESP_LOGE(TAG, "Error occurred during receiving: errno %d", errno);
+            shutdown(sock, 0);
+            close(sock);
         } else if (len == 0) {
-            ESP_LOGW(TAG, "Connection closed");
+            //ESP_LOGW(TAG, "Connection closed");
+            shutdown(sock, 0);
+            close(sock);
         } else {
             rx_buffer[len] = 0; // Null-terminate whatever is received and treat it like a string
-            ESP_LOGI(TAG, "Received %d bytes: %s", len, rx_buffer);
-
-            // send() can return less bytes than supplied length.
-            // Walk-around for robust implementation.
-            int to_write = len;
-            
-            while (to_write > 0) {
-                int written = send(sock, rx_buffer + (len - to_write), to_write, 0);
-                if (written < 0) {
-                    ESP_LOGE(TAG, "Error occurred during sending: errno %d", errno);
-                    // Failed to retransmit, giving up
-                    return;
-                }
-                to_write -= written;
-            }
+            if (LOG_OUTPUT) ESP_LOGI(TAG, "Received %d bytes: %s", len, rx_buffer);
+            if (!LOG_OUTPUT) totalBytesSent += len;
         }
     } while (len > 0);
 }
 
 static void tcp_server_task(void *pvParameters)
 {
-    printf("Inside TCP Server task\n\n");
-    char addr_str[128];
+    char addr_str[128]; //IP Adress
     int addr_family = (int)pvParameters;
     int ip_protocol = 0;
     int keepAlive = 1;
     int keepIdle = KEEPALIVE_IDLE;
     int keepInterval = KEEPALIVE_INTERVAL;
     int keepCount = KEEPALIVE_COUNT;
-    struct sockaddr_storage dest_addr;
+    struct sockaddr_storage dest_addr; //File descriptor (?)
 
 #ifdef CONFIG_EXAMPLE_IPV4
     if (addr_family == AF_INET) {
@@ -172,15 +176,20 @@ static void tcp_server_task(void *pvParameters)
         vTaskDelete(NULL);
         return;
     }
+    /*
     int opt = 1;
-    setsockopt(listen_sock, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt));
+    setsockopt(listen_sock, SOL_SOCKET, SO_REUSEADDR, &opt, sizeof(opt));*/
+    /*int buffer_size = 32768; // or larger
+    setsockopt(socket, SOL_SOCKET, SO_RCVBUF, &buffer_size, sizeof(buffer_size));
+    setsockopt(socket, SOL_SOCKET, SO_SNDBUF, &buffer_size, sizeof(buffer_size));*/
+
 #if defined(CONFIG_EXAMPLE_IPV4) && defined(CONFIG_EXAMPLE_IPV6)
     // Note that by default IPV6 binds to both protocols, it is must be disabled
     // if both protocols used at the same time (used in CI)
     setsockopt(listen_sock, IPPROTO_IPV6, IPV6_V6ONLY, &opt, sizeof(opt));
 #endif
 
-    ESP_LOGI(TAG, "Socket created: %d", listen_sock);
+    ESP_LOGE(TAG, "Socket created: %d", listen_sock);
     /*
     ESP_LOGE(TAG, "SENDING MESSAGE");
     const char *payload = "Hello from ESP32-C6!";
@@ -191,6 +200,8 @@ static void tcp_server_task(void *pvParameters)
         ESP_LOGI("TCP", "Message sent successfully");
     }
     */
+    int flag = 1;
+    setsockopt(listen_sock, SOL_SOCKET, SO_REUSEADDR, &flag, sizeof(flag));
     int err = bind(listen_sock, (struct sockaddr *)&dest_addr, sizeof(dest_addr));
     if (err != 0) {
         ESP_LOGE(TAG, "Socket unable to bind: errno %d", errno);
@@ -204,18 +215,55 @@ static void tcp_server_task(void *pvParameters)
         ESP_LOGE(TAG, "Error occurred during listen: errno %d", errno);
         goto CLEAN_UP;
     }
-
-    while (1) {
-
+    
+    int sock;
+    struct sockaddr_storage source_addr; // Large enough for both IPv4 or IPv6
+    socklen_t addr_len = sizeof(source_addr);
+    
+    while (1)
+    {
         ESP_LOGI(TAG, "Socket listening");
-
-        struct sockaddr_storage source_addr; // Large enough for both IPv4 or IPv6
-        socklen_t addr_len = sizeof(source_addr);
-        int sock = accept(listen_sock, (struct sockaddr *)&source_addr, &addr_len);
+        sock = accept(listen_sock, (struct sockaddr *)&source_addr, &addr_len);
         if (sock < 0) {
             ESP_LOGE(TAG, "Unable to accept connection: errno %d", errno);
             break;
         }
+
+        // Set tcp keepalive option
+        setsockopt(sock, SOL_SOCKET, SO_KEEPALIVE, &keepAlive, sizeof(int));
+        setsockopt(sock, IPPROTO_TCP, TCP_KEEPIDLE, &keepIdle, sizeof(int));
+        setsockopt(sock, IPPROTO_TCP, TCP_KEEPINTVL, &keepInterval, sizeof(int));
+        setsockopt(sock, IPPROTO_TCP, TCP_KEEPCNT, &keepCount, sizeof(int));
+
+// Convert ip address to string
+#ifdef CONFIG_EXAMPLE_IPV4
+        if (source_addr.ss_family == PF_INET) {
+            inet_ntoa_r(((struct sockaddr_in *)&source_addr)->sin_addr, addr_str, sizeof(addr_str) - 1);
+        }
+#endif
+#ifdef CONFIG_EXAMPLE_IPV6
+        if (source_addr.ss_family == PF_INET6) {
+            inet6_ntoa_r(((struct sockaddr_in6 *)&source_addr)->sin6_addr, addr_str, sizeof(addr_str) - 1);
+        }
+#endif
+        ESP_LOGI(TAG, "Socket accepted IP ADDRESS: %s, SOCK: %d", addr_str, sock);
+
+        int *temp = &sock;
+        xTaskCreate(do_retransmit, "TCP_Receiver", 4096, (int*)temp, 5, NULL);
+        //do_retransmit(sock);
+
+        //break;
+    }
+
+    while (1) {
+
+        //ESP_LOGI(TAG, "Socket listening");
+
+        /*sock = accept(listen_sock, (struct sockaddr *)&source_addr, &addr_len);
+        if (sock < 0) {
+            ESP_LOGE(TAG, "Unable to accept connection: errno %d", errno);
+            break;
+        }*/
 
         // Set tcp keepalive option
         setsockopt(sock, SOL_SOCKET, SO_KEEPALIVE, &keepAlive, sizeof(int));
@@ -233,12 +281,13 @@ static void tcp_server_task(void *pvParameters)
             inet6_ntoa_r(((struct sockaddr_in6 *)&source_addr)->sin6_addr, addr_str, sizeof(addr_str) - 1);
         }
 #endif
-        ESP_LOGI(TAG, "Socket accepted ip address: %s", addr_str);
-        printf("Before do retransmit function\n");
-        do_retransmit(sock);
+        ESP_LOGI(TAG, "Socket accepted ip address: %s, SOCK: %d", addr_str, sock);
+        //select();
+        //xTaskCreate(tcp_server_task, "tcp_server", 4096, (void*)AF_INET, 5, NULL);
+        //xTaskCreate(do_retransmit, "Receiver", 4096, (void*)AF_INET, 5, NULL);
+        //do_retransmit(sock);
 
-        shutdown(sock, 0);
-        close(sock);
+        
     }
 
 CLEAN_UP:
@@ -246,11 +295,31 @@ CLEAN_UP:
     vTaskDelete(NULL);
 }
 
+static void periodic_timer_callback(void* arg)
+{ //INTERRUPT: Gets called after each TIMERPERIOD
+    time1 = time2;
+    time2 = esp_timer_get_time();
+    timeDifference = time2 - time1;
+    totalBytesSentDifference = totalBytesSent - totalBytesSent_OLD;
+    totalBytesSent_OLD = totalBytesSent;
+
+    //Computing the throughput in [Bytes/second]
+    currentThroughput = ((double)totalBytesSentDifference / timeDifference) * MICRO_S_CONVERSION;
+    
+    //Computing the average throughput
+    ++printCounter;
+    addedUpThroughput += currentThroughput;
+    average = (double)addedUpThroughput / printCounter;
+
+    ESP_LOGI(TAG,
+    "Runtime: %lld [us], #Bytes: %lld, TP_Interval: %lld [Bytes/PERIOD], Throughput: %.0f[B/s], Avg TP: %.2f[B/s]",
+    time2, totalBytesSent, totalBytesSentDifference, currentThroughput, average);
+}
+
 
 void app_main(void)
 {
-    printf("----------------");
-    ESP_LOGE(TAG, "+++++++++++++++++++START+++++++++++++++++++++");
+    //ESP_LOGE(TAG, "+++++++++++++++++++START+++++++++++++++++++++");
     //Initialize NVS
     esp_err_t ret = nvs_flash_init();
     if (ret == ESP_ERR_NVS_NO_FREE_PAGES || ret == ESP_ERR_NVS_NEW_VERSION_FOUND) {
@@ -258,17 +327,31 @@ void app_main(void)
       ret = nvs_flash_init();
     }
     ESP_ERROR_CHECK(ret);
+    const esp_timer_create_args_t periodic_timer_args = {
+            .callback = &periodic_timer_callback,
+            /* name is optional, but may help identify the timer when debugging */
+            .name = "periodic"
+    };
+    
+    if(esp_timer_create(&periodic_timer_args, &timer) != ESP_OK){
+        ESP_LOGE(TAG, "ERROR WHILE CREATING TIMER");
+    }
 
     ESP_LOGI(TAG, "ESP_WIFI_MODE_AP");
     wifi_init_softap();
+    //wifi_phy_rate_t rate = WIFI_PHY_RATE_MCS7_SGI;
+    esp_wifi_config_80211_tx_rate(WIFI_IF_AP, WIFI_PHY_RATE_MCS7_SGI);
     ESP_LOGI(TAG, "wifi_init completed");
-    
-    printf("----------------");
+
     //ESP_ERROR_CHECK(esp_netif_init());
     //ESP_ERROR_CHECK(esp_event_loop_create_default());
+    if (!LOG_OUTPUT /*&& strcmp(rx_buffer, "start_timer") == 0*/) {
+        //Timer will be started
+        if(esp_timer_start_periodic(timer, TIMER_PERIOD) != ESP_OK) ESP_LOGE(TAG, "ERROR STARTING TIMER");
+    }
 
     #ifdef CONFIG_EXAMPLE_IPV4
-    xTaskCreate(tcp_server_task, "tcp_server", 4096, (void*)AF_INET, 5, NULL);
+    xTaskCreate(tcp_server_task, "tcp_server", 4096, (void*)AF_INET, 5, NULL); //Creates a Thread(?) for handling TCP server
     #endif
     #ifdef CONFIG_EXAMPLE_IPV6
         xTaskCreate(tcp_server_task, "tcp_server", 4096, (void*)AF_INET6, 5, NULL);
