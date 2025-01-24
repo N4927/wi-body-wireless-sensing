@@ -1,4 +1,5 @@
-
+//Julian Caredda 06.12.2024
+#include "config.h"
 #include <string.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
@@ -20,24 +21,24 @@
 #include <arpa/inet.h>
 #include "esp_netif.h"
 #include "esp_log.h"
+#define TAG                         "STA"
+#define DATA_STREAM_ENABLE          1
+#define TIME_SYNCH_ENABLE           0
 
 extern void tcp_client(void);
-extern int sock;
-extern void tcp_sending(char *);
-//extern void signal_generation(void);
+extern void udp_time_synch(void *pvParameters);
 
-//Timer for periodic signal acquisition: Acts as a clock signal for sensors
-#include "esp_timer.h"
+//Timer for synching time from Time-Master
+//#include "esp_timer.h"
 #define MICRO_S_CONVERSION          1000000 //1 second in microseconds
-#define TIMER_PERIOD                (MICRO_S_CONVERSION * 3) //Timer period until callback function is called
-esp_timer_handle_t sensor_clock;
-static void periodic_timer_callback(void* arg);
+#define TIMER_PERIOD                (MICRO_S_CONVERSION) //Timer period until callback function is called
+
 
 //WIFI 
 #define EXAMPLE_ESP_WIFI_SSID      "myssid"
-#define EXAMPLE_ESP_WIFI_PASS      "mypassword"
-#define EXAMPLE_ESP_MAXIMUM_RETRY  50
-#define BUFFER_SIZE                 2048    //Size of RX_Buffer in bytes
+#define EXAMPLE_ESP_WIFI_PASS      "mypassword" //")9kAM9{?V8W9'4bT"
+#define ESP_MAX_RETRY  50
+#define BUFFER_SIZE                2048    //Size of RX_Buffer in bytes
 
 #if CONFIG_ESP_WPA3_SAE_PWE_HUNT_AND_PECK
 #define ESP_WIFI_SAE_MODE WPA3_SAE_PWE_HUNT_AND_PECK
@@ -76,20 +77,15 @@ static EventGroupHandle_t s_wifi_event_group;
 #define WIFI_CONNECTED_BIT BIT0
 #define WIFI_FAIL_BIT      BIT1
 
-static const char *TAG = "Station";
-
 static int s_retry_num = 0;
-
 
 static void event_handler(void* arg, esp_event_base_t event_base,
                                 int32_t event_id, void* event_data)
 {
     if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_START) {
         esp_wifi_connect();
-       // wifi_init_config_t config = WIFI_INIT_CONFIG_DEFAULT(); //ADDED
-       //esp_wifi_init(&config);//ADDED
     } else if (event_base == WIFI_EVENT && event_id == WIFI_EVENT_STA_DISCONNECTED) {
-        if (s_retry_num < EXAMPLE_ESP_MAXIMUM_RETRY) {
+        if (s_retry_num < ESP_MAX_RETRY) {
             esp_wifi_connect();
             s_retry_num++;
             ESP_LOGI(TAG, "retry to connect to the AP");
@@ -102,9 +98,7 @@ static void event_handler(void* arg, esp_event_base_t event_base,
         ESP_LOGI(TAG, "got ip:" IPSTR, IP2STR(&event->ip_info.ip));
         s_retry_num = 0;
         xEventGroupSetBits(s_wifi_event_group, WIFI_CONNECTED_BIT);
-        //esp_wifi_set_promiscuous(true); //ADDED
     }
-    ESP_LOGE(TAG,"END OF EVENT HANDLER");//ADDED
 }
 
 void wifi_init_sta(void)
@@ -150,6 +144,7 @@ void wifi_init_sta(void)
     ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA) );
     ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &wifi_config) );
     ESP_ERROR_CHECK(esp_wifi_start() );
+    esp_wifi_set_ps(0);
 
     ESP_LOGI(TAG, "wifi_init_sta finished.");
 
@@ -172,21 +167,7 @@ void wifi_init_sta(void)
     } else {
         ESP_LOGE(TAG, "UNEXPECTED EVENT");
     }
-    ESP_LOGE(TAG, "EVENT_CHECK-------------------------");//ADDED
 }
-
-/*
-static void periodic_timer_callback(void* arg)
-{   //INTERRUPT
-    //Sensor gets sampled
-    signal_generation();
-    
-    //Following code might be wrong; dereferencing payload!!!
-    if ( strlen(sensorBuffer) >= 1459){
-        ESP_LOGI(TAG,"DATA: %s \n",sensorBuffer);
-        tcp_sending(&sensorBuffer);
-    }
-}*/
 
 
 void app_main(void)
@@ -199,21 +180,17 @@ void app_main(void)
     }
     ESP_ERROR_CHECK(ret);
     
-    /*
-    //Timer initialization
-    const esp_timer_create_args_t periodic_timer_args = {
-            .callback = &periodic_timer_callback,
-            //name is optional, but may help identify the timer when debugging
-            .name = "Sensor_clocking_signal"
-    };
-    
-    if(esp_timer_create(&periodic_timer_args, &sensor_clock) != ESP_OK){
-        ESP_LOGE(TAG, "ERROR WHILE CREATING TIMER");
-    }*/
-
-    ESP_LOGI(TAG, "ESP_WIFI_MODE_STA");
     wifi_init_sta();
-    //signal_generation();
-    tcp_client(); //This function runs in background
-    //if(esp_timer_start_periodic(sensor_clock, TIMER_PERIOD) != ESP_OK) ESP_LOGE(TAG, "ERROR STARTING TIMER");
+
+    //Creating a Thread for TCP_Client: Sampling and transmitting data
+    #if DATA_STREAM_ENABLE
+    xTaskCreate(tcp_client, "TCP_streaming", 4096, NULL, 5, NULL);
+    #endif
+
+    //ESP_LOGI(TAG, "BETWEEN TCP AND UDP");
+
+    //Creating a Thread for Time Synchronization
+    #if TIME_SYNCH_ENABLE
+    xTaskCreate(udp_time_synch, "udp_client", 4096, (void*)AF_INET, 5, NULL);
+    #endif
 }

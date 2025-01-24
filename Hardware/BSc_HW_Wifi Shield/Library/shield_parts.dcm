@@ -1,0 +1,183 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP NE555DR
+D Single Precision Timer
+K
+F http://www.ti.com/lit/ds/symlink/ne555.pdf
+$ENDCMP
+#
+$CMP DM3AT-SF-PEJM5_40_
+D Memory Card Connectors MICRO SD CD CONN STD SMT PUSHPUSH
+K
+F https://componentsearchengine.com/Datasheets/2/DM3AT-SF-PEJM5(40).pdf
+$ENDCMP
+#
+$CMP AM1805AQ
+D IC REAL TIME CLOCK 16QFN
+K
+F https://octopart.com/am1805aq-ambiq+micro-67062070
+$ENDCMP
+#
+$CMP ESP32-C6-MINI-1-H8
+D 8 MB (Quad SPI) , 13.2  16.6  2.4 , 3.0 ~ 3.6 V , 2.4 GHz , 2412 ~ 2484 MHz , 40C ~ 105C
+K
+F https://www.espressif.com/sites/default/files/documentation/esp32-c6-mini-1_mini-1u_datasheet_en.pdf
+$ENDCMP
+#
+$CMP IS31FL3194-CLS2-TR
+D LED Driver IC 3 Output Linear Dimming 40mA Voltage min 2.7V, max 	 5.5V, 8-WFBGA, WLCSP -40C ~ 85C
+K
+F https://www.lumissil.com/assets/pdf/core/IS31FL3194_DS.pdf
+$ENDCMP
+#
+$CMP SML-LX0404SIUPGUSB
+D LED,0404,Surface Mount,QuasarBrite Lumex SML-LX0404SIUPGUSB RGB LED, 465 (Blue) nm, 518 (Green) nm, 632 (Red) nm 0404 Clear, Rectangle Lens SMD package
+K
+F https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-DGA13/1153815.pdf
+$ENDCMP
+#
+$CMP TXB0108PWR
+D 8-Bit Bidirectional Voltage-Level Shifter with Auto Direction Sensing and +/-15-kV ESD Protect
+K
+F http://www.ti.com/lit/ds/symlink/txb0108.pdf
+$ENDCMP
+#
+$CMP RCWE0402R100FNEA
+D Current Sense Resistors - SMD 1/8watt .1ohms 1% 200ppm
+K
+F http://www.vishay.com/docs/20019/rcwe.pdf
+$ENDCMP
+#
+$CMP JMK105BJ105KP-F
+D Taiyo Yuden JMK105BJ105KP-F 1F MLCC 6.3V dc +/-10% Tolerance SMD
+K
+F https://componentsearchengine.com/Datasheets/1/JMK105BJ105KP-F.pdf
+$ENDCMP
+#
+$CMP GMK105BJ104KV-F
+D Multilayer Ceramic Capacitors MLCC - SMD/SMT 0402 35V 0.1uF 10% X5R
+K
+F https://ds.yuden.co.jp/TYCOMPAS/ut/download?pn=LMK063BBJ474MPLF&fileType=CA
+$ENDCMP
+#
+$CMP MCS04020C4701FE000
+D Vishay Resistor Chip 0402
+K
+F http://www.vishay.com/docs/28705/mcx0x0xpro.pdf
+$ENDCMP
+#
+$CMP CRT0402ABY-1003GLF
+D ResThinFilm 0402 100kR 0.1% 63mW TC25
+K
+F https://www.bourns.com/docs/Product-Datasheets/CRT-A.pdf
+$ENDCMP
+#
+$CMP CM05X5R106M10AH
+D Multilayer Ceramic Capacitors MLCC - SMD/SMT 10V 10uF X5R 0402 2mm Pitch 20%
+K
+F https://www.mouser.kr/datasheet/2/40/Kyocera_AVX_Components_CT_Series_e-2933596.pdf
+$ENDCMP
+#
+$CMP 830105946101
+D Operating Temperature Range -40.00 to 85.00C
+K
+F https://www.mouser.tw/datasheet/2/445/830105946101-2005497.pdf
+$ENDCMP
+#
+$CMP 04025A120CAT2A
+D Multilayer Ceramic Capacitors MLCC - SMD/SMT 50V 12pF C0G 0402 .25pF Tol
+K
+F 
+$ENDCMP
+#
+$CMP RCC040210M0FKED
+D Medium Power Thick Film Chip Resistor, AEC-Q200, 0402
+K
+F https://www.vishay.com/docs/20066/rcce3.pdf
+$ENDCMP
+#
+$CMP CBR04C470F5GAC
+D CBR-SMD RF C0G, Ceramic, 47 pF, 1%, 50 VDC, 125 VDC, 125C, -55C, C0G, SMD, Fixed, RF, Ultra High Q, Low ESR, Class I, 0.1 % , 10 GOhms, 1000, 1.4 mg, 0402, 1mm, 0.5mm, 0.5mm, 0.25mm, 10000, 78  Weeks, 120
+K
+F http://www.kemet.com/Lists/ProductCatalog/Attachments/490/KEM_C1030_CBR_SMD.pdf
+$ENDCMP
+#
+$CMP DF40HC_3.0_-50DS-0.4V_51_
+D Board to Board & Mezzanine Connectors 50P RECPT 3.0 STK HT W/O METAL FITTING
+K
+F https://www.arrow.com/en/products/df40hc-3.0-50ds-0.4v-51/hirose-electric?region=nac
+$ENDCMP
+#
+$CMP DF40HC_3.0_-40DS-0.4V_51_
+D Hirose DF40 Series 0.4mm Pitch 40 Way 2 Row Straight PCB Socket, Surface Mount, Solder Termination
+K
+F https://www.hirose.com/product/document?clcode=CL0684-4169-6-51&productname=DF40HC(3.0)-40DS-0.4V(51)&series=DF40&documenttype=2DDrawing&lang=en&documentid=0000951087
+$ENDCMP
+#
+$CMP TPS22916CYFPR
+D TPS22916 5.5-V, 2-A Ultra-Low Leakage Load Switch
+K
+F http://www.ti.com/lit/gpn/tps22916
+$ENDCMP
+#
+$CMP CRCW040210K0FKEDC
+D VISHAY - CRCW040210K0FKEDC - RES, THICK FILM, 10K, 0.063W, 0402
+K
+F https://rs.componentsearchengine.com/Datasheets/2/CRCW040210K0FKEDC.pdf
+$ENDCMP
+#
+$CMP KGM05DR50J226MH
+D Multilayer Ceramic Capacitors MLCC - SMD/SMT 6.3V 22uF X5R 0402 2 0%
+K
+F 
+$ENDCMP
+#
+$CMP TLRZ1ETTB
+D Current Sense Resistors - SMD 0402 Zero Ohm Jumper 10 Amps
+K
+F 
+$ENDCMP
+#
+$CMP ABS05W-32.768KHZ-D-2-T
+D ABRACON - ABS05W-32.768KHZ-D-2-T - CRYSTAL, 32.768KHZ, 4PF, 1.6X1MM
+K
+F https://abracon.com/Resonators/ABS05W.pdf
+$ENDCMP
+#
+$CMP TL3305AF160QG
+D TACT, 50mA, 12VDC SPST-NO, Off-(On) Surface Mount
+K
+F https://configured-product-images.s3.amazonaws.com/2D/specs/TL3305AF160QG.pdf
+$ENDCMP
+#
+$CMP DF40C-40DP-0.4V_51_
+D HIROSE(HRS) - DF40C-40DP-0.4V(51) - CONNECTOR, STACKING, HEADER, 40POS, 2ROW
+K
+F https://www.hirose.com/en/product/document?clcode=CL0684-4013-7-51&productname=DF40C-40DP-0.4V(51)&series=DF40&documenttype=2DDrawing&lang=en&documentid=0001001212
+$ENDCMP
+#
+$CMP DF40C-50DP-0.4V_51_
+D HIROSE(HRS) - DF40C-50DP-0.4V(51) - STIFTLEISTE, STAPELBAR, 50POS., 2 REIHEN
+K
+F https://www.hirose.com/en/product/document?clcode=CL0684-4014-0-51&productname=DF40C-50DP-0.4V(51)&series=DF40&documenttype=2DDrawing&lang=en&documentid=0001001212
+$ENDCMP
+#
+$CMP HTSW-104-08-G-S-RA
+D SAMTEC - HTSW-104-08-G-S-RA - HEADER, 2.54MM, THT, R/A, 4WAY
+K
+F https://componentsearchengine.com/Datasheets/2/HTSW-104-08-G-S-RA.pdf
+$ENDCMP
+#
+$CMP TMUX1219DBVRQ1
+D AEC-Q100 Qualified for Automotive Applications  Device Temperature Grade 1: 40C to 125C Ambient Operating Temperature  Device HBM Classification Level H1C  Device CDM Classification Level C3  Rail to rail operation  Bidirectional signal path  1.8V Logic compatible  Fail-safe logic  Low on-resistance: 3  Wide supply range: 1.08V to 5.5V  -40C to +125C Operating temperature  Low supply current: 4nA  Transition time: 14ns  Break-before-make switching  ESD protection HBM: 2000
+K
+F https://www.ti.com/lit/ds/symlink/tmux1219-q1.pdf?ts=1732116381328&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTMUX1219-Q1
+$ENDCMP
+#
+$CMP SS14
+D TAIWAN SEMICONDUCTOR - SS14 - SCHOTTKY RECTIFIER, 1A, 40V, DO-214AC
+K
+F https://www.taiwansemi.com/assets/uploads/datasheet/SS12%20SERIES_Q2102.pdf
+$ENDCMP
+#
+#End Doc Library
