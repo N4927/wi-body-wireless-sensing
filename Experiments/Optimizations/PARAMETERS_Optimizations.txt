@@ -1,0 +1,132 @@
+PARAMETERS:
+date: 08.11.2024
+
+With this series of tests I want to find out what 'variables'/changes in the programmcode and/or environment have an effect on the throughput between two nodes.
+Test duration: ~120 seconds
+
+timer enabled
+
+RX_BUFFER 2048
+TIMER_PERIOD 1000000
+payload size = 1459 bytes
+
+
+
+Tests:
+
+---
+APv2_at home
+
+test conducted at home
+
+I assume that the network experiences less congestion due to lower density of people and their respective devices compared to the work environment of eth.
+---
+APv2_at home_no float
+
+test conducted at home
+float variable removed
+
+Does the removal of the float var in the throughput measurement affect the performance?
+
+Result: The difference seems marginal. I'll leave it out, bc. it's not needed.
+---
+APv2_at etz
+
+test conducted in ETZ H68.2
+float variable removed
+
+This test is for comparing against "APv2_at home"
+Laptop is in between the two nodes. Does this affect throughput?
+---
+APv2_at etz_direct
+
+test conducted in ETZ H68.2
+float variable removed
+Clk 160 MHz
+
+This test is for comparing against "APv2_at home"
+The nodes are now closer and there's nothing in between them. (No metallic devices or things.)
+---
+APv2_clk 240hz
+
+test conducted in ETZ H68.2
+float variable removed
+#define CONFIG_ESP_DEFAULT_CPU_FREQ_MHZ 240 //clock frequency on AP and STA side from 160 Mhz to 240 Mhz increased
+No Laptop between nodes (node distance ~20cm)
+
+---
+APv2_IRAM
+
+test conducted in ETZ H68.2
+float variable removed
+Clk 160 MHz
+No Laptop between nodes (node distance ~20cm)
+
+Functions put into IRAM:
+
+AP:
+static void IRAM_ATTR periodic_timer_callback(void* arg)
+static void IRAM_ATTR do_retransmit(const int sock)
+STA:
+void IRAM_ATTR tcp_client(void)
+---
+APv2_Serial Monitor OFF
+
+test conducted in ETZ H68.2
+float variable removed
+Clk 160 MHz
+No Laptop between nodes (node distance ~20cm)
+
+Serial Monitor on STA side is turned off. SM on AP side is on.
+
+---
+APv2_Socket Buffer set
+
+test conducted in ETZ H68.2
+float variable removed
+Clk 160 MHz
+No Laptop between nodes (node distance ~20cm)
+Set buffer sizes of Sockets.
+AP:
+int buffer_size = 32768; // or larger
+setsockopt(socket, SOL_SOCKET, SO_RCVBUF, &buffer_size, sizeof(buffer_size));
+setsockopt(socket, SOL_SOCKET, SO_SNDBUF, &buffer_size, sizeof(buffer_size));
+---
+APv2_Flashmode qio
+
+test conducted in ETZ H68.2
+float variable removed
+Clk 160 MHz
+No Laptop between nodes (node distance ~20cm)
+
+
+AP and STA:
+#define CONFIG_ESPTOOLPY_FLASHMODE "qio" //setting flashmode qio instead of "dio"
+
+---
+APv2_all opt
+
+test conducted in ETZ H68.2
+float variable removed
+Clk 160 MHz
+No Laptop between nodes (node distance ~20cm)
+
+Clk freq: 240 MHz
+Functions into IRAM
+Socket Buffersizes' set
+Flashmode: qio
+Serial Monitoring on STA side off
+---
+APv2_qio and SM OFF
+
+test conducted in ETZ H68.2
+float variable removed
+Clk 160 MHz
+No Laptop between nodes (node distance ~20cm)
+
+chosen options enabled:
+Flashmode: qio
+Serial Monitoring on STA side off
+
+---
+

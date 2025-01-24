@@ -1,0 +1,355 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x1804
+load:0x4086c110,len:0xe2c
+load:0x4086e610,len:0x2e5c
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.3.1 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Nov  7 2024 10:12:06[0m
+[0;32mI (24) boot: chip revision: v0.1[0m
+[0;32mI (26) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=42098020 size=22f88h (143240) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=00032fb0 vaddr=40800000 size=05068h ( 20584) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00038020 vaddr=42000020 size=9279ch (599964) map[0m
+[0;32mI (252) esp_image: segment 3: paddr=000ca7c4 vaddr=40805068 size=1392ch ( 80172) load[0m
+[0;32mI (271) esp_image: segment 4: paddr=000de0f8 vaddr=408189a0 size=03b30h ( 15152) load[0m
+[0;32mI (281) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (282) boot: Disabling RNG early entropy source...[0m
+[0;32mI (293) cpu_start: Unicore app[0m
+[0;32mI (302) cpu_start: Pro cpu start user code[0m
+[0;32mI (302) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (302) app_init: Application information:[0m
+[0;32mI (305) app_init: Project name:     wifi_softAP[0m
+[0;32mI (310) app_init: App version:      1[0m
+[0;32mI (315) app_init: Compile time:     Nov  7 2024 10:11:27[0m
+[0;32mI (321) app_init: ELF file SHA256:  97de9969a...[0m
+[0;32mI (326) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (331) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (335) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (340) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (345) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (352) heap_init: At 408218E0 len 0005AD30 (363 KiB): RAM[0m
+[0;32mI (358) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (365) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (372) spi_flash: detected chip: generic[0m
+[0;32mI (376) spi_flash: flash io: dio[0m
+[0;33mW (379) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (393) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (399) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (406) coexist: coex firmware version: 4482466[0m
+[0;32mI (421) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (422) main_task: Started on CPU0[0m
+[0;32mI (422) main_task: Calling app_main()[0m
+[0;31mE (422) Access Point: +++++++++++++++++++START+++++++++++++++++++++[0m
+[0;32mI (442) Access Point: ESP_WIFI_MODE_AP[0m
+[0;32mI (442) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (442) net80211: net80211 rom version: 5b8dcfa[0m
+I (452) wifi:wifi driver task: 4082a964, prio:23, stack:6656, core=0
+I (462) wifi:wifi firmware version: ccaebfa
+I (462) wifi:wifi certification version: v7.0
+I (462) wifi:config NVS flash: enabled
+I (462) wifi:config nano formating: disabled
+I (462) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band:0x1
+I (472) wifi:Init data frame dynamic rx buffer num: 32
+I (472) wifi:Init static rx mgmt buffer num: 5
+I (482) wifi:Init management short buffer num: 32
+I (482) wifi:Init dynamic tx buffer num: 32
+I (492) wifi:Init static tx FG buffer num: 2
+I (492) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)
+I (502) wifi:Init static rx buffer num: 10
+I (502) wifi:Init dynamic rx buffer num: 32
+[0;32mI (502) wifi_init: rx ba win: 6[0m
+[0;32mI (512) wifi_init: accept mbox: 6[0m
+[0;32mI (512) wifi_init: tcpip mbox: 32[0m
+[0;32mI (522) wifi_init: udp mbox: 6[0m
+[0;32mI (522) wifi_init: tcp mbox: 6[0m
+[0;32mI (522) wifi_init: tcp tx win: 5760[0m
+[0;32mI (532) wifi_init: tcp rx win: 5760[0m
+[0;32mI (532) wifi_init: tcp mss: 1440[0m
+[0;32mI (542) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (542) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (542) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (552) phy_init: phy_version 310,dde1ba9,Jun  4 2024,16:38:11[0m
+W (602) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)
+W (602) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)
+W (612) wifi:(agc)0x600a7128:0xd20d4800, min.avgNF:0xce->0xd2(dB), RCalCount:0xd3, min.RRssi:0x800(-128.00)
+W (622) wifi:(TB)WDEV_PWR_TB_MCS0:19
+W (622) wifi:(TB)WDEV_PWR_TB_MCS1:19
+W (632) wifi:(TB)WDEV_PWR_TB_MCS2:19
+W (632) wifi:(TB)WDEV_PWR_TB_MCS3:19
+W (632) wifi:(TB)WDEV_PWR_TB_MCS4:19
+W (642) wifi:(TB)WDEV_PWR_TB_MCS5:19
+W (642) wifi:(TB)WDEV_PWR_TB_MCS6:18
+W (642) wifi:(TB)WDEV_PWR_TB_MCS7:18
+W (652) wifi:(TB)WDEV_PWR_TB_MCS8:17
+W (652) wifi:(TB)WDEV_PWR_TB_MCS9:15
+W (652) wifi:(TB)WDEV_PWR_TB_MCS10:15
+W (662) wifi:(TB)WDEV_PWR_TB_MCS11:15
+I (662) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).
+
+W (672) wifi:(he)deattach, ap, phymode:11bgn
+I (672) wifi:mode : softAP (f0:f5:bd:06:f4:59)
+I (722) wifi:Total power save buffer number: 16
+I (722) wifi:Init max length of beacon: 752/752
+I (722) wifi:Init max length of beacon: 752/752
+[0;32mI (722) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (732) Access Point: wifi_init_softap finished. SSID:myssid password:mypassword channel:1[0m
+[0;32mI (742) Access Point: wifi_init completed[0m
+[0;31mE (742) Access Point: Socket created: 54[0m
+[0;32mI (752) Access Point: Socket bound, port 3333[0m
+[0;32mI (752) Access Point: Socket listening[0m
+[0;32mI (762) main_task: Returned from app_main()[0m
+I (3762) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (3762) wifi:(trc)phytype:CBW20-SGI, snr:56, maxRate:0, highestRateIdx:0
+W (3762) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14
+I (3772) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:56, ampduState:wait operational
+I (3782) wifi:ifidx:1, rssi:-41, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1
+I (3792) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)
+I (3802) wifi:station: f0:f5:bd:06:f7:24 join, AID=1, bgn, 20
+I (3812) wifi:station: f0:f5:bd:06:f7:24 leave, AID = 1, reason = 2, bss_flags is 167010, bss:0x40823b10
+I (3822) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (6392) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (6392) wifi:(trc)phytype:CBW20-SGI, snr:56, maxRate:0, highestRateIdx:0
+W (6392) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14
+I (6402) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:56, ampduState:wait operational
+I (6412) wifi:ifidx:1, rssi:-40, nf:-96, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1
+I (6422) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)
+I (6432) wifi:station: f0:f5:bd:06:f7:24 join, AID=1, bgn, 20
+[0;32mI (6492) Access Point: station f0:f5:bd:06:f7:24 join, AID=1[0m
+W (6562) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x10124f7, TALO:0x6bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005
+W (6562) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x10124f7, TALO:0x6bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005
+W (6582) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x10124f7, TALO:0x6bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005
+[0;32mI (6602) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+I (27332) wifi:WPA3 SAE f0:f5:bd:06:f7:24 start reauthentication
+[0;32mI (27332) Access Point: station f0:f5:bd:06:f7:24 leave, AID=1, reason=2[0m
+[0;32mI (27402) Access Point: station f0:f5:bd:06:f7:24 leave, AID=1, reason=2[0m
+I (27412) wifi:<ba-del>idx:4, tid:0
+I (27412) wifi:<ba-del>idx:6, tid:5
+I (27412) wifi:<ba-del>idx:5, tid:7
+I (27412) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (27412) wifi:(trc)phytype:CBW20-SGI, snr:56, maxRate:0, highestRateIdx:0
+W (27422) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14
+I (27432) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:56, ampduState:wait operational
+I (27442) wifi:ifidx:1, rssi:-39, nf:-95, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1
+I (27452) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)
+I (27462) wifi:station: f0:f5:bd:06:f7:24 join, AID=1, bgn, 20
+[0;32mI (27512) Access Point: station f0:f5:bd:06:f7:24 join, AID=1[0m
+W (27582) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x10124f7, TALO:0x6bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005
+W (27602) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x10124f7, TALO:0x6bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005
+W (27612) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x10124f7, TALO:0x6bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005
+[0;32mI (27632) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+I (28662) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)
+I (28672) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6
+[0;32mI (28672) Access Point: Socket accepted ip address: 192.168.4.2[0m
+[0;32mI (29672) Access Point: Runtime: 29307274 [us], Total Bytes: 1223504, Bytes: 1223504[B/s], Throughput; 0.000000[0m
+[0;32mI (30672) Access Point: Runtime: 30307273 [us], Total Bytes: 2455052, Bytes: 1231548[B/s], Throughput; 1000000.000000[0m
+[0;32mI (31672) Access Point: Runtime: 31307274 [us], Total Bytes: 3722676, Bytes: 1267624[B/s], Throughput; 1000000.000000[0m
+[0;32mI (32672) Access Point: Runtime: 32307273 [us], Total Bytes: 4980771, Bytes: 1258095[B/s], Throughput; 1000000.000000[0m
+[0;32mI (33672) Access Point: Runtime: 33307274 [us], Total Bytes: 6343192, Bytes: 1362421[B/s], Throughput; 1000000.000000[0m
+[0;32mI (34672) Access Point: Runtime: 34307273 [us], Total Bytes: 7783719, Bytes: 1440527[B/s], Throughput; 1000000.000000[0m
+[0;32mI (35672) Access Point: Runtime: 35307274 [us], Total Bytes: 9209674, Bytes: 1425955[B/s], Throughput; 1000000.000000[0m
+[0;32mI (36672) Access Point: Runtime: 36307280 [us], Total Bytes: 10617040, Bytes: 1407366[B/s], Throughput; 1000000.000000[0m
+[0;32mI (37672) Access Point: Runtime: 37307320 [us], Total Bytes: 12017699, Bytes: 1400659[B/s], Throughput; 1000000.000000[0m
+[0;32mI (38672) Access Point: Runtime: 38307274 [us], Total Bytes: 13397761, Bytes: 1380062[B/s], Throughput; 1000000.000000[0m
+[0;32mI (39672) Access Point: Runtime: 39307274 [us], Total Bytes: 14807250, Bytes: 1409489[B/s], Throughput; 1000000.000000[0m
+[0;32mI (40672) Access Point: Runtime: 40307332 [us], Total Bytes: 16304053, Bytes: 1496803[B/s], Throughput; 1000000.000000[0m
+[0;32mI (41672) Access Point: Runtime: 41307274 [us], Total Bytes: 17774605, Bytes: 1470552[B/s], Throughput; 1000000.000000[0m
+[0;32mI (42672) Access Point: Runtime: 42307273 [us], Total Bytes: 19255171, Bytes: 1480566[B/s], Throughput; 1000000.000000[0m
+[0;32mI (43672) Access Point: Runtime: 43307274 [us], Total Bytes: 20719000, Bytes: 1463829[B/s], Throughput; 1000000.000000[0m
+[0;32mI (44672) Access Point: Runtime: 44307288 [us], Total Bytes: 22116916, Bytes: 1397916[B/s], Throughput; 1000000.000000[0m
+[0;32mI (45672) Access Point: Runtime: 45307274 [us], Total Bytes: 23549730, Bytes: 1432814[B/s], Throughput; 1000000.000000[0m
+[0;32mI (46672) Access Point: Runtime: 46307281 [us], Total Bytes: 24880053, Bytes: 1330323[B/s], Throughput; 1000000.000000[0m
+[0;32mI (47672) Access Point: Runtime: 47307296 [us], Total Bytes: 26294979, Bytes: 1414926[B/s], Throughput; 1000000.000000[0m
+[0;32mI (48672) Access Point: Runtime: 48307273 [us], Total Bytes: 27556011, Bytes: 1261032[B/s], Throughput; 1000000.000000[0m
+[0;32mI (49672) Access Point: Runtime: 49307274 [us], Total Bytes: 29051030, Bytes: 1495019[B/s], Throughput; 1000000.000000[0m
+[0;32mI (50672) Access Point: Runtime: 50307278 [us], Total Bytes: 30542527, Bytes: 1491497[B/s], Throughput; 1000000.000000[0m
+[0;32mI (51672) Access Point: Runtime: 51307274 [us], Total Bytes: 32001508, Bytes: 1458981[B/s], Throughput; 1000000.000000[0m
+[0;32mI (52672) Access Point: Runtime: 52307273 [us], Total Bytes: 33425017, Bytes: 1423509[B/s], Throughput; 1000000.000000[0m
+[0;32mI (53672) Access Point: Runtime: 53307274 [us], Total Bytes: 34821489, Bytes: 1396472[B/s], Throughput; 1000000.000000[0m
+[0;32mI (54672) Access Point: Runtime: 54307273 [us], Total Bytes: 36282081, Bytes: 1460592[B/s], Throughput; 1000000.000000[0m
+[0;32mI (55672) Access Point: Runtime: 55307366 [us], Total Bytes: 37720674, Bytes: 1438593[B/s], Throughput; 1000000.000000[0m
+[0;32mI (56672) Access Point: Runtime: 56307273 [us], Total Bytes: 38995992, Bytes: 1275318[B/s], Throughput; 1000000.000000[0m
+[0;32mI (57672) Access Point: Runtime: 57307274 [us], Total Bytes: 40402506, Bytes: 1406514[B/s], Throughput; 1000000.000000[0m
+[0;32mI (58672) Access Point: Runtime: 58307273 [us], Total Bytes: 41787169, Bytes: 1384663[B/s], Throughput; 1000000.000000[0m
+[0;32mI (59672) Access Point: Runtime: 59307367 [us], Total Bytes: 43142944, Bytes: 1355775[B/s], Throughput; 1000000.000000[0m
+[0;32mI (60672) Access Point: Runtime: 60307276 [us], Total Bytes: 44441394, Bytes: 1298450[B/s], Throughput; 1000000.000000[0m
+[0;32mI (61672) Access Point: Runtime: 61307274 [us], Total Bytes: 45847532, Bytes: 1406138[B/s], Throughput; 1000000.000000[0m
+[0;32mI (62672) Access Point: Runtime: 62307273 [us], Total Bytes: 47245649, Bytes: 1398117[B/s], Throughput; 1000000.000000[0m
+[0;32mI (63672) Access Point: Runtime: 63307360 [us], Total Bytes: 48603488, Bytes: 1357839[B/s], Throughput; 1000000.000000[0m
+[0;32mI (64672) Access Point: Runtime: 64307273 [us], Total Bytes: 50095988, Bytes: 1492500[B/s], Throughput; 1000000.000000[0m
+[0;32mI (65672) Access Point: Runtime: 65307274 [us], Total Bytes: 51498125, Bytes: 1402137[B/s], Throughput; 1000000.000000[0m
+[0;32mI (66672) Access Point: Runtime: 66307274 [us], Total Bytes: 52900034, Bytes: 1401909[B/s], Throughput; 1000000.000000[0m
+[0;32mI (67672) Access Point: Runtime: 67307274 [us], Total Bytes: 54171127, Bytes: 1271093[B/s], Throughput; 1000000.000000[0m
+[0;32mI (68672) Access Point: Runtime: 68307289 [us], Total Bytes: 55516420, Bytes: 1345293[B/s], Throughput; 1000000.000000[0m
+[0;32mI (69672) Access Point: Runtime: 69307332 [us], Total Bytes: 56897504, Bytes: 1381084[B/s], Throughput; 1000000.000000[0m
+[0;32mI (70672) Access Point: Runtime: 70307273 [us], Total Bytes: 58313737, Bytes: 1416233[B/s], Throughput; 1000000.000000[0m
+[0;32mI (71672) Access Point: Runtime: 71307318 [us], Total Bytes: 59699354, Bytes: 1385617[B/s], Throughput; 1000000.000000[0m
+[0;32mI (72672) Access Point: Runtime: 72307273 [us], Total Bytes: 61044643, Bytes: 1345289[B/s], Throughput; 1000000.000000[0m
+[0;32mI (73672) Access Point: Runtime: 73307274 [us], Total Bytes: 62507830, Bytes: 1463187[B/s], Throughput; 1000000.000000[0m
+[0;32mI (74672) Access Point: Runtime: 74307274 [us], Total Bytes: 63961093, Bytes: 1453263[B/s], Throughput; 1000000.000000[0m
+[0;32mI (75672) Access Point: Runtime: 75307274 [us], Total Bytes: 65358663, Bytes: 1397570[B/s], Throughput; 1000000.000000[0m
+[0;32mI (76672) Access Point: Runtime: 76307288 [us], Total Bytes: 66687280, Bytes: 1328617[B/s], Throughput; 1000000.000000[0m
+[0;32mI (77672) Access Point: Runtime: 77307274 [us], Total Bytes: 68173833, Bytes: 1486553[B/s], Throughput; 1000000.000000[0m
+[0;32mI (78672) Access Point: Runtime: 78307413 [us], Total Bytes: 69661425, Bytes: 1487592[B/s], Throughput; 1000000.000000[0m
+[0;32mI (79672) Access Point: Runtime: 79307274 [us], Total Bytes: 71078057, Bytes: 1416632[B/s], Throughput; 1000000.000000[0m
+[0;32mI (80672) Access Point: Runtime: 80307274 [us], Total Bytes: 72490576, Bytes: 1412519[B/s], Throughput; 1000000.000000[0m
+[0;32mI (81672) Access Point: Runtime: 81307274 [us], Total Bytes: 73860385, Bytes: 1369809[B/s], Throughput; 1000000.000000[0m
+[0;32mI (82672) Access Point: Runtime: 82307273 [us], Total Bytes: 75153743, Bytes: 1293358[B/s], Throughput; 1000000.000000[0m
+[0;32mI (83672) Access Point: Runtime: 83307274 [us], Total Bytes: 76591880, Bytes: 1438137[B/s], Throughput; 1000000.000000[0m
+[0;32mI (84672) Access Point: Runtime: 84307276 [us], Total Bytes: 78087055, Bytes: 1495175[B/s], Throughput; 1000000.000000[0m
+[0;32mI (85672) Access Point: Runtime: 85307274 [us], Total Bytes: 79572146, Bytes: 1485091[B/s], Throughput; 1000000.000000[0m
+[0;32mI (86672) Access Point: Runtime: 86307293 [us], Total Bytes: 80971536, Bytes: 1399390[B/s], Throughput; 1000000.000000[0m
+[0;32mI (87672) Access Point: Runtime: 87307274 [us], Total Bytes: 82429605, Bytes: 1458069[B/s], Throughput; 1000000.000000[0m
+[0;32mI (88672) Access Point: Runtime: 88307273 [us], Total Bytes: 83828938, Bytes: 1399333[B/s], Throughput; 1000000.000000[0m
+[0;32mI (89672) Access Point: Runtime: 89307274 [us], Total Bytes: 85282881, Bytes: 1453943[B/s], Throughput; 1000000.000000[0m
+[0;32mI (90672) Access Point: Runtime: 90307286 [us], Total Bytes: 86865535, Bytes: 1582654[B/s], Throughput; 1000000.000000[0m
+[0;32mI (91672) Access Point: Runtime: 91307274 [us], Total Bytes: 88344904, Bytes: 1479369[B/s], Throughput; 1000000.000000[0m
+[0;32mI (92672) Access Point: Runtime: 92307274 [us], Total Bytes: 89688814, Bytes: 1343910[B/s], Throughput; 1000000.000000[0m
+[0;32mI (93672) Access Point: Runtime: 93307274 [us], Total Bytes: 91070677, Bytes: 1381863[B/s], Throughput; 1000000.000000[0m
+[0;32mI (94672) Access Point: Runtime: 94307274 [us], Total Bytes: 92445150, Bytes: 1374473[B/s], Throughput; 1000000.000000[0m
+[0;32mI (95672) Access Point: Runtime: 95307336 [us], Total Bytes: 93728291, Bytes: 1283141[B/s], Throughput; 1000000.000000[0m
+[0;32mI (96672) Access Point: Runtime: 96307276 [us], Total Bytes: 95077011, Bytes: 1348720[B/s], Throughput; 1000000.000000[0m
+[0;32mI (97672) Access Point: Runtime: 97307277 [us], Total Bytes: 96415978, Bytes: 1338967[B/s], Throughput; 1000000.000000[0m
+[0;32mI (98672) Access Point: Runtime: 98307274 [us], Total Bytes: 97807902, Bytes: 1391924[B/s], Throughput; 1000000.000000[0m
+[0;32mI (99672) Access Point: Runtime: 99307274 [us], Total Bytes: 99187603, Bytes: 1379701[B/s], Throughput; 1000000.000000[0m
+[0;32mI (100672) Access Point: Runtime: 100307273 [us], Total Bytes: 100544910, Bytes: 1357307[B/s], Throughput; 1000000.000000[0m
+[0;32mI (101672) Access Point: Runtime: 101307286 [us], Total Bytes: 101928627, Bytes: 1383717[B/s], Throughput; 1000000.000000[0m
+[0;32mI (102672) Access Point: Runtime: 102307273 [us], Total Bytes: 103285292, Bytes: 1356665[B/s], Throughput; 1000000.000000[0m
+[0;32mI (103672) Access Point: Runtime: 103307337 [us], Total Bytes: 104680096, Bytes: 1394804[B/s], Throughput; 1000000.000000[0m
+[0;32mI (104672) Access Point: Runtime: 104307273 [us], Total Bytes: 106008504, Bytes: 1328408[B/s], Throughput; 1000000.000000[0m
+[0;32mI (105672) Access Point: Runtime: 105307274 [us], Total Bytes: 107328215, Bytes: 1319711[B/s], Throughput; 1000000.000000[0m
+[0;32mI (106672) Access Point: Runtime: 106307288 [us], Total Bytes: 108765524, Bytes: 1437309[B/s], Throughput; 1000000.000000[0m
+[0;32mI (107672) Access Point: Runtime: 107307274 [us], Total Bytes: 110065246, Bytes: 1299722[B/s], Throughput; 1000000.000000[0m
+[0;32mI (108672) Access Point: Runtime: 108307275 [us], Total Bytes: 111236842, Bytes: 1171596[B/s], Throughput; 1000000.000000[0m
+[0;32mI (109672) Access Point: Runtime: 109307274 [us], Total Bytes: 112243552, Bytes: 1006710[B/s], Throughput; 1000000.000000[0m
+[0;32mI (110672) Access Point: Runtime: 110307273 [us], Total Bytes: 113504033, Bytes: 1260481[B/s], Throughput; 1000000.000000[0m
+[0;32mI (111672) Access Point: Runtime: 111307301 [us], Total Bytes: 114956570, Bytes: 1452537[B/s], Throughput; 1000000.000000[0m
+[0;32mI (112672) Access Point: Runtime: 112307273 [us], Total Bytes: 116368297, Bytes: 1411727[B/s], Throughput; 1000000.000000[0m
+[0;32mI (113672) Access Point: Runtime: 113307274 [us], Total Bytes: 117786027, Bytes: 1417730[B/s], Throughput; 1000000.000000[0m
+[0;32mI (114672) Access Point: Runtime: 114307276 [us], Total Bytes: 119157962, Bytes: 1371935[B/s], Throughput; 1000000.000000[0m
+[0;32mI (115672) Access Point: Runtime: 115307274 [us], Total Bytes: 120587592, Bytes: 1429630[B/s], Throughput; 1000000.000000[0m
+[0;32mI (116672) Access Point: Runtime: 116307274 [us], Total Bytes: 122068648, Bytes: 1481056[B/s], Throughput; 1000000.000000[0m
+[0;32mI (117672) Access Point: Runtime: 117307274 [us], Total Bytes: 123363917, Bytes: 1295269[B/s], Throughput; 1000000.000000[0m
+[0;32mI (118672) Access Point: Runtime: 118307277 [us], Total Bytes: 124751559, Bytes: 1387642[B/s], Throughput; 1000000.000000[0m
+[0;32mI (119672) Access Point: Runtime: 119307274 [us], Total Bytes: 126142119, Bytes: 1390560[B/s], Throughput; 1000000.000000[0m
+[0;32mI (120672) Access Point: Runtime: 120307274 [us], Total Bytes: 127544142, Bytes: 1402023[B/s], Throughput; 1000000.000000[0m
+[0;32mI (121672) Access Point: Runtime: 121307274 [us], Total Bytes: 129023321, Bytes: 1479179[B/s], Throughput; 1000000.000000[0m
+[0;32mI (122672) Access Point: Runtime: 122307276 [us], Total Bytes: 130338241, Bytes: 1314920[B/s], Throughput; 1000000.000000[0m
+[0;32mI (123672) Access Point: Runtime: 123307274 [us], Total Bytes: 131632393, Bytes: 1294152[B/s], Throughput; 1000000.000000[0m
+[0;32mI (124672) Access Point: Runtime: 124307273 [us], Total Bytes: 132897042, Bytes: 1264649[B/s], Throughput; 1000000.000000[0m
+[0;32mI (125672) Access Point: Runtime: 125307274 [us], Total Bytes: 134331372, Bytes: 1434330[B/s], Throughput; 1000000.000000[0m
+[0;32mI (126672) Access Point: Runtime: 126307276 [us], Total Bytes: 135794787, Bytes: 1463415[B/s], Throughput; 1000000.000000[0m
+[0;32mI (127672) Access Point: Runtime: 127307330 [us], Total Bytes: 137125490, Bytes: 1330703[B/s], Throughput; 1000000.000000[0m
+[0;32mI (128672) Access Point: Runtime: 128307274 [us], Total Bytes: 138494127, Bytes: 1368637[B/s], Throughput; 1000000.000000[0m
+[0;32mI (129672) Access Point: Runtime: 129307274 [us], Total Bytes: 139888437, Bytes: 1394310[B/s], Throughput; 1000000.000000[0m
+[0;32mI (130672) Access Point: Runtime: 130307292 [us], Total Bytes: 141027444, Bytes: 1139007[B/s], Throughput; 1000000.000000[0m
+[0;32mI (131672) Access Point: Runtime: 131307341 [us], Total Bytes: 142461505, Bytes: 1434061[B/s], Throughput; 1000000.000000[0m
+[0;32mI (132672) Access Point: Runtime: 132307274 [us], Total Bytes: 143815100, Bytes: 1353595[B/s], Throughput; 1000000.000000[0m
+[0;32mI (133672) Access Point: Runtime: 133307274 [us], Total Bytes: 145227089, Bytes: 1411989[B/s], Throughput; 1000000.000000[0m
+[0;32mI (134672) Access Point: Runtime: 134307316 [us], Total Bytes: 146705208, Bytes: 1478119[B/s], Throughput; 1000000.000000[0m
+[0;32mI (135672) Access Point: Runtime: 135307274 [us], Total Bytes: 148180048, Bytes: 1474840[B/s], Throughput; 1000000.000000[0m
+[0;32mI (136672) Access Point: Runtime: 136307274 [us], Total B[0m
+ytes: 149325572, Bytes: 1145524[B/s], Throughput; 1000000.000000[0;32mI (137672) Access Point: Runtime: 137307274 [us], Total Bytes: 150467228, Bytes: 1141656[B/s], Throughput; 1000000.000000[0m
+[0;32mI (138672) Access Point: Runtime: 138307274 [us], Total Bytes: 151533134, Bytes: 1065906[B/s], Throughput; 1000000.000000[0m
+[0;32mI (139672) Access Point: Runtime: 139307278 [us], Total Bytes: 152944325, Bytes: 1411191[B/s], Throughput; 1000000.000000[0m
+[0;32mI (140672) Access Point: Runtime: 140307274 [us], Total Bytes: 154310652, Bytes: 1366327[B/s], Throughput; 1000000.000000[0m
+[0;32mI (141672) Access Point: Runtime: 141307274 [us], Total Bytes: 155747824, Bytes: 1437172[B/s], Throughput; 1000000.000000[0m
+[0;32mI (142672) Access Point: Runtime: 142307273 [us], Total Bytes: 157146625, Bytes: 1398801[B/s], Throughput; 1000000.000000[0m
+[0;32mI (143672) Access Point: Runtime: 143307273 [us], Total Bytes: 158644638, Bytes: 1498013[B/s], Throughput; 1000000.000000[0m
+[0;32mI (144672) Access Point: Runtime: 144307333 [us], Total Bytes: 160182674, Bytes: 1538036[B/s], Throughput; 1000000.000000[0m
+[0;32mI (145672) Access Point: Runtime: 145307274 [us], Total Bytes: 161607510, Bytes: 1424836[B/s], Throughput; 1000000.000000[0m
+[0;32mI (146672) Access Point: Runtime: 146307274 [us], Total Bytes: 163032516, Bytes: 1425006[B/s], Throughput; 1000000.000000[0m
+[0;32mI (147672) Access Point: Runtime: 147307312 [us], Total Bytes: 164535134, Bytes: 1502618[B/s], Throughput; 1000000.000000[0m
+[0;32mI (148672) Access Point: Runtime: 148307274 [us], Total Bytes: 165999814, Bytes: 1464680[B/s], Throughput; 1000000.000000[0m
+[0;32mI (149672) Access Point: Runtime: 149307336 [us], Total Bytes: 167547023, Bytes: 1547209[B/s], Throughput; 1000000.000000[0m
+[0;32mI (150672) Access Point: Runtime: 150307273 [us], Total Bytes: 169016368, Bytes: 1469345[B/s], Throughput; 1000000.000000[0m
+[0;32mI (151672) Access Point: Runtime: 151307274 [us], Total Bytes: 170460380, Bytes: 1444012[B/s], Throughput; 1000000.000000[0m
+[0;32mI (152672) Access Point: Runtime: 152307277 [us], Total Bytes: 171964020, Bytes: 1503640[B/s], Throughput; 1000000.000000[0m
+[0;32mI (153672) Access Point: Runtime: 153307274 [us], Total Bytes: 173407788, Bytes: 1443768[B/s], Throughput; 1000000.000000[0m
+[0;32mI (154672) Access Point: Runtime: 154307273 [us], Total Bytes: 174936706, Bytes: 1528918[B/s], Throughput; 1000000.000000[0m
+[0;32mI (155672) Access Point: Runtime: 155307333 [us], Total Bytes: 176353850, Bytes: 1417144[B/s], Throughput; 1000000.000000[0m
+[0;32mI (156672) Access Point: Runtime: 156307274 [us], Total Bytes: 177881177, Bytes: 1527327[B/s], Throughput; 1000000.000000[0m
+[0;32mI (157672) Access Point: Runtime: 157307274 [us], Total Bytes: 179299287, Bytes: 1418110[B/s], Throughput; 1000000.000000[0m
+[0;32mI (158672) Access Point: Runtime: 158307276 [us], Total Bytes: 180757774, Bytes: 1458487[B/s], Throughput; 1000000.000000[0m
+[0;32mI (159672) Access Point: Runtime: 159307276 [us], Total Bytes: 182139086, Bytes: 1381312[B/s], Throughput; 1000000.000000[0m
+[0;32mI (160672) Access Point: Runtime: 160307273 [us], Total Bytes: 183582679, Bytes: 1443593[B/s], Throughput; 1000000.000000[0m
+[0;32mI (161672) Access Point: Runtime: 161307337 [us], Total Bytes: 185023206, Bytes: 1440527[B/s], Throughput; 1000000.000000[0m
+[0;32mI (162672) Access Point: Runtime: 162307338 [us], Total Bytes: 186475538, Bytes: 1452332[B/s], Throughput; 1000000.000000[0m
+[0;32mI (163672) Access Point: Runtime: 163307274 [us], Total Bytes: 187926506, Bytes: 1450968[B/s], Throughput; 1000000.000000[0m
+[0;32mI (164672) Access Point: Runtime: 164307281 [us], Total Bytes: 189345102, Bytes: 1418596[B/s], Throughput; 1000000.000000[0m
+[0;32mI (165672) Access Point: Runtime: 165307356 [us], Total Bytes: 190673556, Bytes: 1328454[B/s], Throughput; 1000000.000000[0m
+[0;32mI (166672) Access Point: Runtime: 166307274 [us], Total Bytes: 192131986, Bytes: 1458430[B/s], Throughput; 1000000.000000[0m
+[0;32mI (167672) Access Point: Runtime: 167307299 [us], Total Bytes: 193619448, Bytes: 1487462[B/s], Throughput; 1000000.000000[0m
+[0;32mI (168672) Access Point: Runtime: 168307273 [us], Total Bytes: 195113464, Bytes: 1494016[B/s], Throughput; 1000000.000000[0m
+[0;32mI (169672) Access Point: Runtime: 169307274 [us], Total Bytes: 196603817, Bytes: 1490353[B/s], Throughput; 1000000.000000[0m
+[0;32mI (170672) Access Point: Runtime: 170307273 [us], Total Bytes: 198063486, Bytes: 1459669[B/s], Throughput; 1000000.000000[0m
+[0;32mI (171672) Access Point: Runtime: 171307274 [us], Total Bytes: 199531866, Bytes: 1468380[B/s], Throughput; 1000000.000000[0m
+[0;32mI (172672) Access Point: Runtime: 172307273 [us], Total Bytes: 200988838, Bytes: 1456972[B/s], Throughput; 1000000.000000[0m
+[0;32mI (173672) Access Point: Runtime: 173307274 [us], Total Bytes: 202430178, Bytes: 1441340[B/s], Throughput; 1000000.000000[0m
+[0;32mI (174672) Access Point: Runtime: 174307367 [us], Total Bytes: 203914114, Bytes: 1483936[B/s], Throughput; 1000000.000000[0m
+[0;32mI (175672) Access Point: Runtime: 175307327 [us], Total Bytes: 205360948, Bytes: 1446834[B/s], Throughput; 1000000.000000[0m
+[0;32mI (176672) Access Point: Runtime: 176307274 [us], Total Bytes: 206765281, Bytes: 1404333[B/s], Throughput; 1000000.000000[0m
+[0;32mI (177672) Access Point: Runtime: 177307274 [us], Total Bytes: 208040090, Bytes: 1274809[B/s], Throughput; 1000000.000000[0m
+[0;32mI (178672) Access Point: Runtime: 178307274 [us], Total Bytes: 209331343, Bytes: 1291253[B/s], Throughput; 1000000.000000[0m
+[0;32mI (179672) Access Point: Runtime: 179307274 [us], Total Bytes: 210842791, Bytes: 1511448[B/s], Throughput; 1000000.000000[0m
+[0;32mI (180672) Access Point: Runtime: 180307273 [us], Total Bytes: 212259932, Bytes: 1417141[B/s], Throughput; 1000000.000000[0m
+[0;32mI (181672) Access Point: Runtime: 181307283 [us], Total Bytes: 213686116, Bytes: 1426184[B/s], Throughput; 1000000.000000[0m
+[0;32mI (182672) Access Point: Runtime: 182307274 [us], Total Bytes: 215111882, Bytes: 1425766[B/s], Throughput; 1000000.000000[0m
+[0;32mI (183672) Access Point: Runtime: 183307324 [us], Total Bytes: 216495884, Bytes: 1384002[B/s], Throughput; 1000000.000000[0m
+[0;32mI (184672) Access Point: Runtime: 184307274 [us], Total Bytes: 217958087, Bytes: 1462203[B/s], Throughput; 1000000.000000[0m
+[0;32mI (185672) Access Point: Runtime: 185307274 [us], Total Bytes: 219440678, Bytes: 1482591[B/s], Throughput; 1000000.000000[0m
+[0;32mI (186672) Access Point: Runtime: 186307281 [us], Total Bytes: 220920100, Bytes: 1479422[B/s], Throughput; 1000000.000000[0m
+[0;32mI (187672) Access Point: Runtime: 187307351 [us], Total Bytes: 222240062, Bytes: 1319962[B/s], Throughput; 1000000.000000[0m
+[0;32mI (188672) Access Point: Runtime: 188307273 [us], Total Bytes: 223580446, Bytes: 1340384[B/s], Throughput; 1000000.000000[0m
+[0;32mI (189672) Access Point: Runtime: 189307282 [us], Total Bytes: 225049093, Bytes: 1468647[B/s], Throughput; 1000000.000000[0m
+[0;32mI (190672) Access Point: Runtime: 190307273 [us], Total Bytes: 226416100, Bytes: 1367007[B/s], Throughput; 1000000.000000[0m
+[0;32mI (191672) Access Point: Runtime: 191307274 [us], Total Bytes: 227908349, Bytes: 1492249[B/s], Throughput; 1000000.000000[0m
+[0;32mI (192672) Access Point: Runtime: 192307274 [us], Total Bytes: 229337132, Bytes: 1428783[B/s], Throughput; 1000000.000000[0m
+[0;32mI (193672) Access Point: Runtime: 193307274 [us], Total Bytes: 230762708, Bytes: 1425576[B/s], Throughput; 1000000.000000[0m
+[0;32mI (194672) Access Point: Runtime: 194307273 [us], Total Bytes: 232237453, Bytes: 1474745[B/s], Throughput; 1000000.000000[0m
+[0;32mI (195672) Access Point: Runtime: 195307283 [us], Total Bytes: 233661190, Bytes: 1423737[B/s], Throughput; 1000000.000000[0m
+[0;32mI (196672) Access Point: Runtime: 196307279 [us], Total Bytes: 234961615, Bytes: 1300425[B/s], Throughput; 1000000.000000[0m
+[0;32mI (197672) Access Point: Runtime: 197307365 [us], Total Bytes: 236320020, Bytes: 1358405[B/s], Throughput; 1000000.000000[0m
+[0;32mI (198672) Access Point: Runtime: 198307274 [us], Total Bytes: 237646213, Bytes: 1326193[B/s], Throughput; 1000000.000000[0m
+[0;32mI (199672) Access Point: Runtime: 199307274 [us], Total Bytes: 238897788, Bytes: 1251575[B/s], Throughput; 1000000.000000[0m
+[0;32mI (200672) Access Point: Runtime: 200307276 [us], Total Bytes: 240126304, Bytes: 1228516[B/s], Throughput; 1000000.000000[0m
+[0;32mI (201672) Access Point: Runtime: 201307274 [us], Total Bytes: 241554703, Bytes: 1428399[B/s], Throughput; 1000000.000000[0m
+[0;32mI (202672) Access Point: Runtime: 202307274 [us], Total Bytes: 242958827, Bytes: 1404124[B/s], Throughput; 1000000.000000[0m
+[0;32mI (203672) Access Point: Runtime: 203307286 [us], Total Bytes: 244362578, Bytes: 1403751[B/s], Throughput; 1000000.000000[0m
+[0;32mI (204672) Access Point: Runtime: 204307273 [us], Total Bytes: 245803538, Bytes: 1440960[B/s], Throughput; 1000000.000000[0m
+[0;32mI (205672) Access Point: Runtime: 205307274 [us], Total Bytes: 247180835, Bytes: 1377297[B/s], Throughput; 1000000.000000[0m
+[0;32mI (206672) Access Point: Runtime: 206307274 [us], Total Bytes: 248623767, Bytes: 1442932[B/s], Throughput; 1000000.000000[0m
+[0;32mI (207672) Access Point: Runtime: 207307273 [us], Total Bytes: 250063325, Bytes: 1439558[B/s], Throughput; 1000000.000000[0m
+[0;32mI (208672) Access Point: Runtime: 208307273 [us], Total Bytes: 251397269, Bytes: 1333944[B/s], Throughput; 1000000.000000[0m
+[0;32mI (209672) Access Point: Runtime: 209307274 [us], Total Bytes: 252876543, Bytes: 1479274[B/s], Throughput; 1000000.000000[0m
+[0;32mI (210672) Access Point: Runtime: 210307276 [us], Total Bytes: 254309490, Bytes: 1432947[B/s], Throughput; 1000000.000000[0m
+[0;32mI (211672) Access Point: Runtime: 211307275 [us], Total Bytes: 255838503, Bytes: 1529013[B/s], Throughput; 1000000.000000[0m
+[0;32mI (212672) Access Point: Runtime: 212307273 [us], Total Bytes: 257215875, Bytes: 1377372[B/s], Throughput; 1000000.000000[0m
+[0;32mI (213672) Access Point: Runtime: 213307274 [us], Total Bytes: 258649783, Bytes: 1433908[B/s], Throughput; 1000000.000000[0m
+[0;32mI (214672) Access Point: Runtime: 214307274 [us], Total Bytes: 260177189, Bytes: 1527406[B/s], Throughput; 1000000.000000[0m
+[0;32mI (215672) Access Point: Runtime: 215307274 [us], Total Bytes: 261695381, Bytes: 1518192[B/s], Throughput; 1000000.000000[0m
+[0;32mI (216672) Access Point: Runtime: 216307274 [us], Total Bytes: 263133689, Bytes: 1438308[B/s], Throughput; 1000000.000000[0m
+[0;32mI (217672) Access Point: Runtime: 217307274 [us], Total Bytes: 264490373, Bytes: 1356684[B/s], Throughput; 1000000.000000[0m
+[0;32mI (218672) Access Point: Runtime: 218307274 [us], Total Bytes: 265850066, Bytes: 1359693[B/s], Throughput; 1000000.000000[0m
+[0;32mI (219672) Access Point: Runtime: 219307274 [us], Total Bytes: 267235888, Bytes: 1385822[B/s], Throughput; 1000000.000000[0m
+[0;32mI (220672) Access Point: Runtime: 220307302 [us], Total Bytes: 268470259, Bytes: 1234371[B/s], Throughput; 1000000.000000[0m
+[0;32mI (221672) Access Point: Runtime: 221307274 [us], Total Bytes: 269690716, Bytes: 1220457[B/s], Throughput; 1000000.000000[0m
+[0;32mI (222672) Access Point: Runtime: 222307274 [us], Total Bytes: 270889657, Bytes: 1198941[B/s], Throughput; 1000000.000000[0m
+[0;32mI (223672) Access Point: Runtime: 223307274 [us], Total Bytes: 272106201, Bytes: 1216544[B/s], Throughput; 1000000.000000[0m
+[0;32mI (224672) Access Point: Runtime: 224307273 [us], Total Bytes: 273333691, Bytes: 1227490[B/s], Throughput; 1000000.000000[0m
+[0;32mI (225672) Access Point: Runtime: 225307331 [us], Total Bytes: 274682833, Bytes: 1349142[B/s], Throughput; 1000000.000000[0m
+[0;32mI (226672) Access Point: Runtime: 226307273 [us], Total Bytes: 275964025, Bytes: 1281192[B/s], Throughput; 1000000.000000[0m
+[0;32mI (227672) Access Point: Runtime: 227307322 [us], Total Bytes: 277342666, Bytes: 1378641[B/s], Throughput; 1000000.000000[0m
+[0;32mI (228672) Access Point: Runtime: 228307273 [us], Total Bytes: 278731953, Bytes: 1389287[B/s], Throughput; 1000000.000000[0m

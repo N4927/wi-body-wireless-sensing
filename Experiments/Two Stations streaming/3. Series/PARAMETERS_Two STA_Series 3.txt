@@ -1,0 +1,40 @@
+PARAMETERS:
+Date: 20.11.2024
+ETZ H68.2
+
+
+Streaming data from (1/2 STA). Sending constant payload of 1460 bytes.
+ 
+Tests:
+
+---
+1 Sta
+payload size = 1460 bytes
+Printing Period 1 sec
+
+Duration: 15:05 minutes
+
+---
+2 Sta
+payload size = 1460 bytes
+Printing Period 1 sec
+
+Duration: 15:05 minutes
+
+---
+1 Sta_optimized
+payload size = 1459 bytes
+Printing Period 10 sec
+
+Duration: 15:00 minutes
+
+---
+2 Sta_optimized
+payload size = 1459 bytes
+Printing Period 10 sec
+
+Duration: 15:21 minutes
+
+In the middle a random connection to another device happened. Probably a student that connected his device with "myssid".
+
+---

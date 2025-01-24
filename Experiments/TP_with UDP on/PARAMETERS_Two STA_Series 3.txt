@@ -1,0 +1,88 @@
+PARAMETERS:
+Date: 21.01.2025
+ETZ H68.2
+
+
+Measuring throughput towards AP when timesynch is also active
+ 
+Tests:
+
+---
+M1
+1 Sta
+UDP timesynch disabled
+payload size = 1460 bytes
+Printing Period 10 sec
+
+Duration: 15:05 minutes
+
+---
+M2
+1 Sta
+UDP timesynch enabled
+UDP period: 1 s
+delay with esp_timer
+payload size = 1460 bytes
+Printing Period 10 sec
+
+Duration: 15:09
+
+---
+M3
+1 Sta
+UDP timesynch enabled
+UDP period: 1 s
+delay with vTaskDelay
+payload size = 1460 bytes
+Printing Period 10 sec
+
+Duration: 15:13
+
+---
+M4
+2 Sta
+UDP timesynch enabled
+UDP period: 1 s
+delay with vTaskDelay
+payload size = 1460 bytes
+Printing Period 10 sec
+
+Duration: 15:38
+
+---
+M5
+2 Sta
+UDP timesynch enabled
+UDP period: 0.1 s
+delay with vTaskDelay
+payload size = 1460 bytes
+Printing Period 10 sec
+
+Duration: 15:07
+
+---
+M6
+2 Sta
+UDP timesynch disabled
+UDP period: 0.1 s
+delay with vTaskDelay
+payload size = 1460 bytes
+Printing Period 10 sec
+
+Duration: 15:08
+Stations left connection
+---
+M7
+
+redundancy for M6
+
+2 Sta
+UDP timesynch disabled
+UDP period: 0.1 s
+delay with vTaskDelay
+payload size = 1460 bytes
+Printing Period 10 sec
+
+Duration: 15:16
+---
+

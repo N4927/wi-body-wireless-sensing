@@ -1,0 +1,12 @@
+#include <iostream>
+
+int main()
+{
+    std::cout<<"Hello World\n";
+    char c = '0';
+    for(int i = 0; i < 1180; i++){
+        std::cout<<(c+i)%30;
+    }
+
+    return 0;
+}

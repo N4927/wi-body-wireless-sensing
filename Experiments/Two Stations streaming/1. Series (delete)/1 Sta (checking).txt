@@ -1,0 +1,187 @@
+[0;32mI (187791) AP: Runtime: 187424708 [us], #Bytes: 692604, TP_Interval: 21465 [Bytes/PERIOD], Throughput: 21465[B/s], Avg TP: 3703.77[B/s][0m
+[0;32mI (188791) AP: Runtime: 188424706 [us], #Bytes: 706914, TP_Interval: 14310 [Bytes/PERIOD], Throughput: 14310[B/s], Avg TP: 3760.18[B/s][0m
+[0;32mI (189791) AP: Runtime: 189424703 [us], #Bytes: 781326, TP_Interval: 74412 [Bytes/PERIOD], Throughput: 74412[B/s], Avg TP: 4134.00[B/s][0m
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x1804
+load:0x4086c110,len:0xe2c
+load:0x4086e610,len:0x2e5c
+entry oot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp30x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.3.1 2nd stage bootloa0m
+[0;32mI (24) boot: chip revision: v0.1[0m
+[0;32mI (26) bder[0m
+[0;32mI (24) boot: compile time Nov  8 2024 09:36:04[2c6: SPI Mode       : DIO[0m
+[0;32mI (36) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (41) boot: Enabling RNG early entropy source...[0m
+[0;32mI (46) boot: Partition Table:[0m
+[0;32mI (50) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (57) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (72) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (83) esp_image: segment 0: paddr=00010020 vaddr=42098020 size=22eb8h (143032) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=00032ee0 vaddr=40800000 size=05138h ( 20792) load[0m
+[0;32mI (127) esp_image: segment 2: paddr=00038020 vaddr=42000020 size=92998h (600472) map[0m
+[0;32mI (252) esp_image: segment 3: paddr=000ca9c0 vaddr=40805138 size=13610h ( 79376) load[0m
+[0;32mI (271) esp_image: segment 4: paddr=000ddfd8 vaddr=40818750 size=03b30h ( 15152) load[0m
+[0;32mI (281) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (281) boot: Disabling RNG early entropy source...[0m
+[0;32mI (293) cpu_start: Unicore app[0m
+[0;32mI (302) cpu_start: Pro cpu start user code[0m
+[0;32mI (302) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (302) app_init: Application information:[0m
+[0;32mI (305) app_init: Project name:     wifi_softAP[0m
+[0;32mI (310) app_init: App version:      1[0m
+[0;32mI (314) app_init: Compile time:     Nov  8 2024 09:34:55[0m
+[0;32mI (320) app_init: ELF file SHA256:  2ed5719c0...[0m
+[0;32mI (326) app_init: ESP-IDF:          v5.3.1[0m
+[0;32mI (330) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (335) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (340) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (345) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (352) heap_init: At 408216A0 len 0005AF70 (363 KiB): RAM[0m
+[0;32mI (358) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (364) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (371) spi_flash: detected chip: generic[0m
+[0;32mI (375) spi_flash: flash io: dio[0m
+[0;33mW (379) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (393) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (399) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (406) coexist: coex firmware version: 4482466[0m
+[0;32mI (421) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (421) main_task: Started on CPU0[0m
+[0;32mI (421) main_task: Calling app_main()[0m
+[0;32mI (431) AP: ESP_WIFI_MODE_AP[0m
+[0;32mI (431) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (431) net80211: net80211 rom version: 5b8dcfa[0m
+I (441) wifi:wifi driver task: 4082a724, prio:23, stack:6656, core=0
+I (451) wifi:wifi firmware version: ccaebfa
+I (451) wifi:wifi certification version: v7.0
+I (451) wifi:config NVS flash: enabled
+I (451) wifi:config nano formating: disabled
+I (461) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band:0x1
+I (461) wifi:Init data frame dynamic rx buffer num: 32
+I (471) wifi:Init static rx mgmt buffer num: 5
+I (471) wifi:Init management short buffer num: 32
+I (481) wifi:Init dynamic tx buffer num: 32
+I (481) wifi:Init static tx FG buffer num: 2
+I (481) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)
+I (491) wifi:Init static rx buffer num: 10
+I (491) wifi:Init dynamic rx buffer num: 32
+[0;32mI (501) wifi_init: rx ba win: 6[0m
+[0;32mI (501) wifi_init: accept mbox: 6[0m
+[0;32mI (501) wifi_init: tcpip mbox: 32[0m
+[0;32mI (511) wifi_init: udp mbox: 6[0m
+[0;32mI (511) wifi_init: tcp mbox: 6[0m
+[0;32mI (521) wifi_init: tcp tx win: 5760[0m
+[0;32mI (521) wifi_init: tcp rx win: 5760[0m
+[0;32mI (521) wifi_init: tcp mss: 1440[0m
+[0;32mI (531) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (531) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (541) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (541) phy_init: phy_version 310,dde1ba9,Jun  4 2024,16:38:11[0m
+[0;33mW (601) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+W (621) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)
+W (621) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)
+W (621) wifi:(agc)0x600a7128:0xd21239e8, min.avgNF:0xce->0xd2(dB), RCalCount:0x122, min.RRssi:0x9e8(-97.50)
+W (631) wifi:(TB)WDEV_PWR_TB_MCS0:19
+W (631) wifi:(TB)WDEV_PWR_TB_MCS1:19
+W (641) wifi:(TB)WDEV_PWR_TB_MCS2:19
+W (641) wifi:(TB)WDEV_PWR_TB_MCS3:19
+W (641) wifi:(TB)WDEV_PWR_TB_MCS4:19
+W (651) wifi:(TB)WDEV_PWR_TB_MCS5:19
+W (651) wifi:(TB)WDEV_PWR_TB_MCS6:18
+W (651) wifi:(TB)WDEV_PWR_TB_MCS7:18
+W (661) wifi:(TB)WDEV_PWR_TB_MCS8:17
+W (661) wifi:(TB)WDEV_PWR_TB_MCS9:15
+W (661) wifi:(TB)WDEV_PWR_TB_MCS10:15
+W (671) wifi:(TB)WDEV_PWR_TB_MCS11:15
+I (671) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).
+
+W (681) wifi:(he)deattach, ap, phymode:11bgn
+I (681) wifi:mode : softAP (f0:f5:bd:06:f9:ad)
+I (731) wifi:Total power save buffer number: 16
+I (731) wifi:Init max length of beacon: 752/752
+I (731) wifi:Init max length of beacon: 752/752
+[0;32mI (731) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (741) AP: wifi_init_softap finished. SSID:myssid password:mypassword channel:1[0m
+[0;32mI (751) AP: wifi_init completed[0m
+[0;31mE (751) AP: Socket created: 54[0m
+[0;32mI (761) AP: Socket bound, port 3333[0m
+[0;32mI (761) main_task: Returned from app_main()[0m
+I (1021) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0
+I (1021) wifi:(trc)phytype:CBW20-SGI, snr:61, maxRate:0, highestRateIdx:0
+W (1021) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14
+I (1031) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:61, ampduState:wait operational
+I (1041) wifi:ifidx:1, rssi:-35, nf:-96, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1
+I (1051) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)
+I (1061) wifi:station: f0:f5:bd:06:f7:24 join, AID=1, bgn, 20
+[0;32mI (1121) AP: station f0:f5:bd:06:f7:24 join, AID=1[0m
+W (1191) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x10124f7, TALO:0x6bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005
+W (1201) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x10124f7, TALO:0x6bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005
+W (1211) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x10124f7, TALO:0x6bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005
+[0;32mI (1241) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (1751) AP: Runtime: 1387480 [us], #Bytes: 0, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 0.00[B/s][0m
+I (2251) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)
+I (2261) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6
+[0;32mI (2751) AP: Runtime: 2387477 [us], #Bytes: 52947, TP_Interval: 52947 [Bytes/PERIOD], Throughput: 52947[B/s], Avg TP: 26473.58[B/s][0m
+[0;32mI (3751) AP: Runtime: 3387476 [us], #Bytes: 165996, TP_Interval: 113049 [Bytes/PERIOD], Throughput: 113049[B/s], Avg TP: 55332.09[B/s][0m
+[0;32mI (4751) AP: Runtime: 4387476 [us], #Bytes: 274752, TP_Interval: 108756 [Bytes/PERIOD], Throughput: 108756[B/s], Avg TP: 68688.07[B/s][0m
+[0;32mI (5751) AP: Runtime: 5387475 [us], #Bytes: 387801, TP_Interval: 113049 [Bytes/PERIOD], Throughput: 113049[B/s], Avg TP: 77560.28[B/s][0m
+[0;32mI (6751) AP: Runtime: 6387476 [us], #Bytes: 465075, TP_Interval: 77274 [Bytes/PERIOD], Throughput: 77274[B/s], Avg TP: 77512.55[B/s][0m
+[0;32mI (7751) AP: Runtime: 7387476 [us], #Bytes: 490833, TP_Interval: 25758 [Bytes/PERIOD], Throughput: 25758[B/s], Avg TP: 70119.04[B/s][0m
+[0;32mI (8751) AP: Runtime: 8387476 [us], #Bytes: 596727, TP_Interval: 105894 [Bytes/PERIOD], Throughput: 105894[B/s], Avg TP: 74590.91[B/s][0m
+[0;32mI (9751) AP: Runtime: 9387475 [us], #Bytes: 705483, TP_Interval: 108756 [Bytes/PERIOD], Throughput: 108756[B/s], Avg TP: 78387.05[B/s][0m
+[0;32mI (10751) AP: Runtime: 10387476 [us], #Bytes: 819963, TP_Interval: 114480 [Bytes/PERIOD], Throughput: 114480[B/s], Avg TP: 81996.33[B/s][0m
+[0;32mI (11751) AP: Runtime: 11387476 [us], #Bytes: 925857, TP_Interval: 105894 [Bytes/PERIOD], Throughput: 105894[B/s], Avg TP: 84168.85[B/s][0m
+[0;32mI (12751) AP: Runtime: 12387478 [us], #Bytes: 928719, TP_Interval: 2862 [Bytes/PERIOD], Throughput: 2862[B/s], Avg TP: 77393.27[B/s][0m
+[0;32mI (13751) AP: Runtime: 13387476 [us], #Bytes: 1008855, TP_Interval: 80136 [Bytes/PERIOD], Throughput: 80136[B/s], Avg TP: 77604.27[B/s][0m
+[0;32mI (14751) AP: Runtime: 14387483 [us], #Bytes: 1109025, TP_Interval: 100170 [Bytes/PERIOD], Throughput: 100169[B/s], Avg TP: 79216.05[B/s][0m
+[0;32mI (15751) AP: Runtime: 15387473 [us], #Bytes: 1133352, TP_Interval: 24327 [Bytes/PERIOD], Throughput: 24327[B/s], Avg TP: 75556.80[B/s][0m
+[0;32mI (16751) AP: Runtime: 16387474 [us], #Bytes: 1134783, TP_Interval: 1431 [Bytes/PERIOD], Throughput: 1431[B/s], Avg TP: 70923.94[B/s][0m
+[0;32mI (17751) AP: Runtime: 17387477 [us], #Bytes: 1157679, TP_Interval: 22896 [Bytes/PERIOD], Throughput: 22896[B/s], Avg TP: 68098.76[B/s][0m
+[0;32mI (18751) AP: Runtime: 18387476 [us], #Bytes: 1177713, TP_Interval: 20034 [Bytes/PERIOD], Throughput: 20034[B/s], Avg TP: 65428.50[B/s][0m
+[0;32mI (19751) AP: Runtime: 19387478 [us], #Bytes: 1214919, TP_Interval: 37206 [Bytes/PERIOD], Throughput: 37206[B/s], Avg TP: 63943.10[B/s][0m
+[0;32mI (20751) AP: Runtime: 20387513 [us], #Bytes: 1237815, TP_Interval: 22896 [Bytes/PERIOD], Throughput: 22895[B/s], Avg TP: 61890.70[B/s][0m
+[0;32mI (21751) AP: Runtime: 21387476 [us], #Bytes: 1336554, TP_Interval: 98739 [Bytes/PERIOD], Throughput: 98743[B/s], Avg TP: 63645.56[B/s][0m
+[0;32mI (22751) AP: Runtime: 22387474 [us], #Bytes: 1431000, TP_Interval: 94446 [Bytes/PERIOD], Throughput: 94446[B/s], Avg TP: 65045.59[B/s][0m
+[0;32mI (23751) AP: Runtime: 23387559 [us], #Bytes: 1528308, TP_Interval: 97308 [Bytes/PERIOD], Throughput: 97300[B/s], Avg TP: 66447.94[B/s][0m
+[0;32mI (24751) AP: Runtime: 24387478 [us], #Bytes: 1532601, TP_Interval: 4293 [Bytes/PERIOD], Throughput: 4293[B/s], Avg TP: 63858.17[B/s][0m
+[0;32mI (25751) AP: Runtime: 25387473 [us], #Bytes: 1562652, TP_Interval: 30051 [Bytes/PERIOD], Throughput: 30051[B/s], Avg TP: 62505.89[B/s][0m
+[0;32mI (26751) AP: Runtime: 26387616 [us], #Bytes: 1588410, TP_Interval: 25758 [Bytes/PERIOD], Throughput: 25754[B/s], Avg TP: 61092.36[B/s][0m
+[0;32mI (27751) AP: Runtime: 27387476 [us], #Bytes: 1694304, TP_Interval: 105894 [Bytes/PERIOD], Throughput: 105909[B/s], Avg TP: 62752.23[B/s][0m
+[0;32mI (28751) AP: Runtime: 28387477 [us], #Bytes: 1805922, TP_Interval: 111618 [Bytes/PERIOD], Throughput: 111618[B/s], Avg TP: 64497.43[B/s][0m
+[0;32mI (29751) AP: Runtime: 29387473 [us], #Bytes: 1893213, TP_Interval: 87291 [Bytes/PERIOD], Throughput: 87291[B/s], Avg TP: 65283.43[B/s][0m
+[0;32mI (30751) AP: Runtime: 30387478 [us], #Bytes: 1893213, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 63107.32[B/s][0m
+[0;32mI (31751) AP: Runtime: 31387473 [us], #Bytes: 1893213, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 61071.60[B/s][0m
+[0;32mI (32751) AP: Runtime: 32387474 [us], #Bytes: 1893213, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 59163.11[B/s][0m
+[0;32mI (33751) AP: Runtime: 33387473 [us], #Bytes: 1893213, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 57370.29[B/s][0m
+[0;32mI (34751) AP: Runtime: 34387474 [us], #Bytes: 1893213, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 55682.93[B/s][0m
+[0;32mI (35751) AP: Runtime: 35387473 [us], #Bytes: 1893213, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 54091.99[B/s][0m
+[0;32mI (36751) AP: Runtime: 36387474 [us], #Bytes: 1893213, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 52589.43[B/s][0m
+[0;32mI (37751) AP: Runtime: 37387473 [us], #Bytes: 1893213, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 51168.10[B/s][0m
+[0;32mI (38751) AP: Runtime: 38387474 [us], #Bytes: 1893213, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 49821.57[B/s][0m
+[0;32mI (39751) AP: Runtime: 39387473 [us], #Bytes: 1893213, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 48544.09[B/s][0m
+[0;32mI (40751) AP: Runtime: 40387474 [us], #Bytes: 1893213, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 47330.49[B/s][0m
+[0;32mI (41751) AP: Runtime: 41387473 [us], #Bytes: 1893213, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 46176.09[B/s][0m
+[0;32mI (42751) AP: Runtime: 42387474 [us], #Bytes: 1893213, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 45076.66[B/s][0m
+[0;32mI (43751) AP: Runtime: 43387473 [us], #Bytes: 1893213, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 44028.36[B/s][0m
+[0;32mI (44751) AP: Runtime: 44387474 [us], #Bytes: 1893213, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 43027.72[B/s][0m
+[0;32mI (45751) AP: Runtime: 45387473 [us], #Bytes: 1893213, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 42071.54[B/s][0m
+[0;32mI (46751) AP: Runtime: 46387474 [us], #Bytes: 1893213, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 41156.95[B/s][0m
+[0;32mI (47751) AP: Runtime: 47387473 [us], #Bytes: 1893213, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 40281.27[B/s][0m
+[0;32mI (48751) AP: Runtime: 48387481 [us], #Bytes: 1896075, TP_Interval: 2862 [Bytes/PERIOD], Throughput: 2862[B/s], Avg TP: 39501.70[B/s][0m
+[0;32mI (49751) AP: Runtime: 49387473 [us], #Bytes: 1896075, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 38695.54[B/s][0m
+[0;32mI (50751) AP: Runtime: 50387474 [us], #Bytes: 1896075, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 37921.63[B/s][0m
+[0;32mI (51751) AP: Runtime: 51387473 [us], #Bytes: 1896075, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 37178.07[B/s][0m
+[0;32mI (52751) AP: Runtime: 52387473 [us], #Bytes: 1896075, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 36463.11[B/s][0m
+[0;32mI (53751) AP: Runtime: 53387473 [us], #Bytes: 1896075, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 35775.12[B/s][0m
+[0;32mI (54751) AP: Runtime: 54387474 [us], #Bytes: 1896075, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 35112.62[B/s][0m
+[0;32mI (55751) AP: Runtime: 55387473 [us], #Bytes: 1896075, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 34474.21[B/s][0m
+[0;32mI (56751) AP: Runtime: 56387474 [us], #Bytes: 1896075, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 33858.60[B/s][0m
+[0;32mI (57751) AP: Runtime: 57387473 [us], #Bytes: 1896075, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 33264.59[B/s][0m
+[0;32mI (58751) AP: Runtime: 58387474 [us], #Bytes: 1896075, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 32691.06[B/s][0m

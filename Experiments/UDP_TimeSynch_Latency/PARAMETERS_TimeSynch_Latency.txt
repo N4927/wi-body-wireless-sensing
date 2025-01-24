@@ -1,0 +1,12 @@
+PARAMETERS:
+Date: 27.11.2024
+ETZ J65
+
+
+Testing Latency with oscilloscope
+
+Channel 1: Yellow - AP/UDP Time Master
+Channel 3: Blue - STA/
+ 
+Tests:
+

@@ -1,0 +1,25 @@
+PARAMETERS:
+Date: 03.12.2024
+ETZ J65
+
+
+Testing Latency with oscilloscope [Keysight InfiniiVision MSOX2024A]
+
+Channel 1: Yellow - AP/UDP Time Master
+Channel 3: Blue - STA/
+Channel 4: Red - STA/
+ 
+Tests:
+---
+scope 3,4,5
+
+These probably contain glitches as seen in scope_7
+
+---
+AP delays: 15, 485 ms
+STA: 40, 360
+
+scope 9, 10, 11
+
+Lower sending frequency should eliminate glitches. (it does)
+scope 12 is a picture for reference

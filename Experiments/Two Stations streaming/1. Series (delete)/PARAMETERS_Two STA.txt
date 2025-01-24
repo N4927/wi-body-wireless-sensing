@@ -1,0 +1,22 @@
+PARAMETERS:
+
+payload size = 1430 bytes
+
+
+
+Tests:
+
+---
+2 Sta
+Dauer: 54 sec
+
+Average Throughput: 61266.23 Bytes/second
+
+Throughput drops to 0 after a while, no idea why.
+---
+1 Sta
+Duration: 36 sec
+
+Average Throughput: 48800.92 Bytes/second
+
+---

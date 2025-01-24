@@ -1,0 +1,11 @@
+PARAMETERS:
+date: 07.11.2024
+tests conducted in ETZ H68.2
+
+RX_BUFFER 2048
+TIMER_PERIOD 1000000
+
+timer enabled
+
+no specific optimization measures taken
+

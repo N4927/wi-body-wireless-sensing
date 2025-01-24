@@ -1,0 +1,26 @@
+[0;32mI (5902) Access Point: Socket accepted ip address: 192.168.4.2[0m
+[0;32mI (6902) Access Point: Runtime: 6538742 [us], Total Bytes: 1146158, Bytes: 1146158[B/s], Throughput; 0.000000[0m
+[0;32mI (7902) Access Point: Runtime: 7538816 [us], Total Bytes: 2432331, Bytes: 1286173[B/s], Throughput; 1000000.000000[0m
+[0;32mI (8902) Access Point: Runtime: 8538734 [us], Total Bytes: 3577422, Bytes: 1145091[B/s], Throughput; 1000000.000000[0m
+[0;32mI (9902) Access Point: Runtime: 9538797 [us], Total Bytes: 4927563, Bytes: 1350141[B/s], Throughput; 1000000.000000[0m
+[0;32mI (10902) Access Point: Runtime: 10538870 [us], Total Bytes: 6177398, Bytes: 1249835[B/s], Throughput; 1000000.000000[0m
+[0;32mI (11902) Access Point: Runtime: 11538735 [us], Total Bytes: 7479924, Bytes: 1302526[B/s], Throughput; 1000000.000000[0m
+[0;32mI (12902) Access Point: Runtime: 12538735 [us], Total Bytes: 8679602, Bytes: 1199678[B/s], Throughput; 1000000.000000[0m
+[0;32mI (13902) Access Point: Runtime: 13538734 [us], Total Bytes: 9931211, Bytes: 1251609[B/s], Throughput; 1000000.000000[0m
+[0;32mI (14902) Access Point: Runtime: 14538735 [us], Total Bytes: 11130570, Bytes: 1199359[B/s], Throughput; 1000000.000000[0m
+[0;32mI (15902) Access Point: Runtime: 15538755 [us], Total Bytes: 12059687, Bytes: 929117[B/s], Throughput; 0.000000[0m
+[0;32mI (16902) Access Point: Runtime: 16538854 [us], Total Bytes: 13453810, Bytes: 1394123[B/s], Throughput; 1000000.000000[0m
+[0;32mI (17902) Access Point: Runtime: 17538734 [us], Total Bytes: 14829287, Bytes: 1375477[B/s], Throughput; 1000000.000000[0m
+[0;32mI (18902) Access Point: Runtime: 18538735 [us], Total Bytes: 16067959, Bytes: 1238672[B/s], Throughput; 1000000.000000[0m
+[0;32mI (19902) Access Point: Runtime: 19538734 [us], Total Bytes: 17167665, Bytes: 1099706[B/s], Throughput; 1000000.000000[0m
+[0;32mI (20902) Access Point: Runtime: 20538734 [us], Total Bytes: 18360785, Bytes: 1193120[B/s], Throughput; 1000000.000000[0m
+[0;32mI (21902) Access Point: Runtime: 21538768 [us], Total Bytes: 19621703, Bytes: 1260918[B/s], Throughput; 1000000.000000[0m
+[0;32mI (22902) Access Point: Runtime: 22538734 [us], Total Bytes: 20774882, Bytes: 1153179[B/s], Throughput; 1000000.000000[0m
+[0;32mI (23902) Access Point: Runtime: 23538734 [us], Total Bytes: 21965974, Bytes: 1191092[B/s], Throughput; 1000000.000000[0m
+[0;32mI (24902) Access Point: Runtime: 24538735 [us], Total Bytes: 23169839, Bytes: 1203865[B/s], Throughput; 1000000.000000[0m
+[0;32mI (25902) Access Point: Runtime: 25538735 [us], Total Bytes: 24382875, Bytes: 1213036[B/s], Throughput; 1000000.000000[0m
+[0;32mI (26902) Access Point: Runtime: 26538737 [us], Total Bytes: 25574784, Bytes: 1191909[B/s], Throughput; 1000000.000000[0m
+[0;32mI (27902) Access Point: Runtime: 27538734 [us], Total Bytes: 26676177, Bytes: 1101393[B/s], Throughput; 1000000.000000[0m
+[0;32mI (28902) Access Point: Runtime: 28538734 [us], Total Bytes: 27713355, Bytes: 1037178[B/s], Throughput; 1000000.000000[0m
+[0;32mI (29902) Access Point: Runtime: 29538734 [us], Total Bytes: 28902554, Bytes: 1189199[B/s], Throughput; 1000000.000000[0m
+[0;32mI (30902) Access Point: Runtime: 30538735 [us], Total Bytes: 29979258, Bytes: 1076704[B/s], Throughput; 1000000.000000[0m

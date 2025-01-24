@@ -1,0 +1,21 @@
+PARAMETERS:
+Date: 20.11.2024
+ETZ H68.2
+
+payload size = 1430 bytes
+
+
+
+Tests:
+
+---
+1 Sta
+
+Duration: 10:01 min
+
+---
+2 Sta
+
+Duration: 10:01 min
+
+---

@@ -1,0 +1,56 @@
+PARAMETERS:
+date: 09.11.2024
+tests conducted in ETZ H68.2
+
+It's saturday, no one's around, wifi freq band congestion is not caused.
+
+Laptop is in between the two espressif boards.
+
+RX_BUFFER 2048
+TIMER_PERIOD 10 seconds
+
+timer enabled
+
+Optimizations:
+Serial Monitoring STA side OFF
+flashmode qio
+Timer Period is set to ten seconds, alleviating computational load from AP due to reduced serial monitoring
+
+---
+128 bytes
+16:04 minutes
+---
+256 bytes
+16:49 minutes
+---
+512 bytes
+16:08 minutes
+---
+1024 bytes
+16:00 minutes
+---
+1459 bytes
+16:00
+---
+1460 bytes
+16:00
+---
+1461 bytes
+16:20
+---
+1462 bytes
+16:07
+---
+1463 bytes
+16:08
+---
+2048 bytes
+16:08
+---
+1536 bytes
+15:31
+//1536 bytes = 1024 + 511 + 1 termination byte
+---
+1499 bytes
+16:10
+---

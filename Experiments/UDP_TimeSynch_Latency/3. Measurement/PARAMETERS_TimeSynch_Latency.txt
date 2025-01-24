@@ -1,0 +1,25 @@
+PARAMETERS:
+Date: 27.11.2024
+ETZ J65
+
+
+Testing Latency with oscilloscope [Keysight InfiniiVision MSOX2024A]
+
+Channel 1: Yellow - AP/UDP Time Master
+Channel 3: Blue - STA/
+ 
+Tests:
+---
+scope 5
+timescaling oscilloscope: 500 ms/dec -> 10kS/s
+
+(second Measurements for reference: scope_10, scope_11, scope_4, scope_0)
+
+Scope 11 only has 2000 samples !
+Should be redone
+
+replacement measurement is scope_0, scope_1, scope_2 [03.12.2024]
+
+---
+scope 8
+timescaling oscilloscope: 200 ms/dec -> 25kS/s

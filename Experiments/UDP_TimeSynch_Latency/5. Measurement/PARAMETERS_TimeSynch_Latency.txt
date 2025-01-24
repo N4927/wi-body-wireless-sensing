@@ -1,0 +1,87 @@
+PARAMETERS:
+Date: 06.12.2024
+ETZ J65
+
+
+Testing Latency with oscilloscope
+How does a parallel TCP Stream affect the UDP-Latency?
+
+Channel 1: Yellow - AP/UDP Time Master
+Channel 3: Blue - STA/
+Channel 4: Red - STA/
+
+ 
+Tests:
+---
+0,1,2
+
+Only UDP is enabled; TCP Data streaming is disabled
+Channels 1,3 (1 node)
+AP Delays: 10'000 us, 20'000 us
+STA Delays: 10'000 us, 18'000 us
+
+no data cleaning
+
+500 MS/s
+---
+3,4,5
+
+Only UDP is enabled; TCP Data streaming is disabled
+Channels 1,3,4 (2 nodes)
+AP Delays: 10'000 us, 20'000 us
+STA Delays: 10'000 us, 18'000 us
+
+data cleaning
+
+500 MS/s
+---
+10,11,12
+
+UDP + TCP enabled
+payload size: 1024 bytes
+Channels 1,3 (1 node)
+AP Delays: 10'000 us, 20'000 us
+STA Delays: 10'000 us, 18'000 us
+
+no data cleaning
+
+500 MS/s
+---
+13(i)
+
+UDP + TCP enabled
+payload size: 32 bytes
+Channels 1,3 (1 node)
+AP Delays: 10'000 us, 20'000 us
+STA Delays: 10'000 us, 18'000 us
+
+no data cleaning
+
+500 MS/s
+
+scope14 images 
+---
+15(i)
+
+UDP + TCP enabled
+payload size: 2048 bytes
+Channels 1,3 (1 node)
+AP Delays: 10'000 us, 20'000 us
+STA Delays: 10'000 us, 18'000 us
+
+no data cleaning
+
+500 MS/s
+---
+16(i)
+
+UDP + TCP enabled
+payload size: 1024 bytes
+Channels 1,3,4 (2 node)
+AP Delays: 10'000 us, 20'000 us
+STA Delays: 10'000 us, 18'000 us
+
+data cleaning
+
+500 MS/s
+---
