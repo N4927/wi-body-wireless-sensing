@@ -1,0 +1,1100 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0x3e (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x16b8
+load:0x4086c110,len:0xe84
+load:0x4086e610,len:0x3058
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time May  1 2025 16:56:58[0m
+[0;32mI (24) boot: chip revision: v0.2[0m
+[0;32mI (24) boot: efuse block revision: v0.3[0m
+[0;32mI (27) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (35) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (43) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (75) esp_image: segment 0: paddr=00010020 vaddr=42098020 size=20ea4h (134820) map[0m
+[0;32mI (107) esp_image: segment 1: paddr=00030ecc vaddr=40800000 size=0714ch ( 29004) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00038020 vaddr=42000020 size=94660h (607840) map[0m
+[0;32mI (227) esp_image: segment 3: paddr=000cc688 vaddr=4080714c size=15740h ( 87872) load[0m
+[0;32mI (246) esp_image: segment 4: paddr=000e1dd0 vaddr=4081c890 size=03d30h ( 15664) load[0m
+[0;32mI (250) esp_image: segment 5: paddr=000e5b08 vaddr=50000000 size=00050h (    80) load[0m
+[0;32mI (251) esp_image: segment 6: paddr=000e5b60 vaddr=50000050 size=00020h (    32) load[0m
+[0;32mI (264) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (264) boot: Disabling RNG early entropy source...[0m
+[0;32mI (279) cpu_start: Unicore app[0m
+[0;32mI (287) cpu_start: Pro cpu start user code[0m
+[0;32mI (288) cpu_start: cpu freq: 80000000 Hz[0m
+[0;32mI (288) app_init: Application information:[0m
+[0;32mI (290) app_init: Project name:     itwt[0m
+[0;32mI (295) app_init: App version:      ac3da05a-dirty[0m
+[0;32mI (300) app_init: Compile time:     May  6 2025 14:30:07[0m
+[0;32mI (306) app_init: ELF file SHA256:  5c05be7c5...[0m
+[0;32mI (311) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (316) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (321) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (326) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (331) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (338) heap_init: At 40825530 len 000570E0 (348 KiB): RAM[0m
+[0;32mI (344) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (350) heap_init: At 50000070 len 00003F78 (15 KiB): RTCRAM[0m
+[0;32mI (358) spi_flash: detected chip: generic[0m
+[0;32mI (361) spi_flash: flash io: dio[0m
+[0;33mW (365) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (379) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (386) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (394) sleep_clock: System Power, Clock and Reset sleep retention initialization[0m
+[0;32mI (412) coexist: coex firmware version: e727207[0m
+[0;32mI (413) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (414) main_task: Started on CPU0[0m
+[0;32mI (416) main_task: Calling app_main()[0m
+[0;32mI (440) pm: Frequency switching config: CPU_MAX: 160, APB_MAX: 80, APB_MIN: 40, Light sleep: ENABLED[0m
+[0;32mI (442) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (443) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (450) wifi:wifi driver task: 4083014c, prio:23, stack:6656, core=0[0m
+[0;32mI (455) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (459) wifi:wifi certification version: v7.0[0m
+[0;32mI (463) wifi:config NVS flash: disabled[0m
+[0;32mI (466) wifi:config nano formatting: disabled[0m
+[0;32mI (470) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1[0m
+[0;32mI (477) wifi:Init data frame dynamic rx buffer num: 38[0m
+[0;32mI (482) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (486) wifi:Init management short buffer num: 32[0m
+[0;32mI (490) wifi:Init dynamic tx buffer num: 35[0m
+[0;32mI (494) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (498) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (504) wifi:Init static rx buffer num: 20[0m
+[0;32mI (508) wifi:Init dynamic rx buffer num: 38[0m
+[0;32mI (512) sleep_clock: Modem Power, Clock and Reset sleep retention initialization[0m
+[0;32mI (521) wifi_init: rx ba win: 20[0m
+[0;32mI (524) wifi_init: accept mbox: 6[0m
+[0;32mI (528) wifi_init: tcpip mbox: 64[0m
+[0;32mI (532) wifi_init: udp mbox: 64[0m
+[0;32mI (535) wifi_init: tcp mbox: 64[0m
+[0;32mI (539) wifi_init: tcp tx win: 30000[0m
+[0;32mI (544) wifi_init: tcp rx win: 34000[0m
+[0;32mI (548) wifi_init: tcp mss: 1440[0m
+[0;32mI (552) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (556) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (561) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;33mW (566) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (575) wifi:ifx:0, phymode(new:7, sta nvs: 7 ap nvs: 3)[0m
+[0;32mI (580) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (583) itwt: Success to set static ip: 192.168.0.200, netmask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (593) phy_init: phy_version 330,4af1121,Feb  6 2025,14:39:13[0m
+[0;32mI (667) phy_init: Saving new calibration data due to checksum failure or outdated calibration data, mode(0)[0m
+[0;33mW (677) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (678) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (683) wifi:(agc)0x600a7128:0xd2032800, min.avgNF:0xce->0xd2(dB), RCalCount:0x31, min.RRssi:0x800(-128.00)[0m
+[0;33mW (693) wifi:(TB)WDEV_PWR_TB_MCS0:19[0m
+[0;33mW (695) wifi:(TB)WDEV_PWR_TB_MCS1:19[0m
+[0;33mW (699) wifi:(TB)WDEV_PWR_TB_MCS2:19[0m
+[0;33mW (702) wifi:(TB)WDEV_PWR_TB_MCS3:19[0m
+[0;33mW (705) wifi:(TB)WDEV_PWR_TB_MCS4:19[0m
+[0;33mW (709) wifi:(TB)WDEV_PWR_TB_MCS5:19[0m
+[0;33mW (712) wifi:(TB)WDEV_PWR_TB_MCS6:18[0m
+[0;33mW (715) wifi:(TB)WDEV_PWR_TB_MCS7:18[0m
+[0;33mW (719) wifi:(TB)WDEV_PWR_TB_MCS8:17[0m
+[0;33mW (722) wifi:(TB)WDEV_PWR_TB_MCS9:15[0m
+[0;33mW (725) wifi:(TB)WDEV_PWR_TB_MCS10:15[0m
+[0;33mW (729) wifi:(TB)WDEV_PWR_TB_MCS11:15[0m
+[0;32mI (732) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (739) wifi:mode : sta (7c:2c:67:5d:2c:3c)[0m
+[0;32mI (743) wifi:enable tsf[0m
+[0;32mI (746) itwt: sta connect to TP-Link_B5F4[0m
+[0;32mI (751) main_task: Returned from app_main()[0m
+[0;32mI (1841) wifi:(he)max.RxAMPDULenExponentExtension:2, max.RxAMPDUpre-EOFpaddingBytes:4194303(0x3fffff)[0m
+[0;32mI (1841) wifi:(mac)omc_ul_mu_data_disable_rx:1[0m
+[0;32mI (1843) wifi:(phy)ppe_thresholds_present:1, nominal_packet_padding:0[0m
+[0;32mI (1849) wifi:(phy)dcm tx(constellation:0, nss:0), dcm rx(constellation:0, nss:0)[0m
+[0;32mI (1856) wifi:(phy)rx_mcs_map:0xfffa, tx_mcs_map:0xfffa, stbc_tx:0, bfmer(su:1, mu:0), ldpc:1, max_rate:172[0m
+[0;32mI (1866) wifi:(phy)nsts:2, ru_index_bitmap:0x7(242:1, 484:1, 996:1, 2*996:0)[0m
+[0;32mI (1873) wifi:(phy)threshold_bits:36, nsts_num:2, ru_num:3, he_cap->len:28, ppe_threshold_len:6(6,11,4)[0m
+[0;32mI (1882) wifi:(ppe)RU242, NSTS0, PPE16:0, PPE8:7, nominal_packet_padding:2[0m
+[0;32mI (1888) wifi:(opr)len:7, TWT Required:0, VHT Opr Info Present:0, 6GHz Opr Info Present:0, Co-Hosted BSS:0(max_indicator:0), Basic MCS and NSS:0xfffc[0m
+[0;32mI (1901) wifi:(opr)len:7, Default PE Duration:4, TXOP RTS Threshold:0(0 us), ER-SU-Disable:0[0m
+[0;32mI (1910) wifi:(opr)len:7, BSS Color:31, disabled:0, Partial BSS Color:0[0m
+[0;32mI (2219) wifi:new:<10,0>, old:<1,0>, ap:<255,255>, sta:<10,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2220) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3[0m
+[0;32mI (2223) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (2237) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (2243) wifi:(assoc)RESP, Extended Capabilities length:10, operating_mode_notification:0[0m
+[0;32mI (2243) wifi:(assoc)RESP, Extended Capabilities, MBSSID:0, TWT Responder:0, OBSS Narrow Bandwidth RU In OFDMA Tolerance:0[0m
+[0;32mI (2251) wifi:Extended Capabilities length:10, operating_mode_notification:1[0m
+[0;32mI (2258) wifi:(he)max.RxAMPDULenExponentExtension:2, max.RxAMPDUpre-EOFpaddingBytes:4194303(0x3fffff)[0m
+[0;32mI (2267) wifi:(mac)omc_ul_mu_data_disable_rx:1[0m
+[0;32mI (2271) wifi:(phy)ppe_thresholds_present:1, nominal_packet_padding:0[0m
+[0;32mI (2277) wifi:(phy)dcm tx(constellation:0, nss:0), dcm rx(constellation:0, nss:0)[0m
+[0;32mI (2284) wifi:(phy)rx_mcs_map:0xfffa, tx_mcs_map:0xfffa, stbc_tx:0, bfmer(su:1, mu:0), ldpc:1, max_rate:172[0m
+[0;32mI (2294) wifi:(phy)nsts:2, ru_index_bitmap:0x7(242:1, 484:1, 996:1, 2*996:0)[0m
+[0;32mI (2300) wifi:(phy)threshold_bits:36, nsts_num:2, ru_num:3, he_cap->len:28, ppe_threshold_len:6(6,11,4)[0m
+[0;32mI (2309) wifi:(ppe)RU242, NSTS0, PPE16:0, PPE8:7, nominal_packet_padding:2[0m
+[0;32mI (2316) wifi:(opr)len:7, TWT Required:0, VHT Opr Info Present:0, 6GHz Opr Info Present:0, Co-Hosted BSS:0(max_indicator:0), Basic MCS and NSS:0xfffc[0m
+[0;32mI (2329) wifi:(opr)len:7, Default PE Duration:4, TXOP RTS Threshold:0(0 us), ER-SU-Disable:0[0m
+[0;32mI (2337) wifi:(opr)len:7, BSS Color:31, disabled:0, Partial BSS Color:0[0m
+[0;32mI (2344) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (2347) wifi:(he)ppe_thresholds_present:1, nominal_packet_padding(rx:0, cfg:2)[0m
+[0;32mI (2354) wifi:(trc)phytype:CBW20-SGI, snr:49, maxRate:172, highestRateIdx:0[0m
+[0;33mW (2361) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (2370) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:49, ampduState:wait operational[0m
+[0;32mI (2381) wifi:ifidx:0, rssi:-43, nf:-92, phytype(0x3, CBW20-SGI), phymode(0x7, 11ax), max_rate:172, he:1, vht:0, ht:1[0m
+[0;32mI (2391) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:5(4 us)[0m
+[0;32mI (2414) wifi:(extcap)mbssid:0, enhanced_mbssid_advertise:0, complete_nontxbssid_profiles:0, twt_responder: 1[0m
+[0;32mI (2415) wifi:connected with TP-Link_B5F4, aid = 26, channel 10, BW20, bssid = c0:c9:e3:9e:b5:f3[0m
+[0;32mI (2422) wifi:security: WPA2-PSK, phy:11ax, rssi:-43, cipher(pairwise:0x3, group:0x3), pmf:0, [0m
+[0;32mI (2430) wifi:pm start, type: 1, twt_start:0[0m
+
+[0;32mI (2434) wifi:pm start, type:1, aid:0x1a, trans-BSSID:c0:c9:e3:9e:b5:f3, BSSID[5]:0xf3, mbssid(max-indicator:0, index:0), he:1[0m
+[0;32mI (2445) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2453) wifi:set rx beacon pti, rx_bcn_pti: 10, bcn_timeout: 25000, mt_pti: 10, mt_time: 10000[0m
+[0;32mI (2462) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:32, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (2473) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:32, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)[0m
+[0;32mI (2484) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:32, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (2495) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (2501) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:32, batimeout:0, txa_wnd:32[0m
+[0;32mI (2509) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:32, batimeout:0, txa_wnd:32[0m
+[0;32mI (2518) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:32, batimeout:0, txa_wnd:32[0m
+[0;32mI (2528) esp_netif_handlers: sta ip: 192.168.0.200, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;33mW (2541) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100f3b5, TALO:0x9ee3c9c0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;32mI (2559) itwt: <WIFI_EVENT_ITWT_SETUP>twt_id:0, flow_id:0, trigger-enabled, announced, wake_dura:224, wake_dura_unit:0, wake_invl_e:13, wake_invl_m:13[0m
+[0;32mI (2562) itwt: <WIFI_EVENT_ITWT_SETUP>target wake time:12219736064, wake duration:57344 us, service period:106496 us[0m
+[0;32mI (8291) itwt: Connected to TCP server[0m
+[0;31mE (432375) itwt: send() failed: 104[0m
+[0;31mE (432376) itwt: send() failed: 104[0m
+[0;31mE (432425) itwt: send() failed: 128[0m
+[0;31mE (432426) itwt: send() failed: 128[0m
+[0;31mE (432426) itwt: send() failed: 128[0m
+[0;31mE (432427) itwt: send() failed: 128[0m
+[0;31mE (432431) itwt: send() failed: 128[0m
+[0;31mE (432435) itwt: send() failed: 128[0m
+[0;31mE (432439) itwt: send() failed: 128[0m
+[0;31mE (432444) itwt: send() failed: 128[0m
+[0;31mE (432448) itwt: send() failed: 128[0m
+[0;31mE (432452) itwt: send() failed: 128[0m
+[0;31mE (432456) itwt: send() failed: 128[0m
+[0;31mE (432460) itwt: send() failed: 128[0m
+[0;31mE (432464) itwt: send() failed: 128[0m
+[0;31mE (432468) itwt: send() failed: 128[0m
+[0;31mE (432473) itwt: send() failed: 128[0m
+[0;31mE (432477) itwt: send() failed: 128[0m
+[0;31mE (432481) itwt: send() failed: 128[0m
+[0;31mE (432485) itwt: send() failed: 128[0m
+[0;31mE (432489) itwt: send() failed: 128[0m
+[0;31mE (432493) itwt: send() failed: 128[0m
+[0;31mE (432498) itwt: send() failed: 128[0m
+[0;31mE (432502) itwt: send() failed: 128[0m
+[0;31mE (432506) itwt: send() failed: 128[0m
+[0;31mE (432510) itwt: send() failed: 128[0m
+[0;31mE (432514) itwt: send() failed: 128[0m
+[0;31mE (432518) itwt: send() failed: 128[0m
+[0;31mE (432523) itwt: send() failed: 128[0m
+[0;31mE (432527) itwt: send() failed: 128[0m
+[0;31mE (432531) itwt: send() failed: 128[0m
+[0;31mE (432535) itwt: send() failed: 128[0m
+[0;31mE (432539) itwt: send() failed: 128[0m
+[0;31mE (432543) itwt: send() failed: 128[0m
+[0;31mE (432548) itwt: send() failed: 128[0m
+[0;31mE (432552) itwt: send() failed: 128[0m
+[0;31mE (432556) itwt: send() failed: 128[0m
+[0;31mE (432560) itwt: send() failed: 128[0m
+[0;31mE (432564) itwt: send() failed: 128[0m
+[0;31mE (432568) itwt: send() failed: 128[0m
+[0;31mE (432573) itwt: send() failed: 128[0m
+[0;31mE (432577) itwt: send() failed: 128[0m
+[0;31mE (432581) itwt: send() failed: 128[0m
+[0;31mE (432585) itwt: send() failed: 128[0m
+[0;31mE (432589) itwt: send() failed: 128[0m
+[0;31mE (432593) itwt: send() failed: 128[0m
+[0;31mE (432598) itwt: send() failed: 128[0m
+[0;31mE (432602) itwt: send() failed: 128[0m
+[0;31mE (432606) itwt: send() failed: 128[0m
+[0;31mE (432610) itwt: send() failed: 128[0m
+[0;31mE (432614) itwt: send() failed: 128[0m
+[0;31mE (432618) itwt: send() failed: 128[0m
+[0;31mE (432623) itwt: send() failed: 128[0m
+[0;31mE (432627) itwt: send() failed: 128[0m
+[0;31mE (432631) itwt: send() failed: 128[0m
+[0;31mE (432635) itwt: send() failed: 128[0m
+[0;31mE (432639) itwt: send() failed: 128[0m
+[0;31mE (432643) itwt: send() failed: 128[0m
+[0;31mE (432648) itwt: send() failed: 128[0m
+[0;31mE (432652) itwt: send() failed: 128[0m
+[0;31mE (432656) itwt: send() failed: 128[0m
+[0;31mE (432660) itwt: send() failed: 128[0m
+[0;31mE (432664) itwt: send() failed: 128[0m
+[0;31mE (432668) itwt: send() failed: 128[0m
+[0;31mE (432673) itwt: send() failed: 128[0m
+[0;31mE (432677) itwt: send() failed: 128[0m
+[0;31mE (432681) itwt: send() failed: 128[0m
+[0;31mE (432685) itwt: send() failed: 128[0m
+[0;31mE (432689) itwt: send() failed: 128[0m
+[0;31mE (432693) itwt: send() failed: 128[0m
+[0;31mE (432698) itwt: send() failed: 128[0m
+[0;31mE (432702) itwt: send() failed: 128[0m
+[0;31mE (432706) itwt: send() failed: 128[0m
+[0;31mE (432710) itwt: send() failed: 128[0m
+[0;31mE (432714) itwt: send() failed: 128[0m
+[0;31mE (432718) itwt: send() failed: 128[0m
+[0;31mE (432723) itwt: send() failed: 128[0m
+[0;31mE (432727) itwt: send() failed: 128[0m
+[0;31mE (432731) itwt: send() failed: 128[0m
+[0;31mE (432735) itwt: send() failed: 128[0m
+[0;31mE (432739) itwt: send() failed: 128[0m
+[0;31mE (432743) itwt: send() failed: 128[0m
+[0;31mE (432748) itwt: send() failed: 128[0m
+[0;31mE (432752) itwt: send() failed: 128[0m
+[0;31mE (432756) itwt: send() failed: 128[0m
+[0;31mE (432760) itwt: send() failed: 128[0m
+[0;31mE (432764) itwt: send() failed: 128[0m
+[0;31mE (432768) itwt: send() failed: 128[0m
+[0;31mE (432773) itwt: send() failed: 128[0m
+[0;31mE (432777) itwt: send() failed: 128[0m
+[0;31mE (432781) itwt: send() failed: 128[0m
+[0;31mE (432785) itwt: send() failed: 128[0m
+[0;31mE (432789) itwt: send() failed: 128[0m
+[0;31mE (432793) itwt: send() failed: 128[0m
+[0;31mE (432798) itwt: send() failed: 128[0m
+[0;31mE (432802) itwt: send() failed: 128[0m
+[0;31mE (432806) itwt: send() failed: 128[0m
+[0;31mE (432810) itwt: send() failed: 128[0m
+[0;31mE (432814) itwt: send() failed: 128[0m
+[0;31mE (432818) itwt: send() failed: 128[0m
+[0;31mE (432823) itwt: send() failed: 128[0m
+[0;31mE (432827) itwt: send() failed: 128[0m
+[0;31mE (432831) itwt: send() failed: 128[0m
+[0;31mE (432835) itwt: send() failed: 128[0m
+[0;31mE (432839) itwt: send() failed: 128[0m
+[0;31mE (432843) itwt: send() failed: 128[0m
+[0;31mE (432848) itwt: send() failed: 128[0m
+[0;31mE (432852) itwt: send() failed: 128[0m
+[0;31mE (432856) itwt: send() failed: 128[0m
+[0;31mE (432860) itwt: send() failed: 128[0m
+[0;31mE (432864) itwt: send() failed: 128[0m
+[0;31mE (432868) itwt: send() failed: 128[0m
+[0;31mE (432873) itwt: send() failed: 128[0m
+[0;31mE (432877) itwt: send() failed: 128[0m
+[0;31mE (432881) itwt: send() failed: 128[0m
+[0;31mE (432885) itwt: send() failed: 128[0m
+[0;31mE (432889) itwt: send() failed: 128[0m
+[0;31mE (432893) itwt: send() failed: 128[0m
+[0;31mE (432898) itwt: send() failed: 128[0m
+[0;31mE (432902) itwt: send() failed: 128[0m
+[0;31mE (432906) itwt: send() failed: 128[0m
+[0;31mE (432910) itwt: send() failed: 128[0m
+[0;31mE (432914) itwt: send() failed: 128[0m
+[0;31mE (432918) itwt: send() failed: 128[0m
+[0;31mE (432923) itwt: send() failed: 128[0m
+[0;31mE (432927) itwt: send() failed: 128[0m
+[0;31mE (432931) itwt: send() failed: 128[0m
+[0;31mE (432935) itwt: send() failed: 128[0m
+[0;31mE (432939) itwt: send() failed: 128[0m
+[0;31mE (432943) itwt: send() failed: 128[0m
+[0;31mE (432948) itwt: send() failed: 128[0m
+[0;31mE (432952) itwt: send() failed: 128[0m
+[0;31mE (432956) itwt: send() failed: 128[0m
+[0;31mE (432960) itwt: send() failed: 128[0m
+[0;31mE (432964) itwt: send() failed: 128[0m
+[0;31mE (432968) itwt: send() failed: 128[0m
+[0;31mE (432973) itwt: send() failed: 128[0m
+[0;31mE (432977) itwt: send() failed: 128[0m
+[0;31mE (432981) itwt: send() failed: 128[0m
+[0;31mE (432985) itwt: send() failed: 128[0m
+[0;31mE (432989) itwt: send() failed: 128[0m
+[0;31mE (432993) itwt: send() failed: 128[0m
+[0;31mE (432998) itwt: send() failed: 128[0m
+[0;31mE (433002) itwt: send() failed: 128[0m
+[0;31mE (433006) itwt: send() failed: 128[0m
+[0;31mE (433010) itwt: send() failed: 128[0m
+[0;31mE (433014) itwt: send() failed: 128[0m
+[0;31mE (433018) itwt: send() failed: 128[0m
+[0;31mE (433023) itwt: send() failed: 128[0m
+[0;31mE (433027) itwt: send() failed: 128[0m
+[0;31mE (433031) itwt: send() failed: 128[0m
+[0;31mE (433035) itwt: send() failed: 128[0m
+[0;31mE (433039) itwt: send() failed: 128[0m
+[0;31mE (433043) itwt: send() failed: 128[0m
+[0;31mE (433048) itwt: send() failed: 128[0m
+[0;31mE (433052) itwt: send() failed: 128[0m
+[0;31mE (433056) itwt: send() failed: 128[0m
+[0;31mE (433060) itwt: send() failed: 128[0m
+[0;31mE (433064) itwt: send() failed: 128[0m
+[0;31mE (433068) itwt: send() failed: 128[0m
+[0;31mE (433073) itwt: send() failed: 128[0m
+[0;31mE (433077) itwt: send() failed: 128[0m
+[0;31mE (433081) itwt: send() failed: 128[0m
+[0;31mE (433085) itwt: send() failed: 128[0m
+[0;31mE (433089) itwt: send() failed: 128[0m
+[0;31mE (433093) itwt: send() failed: 128[0m
+[0;31mE (433098) itwt: send() failed: 128[0m
+[0;31mE (433102) itwt: send() failed: 128[0m
+[0;31mE (433106) itwt: send() failed: 128[0m
+[0;31mE (433110) itwt: send() failed: 128[0m
+[0;31mE (433114) itwt: send() failed: 128[0m
+[0;31mE (433118) itwt: send() failed: 128[0m
+[0;31mE (433123) itwt: send() failed: 128[0m
+[0;31mE (433127) itwt: send() failed: 128[0m
+[0;31mE (433131) itwt: send() failed: 128[0m
+[0;31mE (433135) itwt: send() failed: 128[0m
+[0;31mE (433139) itwt: send() failed: 128[0m
+[0;31mE (433143) itwt: send() failed: 128[0m
+[0;31mE (433148) itwt: send() failed: 128[0m
+[0;31mE (433152) itwt: send() failed: 128[0m
+[0;31mE (433156) itwt: send() failed: 128[0m
+[0;31mE (433160) itwt: send() failed: 128[0m
+[0;31mE (433164) itwt: send() failed: 128[0m
+[0;31mE (433168) itwt: send() failed: 128[0m
+[0;31mE (433173) itwt: send() failed: 128[0m
+[0;31mE (433177) itwt: send() failed: 128[0m
+[0;31mE (433181) itwt: send() failed: 128[0m
+[0;31mE (433185) itwt: send() failed: 128[0m
+[0;31mE (433189) itwt: send() failed: 128[0m
+[0;31mE (433193) itwt: send() failed: 128[0m
+[0;31mE (433198) itwt: send() failed: 128[0m
+[0;31mE (433202) itwt: send() failed: 128[0m
+[0;31mE (433206) itwt: send() failed: 128[0m
+[0;31mE (433210) itwt: send() failed: 128[0m
+[0;31mE (433214) itwt: send() failed: 128[0m
+[0;31mE (433218) itwt: send() failed: 128[0m
+[0;31mE (433223) itwt: send() failed: 128[0m
+[0;31mE (433227) itwt: send() failed: 128[0m
+[0;31mE (433231) itwt: send() failed: 128[0m
+[0;31mE (433235) itwt: send() failed: 128[0m
+[0;31mE (433239) itwt: send() failed: 128[0m
+[0;31mE (433243) itwt: send() failed: 128[0m
+[0;31mE (433248) itwt: send() failed: 128[0m
+[0;31mE (433252) itwt: send() failed: 128[0m
+[0;31mE (433256) itwt: send() failed: 128[0m
+[0;31mE (433260) itwt: send() failed: 128[0m
+[0;31mE (433264) itwt: send() failed: 128[0m
+[0;31mE (433268) itwt: send() failed: 128[0m
+[0;31mE (433273) itwt: send() failed: 128[0m
+[0;31mE (433277) itwt: send() failed: 128[0m
+[0;31mE (433281) itwt: send() failed: 128[0m
+[0;31mE (433285) itwt: send() failed: 128[0m
+[0;31mE (433289) itwt: send() failed: 128[0m
+[0;31mE (433293) itwt: send() failed: 128[0m
+[0;31mE (433298) itwt: send() failed: 128[0m
+[0;31mE (433302) itwt: send() failed: 128[0m
+[0;31mE (433306) itwt: send() failed: 128[0m
+[0;31mE (433310) itwt: send() failed: 128[0m
+[0;31mE (433314) itwt: send() failed: 128[0m
+[0;31mE (433318) itwt: send() failed: 128[0m
+[0;31mE (433323) itwt: send() failed: 128[0m
+[0;31mE (433327) itwt: send() failed: 128[0m
+[0;31mE (433331) itwt: send() failed: 128[0m
+[0;31mE (433335) itwt: send() failed: 128[0m
+[0;31mE (433339) itwt: send() failed: 128[0m
+[0;31mE (433343) itwt: send() failed: 128[0m
+[0;31mE (433348) itwt: send() failed: 128[0m
+[0;31mE (433352) itwt: send() failed: 128[0m
+[0;31mE (433356) itwt: send() failed: 128[0m
+[0;31mE (433360) itwt: send() failed: 128[0m
+[0;31mE (433364) itwt: send() failed: 128[0m
+[0;31mE (433368) itwt: send() failed: 128[0m
+[0;31mE (433373) itwt: send() failed: 128[0m
+[0;31mE (433377) itwt: send() failed: 128[0m
+[0;31mE (433381) itwt: send() failed: 128[0m
+[0;31mE (433385) itwt: send() failed: 128[0m
+[0;31mE (433389) itwt: send() failed: 128[0m
+[0;31mE (433393) itwt: send() failed: 128[0m
+[0;31mE (433398) itwt: send() failed: 128[0m
+[0;31mE (433402) itwt: send() failed: 128[0m
+[0;31mE (433406) itwt: send() failed: 128[0m
+[0;31mE (433410) itwt: send() failed: 128[0m
+[0;31mE (433414) itwt: send() failed: 128[0m
+[0;31mE (433418) itwt: send() failed: 128[0m
+[0;31mE (433423) itwt: send() failed: 128[0m
+[0;31mE (433427) itwt: send() failed: 128[0m
+[0;31mE (433431) itwt: send() failed: 128[0m
+[0;31mE (433435) itwt: send() failed: 128[0m
+[0;31mE (433439) itwt: send() failed: 128[0m
+[0;31mE (433443) itwt: send() failed: 128[0m
+[0;31mE (433448) itwt: send() failed: 128[0m
+[0;31mE (433452) itwt: send() failed: 128[0m
+[0;31mE (433456) itwt: send() failed: 128[0m
+[0;31mE (433460) itwt: send() failed: 128[0m
+[0;31mE (433464) itwt: send() failed: 128[0m
+[0;31mE (433468) itwt: send() failed: 128[0m
+[0;31mE (433473) itwt: send() failed: 128[0m
+[0;31mE (433477) itwt: send() failed: 128[0m
+[0;31mE (433481) itwt: send() failed: 128[0m
+[0;31mE (433485) itwt: send() failed: 128[0m
+[0;31mE (433489) itwt: send() failed: 128[0m
+[0;31mE (433493) itwt: send() failed: 128[0m
+[0;31mE (433498) itwt: send() failed: 128[0m
+[0;31mE (433502) itwt: send() failed: 128[0m
+[0;31mE (433506) itwt: send() failed: 128[0m
+[0;31mE (433510) itwt: send() failed: 128[0m
+[0;31mE (433514) itwt: send() failed: 128[0m
+[0;31mE (433518) itwt: send() failed: 128[0m
+[0;31mE (433523) itwt: send() failed: 128[0m
+[0;31mE (433527) itwt: send() failed: 128[0m
+[0;31mE (433531) itwt: send() failed: 128[0m
+[0;31mE (433535) itwt: send() failed: 128[0m
+[0;31mE (433539) itwt: send() failed: 128[0m
+[0;31mE (433543) itwt: send() failed: 128[0m
+[0;31mE (433548) itwt: send() failed: 128[0m
+[0;31mE (433552) itwt: send() failed: 128[0m
+[0;31mE (433556) itwt: send() failed: 128[0m
+[0;31mE (433560) itwt: send() failed: 128[0m
+[0;31mE (433564) itwt: send() failed: 128[0m
+[0;31mE (433568) itwt: send() failed: 128[0m
+[0;31mE (433573) itwt: send() failed: 128[0m
+[0;31mE (433577) itwt: send() failed: 128[0m
+[0;31mE (433581) itwt: send() failed: 128[0m
+[0;31mE (433585) itwt: send() failed: 128[0m
+[0;31mE (433589) itwt: send() failed: 128[0m
+[0;31mE (433593) itwt: send() failed: 128[0m
+[0;31mE (433598) itwt: send() failed: 128[0m
+[0;31mE (433602) itwt: send() failed: 128[0m
+[0;31mE (433606) itwt: send() failed: 128[0m
+[0;31mE (433610) itwt: send() failed: 128[0m
+[0;31mE (433614) itwt: send() failed: 128[0m
+[0;31mE (433618) itwt: send() failed: 128[0m
+[0;31mE (433623) itwt: send() failed: 128[0m
+[0;31mE (433627) itwt: send() failed: 128[0m
+[0;31mE (433631) itwt: send() failed: 128[0m
+[0;31mE (433635) itwt: send() failed: 128[0m
+[0;31mE (433639) itwt: send() failed: 128[0m
+[0;31mE (433643) itwt: send() failed: 128[0m
+[0;31mE (433648) itwt: send() failed: 128[0m
+[0;31mE (433652) itwt: send() failed: 128[0m
+[0;31mE (433656) itwt: send() failed: 128[0m
+[0;31mE (433660) itwt: send() failed: 128[0m
+[0;31mE (433664) itwt: send() failed: 128[0m
+[0;31mE (433668) itwt: send() failed: 128[0m
+[0;31mE (433673) itwt: send() failed: 128[0m
+[0;31mE (433677) itwt: send() failed: 128[0m
+[0;31mE (433681) itwt: send() failed: 128[0m
+[0;31mE (433685) itwt: send() failed: 128[0m
+[0;31mE (433689) itwt: send() failed: 128[0m
+[0;31mE (433693) itwt: send() failed: 128[0m
+[0;31mE (433698) itwt: send() failed: 128[0m
+[0;31mE (433702) itwt: send() failed: 128[0m
+[0;31mE (433706) itwt: send() failed: 128[0m
+[0;31mE (433710) itwt: send() failed: 128[0m
+[0;31mE (433714) itwt: send() failed: 128[0m
+[0;31mE (433718) itwt: send() failed: 128[0m
+[0;31mE (433723) itwt: send() failed: 128[0m
+[0;31mE (433727) itwt: send() failed: 128[0m
+[0;31mE (433731) itwt: send() failed: 128[0m
+[0;31mE (433735) itwt: send() failed: 128[0m
+[0;31mE (433739) itwt: send() failed: 128[0m
+[0;31mE (433743) itwt: send() failed: 128[0m
+[0;31mE (433748) itwt: send() failed: 128[0m
+[0;31mE (433752) itwt: send() failed: 128[0m
+[0;31mE (433756) itwt: send() failed: 128[0m
+[0;31mE (433760) itwt: send() failed: 128[0m
+[0;31mE (433764) itwt: send() failed: 128[0m
+[0;31mE (433768) itwt: send() failed: 128[0m
+[0;31mE (433773) itwt: send() failed: 128[0m
+[0;31mE (433777) itwt: send() failed: 128[0m
+[0;31mE (433781) itwt: send() failed: 128[0m
+[0;31mE (433785) itwt: send() failed: 128[0m
+[0;31mE (433789) itwt: send() failed: 128[0m
+[0;31mE (433793) itwt: send() failed: 128[0m
+[0;31mE (433798) itwt: send() failed: 128[0m
+[0;31mE (433802) itwt: send() failed: 128[0m
+[0;31mE (433806) itwt: send() failed: 128[0m
+[0;31mE (433810) itwt: send() failed: 128[0m
+[0;31mE (433814) itwt: send() failed: 128[0m
+[0;31mE (433818) itwt: send() failed: 128[0m
+[0;31mE (433823) itwt: send() failed: 128[0m
+[0;31mE (433827) itwt: send() failed: 128[0m
+[0;31mE (433831) itwt: send() failed: 128[0m
+[0;31mE (433835) itwt: send() failed: 128[0m
+[0;31mE (433839) itwt: send() failed: 128[0m
+[0;31mE (433843) itwt: send() failed: 128[0m
+[0;31mE (433848) itwt: send() failed: 128[0m
+[0;31mE (433852) itwt: send() failed: 128[0m
+[0;31mE (433856) itwt: send() failed: 128[0m
+[0;31mE (433860) itwt: send() failed: 128[0m
+[0;31mE (433864) itwt: send() failed: 128[0m
+[0;31mE (433868) itwt: send() failed: 128[0m
+[0;31mE (433873) itwt: send() failed: 128[0m
+[0;31mE (433877) itwt: send() failed: 128[0m
+[0;31mE (433881) itwt: send() failed: 128[0m
+[0;31mE (433885) itwt: send() failed: 128[0m
+[0;31mE (433889) itwt: send() failed: 128[0m
+[0;31mE (433893) itwt: send() failed: 128[0m
+[0;31mE (433898) itwt: send() failed: 128[0m
+[0;31mE (433902) itwt: send() failed: 128[0m
+[0;31mE (433906) itwt: send() failed: 128[0m
+[0;31mE (433910) itwt: send() failed: 128[0m
+[0;31mE (433914) itwt: send() failed: 128[0m
+[0;31mE (433918) itwt: send() failed: 128[0m
+[0;31mE (433923) itwt: send() failed: 128[0m
+[0;31mE (433927) itwt: send() failed: 128[0m
+[0;31mE (433931) itwt: send() failed: 128[0m
+[0;31mE (433935) itwt: send() failed: 128[0m
+[0;31mE (433939) itwt: send() failed: 128[0m
+[0;31mE (433943) itwt: send() failed: 128[0m
+[0;31mE (433948) itwt: send() failed: 128[0m
+[0;31mE (433952) itwt: send() failed: 128[0m
+[0;31mE (433956) itwt: send() failed: 128[0m
+[0;31mE (433960) itwt: send() failed: 128[0m
+[0;31mE (433964) itwt: send() failed: 128[0m
+[0;31mE (433968) itwt: send() failed: 128[0m
+[0;31mE (433973) itwt: send() failed: 128[0m
+[0;31mE (433977) itwt: send() failed: 128[0m
+[0;31mE (433981) itwt: send() failed: 128[0m
+[0;31mE (433985) itwt: send() failed: 128[0m
+[0;31mE (433989) itwt: send() failed: 128[0m
+[0;31mE (433993) itwt: send() failed: 128[0m
+[0;31mE (433998) itwt: send() failed: 128[0m
+[0;31mE (434002) itwt: send() failed: 128[0m
+[0;31mE (434006) itwt: send() failed: 128[0m
+[0;31mE (434010) itwt: send() failed: 128[0m
+[0;31mE (434014) itwt: send() failed: 128[0m
+[0;31mE (434018) itwt: send() failed: 128[0m
+[0;31mE (434023) itwt: send() failed: 128[0m
+[0;31mE (434027) itwt: send() failed: 128[0m
+[0;31mE (434031) itwt: send() failed: 128[0m
+[0;31mE (434035) itwt: send() failed: 128[0m
+[0;31mE (434039) itwt: send() failed: 128[0m
+[0;31mE (434043) itwt: send() failed: 128[0m
+[0;31mE (434048) itwt: send() failed: 128[0m
+[0;31mE (434052) itwt: send() failed: 128[0m
+[0;31mE (434056) itwt: send() failed: 128[0m
+[0;31mE (434060) itwt: send() failed: 128[0m
+[0;31mE (434064) itwt: send() failed: 128[0m
+[0;31mE (434068) itwt: send() failed: 128[0m
+[0;31mE (434072) itwt: send() failed: 128[0m
+[0;31mE (434077) itwt: send() failed: 128[0m
+[0;31mE (434081) itwt: send() failed: 128[0m
+[0;31mE (434085) itwt: send() failed: 128[0m
+[0;31mE (434089) itwt: send() failed: 128[0m
+[0;31mE (434093) itwt: send() failed: 128[0m
+[0;31mE (434097) itwt: send() failed: 128[0m
+[0;31mE (434102) itwt: send() failed: 128[0m
+[0;31mE (434106) itwt: send() failed: 128[0m
+[0;31mE (434110) itwt: send() failed: 128[0m
+[0;31mE (434114) itwt: send() failed: 128[0m
+[0;31mE (434118) itwt: send() failed: 128[0m
+[0;31mE (434122) itwt: send() failed: 128[0m
+[0;31mE (434127) itwt: send() failed: 128[0m
+[0;31mE (434131) itwt: send() failed: 128[0m
+[0;31mE (434135) itwt: send() failed: 128[0m
+[0;31mE (434139) itwt: send() failed: 128[0m
+[0;31mE (434143) itwt: send() failed: 128[0m
+[0;31mE (434147) itwt: send() failed: 128[0m
+[0;31mE (434152) itwt: send() failed: 128[0m
+[0;31mE (434156) itwt: send() failed: 128[0m
+[0;31mE (434160) itwt: send() failed: 128[0m
+[0;31mE (434164) itwt: send() failed: 128[0m
+[0;31mE (434168) itwt: send() failed: 128[0m
+[0;31mE (434172) itwt: send() failed: 128[0m
+[0;31mE (434177) itwt: send() failed: 128[0m
+[0;31mE (434181) itwt: send() failed: 128[0m
+[0;31mE (434185) itwt: send() failed: 128[0m
+[0;31mE (434189) itwt: send() failed: 128[0m
+[0;31mE (434193) itwt: send() failed: 128[0m
+[0;31mE (434197) itwt: send() failed: 128[0m
+[0;31mE (434202) itwt: send() failed: 128[0m
+[0;31mE (434206) itwt: send() failed: 128[0m
+[0;31mE (434210) itwt: send() failed: 128[0m
+[0;31mE (434214) itwt: send() failed: 128[0m
+[0;31mE (434218) itwt: send() failed: 128[0m
+[0;31mE (434222) itwt: send() failed: 128[0m
+[0;31mE (434227) itwt: send() failed: 128[0m
+[0;31mE (434231) itwt: send() failed: 128[0m
+[0;31mE (434235) itwt: send() failed: 128[0m
+[0;31mE (434239) itwt: send() failed: 128[0m
+[0;31mE (434243) itwt: send() failed: 128[0m
+[0;31mE (434247) itwt: send() failed: 128[0m
+[0;31mE (434252) itwt: send() failed: 128[0m
+[0;31mE (434256) itwt: send() failed: 128[0m
+[0;31mE (434260) itwt: send() failed: 128[0m
+[0;31mE (434264) itwt: send() failed: 128[0m
+[0;31mE (434268) itwt: send() failed: 128[0m
+[0;31mE (434272) itwt: send() failed: 128[0m
+[0;31mE (434277) itwt: send() failed: 128[0m
+[0;31mE (434281) itwt: send() failed: 128[0m
+[0;31mE (434285) itwt: send() failed: 128[0m
+[0;31mE (434289) itwt: send() failed: 128[0m
+[0;31mE (434293) itwt: send() failed: 128[0m
+[0;31mE (434297) itwt: send() failed: 128[0m
+[0;31mE (434302) itwt: send() failed: 128[0m
+[0;31mE (434306) itwt: send() failed: 128[0m
+[0;31mE (434310) itwt: send() failed: 128[0m
+[0;31mE (434314) itwt: send() failed: 128[0m
+[0;31mE (434318) itwt: send() failed: 128[0m
+[0;31mE (434322) itwt: send() failed: 128[0m
+[0;31mE (434327) itwt: send() failed: 128[0m
+[0;31mE (434331) itwt: send() failed: 128[0m
+[0;31mE (434335) itwt: send() failed: 128[0m
+[0;31mE (434339) itwt: send() failed: 128[0m
+[0;31mE (434343) itwt: send() failed: 128[0m
+[0;31mE (434347) itwt: send() failed: 128[0m
+[0;31mE (434352) itwt: send() failed: 128[0m
+[0;31mE (434356) itwt: send() failed: 128[0m
+[0;31mE (434360) itwt: send() failed: 128[0m
+[0;31mE (434364) itwt: send() failed: 128[0m
+[0;31mE (434368) itwt: send() failed: 128[0m
+[0;31mE (434372) itwt: send() failed: 128[0m
+[0;31mE (434377) itwt: send() failed: 128[0m
+[0;31mE (434381) itwt: send() failed: 128[0m
+[0;31mE (434385) itwt: send() failed: 128[0m
+[0;31mE (434389) itwt: send() failed: 128[0m
+[0;31mE (434393) itwt: send() failed: 128[0m
+[0;31mE (434397) itwt: send() failed: 128[0m
+[0;31mE (434402) itwt: send() failed: 128[0m
+[0;31mE (434406) itwt: send() failed: 128[0m
+[0;31mE (434410) itwt: send() failed: 128[0m
+[0;31mE (434414) itwt: send() failed: 128[0m
+[0;31mE (434418) itwt: send() failed: 128[0m
+[0;31mE (434422) itwt: send() failed: 128[0m
+[0;31mE (434427) itwt: send() failed: 128[0m
+[0;31mE (434431) itwt: send() failed: 128[0m
+[0;31mE (434435) itwt: send() failed: 128[0m
+[0;31mE (434439) itwt: send() failed: 128[0m
+[0;31mE (434443) itwt: send() failed: 128[0m
+[0;31mE (434447) itwt: send() failed: 128[0m
+[0;31mE (434452) itwt: send() failed: 128[0m
+[0;31mE (434456) itwt: send() failed: 128[0m
+[0;31mE (434460) itwt: send() failed: 128[0m
+[0;31mE (434464) itwt: send() failed: 128[0m
+[0;31mE (434468) itwt: send() failed: 128[0m
+[0;31mE (434472) itwt: send() failed: 128[0m
+[0;31mE (434477) itwt: send() failed: 128[0m
+[0;31mE (434481) itwt: send() failed: 128[0m
+[0;31mE (434485) itwt: send() failed: 128[0m
+[0;31mE (434489) itwt: send() failed: 128[0m
+[0;31mE (434493) itwt: send() failed: 128[0m
+[0;31mE (434497) itwt: send() failed: 128[0m
+[0;31mE (434502) itwt: send() failed: 128[0m
+[0;31mE (434506) itwt: send() failed: 128[0m
+[0;31mE (434510) itwt: send() failed: 128[0m
+[0;31mE (434514) itwt: send() failed: 128[0m
+[0;31mE (434518) itwt: send() failed: 128[0m
+[0;31mE (434522) itwt: send() failed: 128[0m
+[0;31mE (434527) itwt: send() failed: 128[0m
+[0;31mE (434531) itwt: send() failed: 128[0m
+[0;31mE (434535) itwt: send() failed: 128[0m
+[0;31mE (434539) itwt: send() failed: 128[0m
+[0;31mE (434543) itwt: send() failed: 128[0m
+[0;31mE (434547) itwt: send() failed: 128[0m
+[0;31mE (434552) itwt: send() failed: 128[0m
+[0;31mE (434556) itwt: send() failed: 128[0m
+[0;31mE (434560) itwt: send() failed: 128[0m
+[0;31mE (434564) itwt: send() failed: 128[0m
+[0;31mE (434568) itwt: send() failed: 128[0m
+[0;31mE (434572) itwt: send() failed: 128[0m
+[0;31mE (434577) itwt: send() failed: 128[0m
+[0;31mE (434581) itwt: send() failed: 128[0m
+[0;31mE (434585) itwt: send() failed: 128[0m
+[0;31mE (434589) itwt: send() failed: 128[0m
+[0;31mE (434593) itwt: send() failed: 128[0m
+[0;31mE (434597) itwt: send() failed: 128[0m
+[0;31mE (434602) itwt: send() failed: 128[0m
+[0;31mE (434606) itwt: send() failed: 128[0m
+[0;31mE (434610) itwt: send() failed: 128[0m
+[0;31mE (434614) itwt: send() failed: 128[0m
+[0;31mE (434618) itwt: send() failed: 128[0m
+[0;31mE (434622) itwt: send() failed: 128[0m
+[0;31mE (434627) itwt: send() failed: 128[0m
+[0;31mE (434631) itwt: send() failed: 128[0m
+[0;31mE (434635) itwt: send() failed: 128[0m
+[0;31mE (434639) itwt: send() failed: 128[0m
+[0;31mE (434643) itwt: send() failed: 128[0m
+[0;31mE (434647) itwt: send() failed: 128[0m
+[0;31mE (434652) itwt: send() failed: 128[0m
+[0;31mE (434656) itwt: send() failed: 128[0m
+[0;31mE (434660) itwt: send() failed: 128[0m
+[0;31mE (434664) itwt: send() failed: 128[0m
+[0;31mE (434668) itwt: send() failed: 128[0m
+[0;31mE (434672) itwt: send() failed: 128[0m
+[0;31mE (434677) itwt: send() failed: 128[0m
+[0;31mE (434681) itwt: send() failed: 128[0m
+[0;31mE (434685) itwt: send() failed: 128[0m
+[0;31mE (434689) itwt: send() failed: 128[0m
+[0;31mE (434693) itwt: send() failed: 128[0m
+[0;31mE (434697) itwt: send() failed: 128[0m
+[0;31mE (434702) itwt: send() failed: 128[0m
+[0;31mE (434706) itwt: send() failed: 128[0m
+[0;31mE (434710) itwt: send() failed: 128[0m
+[0;31mE (434714) itwt: send() failed: 128[0m
+[0;31mE (434718) itwt: send() failed: 128[0m
+[0;31mE (434722) itwt: send() failed: 128[0m
+[0;31mE (434727) itwt: send() failed: 128[0m
+[0;31mE (434731) itwt: send() failed: 128[0m
+[0;31mE (434735) itwt: send() failed: 128[0m
+[0;31mE (434739) itwt: send() failed: 128[0m
+[0;31mE (434743) itwt: send() failed: 128[0m
+[0;31mE (434747) itwt: send() failed: 128[0m
+[0;31mE (434752) itwt: send() failed: 128[0m
+[0;31mE (434756) itwt: send() failed: 128[0m
+[0;31mE (434760) itwt: send() failed: 128[0m
+[0;31mE (434764) itwt: send() failed: 128[0m
+[0;31mE (434768) itwt: send() failed: 128[0m
+[0;31mE (434772) itwt: send() failed: 128[0m
+[0;31mE (434777) itwt: send() failed: 128[0m
+[0;31mE (434781) itwt: send() failed: 128[0m
+[0;31mE (434785) itwt: send() failed: 128[0m
+[0;31mE (434789) itwt: send() failed: 128[0m
+[0;31mE (434793) itwt: send() failed: 128[0m
+[0;31mE (434797) itwt: send() failed: 128[0m
+[0;31mE (434802) itwt: send() failed: 128[0m
+[0;31mE (434806) itwt: send() failed: 128[0m
+[0;31mE (434810) itwt: send() failed: 128[0m
+[0;31mE (434814) itwt: send() failed: 128[0m
+[0;31mE (434818) itwt: send() failed: 128[0m
+[0;31mE (434822) itwt: send() failed: 128[0m
+[0;31mE (434827) itwt: send() failed: 128[0m
+[0;31mE (434831) itwt: send() failed: 128[0m
+[0;31mE (434835) itwt: send() failed: 128[0m
+[0;31mE (434839) itwt: send() failed: 128[0m
+[0;31mE (434843) itwt: send() failed: 128[0m
+[0;31mE (434847) itwt: send() failed: 128[0m
+[0;31mE (434852) itwt: send() failed: 128[0m
+[0;31mE (434856) itwt: send() failed: 128[0m
+[0;31mE (434860) itwt: send() failed: 128[0m
+[0;31mE (434864) itwt: send() failed: 128[0m
+[0;31mE (434868) itwt: send() failed: 128[0m
+[0;31mE (434872) itwt: send() failed: 128[0m
+[0;31mE (434877) itwt: send() failed: 128[0m
+[0;31mE (434881) itwt: send() failed: 128[0m
+[0;31mE (434885) itwt: send() failed: 128[0m
+[0;31mE (434889) itwt: send() failed: 128[0m
+[0;31mE (434893) itwt: send() failed: 128[0m
+[0;31mE (434897) itwt: send() failed: 128[0m
+[0;31mE (434902) itwt: send() failed: 128[0m
+[0;31mE (434906) itwt: send() failed: 128[0m
+[0;31mE (434910) itwt: send() failed: 128[0m
+[0;31mE (434914) itwt: send() failed: 128[0m
+[0;31mE (434918) itwt: send() failed: 128[0m
+[0;31mE (434922) itwt: send() failed: 128[0m
+[0;31mE (434927) itwt: send() failed: 128[0m
+[0;31mE (434931) itwt: send() failed: 128[0m
+[0;31mE (434935) itwt: send() failed: 128[0m
+[0;31mE (434939) itwt: send() failed: 128[0m
+[0;31mE (434943) itwt: send() failed: 128[0m
+[0;31mE (434947) itwt: send() failed: 128[0m
+[0;31mE (434952) itwt: send() failed: 128[0m
+[0;31mE (434956) itwt: send() failed: 128[0m
+[0;31mE (434960) itwt: send() failed: 128[0m
+[0;31mE (434964) itwt: send() failed: 128[0m
+[0;31mE (434968) itwt: send() failed: 128[0m
+[0;31mE (434972) itwt: send() failed: 128[0m
+[0;31mE (434977) itwt: send() failed: 128[0m
+[0;31mE (434981) itwt: send() failed: 128[0m
+[0;31mE (434985) itwt: send() failed: 128[0m
+[0;31mE (434989) itwt: send() failed: 128[0m
+[0;31mE (434993) itwt: send() failed: 128[0m
+[0;31mE (434997) itwt: send() failed: 128[0m
+[0;31mE (435002) itwt: send() failed: 128[0m
+[0;31mE (435006) itwt: send() failed: 128[0m
+[0;31mE (435010) itwt: send() failed: 128[0m
+[0;31mE (435014) itwt: send() failed: 128[0m
+[0;31mE (435018) itwt: send() failed: 128[0m
+[0;31mE (435022) itwt: send() failed: 128[0m
+[0;31mE (435027) itwt: send() failed: 128[0m
+[0;31mE (435031) itwt: send() failed: 128[0m
+[0;31mE (435035) itwt: send() failed: 128[0m
+[0;31mE (435039) itwt: send() failed: 128[0m
+[0;31mE (435043) itwt: send() failed: 128[0m
+[0;31mE (435047) itwt: send() failed: 128[0m
+[0;31mE (435052) itwt: send() failed: 128[0m
+[0;31mE (435056) itwt: send() failed: 128[0m
+[0;31mE (435060) itwt: send() failed: 128[0m
+[0;31mE (435064) itwt: send() failed: 128[0m
+[0;31mE (435068) itwt: send() failed: 128[0m
+[0;31mE (435072) itwt: send() failed: 128[0m
+[0;31mE (435077) itwt: send() failed: 128[0m
+[0;31mE (435081) itwt: send() failed: 128[0m
+[0;31mE (435085) itwt: send() failed: 128[0m
+[0;31mE (435089) itwt: send() failed: 128[0m
+[0;31mE (435093) itwt: send() failed: 128[0m
+[0;31mE (435097) itwt: send() failed: 128[0m
+[0;31mE (435102) itwt: send() failed: 128[0m
+[0;31mE (435106) itwt: send() failed: 128[0m
+[0;31mE (435110) itwt: send() failed: 128[0m
+[0;31mE (435114) itwt: send() failed: 128[0m
+[0;31mE (435118) itwt: send() failed: 128[0m
+[0;31mE (435122) itwt: send() failed: 128[0m
+[0;31mE (435127) itwt: send() failed: 128[0m
+[0;31mE (435131) itwt: send() failed: 128[0m
+[0;31mE (435135) itwt: send() failed: 128[0m
+[0;31mE (435139) itwt: send() failed: 128[0m
+[0;31mE (435143) itwt: send() failed: 128[0m
+[0;31mE (435147) itwt: send() failed: 128[0m
+[0;31mE (435152) itwt: send() failed: 128[0m
+[0;31mE (435156) itwt: send() failed: 128[0m
+[0;31mE (435160) itwt: send() failed: 128[0m
+[0;31mE (435164) itwt: send() failed: 128[0m
+[0;31mE (435168) itwt: send() failed: 128[0m
+[0;31mE (435172) itwt: send() failed: 128[0m
+[0;31mE (435177) itwt: send() failed: 128[0m
+[0;31mE (435181) itwt: send() failed: 128[0m
+[0;31mE (435185) itwt: send() failed: 128[0m
+[0;31mE (435189) itwt: send() failed: 128[0m
+[0;31mE (435193) itwt: send() failed: 128[0m
+[0;31mE (435197) itwt: send() failed: 128[0m
+[0;31mE (435202) itwt: send() failed: 128[0m
+[0;31mE (435206) itwt: send() failed: 128[0m
+[0;31mE (435210) itwt: send() failed: 128[0m
+[0;31mE (435214) itwt: send() failed: 128[0m
+[0;31mE (435218) itwt: send() failed: 128[0m
+[0;31mE (435222) itwt: send() failed: 128[0m
+[0;31mE (435227) itwt: send() failed: 128[0m
+[0;31mE (435231) itwt: send() failed: 128[0m
+[0;31mE (435235) itwt: send() failed: 128[0m
+[0;31mE (435239) itwt: send() failed: 128[0m
+[0;31mE (435243) itwt: send() failed: 128[0m
+[0;31mE (435247) itwt: send() failed: 128[0m
+[0;31mE (435252) itwt: send() failed: 128[0m
+[0;31mE (435256) itwt: send() failed: 128[0m
+[0;31mE (435260) itwt: send() failed: 128[0m
+[0;31mE (435264) itwt: send() failed: 128[0m
+[0;31mE (435268) itwt: send() failed: 128[0m
+[0;31mE (435272) itwt: send() failed: 128[0m
+[0;31mE (435277) itwt: send() failed: 128[0m
+[0;31mE (435281) itwt: send() failed: 128[0m
+[0;31mE (435285) itwt: send() failed: 128[0m
+[0;31mE (435289) itwt: send() failed: 128[0m
+[0;31mE (435293) itwt: send() failed: 128[0m
+[0;31mE (435297) itwt: send() failed: 128[0m
+[0;31mE (435302) itwt: send() failed: 128[0m
+[0;31mE (435306) itwt: send() failed: 128[0m
+[0;31mE (435310) itwt: send() failed: 128[0m
+[0;31mE (435314) itwt: send() failed: 128[0m
+[0;31mE (435318) itwt: send() failed: 128[0m
+[0;31mE (435322) itwt: send() failed: 128[0m
+[0;31mE (435327) itwt: send() failed: 128[0m
+[0;31mE (435331) itwt: send() failed: 128[0m
+[0;31mE (435335) itwt: send() failed: 128[0m
+[0;31mE (435339) itwt: send() failed: 128[0m
+[0;31mE (435343) itwt: send() failed: 128[0m
+[0;31mE (435347) itwt: send() failed: 128[0m
+[0;31mE (435352) itwt: send() failed: 128[0m
+[0;31mE (435356) itwt: send() failed: 128[0m
+[0;31mE (435360) itwt: send() failed: 128[0m
+[0;31mE (435364) itwt: send() failed: 128[0m
+[0;31mE (435368) itwt: send() failed: 128[0m
+[0;31mE (435372) itwt: send() failed: 128[0m
+[0;31mE (435377) itwt: send() failed: 128[0m
+[0;31mE (435381) itwt: send() failed: 128[0m
+[0;31mE (435385) itwt: send() failed: 128[0m
+[0;31mE (435389) itwt: send() failed: 128[0m
+[0;31mE (435393) itwt: send() failed: 128[0m
+[0;31mE (435397) itwt: send() failed: 128[0m
+[0;31mE (435402) itwt: send() failed: 128[0m
+[0;31mE (435406) itwt: send() failed: 128[0m
+[0;31mE (435410) itwt: send() failed: 128[0m
+[0;31mE (435414) itwt: send() failed: 128[0m
+[0;31mE (435418) itwt: send() failed: 128[0m
+[0;31mE (435422) itwt: send() failed: 128[0m
+[0;31mE (435427) itwt: send() failed: 128[0m
+[0;31mE (435431) itwt: send() failed: 128[0m
+[0;31mE (435435) itwt: send() failed: 128[0m
+[0;31mE (435439) itwt: send() failed: 128[0m
+[0;31mE (435443) itwt: send() failed: 128[0m
+[0;31mE (435447) itwt: send() failed: 128[0m
+[0;31mE (435452) itwt: send() failed: 128[0m
+[0;31mE (435456) itwt: send() failed: 128[0m
+[0;31mE (435460) itwt: send() failed: 128[0m
+[0;31mE (435464) itwt: send() failed: 128[0m
+[0;31mE (435468) itwt: send() failed: 128[0m
+[0;31mE (435472) itwt: send() failed: 128[0m
+[0;31mE (435477) itwt: send() failed: 128[0m
+[0;31mE (435481) itwt: send() failed: 128[0m
+[0;31mE (435485) itwt: send() failed: 128[0m
+[0;31mE (435489) itwt: send() failed: 128[0m
+[0;31mE (435493) itwt: send() failed: 128[0m
+[0;31mE (435497) itwt: send() failed: 128[0m
+[0;31mE (435502) itwt: send() failed: 128[0m
+[0;31mE (435506) itwt: send() failed: 128[0m
+[0;31mE (435510) itwt: send() failed: 128[0m
+[0;31mE (435514) itwt: send() failed: 128[0m
+[0;31mE (435518) itwt: send() failed: 128[0m
+[0;31mE (435522) itwt: send() failed: 128[0m
+[0;31mE (435527) itwt: send() failed: 128[0m
+[0;31mE (435531) itwt: send() failed: 128[0m
+[0;31mE (435535) itwt: send() failed: 128[0m
+[0;31mE (435539) itwt: send() failed: 128[0m
+[0;31mE (435543) itwt: send() failed: 128[0m
+[0;31mE (435547) itwt: send() failed: 128[0m
+[0;31mE (435552) itwt: send() failed: 128[0m
+[0;31mE (435556) itwt: send() failed: 128[0m
+[0;31mE (435560) itwt: send() failed: 128[0m
+[0;31mE (435564) itwt: send() failed: 128[0m
+[0;31mE (435568) itwt: send() failed: 128[0m
+[0;31mE (435572) itwt: send() failed: 128[0m
+[0;31mE (435577) itwt: send() failed: 128[0m
+[0;31mE (435581) itwt: send() failed: 128[0m
+[0;31mE (435585) itwt: send() failed: 128[0m
+[0;31mE (435589) itwt: send() failed: 128[0m
+[0;31mE (435593) itwt: send() failed: 128[0m
+[0;31mE (435597) itwt: send() failed: 128[0m
+[0;31mE (435602) itwt: send() failed: 128[0m
+[0;31mE (435606) itwt: send() failed: 128[0m
+[0;31mE (435610) itwt: send() failed: 128[0m
+[0;31mE (435614) itwt: send() failed: 128[0m
+[0;31mE (435618) itwt: send() failed: 128[0m
+[0;31mE (435622) itwt: send() failed: 128[0m
+[0;31mE (435627) itwt: send() failed: 128[0m
+[0;31mE (435631) itwt: send() failed: 128[0m
+[0;31mE (435635) itwt: send() failed: 128[0m
+[0;31mE (435639) itwt: send() failed: 128[0m
+[0;31mE (435643) itwt: send() failed: 128[0m
+[0;31mE (435647) itwt: send() failed: 128[0m
+[0;31mE (435652) itwt: send() failed: 128[0m
+[0;31mE (435656) itwt: send() failed: 128[0m
+[0;31mE (435660) itwt: send() failed: 128[0m
+[0;31mE (435664) itwt: send() failed: 128[0m
+[0;31mE (435668) itwt: send() failed: 128[0m
+[0;31mE (435672) itwt: send() failed: 128[0m
+[0;31mE (435677) itwt: send() failed: 128[0m
+[0;31mE (435681) itwt: send() failed: 128[0m
+[0;31mE (435685) itwt: send() failed: 128[0m
+[0;31mE (435689) itwt: send() failed: 128[0m
+[0;31mE (435693) itwt: send() failed: 128[0m
+[0;31mE (435697) itwt: send() failed: 128[0m
+[0;31mE (435702) itwt: send() failed: 128[0m
+[0;31mE (435706) itwt: send() failed: 128[0m
+[0;31mE (435710) itwt: send() failed: 128[0m
+[0;31mE (435714) itwt: send() failed: 128[0m
+[0;31mE (435718) itwt: send() failed: 128[0m
+[0;31mE (435722) itwt: send() failed: 128[0m
+[0;31mE (435727) itwt: send() failed: 128[0m
+[0;31mE (435731) itwt: send() failed: 128[0m
+[0;31mE (435735) itwt: send() failed: 128[0m
+[0;31mE (435739) itwt: send() failed: 128[0m
+[0;31mE (435743) itwt: send() failed: 128[0m
+[0;31mE (435747) itwt: send() failed: 128[0m
+[0;31mE (435751) itwt: send() failed: 128[0m
+[0;31mE (435756) itwt: send() failed: 128[0m
+[0;31mE (435760) itwt: send() failed: 128[0m
+[0;31mE (435764) itwt: send() failed: 128[0m
+[0;31mE (435768) itwt: send() failed: 128[0m
+[0;31mE (435772) itwt: send() failed: 128[0m
+[0;31mE (435776) itwt: send() failed: 128[0m
+[0;31mE (435781) itwt: send() failed: 128[0m
+[0;31mE (435785) itwt: send() failed: 128[0m
+[0;31mE (435789) itwt: send() failed: 128[0m
+[0;31mE (435793) itwt: send() failed: 128[0m
+[0;31mE (435797) itwt: send() failed: 128[0m
+[0;31mE (435801) itwt: send() failed: 128[0m
+[0;31mE (435806) itwt: send() failed: 128[0m
+[0;31mE (435810) itwt: send() failed: 128[0m
+[0;31mE (435814) itwt: send() failed: 128[0m
+[0;31mE (435818) itwt: send() failed: 128[0m
+[0;31mE (435822) itwt: send() failed: 128[0m
+[0;31mE (435826) itwt: send() failed: 128[0m
+[0;31mE (435831) itwt: send() failed: 128[0m
+[0;31mE (435835) itwt: send() failed: 128[0m
+[0;31mE (435839) itwt: send() failed: 128[0m
+[0;31mE (435843) itwt: send() failed: 128[0m
+[0;31mE (435847) itwt: send() failed: 128[0m
+[0;31mE (435851) itwt: send() failed: 128[0m
+[0;31mE (435856) itwt: send() failed: 128[0m
+[0;31mE (435860) itwt: send() failed: 128[0m
+[0;31mE (435864) itwt: send() failed: 128[0m
+[0;31mE (435868) itwt: send() failed: 128[0m
+[0;31mE (435872) itwt: send() failed: 128[0m
+[0;31mE (435876) itwt: send() failed: 128[0m
+[0;31mE (435881) itwt: send() failed: 128[0m
+[0;31mE (435885) itwt: send() failed: 128[0m
+[0;31mE (435889) itwt: send() failed: 128[0m
+[0;31mE (435893) itwt: send() failed: 128[0m
+[0;31mE (435897) itwt: send() failed: 128[0m
+[0;31mE (435901) itwt: send() failed: 128[0m
+[0;31mE (435906) itwt: send() failed: 128[0m
+[0;31mE (435910) itwt: send() failed: 128[0m
+[0;31mE (435914) itwt: send() failed: 128[0m
+[0;31mE (435918) itwt: send() failed: 128[0m
+[0;31mE (435922) itwt: send() failed: 128[0m
+[0;31mE (435926) itwt: send() failed: 128[0m
+[0;31mE (435931) itwt: send() failed: 128[0m
+[0;31mE (435935) itwt: send() failed: 128[0m
+[0;31mE (435939) itwt: send() failed: 128[0m
+[0;31mE (435943) itwt: send() failed: 128[0m
+[0;31mE (435947) itwt: send() failed: 128[0m
+[0;31mE (435951) itwt: send() failed: 128[0m
+[0;31mE (435956) itwt: send() failed: 128[0m
+[0;31mE (435960) itwt: send() failed: 128[0m
+[0;31mE (435964) itwt: send() failed: 128[0m
+[0;31mE (435968) itwt: send() failed: 128[0m
+[0;31mE (435972) itwt: send() failed: 128[0m
+[0;31mE (435976) itwt: send() failed: 128[0m
+[0;31mE (435981) itwt: send() failed: 128[0m
+[0;31mE (435985) itwt: send() failed: 128[0m
+[0;31mE (435989) itwt: send() failed: 128[0m
+[0;31mE (435993) itwt: send() failed: 128[0m
+[0;31mE (435997) itwt: send() failed: 128[0m
+[0;31mE (436001) itwt: send() failed: 128[0m
+[0;31mE (436006) itwt: send() failed: 128[0m
+[0;31mE (436010) itwt: send() failed: 128[0m
+[0;31mE (436014) itwt: send() failed: 128[0m
+[0;31mE (436018) itwt: send() failed: 128[0m
+[0;31mE (436022) itwt: send() failed: 128[0m
+[0;31mE (436026) itwt: send() failed: 128[0m
+[0;31mE (436031) itwt: send() failed: 128[0m
+[0;31mE (436035) itwt: send() failed: 128[0m
+[0;31mE (436039) itwt: send() failed: 128[0m
+[0;31mE (436043) itwt: send() failed: 128[0m
+[0;31mE (436047) itwt: send() failed: 128[0m
+[0;31mE (436051) itwt: send() failed: 128[0m
+[0;31mE (436056) itwt: send() failed: 128[0m
+[0;31mE (436060) itwt: send() failed: 128[0m
+[0;31mE (436064) itwt: send() failed: 128[0m
+[0;31mE (436068) itwt: send() failed: 128[0m
+[0;31mE (436072) itwt: send() failed: 128[0m
+[0;31mE (436076) itwt: send() failed: 128[0m
+[0;31mE (436081) itwt: send() failed: 128[0m
+[0;31mE (436085) itwt: send() failed: 128[0m
+[0;31mE (436089) itwt: send() failed: 128[0m
+[0;31mE (436093) itwt: send() failed: 128[0m
+[0;31mE (436097) itwt: send() failed: 128[0m
+[0;31mE (436101) itwt: send() failed: 128[0m
+[0;31mE (436106) itwt: send() failed: 128[0m
+[0;31mE (436110) itwt: send() failed: 128[0m
+[0;31mE (436114) itwt: send() failed: 128[0m
+[0;31mE (436118) itwt: send() failed: 128[0m
+[0;31mE (436122) itwt: send() failed: 128[0m
+[0;31mE (436126) itwt: send() failed: 128[0m
+[0;31mE (436131) itwt: send() failed: 128[0m
+[0;31mE (436135) itwt: send() failed: 128[0m
+[0;31mE (436139) itwt: send() failed: 128[0m
+[0;31mE (436143) itwt: send() failed: 128[0m
+[0;31mE (436147) itwt: send() failed: 128[0m
+[0;31mE (436151) itwt: send() failed: 128[0m
+[0;31mE (436156) itwt: send() failed: 128[0m
+[0;31mE (436160) itwt: send() failed: 128[0m
+[0;31mE (436164) itwt: send() failed: 128[0m
+[0;31mE (436168) itwt: send() failed: 128[0m
+[0;31mE (436172) itwt: send() failed: 128[0m
+[0;31mE (436176) itwt: send() failed: 128[0m
+[0;31mE (436181) itwt: send() failed: 128[0m
+[0;31mE (436185) itwt: send() failed: 128[0m
+[0;31mE (436189) itwt: send() failed: 128[0m
+[0;31mE (436193) itwt: send() failed: 128[0m
+[0;31mE (436197) itwt: send() failed: 128[0m
+[0;31mE (436201) itwt: send() failed: 128[0m
+[0;31mE (436206) itwt: send() failed: 128[0m
+[0;31mE (436210) itwt: send() failed: 128[0m
+[0;31mE (436214) itwt: send() failed: 128[0m
+[0;31mE (436218) itwt: send() failed: 128[0m
+[0;31mE (436222) itwt: send() failed: 128[0m
+[0;31mE (436226) itwt: send() failed: 128[0m
+[0;31mE (436231) itwt: send() failed: 128[0m
+[0;31mE (436235) itwt: send() failed: 128[0m
+[0;31mE (436239) itwt: send() failed: 128[0m
+[0;31mE (436243) itwt: send() failed: 128[0m
+[0;31mE (436247) itwt: send() failed: 128[0m
+[0;31mE (436251) itwt: send() failed: 128[0m
+[0;31mE (436256) itwt: send() failed: 128[0m
+[0;31mE (436260) itwt: send() failed: 128[0m
+[0;31mE (436264) itwt: send() failed: 128[0m
+[0;31mE (436268) itwt: send() failed: 128[0m
+[0;31

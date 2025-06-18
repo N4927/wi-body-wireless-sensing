@@ -1,0 +1,1984 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x18ec
+load:0x4086c110,len:0xe5c
+load:0x4086e610,len:0x2f50
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time May 13 2025 16:48:27[0m
+[0;32mI (24) boot: chip revision: v0.1[0m
+[0;32mI (26) boot: efuse block revision: v0.2[0m
+[0;32mI (31) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (36) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=42088020 size=1b900h (112896) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=0002b928 vaddr=40800000 size=046f0h ( 18160) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=87444h (554052) map[0m
+[0;32mI (227) esp_image: segment 3: paddr=000b746c vaddr=408046f0 size=148e0h ( 84192) load[0m
+[0;32mI (246) esp_image: segment 4: paddr=000cbd54 vaddr=40818fd0 size=03b70h ( 15216) load[0m
+[0;32mI (256) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (256) boot: Disabling RNG early entropy source...[0m
+[0;32mI (268) cpu_start: Unicore app[0m
+[0;32mI (276) cpu_start: Pro cpu start user code[0m
+[0;32mI (277) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (277) app_init: Application information:[0m
+[0;32mI (279) app_init: Project name:     wifi_station[0m
+[0;32mI (285) app_init: App version:      ac3da05a-dirty[0m
+[0;32mI (290) app_init: Compile time:     May 13 2025 16:46:35[0m
+[0;32mI (296) app_init: ELF file SHA256:  86874a9cd...[0m
+[0;32mI (301) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (306) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (311) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (316) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (321) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (328) heap_init: At 40822010 len 0005A600 (361 KiB): RAM[0m
+[0;32mI (334) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (340) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (347) spi_flash: detected chip: generic[0m
+[0;32mI (351) spi_flash: flash io: dio[0m
+[0;33mW (355) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (368) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (375) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (382) coexist: coex firmware version: cbb41d7[0m
+[0;32mI (397) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (397) main_task: Started on CPU0[0m
+[0;32mI (397) main_task: Calling app_main()[0m
+[0;32mI (407) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (407) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (417) wifi:wifi driver task: 4082b020, prio:23, stack:6656, core=0[0m
+[0;32mI (417) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (417) wifi:wifi certification version: v7.0[0m
+[0;32mI (417) wifi:config NVS flash: enabled[0m
+[0;32mI (427) wifi:config nano formating: disabled[0m
+[0;32mI (427) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band:0x1[0m
+[0;32mI (437) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (437) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (447) wifi:Init management short buffer num: 32[0m
+[0;32mI (447) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (447) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (457) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (457) wifi:Init static rx buffer num: 10[0m
+[0;32mI (467) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (467) wifi_init: rx ba win: 6[0m
+[0;32mI (477) wifi_init: accept mbox: 6[0m
+[0;32mI (477) wifi_init: tcpip mbox: 32[0m
+[0;32mI (477) wifi_init: udp mbox: 6[0m
+[0;32mI (487) wifi_init: tcp mbox: 6[0m
+[0;32mI (487) wifi_init: tcp tx win: 5760[0m
+[0;32mI (497) wifi_init: tcp rx win: 5760[0m
+[0;32mI (497) wifi_init: tcp mss: 1440[0m
+[0;32mI (497) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (507) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (507) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (527) phy_init: phy_version 320,348a293,Sep  3 2024,16:33:12[0m
+[0;33mW (577) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (577) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (587) wifi:(agc)0x600a7128:0xd20efa0e, min.avgNF:0xce->0xd2(dB), RCalCount:0xef, min.RRssi:0xa0e(-95.12)[0m
+[0;33mW (597) wifi:(TB)WDEV_PWR_TB_MCS0:19[0m
+[0;33mW (597) wifi:(TB)WDEV_PWR_TB_MCS1:19[0m
+[0;33mW (597) wifi:(TB)WDEV_PWR_TB_MCS2:19[0m
+[0;33mW (607) wifi:(TB)WDEV_PWR_TB_MCS3:19[0m
+[0;33mW (607) wifi:(TB)WDEV_PWR_TB_MCS4:19[0m
+[0;33mW (607) wifi:(TB)WDEV_PWR_TB_MCS5:19[0m
+[0;33mW (617) wifi:(TB)WDEV_PWR_TB_MCS6:18[0m
+[0;33mW (617) wifi:(TB)WDEV_PWR_TB_MCS7:18[0m
+[0;33mW (617) wifi:(TB)WDEV_PWR_TB_MCS8:17[0m
+[0;33mW (627) wifi:(TB)WDEV_PWR_TB_MCS9:15[0m
+[0;33mW (627) wifi:(TB)WDEV_PWR_TB_MCS10:15[0m
+[0;33mW (627) wifi:(TB)WDEV_PWR_TB_MCS11:15[0m
+[0;32mI (637) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;33mW (637) wifi:(he)attach, station, phymode:11ax[0m
+[0;32mI (647) wifi:mode : sta (f0:f5:bd:07:01:00)[0m
+[0;32mI (647) wifi:enable tsf[0m
+[0;32mI (647) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (967) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (967) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3[0m
+[0;32mI (967) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (977) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (987) wifi:Association refused temporarily time 1500, comeback time 1600 (TUs)[0m
+[0;32mI (2627) wifi:state: assoc -> assoc (0x0)[0m
+[0;32mI (2677) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (2677) wifi:(trc)phytype:CBW20-SGI, snr:93, maxRate:144, highestRateIdx:0[0m
+[0;33mW (2677) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (2687) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:93, ampduState:wait operational[0m
+[0;32mI (2697) wifi:ifidx:0, rssi:-4, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:144, he:0, vht:0, ht:1[0m
+[0;32mI (2707) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (2727) wifi:connected with myssid, aid = 1, channel 1, BW20, bssid = 40:4c:ca:5c:28:dd[0m
+[0;32mI (2727) wifi:security: WPA2-PSK, phy:11bgn, rssi:-4, cipher(pairwise:0x3, group:0x3), pmf:1, [0m
+[0;32mI (2747) wifi:pm start, type: 0, twt_start:0[0m
+
+[0;32mI (2747) wifi:pm start, type:0, aid:0x1, trans-BSSID:40:4c:ca:5c:28:dd, BSSID[5]:0xdd, mbssid(max-indicator:0, index:0), he:0[0m
+[0;32mI (2747) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2757) wifi:set rx beacon pti, rx_bcn_pti: 10, bcn_timeout: 25000, mt_pti: 10, mt_time: 10000[0m
+[0;32mI (2767) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (2777) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)[0m
+[0;32mI (2787) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (2797) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (2807) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (2807) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (2817) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (2827) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (3837) esp_netif_handlers: sta ip: 192.168.4.2, mask: 255.255.255.0, gw: 192.168.4.1[0m
+[0;32mI (3837) WIFI_SETUP: xTaskCreate ok[0m
+[0;32mI (3837) main_task: Returned from app_main()[0m
+[0;33mW (3837) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100dd28, TALO:0x5cca4c40, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;32mI (3847) WIFI_SETUP: TSF = 1690912186 µs[0m
+[0;32mI (3857) TCP_TASK: Connected to 192.168.4.1:3333[0m
+[0;32mI (3857) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (3917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (3967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (4017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (4067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (4117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (4167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (4217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (4267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (4317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (4367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (4417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (4467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (4517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (4567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (4617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (4667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (4717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (4767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (4817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (4837) WIFI_SETUP: TSF = 1691900293 µs[0m
+[0;32mI (4867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (4917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (4967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (5017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (5067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (5117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (5167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (5217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (5267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (5317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (5367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (5417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (5467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (5517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (5567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (5617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (5667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (5717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (5767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (5817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (5837) WIFI_SETUP: TSF = 1692900325 µs[0m
+[0;32mI (5867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (5917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (5967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (6017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (6067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (6117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (6167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (6217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (6267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (6317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (6367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (6417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (6467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (6517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (6567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (6617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (6667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (6717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (6767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (6817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (6837) WIFI_SETUP: TSF = 1693900294 µs[0m
+[0;32mI (6867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (6917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (6967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (7017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (7067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (7117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (7167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (7217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (7267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (7317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (7367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (7417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (7467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (7517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (7567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (7617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (7667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (7717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (7767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (7817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (7837) WIFI_SETUP: TSF = 1694900295 µs[0m
+[0;32mI (7867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (7917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (7967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (8017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (8067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (8117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (8167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (8217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (8267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (8317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (8367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (8417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (8467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (8517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (8567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (8617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (8667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (8717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (8767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (8817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (8837) WIFI_SETUP: TSF = 1695900297 µs[0m
+[0;32mI (8867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (8917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (8967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (9017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (9067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (9117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (9167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (9217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (9267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (9317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (9367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (9417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (9467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (9517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (9567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (9617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (9667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (9717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (9767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (9817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (9837) WIFI_SETUP: TSF = 1696900316 µs[0m
+[0;32mI (9867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (9917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (9967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (10017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (10067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (10117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (10167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (10217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (10267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (10317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (10367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (10417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (10467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (10517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (10567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (10617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (10667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (10717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (10767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (10817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (10837) WIFI_SETUP: TSF = 1697900312 µs[0m
+[0;32mI (10867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (10917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (10967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (11017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (11067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (11117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (11167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (11217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (11267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (11317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (11367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (11417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (11467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (11517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (11567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (11617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (11667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (11717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (11767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (11817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (11837) WIFI_SETUP: TSF = 1698900297 µs[0m
+[0;32mI (11867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (11917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (11967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (12017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (12067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (12117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (12167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (12217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (12267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (12317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (12367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (12417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (12467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (12517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (12567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (12617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (12667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (12717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (12767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (12817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (12837) WIFI_SETUP: TSF = 1699900302 µs[0m
+[0;32mI (12867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (12917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (12967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (13017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (13067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (13117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (13167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (13217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (13267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (13317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (13367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (13417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (13467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (13517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (13567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (13617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (13667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (13717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (13767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (13817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (13837) WIFI_SETUP: TSF = 1700900303 µs[0m
+[0;32mI (13867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (13917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (13967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (14017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (14067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (14117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (14167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (14217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (14267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (14317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (14367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (14417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (14467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (14517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (14567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (14617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (14667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (14717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (14767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (14817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (14837) WIFI_SETUP: TSF = 1701900321 µs[0m
+[0;32mI (14867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (14917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (14967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (15017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (15067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (15117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (15167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (15217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (15267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (15317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (15367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (15417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (15467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (15517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (15567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (15617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (15667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (15717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (15767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (15817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (15837) WIFI_SETUP: TSF = 1702900303 µs[0m
+[0;32mI (15867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (15917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (15967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (16017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (16067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (16117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (16167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (16217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (16267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (16317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (16367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (16417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (16467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (16517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (16567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (16617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (16667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (16717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (16767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (16817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (16837) WIFI_SETUP: TSF = 1703900305 µs[0m
+[0;32mI (16867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (16917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (16967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (17017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (17067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (17117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (17167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (17217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (17267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (17317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (17367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (17417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (17467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (17517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (17567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (17617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (17667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (17717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (17767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (17817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (17837) WIFI_SETUP: TSF = 1704900305 µs[0m
+[0;32mI (17867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (17917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (17967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (18017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (18067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (18117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (18167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (18217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (18267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (18317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (18367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (18417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (18467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (18517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (18567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (18617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (18667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (18717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (18767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (18817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (18837) WIFI_SETUP: TSF = 1705900327 µs[0m
+[0;32mI (18867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (18917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (18967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (19017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (19067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (19117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (19167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (19217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (19267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (19317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (19367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (19417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (19467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (19517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (19567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (19617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (19667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (19717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (19767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (19817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (19837) WIFI_SETUP: TSF = 1706900301 µs[0m
+[0;32mI (19867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (19917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (19967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (20017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (20067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (20117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (20167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (20217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (20267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (20317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (20367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (20417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (20467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (20517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (20567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (20617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (20667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (20717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (20767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (20817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (20837) WIFI_SETUP: TSF = 1707900305 µs[0m
+[0;32mI (20867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (20917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (20967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (21017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (21067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (21117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (21167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (21217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (21267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (21317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (21367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (21417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (21467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (21517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (21567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (21617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (21667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (21717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (21767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (21817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (21837) WIFI_SETUP: TSF = 1708900313 µs[0m
+[0;32mI (21867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (21917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (21967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (22017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (22067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (22117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (22167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (22217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (22267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (22317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (22367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (22417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (22467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (22517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (22567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (22617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (22667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (22717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (22767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (22817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (22837) WIFI_SETUP: TSF = 1709900337 µs[0m
+[0;32mI (22867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (22917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (22967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (23017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (23067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (23117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (23167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (23217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (23267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (23317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (23367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (23417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (23467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (23517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (23567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (23617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (23667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (23717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (23767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (23817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (23837) WIFI_SETUP: TSF = 1710900315 µs[0m
+[0;32mI (23867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (23917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (23967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (24017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (24067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (24117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (24167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (24217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (24267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (24317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (24367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (24417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (24467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (24517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (24567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (24617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (24667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (24717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (24767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (24817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (24837) WIFI_SETUP: TSF = 1711900303 µs[0m
+[0;32mI (24867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (24917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (24967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (25017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (25067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (25117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (25167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (25217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (25267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (25317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (25367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (25417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (25467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (25517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (25567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (25617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (25667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (25717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (25767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (25817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (25837) WIFI_SETUP: TSF = 1712900310 µs[0m
+[0;32mI (25867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (25917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (25967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (26017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (26067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (26117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (26167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (26217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (26267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (26317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (26367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (26417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (26467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (26517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (26567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (26617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (26667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (26717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (26767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (26817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (26837) WIFI_SETUP: TSF = 1713900311 µs[0m
+[0;32mI (26867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (26917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (26967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (27017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (27067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (27117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (27167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (27217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (27267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (27317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (27367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (27417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (27467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (27517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (27567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (27617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (27667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (27717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (27767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (27817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (27837) WIFI_SETUP: TSF = 1714900318 µs[0m
+[0;32mI (27867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (27917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (27967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (28017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (28067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (28117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (28167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (28217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (28267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (28317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (28367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (28417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (28467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (28517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (28567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (28617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (28667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (28717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (28767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (28817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (28837) WIFI_SETUP: TSF = 1715900304 µs[0m
+[0;32mI (28867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (28917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (28967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (29017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (29067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (29117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (29167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (29217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (29267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (29317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (29367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (29417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (29467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (29517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (29567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (29617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (29667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (29717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (29767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (29817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (29837) WIFI_SETUP: TSF = 1716900311 µs[0m
+[0;32mI (29867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (29917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (29967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (30017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (30067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (30117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (30167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (30217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (30267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (30317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (30367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (30417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (30467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (30517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (30567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (30617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (30667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (30717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (30767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (30817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (30837) WIFI_SETUP: TSF = 1717900313 µs[0m
+[0;32mI (30867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (30917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (30967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (31017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (31067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (31117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (31167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (31217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (31267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (31317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (31367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (31417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (31467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (31517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (31567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (31617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (31667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (31717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (31767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (31817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (31837) WIFI_SETUP: TSF = 1718900341 µs[0m
+[0;32mI (31867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (31917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (31967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (32017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (32067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (32117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (32167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (32217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (32267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (32317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (32367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (32417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (32467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (32517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (32567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (32617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (32667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (32717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (32767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (32817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (32837) WIFI_SETUP: TSF = 1719900312 µs[0m
+[0;32mI (32867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (32917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (32967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (33017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (33067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (33117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (33167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (33217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (33267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (33317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (33367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (33417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (33467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (33517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (33567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (33617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (33667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (33717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (33767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (33817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (33837) WIFI_SETUP: TSF = 1720900314 µs[0m
+[0;32mI (33867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (33917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (33967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (34017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (34067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (34117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (34167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (34217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (34267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (34317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (34367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (34417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (34467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (34517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (34567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (34617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (34667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (34717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (34767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (34817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (34837) WIFI_SETUP: TSF = 1721900315 µs[0m
+[0;32mI (34867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (34917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (34967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (35017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (35067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (35117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (35167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (35217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (35267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (35317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (35367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (35417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (35467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (35517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (35567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (35617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (35667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (35717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (35767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (35817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (35837) WIFI_SETUP: TSF = 1722900346 µs[0m
+[0;32mI (35867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (35917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (35967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (36017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (36067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (36117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (36167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (36217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (36267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (36317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (36367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (36417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (36467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (36517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (36567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (36617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (36667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (36717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (36767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (36817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (36837) WIFI_SETUP: TSF = 1723900310 µs[0m
+[0;32mI (36867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (36917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (36967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (37017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (37067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (37117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (37167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (37217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (37267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (37317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (37367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (37417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (37467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (37517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (37567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (37617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (37667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (37717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (37767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (37817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (37837) WIFI_SETUP: TSF = 1724900311 µs[0m
+[0;32mI (37867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (37917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (37967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (38017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (38067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (38117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (38167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (38217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (38267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (38317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (38367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (38417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (38467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (38517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (38567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (38617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (38667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (38717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (38767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (38817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (38837) WIFI_SETUP: TSF = 1725900314 µs[0m
+[0;32mI (38867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (38917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (38967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (39017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (39067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (39117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (39167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (39217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (39267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (39317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (39367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (39417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (39467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (39517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (39567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (39617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (39667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (39717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (39767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (39817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (39837) WIFI_SETUP: TSF = 1726900369 µs[0m
+[0;32mI (39867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (39917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (39967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (40017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (40067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (40117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (40167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (40217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (40267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (40317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (40367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (40417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (40467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (40517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (40567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (40617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (40667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (40717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (40767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (40817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (40837) WIFI_SETUP: TSF = 1727900329 µs[0m
+[0;32mI (40867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (40917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (40967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (41017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (41067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (41117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (41167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (41217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (41267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (41317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (41367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (41417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (41467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (41517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (41567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (41617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (41667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (41717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (41767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (41817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (41837) WIFI_SETUP: TSF = 1728900317 µs[0m
+[0;32mI (41867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (41917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (41967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (42017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (42067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (42117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (42167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (42217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (42267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (42317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (42367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (42417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (42467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (42517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (42567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (42617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (42667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (42717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (42767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (42817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (42837) WIFI_SETUP: TSF = 1729900318 µs[0m
+[0;32mI (42867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (42917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (42967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (43017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (43067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (43117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (43167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (43217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (43267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (43317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (43367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (43417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (43467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (43517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (43567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (43617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (43667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (43717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (43767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (43817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (43837) WIFI_SETUP: TSF = 1730900320 µs[0m
+[0;32mI (43867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (43917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (43967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (44017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (44067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (44117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (44167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (44217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (44267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (44317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (44367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (44417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (44467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (44517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (44567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (44617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (44667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (44717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (44767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (44817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (44837) WIFI_SETUP: TSF = 1731900350 µs[0m
+[0;32mI (44867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (44917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (44967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (45017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (45067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (45117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (45167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (45217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (45267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (45317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (45367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (45417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (45467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (45517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (45567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (45617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (45667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (45717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (45767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (45817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (45837) WIFI_SETUP: TSF = 1732900314 µs[0m
+[0;32mI (45867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (45917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (45967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (46017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (46067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (46117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (46167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (46217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (46267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (46317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (46367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (46417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (46467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (46517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (46567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (46617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (46667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (46717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (46767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (46817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (46837) WIFI_SETUP: TSF = 1733900318 µs[0m
+[0;32mI (46867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (46917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (46967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (47017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (47067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (47117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (47167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (47217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (47267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (47317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (47367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (47417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (47467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (47517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (47567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (47617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (47667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (47717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (47767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (47817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (47837) WIFI_SETUP: TSF = 1734900319 µs[0m
+[0;32mI (47867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (47917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (47967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (48017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (48067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (48117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (48167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (48217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (48267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (48317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (48367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (48417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (48467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (48517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (48567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (48617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (48667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (48717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (48767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (48817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (48837) WIFI_SETUP: TSF = 1735900397 µs[0m
+[0;32mI (48867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (48917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (48967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (49017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (49067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (49117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (49167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (49217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (49267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (49317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (49367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (49417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (49467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (49517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (49567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (49617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (49667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (49717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (49767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (49817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (49837) WIFI_SETUP: TSF = 1736900323 µs[0m
+[0;32mI (49867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (49917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (49967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (50017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (50067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (50117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (50167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (50217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (50267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (50317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (50367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (50417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (50467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (50517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (50567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (50617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (50667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (50717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (50767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (50817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (50837) WIFI_SETUP: TSF = 1737900327 µs[0m
+[0;32mI (50867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (50917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (50967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (51017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (51067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (51117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (51167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (51217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (51267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (51317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (51367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (51417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (51467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (51517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (51567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (51617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (51667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (51717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (51767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (51817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (51837) WIFI_SETUP: TSF = 1738900325 µs[0m
+[0;32mI (51867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (51917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (51967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (52017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (52067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (52117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (52167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (52217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (52267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (52317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (52367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (52417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (52467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (52517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (52567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (52617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (52667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (52717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (52767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (52817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (52837) WIFI_SETUP: TSF = 1739900342 µs[0m
+[0;32mI (52867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (52917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (52967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (53017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (53067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (53117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (53167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (53217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (53267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (53317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (53367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (53417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (53467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (53517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (53567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (53617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (53667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (53717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (53767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (53817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (53837) WIFI_SETUP: TSF = 1740900327 µs[0m
+[0;32mI (53867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (53917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (53967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (54017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (54067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (54117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (54167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (54217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (54267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (54317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (54367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (54417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (54467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (54517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (54567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (54617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (54667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (54717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (54767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (54817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (54837) WIFI_SETUP: TSF = 1741900322 µs[0m
+[0;32mI (54867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (54917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (54967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (55017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (55067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (55117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (55167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (55217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (55267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (55317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (55367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (55417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (55467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (55517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (55567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (55617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (55667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (55717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (55767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (55817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (55837) WIFI_SETUP: TSF = 1742900322 µs[0m
+[0;32mI (55867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (55917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (55967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (56017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (56067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (56117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (56167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (56217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (56267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (56317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (56367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (56417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (56467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (56517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (56567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (56617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (56667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (56717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (56767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (56817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (56837) WIFI_SETUP: TSF = 1743900326 µs[0m
+[0;32mI (56867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (56917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (56967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (57017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (57067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (57117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (57167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (57217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (57267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (57317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (57367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (57417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (57467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (57517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (57567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (57617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (57667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (57717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (57767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (57817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (57837) WIFI_SETUP: TSF = 1744900397 µs[0m
+[0;32mI (57867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (57917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (57967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (58017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (58067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (58117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (58167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (58217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (58267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (58317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (58367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (58417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (58467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (58517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (58567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (58617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (58667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (58717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (58767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (58817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (58837) WIFI_SETUP: TSF = 1745900324 µs[0m
+[0;32mI (58867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (58917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (58967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (59017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (59067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (59117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (59167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (59217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (59267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (59317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (59367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (59417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (59467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (59517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (59567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (59617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (59667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (59717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (59767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (59817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (59837) WIFI_SETUP: TSF = 1746900331 µs[0m
+[0;32mI (59867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (59917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (59967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (60017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (60067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (60117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (60167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (60217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (60267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (60317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (60367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (60417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (60467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (60517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (60567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (60617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (60667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (60717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (60767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (60817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (60837) WIFI_SETUP: TSF = 1747900323 µs[0m
+[0;32mI (60867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (60917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (60967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (61017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (61067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (61117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (61167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (61217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (61267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (61317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (61367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (61417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (61467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (61517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (61567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (61617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (61667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (61717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (61767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (61817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (61837) WIFI_SETUP: TSF = 1748900360 µs[0m
+[0;32mI (61867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (61917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (61967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (62017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (62067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (62117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (62167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (62217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (62267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (62317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (62367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (62417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (62467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (62517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (62567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (62617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (62667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (62717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (62767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (62817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (62837) WIFI_SETUP: TSF = 1749900331 µs[0m
+[0;32mI (62867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (62917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (62967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (63017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (63067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (63117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (63167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (63217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (63267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (63317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (63367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (63417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (63467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (63517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (63567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (63617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (63667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (63717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (63767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (63817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (63837) WIFI_SETUP: TSF = 1750900329 µs[0m
+[0;32mI (63867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (63917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (63967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (64017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (64067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (64117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (64167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (64217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (64267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (64317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (64367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (64417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (64467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (64517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (64567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (64617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (64667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (64717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (64767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (64817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (64837) WIFI_SETUP: TSF = 1751900327 µs[0m
+[0;32mI (64867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (64917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (64967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (65017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (65067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (65117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (65167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (65217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (65267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (65317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (65367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (65417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (65467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (65517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (65567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (65617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (65667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (65717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (65767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (65817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (65837) WIFI_SETUP: TSF = 1752900353 µs[0m
+[0;32mI (65867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (65917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (65967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (66017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (66067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (66117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (66167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (66217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (66267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (66317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (66367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (66417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (66467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (66517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (66567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (66617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (66667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (66717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (66767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (66817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (66837) WIFI_SETUP: TSF = 1753900330 µs[0m
+[0;32mI (66867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (66917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (66967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (67017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (67067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (67117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (67167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (67217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (67267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (67317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (67367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (67417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (67467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (67517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (67567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (67617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (67667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (67717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (67767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (67817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (67837) WIFI_SETUP: TSF = 1754900330 µs[0m
+[0;32mI (67867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (67917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (67967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (68017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (68067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (68117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (68167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (68217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (68267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (68317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (68367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (68417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (68467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (68517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (68567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (68617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (68667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (68717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (68767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (68817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (68837) WIFI_SETUP: TSF = 1755900335 µs[0m
+[0;32mI (68867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (68917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (68967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (69017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (69067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (69117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (69167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (69217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (69267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (69317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (69367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (69417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (69467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (69517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (69567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (69617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (69667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (69717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (69767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (69817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (69837) WIFI_SETUP: TSF = 1756900352 µs[0m
+[0;32mI (69867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (69917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (69967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (70017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (70067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (70117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (70167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (70217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (70267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (70317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (70367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (70417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (70467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (70517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (70567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (70617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (70667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (70717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (70767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (70817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (70837) WIFI_SETUP: TSF = 1757900352 µs[0m
+[0;32mI (70867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (70917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (70967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (71017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (71067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (71117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (71167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (71217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (71267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (71317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (71367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (71417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (71467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (71517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (71567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (71617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (71667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (71717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (71767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (71817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (71837) WIFI_SETUP: TSF = 1758900333 µs[0m
+[0;32mI (71867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (71917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (71967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (72017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (72067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (72117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (72167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (72217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (72267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (72317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (72367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (72417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (72467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (72517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (72567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (72617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (72667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (72717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (72767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (72817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (72837) WIFI_SETUP: TSF = 1759900338 µs[0m
+[0;32mI (72867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (72917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (72967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (73017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (73067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (73117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (73167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (73217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (73267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (73317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (73367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (73417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (73467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (73517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (73567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (73617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (73667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (73717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (73767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (73817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (73837) WIFI_SETUP: TSF = 1760900339 µs[0m
+[0;32mI (73867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (73917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (73967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (74017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (74067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (74117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (74167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (74217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (74267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (74317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (74367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (74417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (74467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (74517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (74567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (74617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (74667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (74717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (74767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (74817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (74837) WIFI_SETUP: TSF = 1761900376 µs[0m
+[0;32mI (74867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (74917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (74967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (75017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (75067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (75117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (75167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (75217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (75267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (75317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (75367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (75417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (75467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (75517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (75567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (75617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (75667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (75717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (75767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (75817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (75837) WIFI_SETUP: TSF = 1762900337 µs[0m
+[0;32mI (75867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (75917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (75967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (76017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (76067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (76117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (76167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (76217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (76267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (76317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (76367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (76417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (76467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (76517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (76567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (76617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (76667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (76717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (76767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (76817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (76837) WIFI_SETUP: TSF = 1763900338 µs[0m
+[0;32mI (76867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (76917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (76967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (77017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (77067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (77117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (77167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (77217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (77267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (77317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (77367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (77417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (77467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (77517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (77567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (77617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (77667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (77717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (77767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (77817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (77837) WIFI_SETUP: TSF = 1764900341 µs[0m
+[0;32mI (77867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (77917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (77967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (78017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (78067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (78117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (78167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (78217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (78267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (78317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (78367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (78417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (78467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (78517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (78567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (78617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (78667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (78717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (78767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (78817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (78837) WIFI_SETUP: TSF = 1765900362 µs[0m
+[0;32mI (78867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (78917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (78967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (79017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (79067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (79117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (79167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (79217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (79267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (79317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (79367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (79417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (79467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (79517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (79567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (79617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (79667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (79717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (79767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (79817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (79837) WIFI_SETUP: TSF = 1766900339 µs[0m
+[0;32mI (79867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (79917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (79967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (80017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (80067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (80117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (80167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (80217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (80267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (80317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (80367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (80417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (80467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (80517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (80567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (80617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (80667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (80717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (80767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (80817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (80837) WIFI_SETUP: TSF = 1767900339 µs[0m
+[0;32mI (80867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (80917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (80967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (81017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (81067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (81117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (81167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (81217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (81267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (81317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (81367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (81417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (81467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (81517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (81567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (81617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (81667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (81717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (81767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (81817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (81837) WIFI_SETUP: TSF = 1768900340 µs[0m
+[0;32mI (81867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (81917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (81967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (82017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (82067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (82117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (82167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (82217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (82267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (82317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (82367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (82417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (82467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (82517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (82567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (82617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (82667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (82717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (82767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (82817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (82837) WIFI_SETUP: TSF = 1769900361 µs[0m
+[0;32mI (82867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (82917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (82967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (83017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (83067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (83117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (83167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (83217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (83267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (83317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (83367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (83417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (83467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (83517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (83567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (83617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (83667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (83717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (83767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (83817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (83837) WIFI_SETUP: TSF = 1770900367 µs[0m
+[0;32mI (83867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (83917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (83967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (84017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (84067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (84117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (84167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (84217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (84267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (84317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (84367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (84417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (84467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (84517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (84567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (84617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (84667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (84717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (84767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (84817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (84837) WIFI_SETUP: TSF = 1771900346 µs[0m
+[0;32mI (84867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (84917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (84967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (85017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (85067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (85117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (85167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (85217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (85267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (85317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (85367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (85417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (85467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (85517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (85567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (85617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (85667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (85717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (85767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (85817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (85837) WIFI_SETUP: TSF = 1772900348 µs[0m
+[0;32mI (85867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (85917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (85967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (86017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (86067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (86117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (86167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (86217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (86267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (86317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (86367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (86417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (86467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (86517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (86567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (86617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (86667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (86717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (86767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (86817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (86837) WIFI_SETUP: TSF = 1773900365 µs[0m
+[0;32mI (86867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (86917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (86967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (87017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (87067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (87117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (87167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (87217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (87267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (87317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (87367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (87417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (87467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (87517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (87567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (87617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (87667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (87717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (87767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (87817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (87837) WIFI_SETUP: TSF = 1774900380 µs[0m
+[0;32mI (87867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (87917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (87967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (88017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (88067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (88117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (88167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (88217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (88267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (88317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (88367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (88417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (88467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (88517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (88567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (88617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (88667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (88717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (88767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (88817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (88837) WIFI_SETUP: TSF = 1775900349 µs[0m
+[0;32mI (88867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (88917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (88967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (89017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (89067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (89117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (89167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (89217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (89267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (89317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (89367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (89417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (89467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (89517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (89567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (89617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (89667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (89717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (89767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (89817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (89837) WIFI_SETUP: TSF = 1776900347 µs[0m
+[0;32mI (89867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (89917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (89967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (90017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (90067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (90117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (90167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (90217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (90267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (90317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (90367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (90417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (90467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (90517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (90567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (90617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (90667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (90717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (90767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (90817) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (90837) WIFI_SETUP: TSF = 1777900346 µs[0m
+[0;32mI (90867) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (90917) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (90967) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (91017) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (91067) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (91117) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (91167) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (91217) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (91267) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (91317) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (91367) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (91417) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (91467) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (91517) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (91567) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (91617) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (91667) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (91717) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibjjv[0m
+[0;32mI (91767) TCP_TASK: funziiiiiiiiiiiiiiiiiiiiibj

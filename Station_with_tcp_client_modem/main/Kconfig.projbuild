@@ -1,0 +1,182 @@
+#code for power supply
+menu "Example Configuration"
+
+    config EXAMPLE_WIFI_SSID
+        string "WiFi SSID"
+        default "myssid"
+        help
+            SSID (network name) for the example to connect to.
+
+    config EXAMPLE_WIFI_PASSWORD
+        string "WiFi Password"
+        default "mypassword"
+        help
+            WiFi password (WPA or WPA2) for the example to use.
+
+    config ESP_MAXIMUM_RETRY
+        int "Maximum WiFi Connection Retries"
+        default 5
+        help
+            Set the maximum number of retries the station will attempt to connect to the AP.
+
+    config EXAMPLE_WIFI_LISTEN_INTERVAL
+        int "WiFi Listen Interval"
+        default 3
+        help
+            Interval (in beacon intervals) for the station to listen for beacons from the AP.
+
+    config EXAMPLE_WIFI_BEACON_TIMEOUT
+        int "WiFi Beacon Timeout (seconds)"
+        default 6
+        range 6 30
+        help
+            For a station, the time in seconds after which it will disconnect if no beacon frames are received from the connected AP.
+
+    # Configuration for Modem Sleep removed as Light Sleep is implemented
+    # choice EXAMPLE_POWER_SAVE_MODE
+    #     prompt "WiFi Power Save Mode"
+    #     default EXAMPLE_POWER_SAVE_NONE
+    #     help
+    #         Configure the Wi-Fi power save mode.
+    #
+    #     config EXAMPLE_POWER_SAVE_NONE
+    #         bool "No Power Save"
+    #     config EXAMPLE_POWER_SAVE_MIN_MODEM
+    #         bool "Minimum Modem Power Save"
+    #     config EXAMPLE_POWER_SAVE_MAX_MODEM
+    #         bool "Maximum Modem Power Save"
+    # endchoice
+
+    # Nuova sezione Power Management
+    menu "Power Management Configuration"
+        config EXAMPLE_PM_ENABLE
+            bool "Enable Power Management"
+            default y
+            help
+                Enable ESP32 power management to reduce power consumption.
+
+        config EXAMPLE_LIGHT_SLEEP_ENABLE
+            bool "Enable Light Sleep"
+            depends on EXAMPLE_PM_ENABLE
+            default y
+            help
+                Put the chip into light sleep mode when idle to save power.
+
+        config EXAMPLE_AUTO_LIGHT_SLEEP
+            bool "Enter Light Sleep Automatically"
+            depends on EXAMPLE_LIGHT_SLEEP_ENABLE
+            default y
+            help
+                Automatically enter light sleep when the CPU is idle.
+
+        config EXAMPLE_SLEEP_DURATION_SEC
+            int "Light Sleep Duration (seconds)"
+            depends on EXAMPLE_LIGHT_SLEEP_ENABLE
+            default 30
+            range 10 3600
+            help
+                Duration of light sleep between wakeups.
+
+        choice EXAMPLE_WAKEUP_SOURCE
+            prompt "Wakeup Source"
+            depends on EXAMPLE_LIGHT_SLEEP_ENABLE
+            default EXAMPLE_TIMER_WAKEUP
+
+            config EXAMPLE_TIMER_WAKEUP
+                bool "Timer Wakeup"
+                help
+                    Wake up periodically using the internal RTC timer.
+
+            config EXAMPLE_GPIO_WAKEUP
+                bool "GPIO Wakeup"
+                help
+                    Wake up using external GPIO interrupt.
+        endchoice
+
+        config EXAMPLE_WAKEUP_GPIO_NUM
+            int "Wakeup GPIO Number"
+            depends on EXAMPLE_GPIO_WAKEUP
+            default 4
+            range 0 39
+            help
+                GPIO number to use for wakeup (0-39).
+
+        config EXAMPLE_WAKEUP_GPIO_LEVEL
+            int "Wakeup GPIO Level"
+            depends on EXAMPLE_GPIO_WAKEUP
+            default 0
+            range 0 1
+            help
+                GPIO trigger level (0=Low, 1=High).
+    endmenu
+
+endmenu
+
+#config without power save
+#menu "Example Configuration"
+#
+ #   config ESP_WIFI_SSID
+  #      string "WiFi SSID"
+   #     default "myssid"
+    #    help
+     #       SSID (network name) for the example to connect to.
+#
+ #   config ESP_WIFI_PASSWORD
+  #      string "WiFi Password"
+   #     default "mypassword"
+    #    help
+     #       WiFi password (WPA or WPA2) for the example to use.
+#
+ #   choice ESP_WIFI_SAE_MODE
+  #      prompt "WPA3 SAE mode selection"
+   #     default ESP_WPA3_SAE_PWE_BOTH
+    #    help
+     #       Select mode for SAE as Hunt and Peck, H2E or both.
+      #  config ESP_WPA3_SAE_PWE_HUNT_AND_PECK
+       #     bool "HUNT AND PECK"
+        #config ESP_WPA3_SAE_PWE_HASH_TO_ELEMENT
+         #   bool "H2E"
+        #config ESP_WPA3_SAE_PWE_BOTH
+         #   bool "BOTH"
+    #endchoice
+
+    #config ESP_WIFI_PW_ID
+     #   string "PASSWORD IDENTIFIER"
+      #  depends on  ESP_WPA3_SAE_PWE_HASH_TO_ELEMENT|| ESP_WPA3_SAE_PWE_BOTH
+       # default ""
+        #help
+         #   password identifier for SAE H2E
+
+    #config ESP_MAXIMUM_RETRY
+     #   int "Maximum retry"
+      #  default 5
+       # help
+        #    Set the Maximum retry to avoid station reconnecting to the AP unlimited when the AP is really inexistent.
+
+    #choice ESP_WIFI_SCAN_AUTH_MODE_THRESHOLD
+     #   prompt "WiFi Scan auth mode threshold"
+      #  default ESP_WIFI_AUTH_WPA2_PSK
+       # help
+        #    The weakest authmode to accept in the scan mode.
+         #   This value defaults to ESP_WIFI_AUTH_WPA2_PSK incase password is present and ESP_WIFI_AUTH_OPEN is used.
+          #  Please select ESP_WIFI_AUTH_WEP/ESP_WIFI_AUTH_WPA_PSK incase AP is operating in WEP/WPA mode.
+#
+ #       config ESP_WIFI_AUTH_OPEN
+  #          bool "OPEN"
+   #     config ESP_WIFI_AUTH_WEP
+    #        bool "WEP"
+     #   config ESP_WIFI_AUTH_WPA_PSK
+      #      bool "WPA PSK"
+  #      config ESP_WIFI_AUTH_WPA2_PSK
+   #         bool "WPA2 PSK"
+    #    config ESP_WIFI_AUTH_WPA_WPA2_PSK
+     #       bool "WPA/WPA2 PSK"
+      #  config ESP_WIFI_AUTH_WPA3_PSK
+       #     bool "WPA3 PSK"
+        #config ESP_WIFI_AUTH_WPA2_WPA3_PSK
+         #   bool "WPA2/WPA3 PSK"
+       # config ESP_WIFI_AUTH_WAPI_PSK
+       #     bool "WAPI PSK"
+    #endchoice
+
+#endmenu

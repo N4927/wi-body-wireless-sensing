@@ -1,0 +1,1099 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0x3e (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x18ec
+load:0x4086c110,len:0xe5c
+load:0x4086e610,len:0x2f50
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr 14 2025 18:50:23[0m
+[0;32mI (24) boot: chip revision: v0.2[0m
+[0;32mI (26) boot: efuse block revision: v0.3[0m
+[0;32mI (31) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (36) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=42098020 size=1c594h (116116) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=0002c5bc vaddr=40800000 size=03a5ch ( 14940) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=934d4h (603348) map[0m
+[0;32mI (237) esp_image: segment 3: paddr=000c34fc vaddr=40803a5c size=15580h ( 87424) load[0m
+[0;32mI (257) esp_image: segment 4: paddr=000d8a84 vaddr=40818fe0 size=03b78h ( 15224) load[0m
+[0;32mI (266) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (267) boot: Disabling RNG early entropy source...[0m
+[0;32mI (278) cpu_start: Unicore app[0m
+[0;32mI (287) cpu_start: Pro cpu start user code[0m
+[0;32mI (287) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (288) app_init: Application information:[0m
+[0;32mI (290) app_init: Project name:     wifi_softAP[0m
+[0;32mI (295) app_init: App version:      ac3da05a-dirty[0m
+[0;32mI (301) app_init: Compile time:     Apr 14 2025 19:06:26[0m
+[0;32mI (307) app_init: ELF file SHA256:  c6355b83c...[0m
+[0;32mI (312) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (317) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (322) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (327) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (331) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (339) heap_init: At 40821FC0 len 0005A650 (361 KiB): RAM[0m
+[0;32mI (345) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (351) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (358) spi_flash: detected chip: generic[0m
+[0;32mI (362) spi_flash: flash io: dio[0m
+[0;33mW (366) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (379) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (386) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (393) coexist: coex firmware version: cbb41d7[0m
+[0;32mI (407) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (408) main_task: Started on CPU0[0m
+[0;32mI (408) main_task: Calling app_main()[0m
+[0;32mI (418) AP: ESP_WIFI_MODE_AP[0m
+[0;32mI (418) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (418) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (428) wifi:wifi driver task: 4082b054, prio:23, stack:6656, core=0[0m
+[0;32mI (438) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (438) wifi:wifi certification version: v7.0[0m
+[0;32mI (438) wifi:config NVS flash: enabled[0m
+[0;32mI (438) wifi:config nano formating: disabled[0m
+[0;32mI (448) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band:0x1[0m
+[0;32mI (448) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (458) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (458) wifi:Init management short buffer num: 32[0m
+[0;32mI (468) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (468) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (468) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (478) wifi:Init static rx buffer num: 10[0m
+[0;32mI (478) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (488) wifi_init: rx ba win: 6[0m
+[0;32mI (488) wifi_init: accept mbox: 6[0m
+[0;32mI (488) wifi_init: tcpip mbox: 32[0m
+[0;32mI (498) wifi_init: udp mbox: 6[0m
+[0;32mI (498) wifi_init: tcp mbox: 6[0m
+[0;32mI (508) wifi_init: tcp tx win: 5760[0m
+[0;32mI (508) wifi_init: tcp rx win: 5760[0m
+[0;32mI (508) wifi_init: tcp mss: 1440[0m
+[0;32mI (518) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (518) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (528) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (538) phy_init: phy_version 320,348a293,Sep  3 2024,16:33:12[0m
+[0;33mW (598) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;33mW (648) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (648) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (648) wifi:(agc)0x600a7128:0xd2112800, min.avgNF:0xce->0xd2(dB), RCalCount:0x112, min.RRssi:0x800(-128.00)[0m
+[0;33mW (658) wifi:(TB)WDEV_PWR_TB_MCS0:19[0m
+[0;33mW (658) wifi:(TB)WDEV_PWR_TB_MCS1:19[0m
+[0;33mW (668) wifi:(TB)WDEV_PWR_TB_MCS2:19[0m
+[0;33mW (668) wifi:(TB)WDEV_PWR_TB_MCS3:19[0m
+[0;33mW (668) wifi:(TB)WDEV_PWR_TB_MCS4:19[0m
+[0;33mW (678) wifi:(TB)WDEV_PWR_TB_MCS5:19[0m
+[0;33mW (678) wifi:(TB)WDEV_PWR_TB_MCS6:18[0m
+[0;33mW (678) wifi:(TB)WDEV_PWR_TB_MCS7:18[0m
+[0;33mW (688) wifi:(TB)WDEV_PWR_TB_MCS8:17[0m
+[0;33mW (688) wifi:(TB)WDEV_PWR_TB_MCS9:15[0m
+[0;33mW (688) wifi:(TB)WDEV_PWR_TB_MCS10:15[0m
+[0;33mW (698) wifi:(TB)WDEV_PWR_TB_MCS11:15[0m
+[0;32mI (698) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;33mW (708) wifi:(he)deattach, ap, phymode:11bgn[0m
+[0;32mI (708) wifi:mode : softAP (7c:2c:67:5d:2c:3d)[0m
+[0;32mI (758) wifi:Total power save buffer number: 16[0m
+[0;32mI (758) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (758) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (758) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (768) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (768) AP: wifi_init_softap finished. SSID:myssid password:mypassword channel:1[0m
+[0;32mI (778) AP: wifi_init comple�ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x3 (LP_SW_HPSYS),boot:0x3e (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4001974a
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x18ec
+load:0x4086c110,len:0xe5c
+load:0x4086e610,len:0x2f50
+entry 0x4086c11a
+[0;32mI (24) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr 14 2025 18:50:23[0m
+[0;32mI (25) boot: chip revision: v0.2[0m
+[0;32mI (27) boot: efuse block revision: v0.3[0m
+[0;32mI (31) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (36) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (55) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (62) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (77) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (85) boot: End of partition table[0m
+[0;32mI (89) esp_image: segment 0: paddr=00010020 vaddr=42098020 size=1c594h (116116) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0002c5bc vaddr=40800000 size=03a5ch ( 14940) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=934d4h (603348) map[0m
+[0;32mI (238) esp_image: segment 3: paddr=000c34fc vaddr=40803a5c size=15580h ( 87424) load[0m
+[0;32mI (257) esp_image: segment 4: paddr=000d8a84 vaddr=40818fe0 size=03b78h ( 15224) load[0m
+[0;32mI (267) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (267) boot: Disabling RNG early entropy source...[0m
+[0;32mI (279) cpu_start: Unicore app[0m
+[0;32mI (288) cpu_start: Pro cpu start user code[0m
+[0;32mI (288) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (288) app_init: Application information:[0m
+[0;32mI (291) app_init: Project name:     wifi_softAP[0m
+[0;32mI (296) app_init: App version:      ac3da05a-dirty[0m
+[0;32mI (301) app_init: Compile time:     Apr 14 2025 19:06:26[0m
+[0;32mI (307) app_init: ELF file SHA256:  c6355b83c...[0m
+[0;32mI (313) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (317) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (322) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (327) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (332) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (339) heap_init: At 40821FC0 len 0005A650 (361 KiB): RAM[0m
+[0;32mI (345) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (351) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (358) spi_flash: detected chip: generic[0m
+[0;32mI (362) spi_flash: flash io: dio[0m
+[0;33mW (366) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (380) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (386) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (393) coexist: coex firmware version: cbb41d7[0m
+[0;32mI (408) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (408) main_task: Started on CPU0[0m
+[0;32mI (408) main_task: Calling app_main()[0m
+[0;32mI (418) AP: ESP_WIFI_MODE_AP[0m
+[0;32mI (418) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (418) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (428) wifi:wifi driver task: 4082b054, prio:23, stack:6656, core=0[0m
+[0;32mI (438) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (438) wifi:wifi certification version: v7.0[0m
+[0;32mI (438) wifi:config NVS flash: enabled[0m
+[0;32mI (438) wifi:config nano formating: disabled[0m
+[0;32mI (448) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band:0x1[0m
+[0;32mI (448) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (458) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (458) wifi:Init management short buffer num: 32[0m
+[0;32mI (458) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (468) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (468) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (478) wifi:Init static rx buffer num: 10[0m
+[0;32mI (478) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (488) wifi_init: rx ba win: 6[0m
+[0;32mI (488) wifi_init: accept mbox: 6[0m
+[0;32mI (488) wifi_init: tcpip mbox: 32[0m
+[0;32mI (498) wifi_init: udp mbox: 6[0m
+[0;32mI (498) wifi_init: tcp mbox: 6[0m
+[0;32mI (508) wifi_init: tcp tx win: 5760[0m
+[0;32mI (508) wifi_init: tcp rx win: 5760[0m
+[0;32mI (508) wifi_init: tcp mss: 1440[0m
+[0;32mI (518) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (518) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (528) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (528) phy_init: phy_version 320,348a293,Sep  3 2024,16:33:12[0m
+[0;33mW (588) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;33mW (608) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (608) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (618) wifi:(agc)0x600a7128:0xd208da8e, min.avgNF:0xce->0xd2(dB), RCalCount:0x8c, min.RRssi:0xa8e(-87.12)[0m
+[0;33mW (628) wifi:(TB)WDEV_PWR_TB_MCS0:19[0m
+[0;33mW (628) wifi:(TB)WDEV_PWR_TB_MCS1:19[0m
+[0;33mW (628) wifi:(TB)WDEV_PWR_TB_MCS2:19[0m
+[0;33mW (638) wifi:(TB)WDEV_PWR_TB_MCS3:19[0m
+[0;33mW (638) wifi:(TB)WDEV_PWR_TB_MCS4:19[0m
+[0;33mW (638) wifi:(TB)WDEV_PWR_TB_MCS5:19[0m
+[0;33mW (648) wifi:(TB)WDEV_PWR_TB_MCS6:18[0m
+[0;33mW (648) wifi:(TB)WDEV_PWR_TB_MCS7:18[0m
+[0;33mW (648) wifi:(TB)WDEV_PWR_TB_MCS8:17[0m
+[0;33mW (658) wifi:(TB)WDEV_PWR_TB_MCS9:15[0m
+[0;33mW (658) wifi:(TB)WDEV_PWR_TB_MCS10:15[0m
+[0;33mW (658) wifi:(TB)WDEV_PWR_TB_MCS11:15[0m
+[0;32mI (668) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;33mW (668) wifi:(he)deattach, ap, phymode:11bgn[0m
+[0;32mI (678) wifi:mode : softAP (7c:2c:67:5d:2c:3d)[0m
+[0;32mI (728) wifi:Total power save buffer number: 16[0m
+[0;32mI (728) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (728) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (728) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (738) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (738) AP: wifi_init_softap finished. SSID:myssid password:mypassword channel:1[0m
+[0;32mI (748) AP: wifi_init completed[0m
+[0;31mE (748) AP: Socket created: 54[0m
+[0;32mI (758) AP: Socket bound, port 3333[0m
+[0;32mI (758) AP: Socket listening[0m
+[0;32mI (758) main_task: Returned from app_main()[0m
+[0;32mI (3508) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3508) wifi:(trc)phytype:CBW20-SGI, snr:68, maxRate:0, highestRateIdx:0[0m
+[0;33mW (3508) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (3518) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:68, ampduState:wait operational[0m
+[0;32mI (3528) wifi:ifidx:1, rssi:-28, nf:-96, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (3538) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (3548) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (3628) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (3698) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (3698) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (3708) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (3778) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (6118) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (6118) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (6188) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (6188) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (6188) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (6188) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (6198) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (6198) wifi:(trc)phytype:CBW20-SGI, snr:68, maxRate:0, highestRateIdx:0[0m
+[0;33mW (6208) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (6218) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:68, ampduState:wait operational[0m
+[0;32mI (6228) wifi:ifidx:1, rssi:-27, nf:-95, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (6238) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (6248) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (6308) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (6378) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (6378) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (6388) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (6438) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (8808) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (8808) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (8888) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (8888) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (8888) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (8888) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (8888) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (8898) wifi:(trc)phytype:CBW20-SGI, snr:67, maxRate:0, highestRateIdx:0[0m
+[0;33mW (8898) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (8908) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:67, ampduState:wait operational[0m
+[0;32mI (8918) wifi:ifidx:1, rssi:-27, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (8928) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (8938) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (9018) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (9088) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (9118) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (9118) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (9138) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (10748) AP: Runtime: 10398544 [us], #Bytes: 0, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 0.00[B/s][0m
+[0;32mI (11488) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (11488) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (11548) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (11558) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (11558) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (11558) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (11558) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (11568) wifi:(trc)phytype:CBW20-SGI, snr:66, maxRate:0, highestRateIdx:0[0m
+[0;33mW (11568) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (11578) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:66, ampduState:wait operational[0m
+[0;32mI (11588) wifi:ifidx:1, rssi:-28, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (11598) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (11608) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (11668) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (11738) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (11758) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (11758) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (11788) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (14228) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (14228) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (14298) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (14298) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (14298) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (14298) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (14298) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (14308) wifi:(trc)phytype:CBW20-SGI, snr:67, maxRate:0, highestRateIdx:0[0m
+[0;33mW (14308) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (14318) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:67, ampduState:wait operational[0m
+[0;32mI (14328) wifi:ifidx:1, rssi:-26, nf:-93, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (14348) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (14348) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (14438) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (14508) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (14518) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (14538) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (14548) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (16908) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (16908) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (16998) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (17008) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (17008) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (17008) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (17008) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (17008) wifi:(trc)phytype:CBW20-SGI, snr:66, maxRate:0, highestRateIdx:0[0m
+[0;33mW (17018) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (17028) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:66, ampduState:wait operational[0m
+[0;32mI (17038) wifi:ifidx:1, rssi:-27, nf:-93, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (17048) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (17058) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (17138) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (17208) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (17208) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (17218) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (17248) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (19568) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (19568) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (19678) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (19678) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (19678) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (19678) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (19678) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (19688) wifi:(trc)phytype:CBW20-SGI, snr:64, maxRate:0, highestRateIdx:0[0m
+[0;33mW (19698) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (19708) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:64, ampduState:wait operational[0m
+[0;32mI (19718) wifi:ifidx:1, rssi:-29, nf:-93, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (19728) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (19738) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (19798) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (19868) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (19868) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (19878) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (19918) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (20748) AP: Runtime: 20398544 [us], #Bytes: 0, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 0.00[B/s][0m
+[0;32mI (22238) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (22238) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (22318) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (22328) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (22328) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (22328) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (22328) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (22338) wifi:(trc)phytype:CBW20-SGI, snr:61, maxRate:0, highestRateIdx:0[0m
+[0;33mW (22348) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (22358) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:61, ampduState:wait operational[0m
+[0;32mI (22368) wifi:ifidx:1, rssi:-32, nf:-93, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (22378) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (22378) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (22498) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (22568) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (22588) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (22588) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (22648) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (24978) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (24978) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (25058) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (25068) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (25068) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (25068) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (25068) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (25078) wifi:(trc)phytype:CBW20-SGI, snr:66, maxRate:0, highestRateIdx:0[0m
+[0;33mW (25078) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (25088) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:66, ampduState:wait operational[0m
+[0;32mI (25098) wifi:ifidx:1, rssi:-27, nf:-93, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (25108) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (25118) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (25188) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (25258) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (25268) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (25278) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (25318) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (27668) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (27668) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (27768) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (27778) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (27778) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (27778) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (27778) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (27788) wifi:(trc)phytype:CBW20-SGI, snr:66, maxRate:0, highestRateIdx:0[0m
+[0;33mW (27798) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (27798) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:66, ampduState:wait operational[0m
+[0;32mI (27818) wifi:ifidx:1, rssi:-27, nf:-93, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (27828) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (27828) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (27928) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (28008) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (28018) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (28058) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (28078) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (30398) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (30398) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (30488) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (30498) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (30498) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (30498) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (30498) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (30508) wifi:(trc)phytype:CBW20-SGI, snr:66, maxRate:0, highestRateIdx:0[0m
+[0;33mW (30508) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (30518) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:66, ampduState:wait operational[0m
+[0;32mI (30528) wifi:ifidx:1, rssi:-27, nf:-93, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (30538) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (30548) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (30628) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (30708) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (30708) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (30718) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (30738) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (30748) AP: Runtime: 30398553 [us], #Bytes: 0, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 0.00[B/s][0m
+[0;32mI (33078) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (33078) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (33138) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (33148) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (33148) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (33148) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (33148) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (33158) wifi:(trc)phytype:CBW20-SGI, snr:65, maxRate:0, highestRateIdx:0[0m
+[0;33mW (33158) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (33168) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:65, ampduState:wait operational[0m
+[0;32mI (33178) wifi:ifidx:1, rssi:-28, nf:-93, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (33188) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (33198) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (33268) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (33368) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (33368) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (33378) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (33398) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (35728) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (35728) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (35818) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (35818) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (35818) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (35818) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (35818) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (35828) wifi:(trc)phytype:CBW20-SGI, snr:65, maxRate:0, highestRateIdx:0[0m
+[0;33mW (35838) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (35838) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:65, ampduState:wait operational[0m
+[0;32mI (35858) wifi:ifidx:1, rssi:-28, nf:-93, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (35868) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (35868) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (35968) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (36038) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (36038) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (36048) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (36088) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (38398) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (38398) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (38478) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (38488) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (38488) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (38488) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (38488) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (38488) wifi:(trc)phytype:CBW20-SGI, snr:68, maxRate:0, highestRateIdx:0[0m
+[0;33mW (38498) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (38508) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:68, ampduState:wait operational[0m
+[0;32mI (38518) wifi:ifidx:1, rssi:-25, nf:-93, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (38528) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (38538) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (38618) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (38688) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (38698) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (38718) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (38728) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (40748) AP: Runtime: 40398544 [us], #Bytes: 0, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 0.00[B/s][0m
+[0;32mI (41068) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (41068) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (41158) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (41168) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (41168) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (41168) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (41168) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (41168) wifi:(trc)phytype:CBW20-SGI, snr:68, maxRate:0, highestRateIdx:0[0m
+[0;33mW (41178) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (41188) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:68, ampduState:wait operational[0m
+[0;32mI (41198) wifi:ifidx:1, rssi:-25, nf:-93, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (41208) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (41218) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (41278) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (41368) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (41378) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (41378) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (41408) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (43728) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (43728) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (43828) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (43828) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (43828) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (43828) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (43838) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (43838) wifi:(trc)phytype:CBW20-SGI, snr:65, maxRate:0, highestRateIdx:0[0m
+[0;33mW (43848) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (43858) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:65, ampduState:wait operational[0m
+[0;32mI (43868) wifi:ifidx:1, rssi:-28, nf:-93, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (43878) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (43888) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (43948) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (44018) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (44038) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (44038) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (44058) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (46408) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (46408) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (46508) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (46508) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (46508) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (46508) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (46508) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (46518) wifi:(trc)phytype:CBW20-SGI, snr:62, maxRate:0, highestRateIdx:0[0m
+[0;33mW (46528) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (46538) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:62, ampduState:wait operational[0m
+[0;32mI (46548) wifi:ifidx:1, rssi:-31, nf:-93, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (46558) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (46568) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (46678) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (46748) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (46758) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (46788) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (46798) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (49138) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (49138) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (49218) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (49218) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (49218) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (49218) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (49218) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (49228) wifi:(trc)phytype:CBW20-SGI, snr:62, maxRate:0, highestRateIdx:0[0m
+[0;33mW (49238) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (49248) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:62, ampduState:wait operational[0m
+[0;32mI (49258) wifi:ifidx:1, rssi:-31, nf:-93, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (49268) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (49278) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (49348) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (49428) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (49428) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (49458) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (49468) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (50748) AP: Runtime: 50398544 [us], #Bytes: 0, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 0.00[B/s][0m
+[0;32mI (51828) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (51828) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (51918) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (51918) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (51918) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (51918) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (51928) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (51928) wifi:(trc)phytype:CBW20-SGI, snr:65, maxRate:0, highestRateIdx:0[0m
+[0;33mW (51938) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (51948) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:65, ampduState:wait operational[0m
+[0;32mI (51958) wifi:ifidx:1, rssi:-28, nf:-93, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (51968) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (51978) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (52058) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (52128) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (52128) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (52138) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (52168) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (54498) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (54498) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (54558) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (54568) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (54568) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (54568) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (54568) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (54578) wifi:(trc)phytype:CBW20-SGI, snr:68, maxRate:0, highestRateIdx:0[0m
+[0;33mW (54578) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (54588) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:68, ampduState:wait operational[0m
+[0;32mI (54598) wifi:ifidx:1, rssi:-25, nf:-93, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (54608) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (54618) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (54698) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (54768) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (54768) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (54778) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (54798) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (57138) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (57138) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (57218) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (57218) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (57218) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (57218) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (57218) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (57228) wifi:(trc)phytype:CBW20-SGI, snr:68, maxRate:0, highestRateIdx:0[0m
+[0;33mW (57238) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (57248) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:68, ampduState:wait operational[0m
+[0;32mI (57258) wifi:ifidx:1, rssi:-25, nf:-93, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (57268) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (57268) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (57328) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (57408) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (57438) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (57438) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (57458) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (59788) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (59788) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (59858) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (59858) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (59858) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (59858) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (59858) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (59868) wifi:(trc)phytype:CBW20-SGI, snr:68, maxRate:0, highestRateIdx:0[0m
+[0;33mW (59878) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (59888) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:68, ampduState:wait operational[0m
+[0;32mI (59898) wifi:ifidx:1, rssi:-25, nf:-93, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (59908) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (59908) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (59988) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (60088) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (60088) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (60098) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (60128) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (60748) AP: Runtime: 60398544 [us], #Bytes: 0, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 0.00[B/s][0m
+[0;32mI (62458) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (62458) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (62528) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (62558) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (62558) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (62558) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (62558) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (62568) wifi:(trc)phytype:CBW20-SGI, snr:68, maxRate:0, highestRateIdx:0[0m
+[0;33mW (62578) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (62578) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:68, ampduState:wait operational[0m
+[0;32mI (62598) wifi:ifidx:1, rssi:-25, nf:-93, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (62608) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (62608) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (62698) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (62788) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (62788) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (62798) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (62818) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (65128) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (65128) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (65208) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (65218) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (65218) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (65218) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (65218) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (65228) wifi:(trc)phytype:CBW20-SGI, snr:67, maxRate:0, highestRateIdx:0[0m
+[0;33mW (65228) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (65238) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:67, ampduState:wait operational[0m
+[0;32mI (65248) wifi:ifidx:1, rssi:-26, nf:-93, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (65258) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (65268) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (65348) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (65428) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (65428) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (65438) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (65478) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (67788) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (67788) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (67868) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (67868) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (67868) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (67878) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (67878) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (67878) wifi:(trc)phytype:CBW20-SGI, snr:62, maxRate:0, highestRateIdx:0[0m
+[0;33mW (67888) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (67898) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:62, ampduState:wait operational[0m
+[0;32mI (67908) wifi:ifidx:1, rssi:-30, nf:-92, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (67918) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (67928) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (67978) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (68058) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (68068) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (68078) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (68118) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (70458) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (70458) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (70518) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (70548) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (70548) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (70548) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (70548) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (70548) wifi:(trc)phytype:CBW20-SGI, snr:63, maxRate:0, highestRateIdx:0[0m
+[0;33mW (70558) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (70568) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:63, ampduState:wait operational[0m
+[0;32mI (70578) wifi:ifidx:1, rssi:-29, nf:-92, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (70588) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (70598) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (70678) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;32mI (70748) AP: Runtime: 70398545 [us], #Bytes: 0, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 0.00[B/s][0m
+[0;33mW (70758) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (70758) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (70768) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (70808) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (73108) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (73108) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (73198) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (73208) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (73208) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (73208) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (73208) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (73218) wifi:(trc)phytype:CBW20-SGI, snr:66, maxRate:0, highestRateIdx:0[0m
+[0;33mW (73218) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (73228) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:66, ampduState:wait operational[0m
+[0;32mI (73238) wifi:ifidx:1, rssi:-27, nf:-93, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (73248) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (73258) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (73328) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (73408) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (73418) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (73428) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (73458) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (75828) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (75828) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (75908) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (75908) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (75908) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (75908) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (75908) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (75918) wifi:(trc)phytype:CBW20-SGI, snr:66, maxRate:0, highestRateIdx:0[0m
+[0;33mW (75928) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (75938) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:66, ampduState:wait operational[0m
+[0;32mI (75948) wifi:ifidx:1, rssi:-27, nf:-93, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (75958) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (75968) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (76038) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (76108) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (76108) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (76128) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (76168) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (78538) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (78538) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (78608) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (78618) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (78618) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (78618) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (78618) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (78628) wifi:(trc)phytype:CBW20-SGI, snr:69, maxRate:0, highestRateIdx:0[0m
+[0;33mW (78628) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (78638) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:69, ampduState:wait operational[0m
+[0;32mI (78648) wifi:ifidx:1, rssi:-24, nf:-93, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (78658) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (78668) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (78728) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (78798) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (78838) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (78838) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (78858) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (80748) AP: Runtime: 80398544 [us], #Bytes: 0, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 0.00[B/s][0m
+[0;32mI (81188) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (81188) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (81258) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (81258) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (81258) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (81258) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (81258) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (81268) wifi:(trc)phytype:CBW20-SGI, snr:69, maxRate:0, highestRateIdx:0[0m
+[0;33mW (81278) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (81288) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:69, ampduState:wait operational[0m
+[0;32mI (81298) wifi:ifidx:1, rssi:-24, nf:-93, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (81308) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (81318) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (81408) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (81498) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (81498) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (81508) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (81528) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (83868) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (83868) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (83958) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (83958) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (83958) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (83958) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (83958) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (83968) wifi:(trc)phytype:CBW20-SGI, snr:69, maxRate:0, highestRateIdx:0[0m
+[0;33mW (83978) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (83978) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:69, ampduState:wait operational[0m
+[0;32mI (83998) wifi:ifidx:1, rssi:-24, nf:-93, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (84008) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (84008) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (84078) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (84158) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (84158) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (84168) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (84188) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (86538) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (86538) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (86628) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (86638) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (86638) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (86638) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (86638) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (86648) wifi:(trc)phytype:CBW20-SGI, snr:66, maxRate:0, highestRateIdx:0[0m
+[0;33mW (86648) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (86658) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:66, ampduState:wait operational[0m
+[0;32mI (86668) wifi:ifidx:1, rssi:-27, nf:-93, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (86678) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (86688) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (86758) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (86838) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (86838) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (86848) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (86878) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (89198) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (89208) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (89268) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (89298) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (89298) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (89298) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (89298) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (89298) wifi:(trc)phytype:CBW20-SGI, snr:65, maxRate:0, highestRateIdx:0[0m
+[0;33mW (89308) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (89318) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:65, ampduState:wait operational[0m
+[0;32mI (89328) wifi:ifidx:1, rssi:-29, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (89338) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (89348) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (89428) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (89508) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (89508) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (89518) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (89548) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (90748) AP: Runtime: 90398544 [us], #Bytes: 0, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 0.00[B/s][0m
+[0;32mI (91868) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (91868) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (91958) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (91958) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (91958) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (91958) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (91958) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (91968) wifi:(trc)phytype:CBW20-SGI, snr:65, maxRate:0, highestRateIdx:0[0m
+[0;33mW (91968) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (91978) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:65, ampduState:wait operational[0m
+[0;32mI (91988) wifi:ifidx:1, rssi:-29, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (91998) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (92008) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (92108) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (92178) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (92178) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (92188) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (92248) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (94608) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (94608) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (94708) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (94708) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (94708) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (94708) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (94708) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (94718) wifi:(trc)phytype:CBW20-SGI, snr:65, maxRate:0, highestRateIdx:0[0m
+[0;33mW (94728) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (94728) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:65, ampduState:wait operational[0m
+[0;32mI (94748) wifi:ifidx:1, rssi:-29, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (94758) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (94758) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (94838) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (94908) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (94938) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (94938) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (94958) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (97288) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (97288) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (97368) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (97378) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (97378) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (97378) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (97378) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (97378) wifi:(trc)phytype:CBW20-SGI, snr:66, maxRate:0, highestRateIdx:0[0m
+[0;33mW (97388) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (97398) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:66, ampduState:wait operational[0m
+[0;32mI (97408) wifi:ifidx:1, rssi:-28, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (97418) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (97428) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (97498) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (97568) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (97578) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (97588) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (97608) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (99978) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (99978) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (100058) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (100068) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (100068) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (100068) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (100068) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (100078) wifi:(trc)phytype:CBW20-SGI, snr:66, maxRate:0, highestRateIdx:0[0m
+[0;33mW (100078) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (100088) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:66, ampduState:wait operational[0m
+[0;32mI (100098) wifi:ifidx:1, rssi:-28, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (100108) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (100118) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (100198) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (100268) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (100268) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (100318) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (100328) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (100748) AP: Runtime: 100398544 [us], #Bytes: 0, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 0.00[B/s][0m
+[0;32mI (102678) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (102678) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (102748) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (102758) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (102758) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (102758) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (102758) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (102758) wifi:(trc)phytype:CBW20-SGI, snr:70, maxRate:0, highestRateIdx:0[0m
+[0;33mW (102768) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (102778) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:70, ampduState:wait operational[0m
+[0;32mI (102788) wifi:ifidx:1, rssi:-24, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (102798) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (102808) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (102868) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (102938) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (102948) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (102958) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (102998) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (105328) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (105328) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (105398) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (105408) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (105408) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (105408) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (105408) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (105418) wifi:(trc)phytype:CBW20-SGI, snr:71, maxRate:0, highestRateIdx:0[0m
+[0;33mW (105428) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (105438) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:71, ampduState:wait operational[0m
+[0;32mI (105448) wifi:ifidx:1, rssi:-23, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (105458) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (105468) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (105548) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (105658) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (105658) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (105668) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (105708) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (108008) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (108008) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (108078) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (108078) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (108078) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (108078) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (108078) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (108088) wifi:(trc)phytype:CBW20-SGI, snr:72, maxRate:0, highestRateIdx:0[0m
+[0;33mW (108098) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (108108) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:72, ampduState:wait operational[0m
+[0;32mI (108118) wifi:ifidx:1, rssi:-22, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (108128) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (108128) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (108228) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (108318) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (108318) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (108328) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (108358) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (110678) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (110678) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (110748) AP: Runtime: 110398555 [us], #Bytes: 0, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 0.00[B/s][0m
+[0;32mI (110758) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (110768) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (110768) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (110768) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (110768) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (110778) wifi:(trc)phytype:CBW20-SGI, snr:73, maxRate:0, highestRateIdx:0[0m
+[0;33mW (110778) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (110788) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:73, ampduState:wait operational[0m
+[0;32mI (110798) wifi:ifidx:1, rssi:-21, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (110808) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (110818) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (110888) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (110958) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (110978) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (110978) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (111008) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (113368) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (113368) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (113458) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (113458) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (113458) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (113458) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (113458) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (113468) wifi:(trc)phytype:CBW20-SGI, snr:73, maxRate:0, highestRateIdx:0[0m
+[0;33mW (113478) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (113478) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:73, ampduState:wait operational[0m
+[0;32mI (113498) wifi:ifidx:1, rssi:-21, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (113508) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (113508) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (113588) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (113658) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (113658) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (113668) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (113698) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (116018) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (116018) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (116098) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (116168) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (116168) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (116168) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (116168) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (116178) wifi:(trc)phytype:CBW20-SGI, snr:72, maxRate:0, highestRateIdx:0[0m
+[0;33mW (116188) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (116188) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:72, ampduState:wait operational[0m
+[0;32mI (116208) wifi:ifidx:1, rssi:-22, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (116218) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (116218) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (116298) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (116368) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (116408) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (116408) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (116448) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (118768) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (118768) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (118848) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (118848) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (118848) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (118848) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (118858) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (118858) wifi:(trc)phytype:CBW20-SGI, snr:68, maxRate:0, highestRateIdx:0[0m
+[0;33mW (118868) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (118878) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:68, ampduState:wait operational[0m
+[0;32mI (118888) wifi:ifidx:1, rssi:-26, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (118898) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (118908) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (119008) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (119078) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (119078) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (119118) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (119138) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (120748) AP: Runtime: 120398544 [us], #Bytes: 0, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 0.00[B/s][0m
+[0;32mI (121448) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (121448) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (121548) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (121558) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (121558) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (121558) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (121558) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (121568) wifi:(trc)phytype:CBW20-SGI, snr:67, maxRate:0, highestRateIdx:0[0m
+[0;33mW (121568) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (121578) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:67, ampduState:wait operational[0m
+[0;32mI (121588) wifi:ifidx:1, rssi:-27, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (121598) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (121608) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (121678) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (121758) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (121758) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (121768) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (121798) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (124118) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (124118) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (124218) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (124218) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (124218) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (124218) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (124228) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (124228) wifi:(trc)phytype:CBW20-SGI, snr:69, maxRate:0, highestRateIdx:0[0m
+[0;33mW (124238) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (124248) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:69, ampduState:wait operational[0m
+[0;32mI (124258) wifi:ifidx:1, rssi:-25, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (124268) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (124278) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (124358) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (124428) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (124458) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (124458) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (124478) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (126818) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (126818) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (126898) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (126908) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (126908) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (126908) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (126908) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (126918) wifi:(trc)phytype:CBW20-SGI, snr:71, maxRate:0, highestRateIdx:0[0m
+[0;33mW (126918) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (126928) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:71, ampduState:wait operational[0m
+[0;32mI (126938) wifi:ifidx:1, rssi:-23, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (126948) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (126958) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (127028) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (127098) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (127108) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (127128) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (127178) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (129498) wifi:WPA3 SAE 7c:2c:67:5d:2b:dc start reauthentication[0m
+[0;32mI (129498) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (129568) AP: station 7c:2c:67:5d:2b:dc leave, AID=1, reason=2[0m
+[0;32mI (129578) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (129578) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (129578) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (129578) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (129578) wifi:(trc)phytype:CBW20-SGI, snr:71, maxRate:0, highestRateIdx:0[0m
+[0;33mW (129588) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (129598) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:71, ampduState:wait operational[0m
+[0;32mI (129608) wifi:ifidx:1, rssi:-23, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (129618) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (129628) wifi:station: 7c:2c:67:5d:2b:dc join, AID=1, bgn, 20[0m
+[0;32mI (129708) AP: station 7c:2c:67:5d:2b:dc join, AID=1[0m
+[0;33mW (129778) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (129798) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (129798) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x101dc2b, TALO:0x5d672c7c, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (129818) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (130748) AP: Runtime: 130398544 [us], #Bytes: 0, TP_Interval: 0 [Bytes/PERIOD], Throughput: 0[B/s], Avg TP: 0.00[B/s][0m

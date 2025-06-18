@@ -1,0 +1,197 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM5 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'Un dispositivo collegato al sistema non è in funzione.', None, 31))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408089a2: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+0x4080899a: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+[0m
+[0;33m--- 0x40022494: multi_heap_internal_unlock in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x40806d16: systimer_ticks_to_us at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_hw_support/port/esp32c6/systimer.c:17
+0x4080200a: esp_timer_impl_get_time at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_timer/src/esp_timer_impl_systimer.c:73
+[0m
+[0;33m--- 0x40022494: multi_heap_internal_unlock in ROM
+[0m
+[0;33m--- 0x40806d10: systimer_ticks_to_us at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_hw_support/port/esp32c6/systimer.c:16
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x408149bc: hal_set_tx_pti at ??:?
+0x40814a20: mac_tx_set_pti at ??:?
+[0m
+[0;33m--- 0x40030dca: memset in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x408036c8: crosscore_int_ll_trigger_interrupt at C:/Users/albif/esp/v5.3.2/esp-idf/components/hal/esp32c6/include/hal/crosscore_int_ll.h:32
+ (inlined by) esp_crosscore_int_send at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/crosscore_int.c:115
+0x408036c8: crosscore_int_ll_trigger_interrupt at C:/Users/albif/esp/v5.3.2/esp-idf/components/hal/esp32c6/include/hal/crosscore_int_ll.h:32
+ (inlined by) esp_crosscore_int_send at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/crosscore_int.c:115
+[0m
+[0;33m--- 0x40022494: multi_heap_internal_unlock in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x40030df4: memset in ROM
+0x408101ca: ppProcTxSecFrame at ??:?
+[0m
+[0;33m--- 0x40030dca: memset in ROM
+[0m
+[0;33m--- 0x40030de6: memset in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x408088d4: vPortClearInterruptMaskFromISR at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:528
+0x40808966: vPortExitCritical at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:641
+[0m
+[0;33m--- 0x40022494: multi_heap_internal_unlock in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x40030c12: memchr in ROM
+0x4003f430: __sfvwrite_r in ROM
+[0m
+[0;33m--- 0x40028140: __retarget_lock_acquire_recursive in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x408089a2: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+0x4080899a: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+[0m
+[0;33m--- 0x40022494: multi_heap_internal_unlock in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x408088d4: vPortClearInterruptMaskFromISR at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:528
+0x40808966: vPortExitCritical at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:641
+[0m
+[0;33m--- 0x4080e9e4: _calloc_r at C:/Users/albif/esp/v5.3.2/esp-idf/components/newlib/heap.c:70
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x408089a2: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+0x4080899a: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+[0m
+[0;33m--- 0x40022494: multi_heap_internal_unlock in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x40020890: systimer_hal_get_counter_value in ROM
+0x40802008: esp_timer_impl_get_time at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_timer/src/esp_timer_impl_systimer.c:72 (discriminator 1)
+[0m
+[0;33m--- 0x40022494: multi_heap_internal_unlock in ROM
+[0m
+[0;33m--- 0x40806d10: systimer_ticks_to_us at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_hw_support/port/esp32c6/systimer.c:16
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/es

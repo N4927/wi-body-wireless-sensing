@@ -1,0 +1,386 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM5 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'Accesso negato.', None, 5))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'Accesso negato.', None, 5))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'Accesso negato.', None, 5))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m.[0m[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m.[0m[0;33m.[0m[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m.[0m[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m.[0m[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m.[0m[0;33m.[0m[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m.[0m[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m.[0m[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m.[0m[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m.[0m[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m.[0m[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 893e639a72c48a0934faf6ef0441ad4c479aea97659e115279478b152d599515[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x40020866: systimer_hal_get_counter_value in ROM
+0x40802008: esp_timer_impl_get_time at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_timer/src/esp_timer_impl_systimer.c:72 (discriminator 1)
+[0m
+[0;33m--- 0x40022494: multi_heap_internal_unlock in ROM
+[0m
+[0;33m--- 0x40806d10: systimer_ticks_to_us at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_hw_support/port/esp32c6/systimer.c:16
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x408089a2: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+0x4080899a: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+[0m
+[0;33m--- 0x40022494: multi_heap_internal_unlock in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x408089a2: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+0x4080899a: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+[0m
+[0;33m--- 0x40022494: multi_heap_internal_unlock in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x408089a2: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+0x4080899a: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+[0m
+[0;33m--- 0x40022494: multi_heap_internal_unlock in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x408089a2: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+0x4080899a: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+[0m
+[0;33m--- 0x40022494: multi_heap_internal_unlock in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x408089a2: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+0x4080899a: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+[0m
+[0;33m--- 0x40022494: multi_heap_internal_unlock in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x408089a2: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+0x4080899a: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+[0m
+[0;33m--- 0x40022494: multi_heap_internal_unlock in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x408089a2: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+0x4080899a: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+[0m
+[0;33m--- 0x40022494: multi_heap_internal_unlock in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x408089a2: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+0x4080899a: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+[0m
+[0;33m--- 0x40022494: multi_heap_internal_unlock in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x408089a2: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+0x4080899a: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+[0m
+[0;33m--- 0x40022494: multi_heap_internal_unlock in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x4002088e: systimer_hal_get_counter_value in ROM
+0x40802008: esp_timer_impl_get_time at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_timer/src/esp_timer_impl_systimer.c:72 (discriminator 1)
+[0m
+[0;33m--- 0x40022494: multi_heap_internal_unlock in ROM
+[0m
+[0;33m--- 0x40806d10: systimer_ticks_to_us at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_hw_support/port/esp32c6/systimer.c:16
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x408089a2: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+0x4080899a: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+[0m
+[0;33m--- 0x40022494: multi_heap_internal_unlock in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x408088ae: xPortSetInterruptMaskFromISR at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:482
+0x408088e0: vPortEnterCritical at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:617
+[0m
+[0;33m--- 0x40022494: multi_heap_internal_unlock in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x4002087e: systimer_hal_get_counter_value in ROM
+0x40802008: esp_timer_impl_get_time at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_timer/src/esp_timer_impl_systimer.c:72 (discriminator 1)
+[0m
+[0;33m--- 0x40022494: multi_heap_internal_unlock in ROM
+[0m
+[0;33m--- 0x40806d10: systimer_ticks_to_us at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_hw_support/port/esp32c6/systimer.c:16
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x408089a2: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+0x4080899a: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+[0m
+[0;33m--- 0x40022494: multi_heap_internal_unlock in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x4200c02c: tcp_client at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/Station_with_tcp_client_modem/main/tcp_client_v4.c:75
+0x4200c02c: tcp_client at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/Station_with_tcp_client_modem/main/tcp_client_v4.c:75
+[0m
+[0;33m--- 0x40022494: multi_heap_internal_unlock in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x408089a2: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+0x4080899a: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+[0m
+[0;33m--- 0x40022494: multi_heap_internal_unlock in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x4080899a: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+0x4080899a: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+[0m
+[0;33m--- 0x40022494: multi_heap_internal_unlock in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x408089a2: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+0x4080899a: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+[0m
+[0;33m--- 0x40022494: multi_heap_internal_unlock in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x408089a2: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+0x4080899a: vPortYield at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:663 (discriminator 3)
+[0m
+[0;33m--- 0x40022494: multi_heap_internal_unlock in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m

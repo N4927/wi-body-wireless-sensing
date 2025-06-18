@@ -1,0 +1,116 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM11 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM11 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x4200b886: tcp_receive at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_dual/main/AP_main.c:65
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x4200b888: tcp_receive at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_dual/main/AP_main.c:66
+0x408086d6: vPortTaskWrapper at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:258
+[0m
+[0;33m--- 0x4200b87c: tcp_receive at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_dual/main/AP_main.c:65
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_dual\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpuf6g8kpd"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpuf6g8kpd': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200b886: tcp_receive at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_dual/main/AP_main.c:65
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x4200b888: tcp_receive at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_dual/main/AP_main.c:66
+0x408086d6: vPortTaskWrapper at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:258
+[0m
+[0;33m--- 0x4200b87c: tcp_receive at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_dual/main/AP_main.c:65
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_dual\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpeyctl9vu"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpeyctl9vu': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200b886: tcp_receive at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_dual/main/AP_main.c:65
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x4200b888: tcp_receive at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_dual/main/AP_main.c:66
+0x408086d6: vPortTaskWrapper at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:258
+[0m
+[0;33m--- 0x4200b87c: tcp_receive at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_dual/main/AP_main.c:65
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_dual\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmp9ll73aha"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmp9ll73aha': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200b886: tcp_receive at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_dual/main/AP_main.c:65
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x4200b888: tcp_receive at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_dual/main/AP_main.c:66
+0x408086d6: vPortTaskWrapper at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:258
+[0m
+[0;33m--- 0x4200b87c: tcp_receive at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_dual/main/AP_main.c:65
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_dual\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmp04itd9bd"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmp04itd9bd': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200b886: tcp_receive at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_dual/main/AP_main.c:65
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x4200b888: tcp_receive at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_dual/main/AP_main.c:66
+0x408086d6: vPortTaskWrapper at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:258
+[0m
+[0;33m--- 0x4200b87c: tcp_receive at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_dual/main/AP_main.c:65
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_dual\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmphenues30"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmphenues30': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200b886: tcp_receive at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_dual/main/AP_main.c:65
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x4200b888: tcp_receive at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_dual/main/AP_main.c:66
+0x408086d6: vPortTaskWrapper at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:258
+[0m
+[0;33m--- 0x4200b87c: tcp_receive at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_dual/main/AP_main.c:65
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_dual\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmp5ot_wf5k"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmp5ot_wf5k': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200b886: tcp_receive at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_dual/main/AP_main.c:65
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x4200b888: tcp_receive at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_dual/main/AP_main.c:66
+0x408086d6: vPortTaskWrapper at C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/port.c:258
+[0m
+[0;33m--- 0x4200b87c: tcp_receive at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_dual/main/AP_main.c:65
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_dual\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpc9srosvy"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpc9srosvy': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m

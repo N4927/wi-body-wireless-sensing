@@ -1,0 +1,91 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM5 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Warning: Checksum mismatch between flashed and built applications. Checksum of built application is 3742d64c76d0b734a63bf2578923be536e160d5f3cdfc47bb4a5d4f5ef0a8a19[0m
+[1;31m--- Error: ClearCommError failed (PermissionError(13, 'Un dispositivo collegato al sistema non è in funzione.', None, 31))[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m

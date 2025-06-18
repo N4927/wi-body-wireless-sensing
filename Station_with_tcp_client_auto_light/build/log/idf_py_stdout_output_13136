@@ -1,0 +1,2369 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0x3e (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x18ec
+load:0x4086c110,len:0xe5c
+load:0x4086e610,len:0x2f50
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Apr 23 2025 12:27:51[0m
+[0;32mI (24) boot: chip revision: v0.2[0m
+[0;32mI (26) boot: efuse block revision: v0.3[0m
+[0;32mI (31) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (36) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=42090020 size=1d170h (119152) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0002d198 vaddr=40800000 size=02e80h ( 11904) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=89204h (561668) map[0m
+[0;32mI (230) esp_image: segment 3: paddr=000b922c vaddr=40802e80 size=183ach ( 99244) load[0m
+[0;32mI (252) esp_image: segment 4: paddr=000d15e0 vaddr=4081b230 size=03c1ch ( 15388) load[0m
+[0;32mI (256) esp_image: segment 5: paddr=000d5204 vaddr=50000000 size=00050h (    80) load[0m
+[0;32mI (258) esp_image: segment 6: paddr=000d525c vaddr=50000050 size=00008h (     8) load[0m
+[0;32mI (272) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (273) boot: Disabling RNG early entropy source...[0m
+[0;32mI (290) cpu_start: Unicore app[0m
+[0;32mI (298) cpu_start: Pro cpu start user code[0m
+[0;32mI (298) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (299) app_init: Application information:[0m
+[0;32mI (301) app_init: Project name:     wifi_station[0m
+[0;32mI (306) app_init: App version:      ac3da05a-dirty[0m
+[0;32mI (312) app_init: Compile time:     Apr 30 2025 15:23:58[0m
+[0;32mI (318) app_init: ELF file SHA256:  44dd40f8a...[0m
+[0;32mI (323) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (328) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (333) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (338) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (343) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (350) heap_init: At 40824260 len 000583B0 (352 KiB): RAM[0m
+[0;32mI (356) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (362) heap_init: At 50000058 len 00003F90 (15 KiB): RTCRAM[0m
+[0;32mI (369) spi_flash: detected chip: generic[0m
+[0;32mI (373) spi_flash: flash io: dio[0m
+[0;33mW (377) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (390) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (397) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (415) coexist: coex firmware version: cbb41d7[0m
+[0;32mI (419) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (419) main_task: Started on CPU0[0m
+[0;32mI (419) main_task: Calling app_main()[0m
+[0;32mI (429) pm: Frequency switching config: CPU_MAX: 160, APB_MAX: 80, APB_MIN: 40, Light sleep: ENABLED[0m
+[0;32mI (429) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (439) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (449) wifi:wifi driver task: 4082d750, prio:23, stack:6656, core=0[0m
+[0;32mI (449) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (449) wifi:wifi certification version: v7.0[0m
+[0;32mI (449) wifi:config NVS flash: enabled[0m
+[0;32mI (459) wifi:config nano formating: disabled[0m
+[0;32mI (459) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band:0x1[0m
+[0;32mI (469) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (469) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (479) wifi:Init management short buffer num: 32[0m
+[0;32mI (479) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (489) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (489) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (499) wifi:Init static rx buffer num: 10[0m
+[0;32mI (499) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (499) wifi_init: rx ba win: 6[0m
+[0;32mI (509) wifi_init: accept mbox: 6[0m
+[0;32mI (509) wifi_init: tcpip mbox: 32[0m
+[0;32mI (509) wifi_init: udp mbox: 6[0m
+[0;32mI (519) wifi_init: tcp mbox: 6[0m
+[0;32mI (519) wifi_init: tcp tx win: 5760[0m
+[0;32mI (529) wifi_init: tcp rx win: 5760[0m
+[0;32mI (529) wifi_init: tcp mss: 1440[0m
+[0;32mI (529) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (539) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (539) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (559) phy_init: phy_version 320,348a293,Sep  3 2024,16:33:12[0m
+[0;33mW (619) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (619) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (619) wifi:(agc)0x600a7128:0xd20e3800, min.avgNF:0xce->0xd2(dB), RCalCount:0xe3, min.RRssi:0x800(-128.00)[0m
+[0;33mW (629) wifi:(TB)WDEV_PWR_TB_MCS0:19[0m
+[0;33mW (639) wifi:(TB)WDEV_PWR_TB_MCS1:19[0m
+[0;33mW (639) wifi:(TB)WDEV_PWR_TB_MCS2:19[0m
+[0;33mW (639) wifi:(TB)WDEV_PWR_TB_MCS3:19[0m
+[0;33mW (649) wifi:(TB)WDEV_PWR_TB_MCS4:19[0m
+[0;33mW (649) wifi:(TB)WDEV_PWR_TB_MCS5:19[0m
+[0;33mW (649) wifi:(TB)WDEV_PWR_TB_MCS6:18[0m
+[0;33mW (659) wifi:(TB)WDEV_PWR_TB_MCS7:18[0m
+[0;33mW (659) wifi:(TB)WDEV_PWR_TB_MCS8:17[0m
+[0;33mW (659) wifi:(TB)WDEV_PWR_TB_MCS9:15[0m
+[0;33mW (669) wifi:(TB)WDEV_PWR_TB_MCS10:15[0m
+[0;33mW (669) wifi:(TB)WDEV_PWR_TB_MCS11:15[0m
+[0;32mI (669) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;33mW (679) wifi:(he)attach, station, phymode:11ax[0m
+[0;32mI (679) wifi:mode : sta (7c:2c:67:5d:2c:3c)[0m
+[0;32mI (689) wifi:enable tsf[0m
+[0;32mI (689) STA: wifi_init_sta finished.[0m
+[0;32mI (699) wifi:(he)max.RxAMPDULenExponentExtension:2, max.RxAMPDUpre-EOFpaddingBytes:4194303(0x3fffff)[0m
+[0;32mI (699) wifi:(mac)omc_ul_mu_data_disable_rx:1[0m
+[0;32mI (709) wifi:(phy)ppe_thresholds_present:1, nominal_packet_padding:0[0m
+[0;32mI (709) wifi:(phy)dcm tx(constellation:0, nss:0), dcm rx(constellation:0, nss:0)[0m
+[0;32mI (719) wifi:(phy)rx_mcs_map:0xfffa, tx_mcs_map:0xfffa, stbc_tx:0, bfmer(su:1, mu:0), ldpc:1, max_rate:172[0m
+[0;32mI (729) wifi:(phy)nsts:2, ru_index_bitmap:0x7(242:1, 484:1, 996:1, 2*996:0)[0m
+[0;32mI (739) wifi:(phy)threshold_bits:36, nsts_num:2, ru_num:3, he_cap->len:28, ppe_threshold_len:6(6,11,4)[0m
+[0;32mI (749) wifi:(ppe)RU242, NSTS0, PPE16:0, PPE8:7, nominal_packet_padding:2[0m
+[0;32mI (749) wifi:(opr)len:7, TWT Required:0, VHT Opr Info Present:0, 6GHz Opr Info Present:0, Co-Hosted BSS:0(max_indicator:0), Basic MCS and NSS:0xfffc[0m
+[0;32mI (769) wifi:(opr)len:7, Default PE Duration:4, TXOP RTS Threshold:0(0 us), ER-SU-Disable:0[0m
+[0;32mI (769) wifi:(opr)len:7, BSS Color:3, disabled:0, Partial BSS Color:0[0m
+[0;32mI (779) sleep_clock: System Power, Clock and Reset sleep retention initialization[0m
+[0;32mI (1129) wifi:new:<10,0>, old:<1,0>, ap:<255,255>, sta:<10,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1129) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3[0m
+[0;32mI (1129) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1139) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1149) wifi:(assoc)RESP, Extended Capabilities length:10, operating_mode_notification:0[0m
+[0;32mI (1149) wifi:(assoc)RESP, Extended Capabilities, MBSSID:0, TWT Responder:0, OBSS Narrow Bandwidth RU In OFDMA Tolerance:0[0m
+[0;32mI (1159) wifi:Extended Capabilities length:10, operating_mode_notification:1[0m
+[0;32mI (1169) wifi:(he)max.RxAMPDULenExponentExtension:2, max.RxAMPDUpre-EOFpaddingBytes:4194303(0x3fffff)[0m
+[0;32mI (1169) wifi:(mac)omc_ul_mu_data_disable_rx:1[0m
+[0;32mI (1179) wifi:(phy)ppe_thresholds_present:1, nominal_packet_padding:0[0m
+[0;32mI (1179) wifi:(phy)dcm tx(constellation:0, nss:0), dcm rx(constellation:0, nss:0)[0m
+[0;32mI (1189) wifi:(phy)rx_mcs_map:0xfffa, tx_mcs_map:0xfffa, stbc_tx:0, bfmer(su:1, mu:0), ldpc:1, max_rate:172[0m
+[0;32mI (1199) wifi:(phy)nsts:2, ru_index_bitmap:0x7(242:1, 484:1, 996:1, 2*996:0)[0m
+[0;32mI (1209) wifi:(phy)threshold_bits:36, nsts_num:2, ru_num:3, he_cap->len:28, ppe_threshold_len:6(6,11,4)[0m
+[0;32mI (1219) wifi:(ppe)RU242, NSTS0, PPE16:0, PPE8:7, nominal_packet_padding:2[0m
+[0;32mI (1219) wifi:(opr)len:7, TWT Required:0, VHT Opr Info Present:0, 6GHz Opr Info Present:0, Co-Hosted BSS:0(max_indicator:0), Basic MCS and NSS:0xfffc[0m
+[0;32mI (1239) wifi:(opr)len:7, Default PE Duration:4, TXOP RTS Threshold:0(0 us), ER-SU-Disable:0[0m
+[0;32mI (1239) wifi:(opr)len:7, BSS Color:3, disabled:0, Partial BSS Color:0[0m
+[0;32mI (1249) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1249) wifi:(he)ppe_thresholds_present:1, nominal_packet_padding(rx:0, cfg:2)[0m
+[0;32mI (1259) wifi:(trc)phytype:CBW20-SGI, snr:65, maxRate:172, highestRateIdx:0[0m
+[0;33mW (1269) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (1279) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:65, ampduState:wait operational[0m
+[0;32mI (1289) wifi:ifidx:0, rssi:-31, nf:-96, phytype(0x3, CBW20-SGI), phymode(0x7, 11ax), max_rate:172, he:1, vht:0, ht:1[0m
+[0;32mI (1299) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:5(4 us)[0m
+[0;32mI (1309) wifi:(extcap)mbssid:0, enhanced_mbssid_advertise:0, complete_nontxbssid_profiles:0, twt_responder: 1[0m
+[0;32mI (1309) wifi:connected with TP-Link_B5F4, aid = 21, channel 10, BW20, bssid = c0:c9:e3:9e:b5:f3[0m
+[0;32mI (1319) wifi:security: WPA2-PSK, phy:11ax, rssi:-31, cipher(pairwise:0x3, group:0x3), pmf:0, [0m
+[0;32mI (1339) wifi:pm start, type: 1, twt_start:0[0m
+
+[0;32mI (1339) wifi:pm start, type:1, aid:0x15, trans-BSSID:c0:c9:e3:9e:b5:f3, BSSID[5]:0xf3, mbssid(max-indicator:0, index:0), he:1[0m
+[0;32mI (1349) wifi:set rx beacon pti, rx_bcn_pti: 10, bcn_timeout: 25000, mt_pti: 10, mt_time: 10000[0m
+[0;32mI (1359) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:32, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (1369) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:32, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)[0m
+[0;32mI (1379) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:32, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (1389) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;32mI (1389) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:32, batimeout:0, txa_wnd:32[0m
+[0;32mI (1399) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:32, batimeout:0, txa_wnd:32[0m
+[0;32mI (1409) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:32, batimeout:0, txa_wnd:32[0m
+[0;33mW (1429) wifi:<ba-add>idx:0, ifx:0, tid:6, TAHI:0x100f3b5, TALO:0x9ee3c9c0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0006005[0m
+[0;32mI (2919) esp_netif_handlers: sta ip: 192.168.0.144, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (2919) STA: got ip:192.168.0.144[0m
+[0;32mI (2919) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (2919) STA: connected to ap SSID:TP-Link_B5F4 password:84021472[0m
+[0;32mI (2929) TCP_CLIENT: TCP client task started[0m
+[0;32mI (2929) main_task: Returned from app_main()[0m
+[0;33mW (2939) wifi:<ba-add>idx:1, ifx:0, tid:0, TAHI:0x100f3b5, TALO:0x9ee3c9c0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;32mI (2949) TCP_CLIENT: Connected to 192.168.0.170:3333[0m
+[0;32mI (2949) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (3039) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (3069) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (3129) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (3159) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (3229) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (3259) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (3329) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (3359) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (3419) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (3449) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (3509) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (3539) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (3599) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (3629) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (3689) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (3719) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (3779) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (3809) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (3869) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (3899) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (3959) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (3989) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (4049) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (4079) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (4149) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (4179) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (4239) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (4269) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (4329) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (4359) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (4419) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (4449) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (4509) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (4539) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (4599) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (4629) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (4689) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (4719) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (4779) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (4809) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (4869) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (4899) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (4969) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (4999) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (5069) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (5099) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (5159) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (5189) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (5249) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (5279) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (5339) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (5369) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (5429) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (5459) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (5519) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (5549) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (5609) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (5639) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (5699) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (5729) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (5789) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (5819) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (5889) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (5919) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (5979) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (6009) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (6069) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (6099) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (6159) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (6189) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (6249) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (6279) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (6339) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (6369) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (6429) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (6459) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (6519) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (6549) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (6609) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (6639) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (6709) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (6739) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (6799) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (6829) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (6889) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (6919) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (6979) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (7009) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (7069) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (7099) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (7159) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (7189) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (7249) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (7279) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (7339) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (7369) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (7429) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (7459) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (7529) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (7559) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (7629) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (7659) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (7719) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (7749) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (7809) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (7839) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (7899) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (7929) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (7989) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (8019) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (8079) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (8109) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (8169) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (8199) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (8259) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (8289) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (8349) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (8379) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (8439) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (8469) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (8529) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (8559) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (8619) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (8649) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (8709) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (8739) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (8799) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (8829) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (8889) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (8919) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (8979) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (9009) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (9069) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (9099) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (9159) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (9189) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (9249) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (9279) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (9339) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (9369) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (9429) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (9459) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (9519) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (9549) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (9609) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (9639) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (9699) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (9729) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (9789) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (9819) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (9879) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (9909) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (9969) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (9999) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (10059) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (10089) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (10149) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (10179) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (10239) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (10269) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (10329) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (10359) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (10419) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (10449) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (10509) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (10539) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (10599) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (10629) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (10689) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (10719) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (10779) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (10809) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (10869) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (10899) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (10959) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (10989) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (11049) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (11079) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (11139) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (11169) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (11229) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (11259) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (11319) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (11349) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (11419) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (11449) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (11509) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (11539) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (11599) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (11629) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (11689) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (11719) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (11779) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (11809) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (11869) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (11899) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (11959) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (11989) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (12049) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (12079) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (12139) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (12169) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (12239) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (12269) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (12329) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (12359) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (12419) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (12449) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (12509) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (12539) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (12599) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (12629) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (12689) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (12719) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (12779) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (12809) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (12869) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (12899) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (12959) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (12989) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (13059) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (13089) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (13159) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (13189) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (13249) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (13279) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (13339) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (13369) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (13429) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (13459) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (13519) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (13549) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (13609) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (13639) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (13699) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (13729) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (13789) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (13819) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (13879) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (13909) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (13979) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (14009) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (14069) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (14099) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (14159) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (14189) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (14249) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (14279) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (14339) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (14369) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (14429) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (14459) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (14519) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (14549) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (14609) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (14639) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (14699) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (14729) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (14799) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (14829) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (14889) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (14919) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (14979) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (15009) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (15069) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (15099) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (15159) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (15189) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (15249) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (15279) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (15339) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (15369) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (15429) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (15459) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (15519) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (15549) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (15619) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (15649) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (15719) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (15749) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (15809) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (15839) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (15909) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (15939) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (15999) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (16029) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (16089) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (16119) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (16179) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (16209) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (16269) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (16299) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (16359) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (16389) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (16449) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (16479) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (16539) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (16569) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (16629) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (16659) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (16719) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (16749) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (16809) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (16839) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (16899) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (16929) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (16989) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (17019) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (17079) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (17109) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (17169) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (17199) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (17259) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (17289) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (17359) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (17389) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (17449) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (17479) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (17539) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (17569) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (17629) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (17659) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (17719) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (17749) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (17809) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (17839) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (17899) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (17929) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (17989) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (18019) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (18079) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (18109) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (18179) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (18209) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (18269) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (18299) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (18359) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (18389) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (18449) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (18479) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (18549) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (18579) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (18639) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (18669) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (18729) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (18759) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (18819) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (18849) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (18919) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (18949) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (19009) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (19039) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (19099) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (19129) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (19189) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (19219) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (19279) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (19309) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (19369) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (19399) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (19459) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (19489) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (19549) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (19579) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (19639) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (19669) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (19729) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (19759) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (19819) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (19849) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (19919) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (19949) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (20009) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (20039) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (20099) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (20129) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (20189) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (20219) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (20279) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (20309) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (20369) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (20399) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (20459) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (20489) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (20549) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (20579) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (20639) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (20669) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (20739) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (20769) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (20839) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (20869) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (20929) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (20959) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (21019) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (21059) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (21119) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (21149) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (21209) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (21239) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (21299) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (21329) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (21389) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (21419) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (21479) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (21509) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (21569) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (21599) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (21659) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (21689) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (21749) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (21779) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (21849) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (21879) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (21939) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (21969) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (22029) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (22059) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (22119) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (22149) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (22209) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (22239) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (22299) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (22329) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (22389) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (22419) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (22479) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (22509) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (22569) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (22599) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (22659) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (22689) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (22759) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (22789) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (22849) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (22879) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (22939) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (22969) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (23029) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (23059) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (23119) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (23149) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (23209) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (23239) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (23299) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (23329) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (23399) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (23429) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (23489) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (23519) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (23579) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (23609) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (23689) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (23719) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (23779) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (23809) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (23869) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (23899) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (23959) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (23989) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (24049) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (24079) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (24139) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (24169) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (24229) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (24259) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (24319) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (24349) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (24409) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (24439) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (24499) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (24529) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (24589) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (24619) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (24679) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (24709) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (24769) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (24799) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (24869) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (24899) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (24959) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (24989) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (25049) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (25079) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (25139) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (25169) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (25229) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (25259) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (25319) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (25349) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (25409) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (25439) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (25499) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (25529) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (25599) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (25629) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (25689) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (25719) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (25779) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (25809) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (25889) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (25919) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (25979) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (26009) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (26069) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (26099) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (26159) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (26189) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (26249) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (26279) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (26339) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (26369) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (26429) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (26459) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (26519) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (26549) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (26609) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (26649) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (26709) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (26739) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (26799) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (26829) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (26889) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (26919) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (26979) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (27009) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (27069) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (27099) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (27159) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (27189) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (27249) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (27279) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (27339) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (27369) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (27429) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (27459) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (27519) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (27549) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (27609) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (27649) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (27709) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (27739) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (27799) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (27829) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (27889) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (27919) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (27979) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (28009) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (28069) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (28099) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (28159) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (28189) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (28249) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (28279) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (28339) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (28369) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (28429) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (28459) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (28529) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (28559) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (28619) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (28649) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (28709) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (28739) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (28809) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (28839) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (28899) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (28929) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (28989) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (29019) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (29079) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (29109) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (29179) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (29209) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (29269) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (29299) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (29359) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (29389) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (29449) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (29479) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (29539) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (29569) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (29629) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (29659) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (29719) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (29749) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (29809) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (29839) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (29899) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (29929) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (29989) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (30019) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (30079) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (30109) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (30169) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (30199) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (30259) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (30289) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (30349) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (30379) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (30439) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (30469) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (30529) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (30559) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (30619) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (30649) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (30709) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (30739) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (30799) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (30829) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (30889) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (30919) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (30979) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (31009) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (31079) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (31109) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (31169) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (31199) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (31259) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (31289) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (31349) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (31379) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (31439) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (31469) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (31529) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (31559) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (31619) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (31649) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (31709) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (31739) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (31799) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (31829) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (31899) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (31929) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (31989) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (32019) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (32079) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (32109) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (32169) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (32199) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (32259) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (32289) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (32349) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (32379) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (32439) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (32469) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (32529) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (32559) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (32619) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (32649) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (32719) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (32749) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (32809) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (32839) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (32899) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (32929) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (32989) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (33019) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (33079) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (33109) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (33169) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (33199) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (33259) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (33289) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (33349) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (33379) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (33439) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (33469) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (33539) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (33569) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (33639) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (33669) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (33729) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (33759) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (33819) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (33849) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (33909) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (33939) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (33999) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (34029) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (34089) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (34119) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (34179) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (34209) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (34269) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (34299) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (34359) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (34389) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (34459) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (34489) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (34549) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (34579) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (34639) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (34669) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (34729) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (34759) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (34819) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (34849) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (34909) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (34939) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (34999) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (35029) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (35089) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (35119) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (35179) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (35209) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (35279) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (35309) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (35369) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (35399) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (35459) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (35489) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (35549) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (35579) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (35639) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (35669) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (35729) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (35759) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (35819) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (35849) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (35909) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (35939) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (35999) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (36029) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (36099) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (36129) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (36189) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (36219) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (36279) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (36309) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (36369) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (36399) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (36459) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (36489) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (36549) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (36579) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (36639) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (36669) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (36729) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (36759) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (36819) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (36849) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (36919) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (36949) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (37019) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (37049) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (37109) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (37139) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (37199) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (37229) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (37289) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (37319) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (37379) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (37409) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (37469) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (37499) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (37559) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (37589) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (37649) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (37679) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (37739) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (37769) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (37839) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (37869) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (37929) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (37959) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (38019) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (38049) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (38119) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (38149) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (38209) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (38239) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (38299) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (38329) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (38389) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (38419) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (38479) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (38509) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (38569) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (38599) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (38659) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (38689) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (38749) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (38779) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (38839) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (38869) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (38929) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (38959) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (39019) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (39049) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (39109) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (39139) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (39199) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (39229) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (39289) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (39319) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (39379) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (39409) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (39469) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (39509) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (39769) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (39799) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (39859) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (39889) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (39949) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (39979) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (40039) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (40069) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (40129) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (40159) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (40219) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (40249) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (40309) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (40339) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (40399) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (40429) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (40489) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (40519) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (40579) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (40609) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (40669) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (40699) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (40759) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (40789) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (40849) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (40879) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (40939) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (40969) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (41029) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (41059) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (41119) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (41149) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (41219) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (41249) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (41319) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (41349) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (41409) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (41439) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (41499) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (41529) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (41589) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (41619) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (41679) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (41709) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (41769) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (41799) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (41859) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (41889) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (41949) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (41979) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (42039) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (42069) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (42139) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (42179) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (42239) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (42269) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (42329) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (42359) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (42419) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (42449) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (42519) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (42549) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (42609) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (42639) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (42699) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (42729) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (42789) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (42819) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (42879) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (42909) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (42969) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (42999) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (43059) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (43089) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (43149) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (43179) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (43239) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (43269) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (43329) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (43359) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (43419) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (43449) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (43519) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (43549) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (43609) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (43639) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (43699) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (43729) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (43789) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (43819) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (43879) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (43909) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (43969) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (43999) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (44059) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (44089) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (44159) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (44189) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (44249) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (44279) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (44339) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (44369) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (44429) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (44459) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (44519) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (44549) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (44609) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (44639) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (44699) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (44729) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (44789) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (44819) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (44879) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (44909) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (44969) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (44999) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (45059) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (45089) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (45149) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (45179) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (45239) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (45269) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (45329) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (45359) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (45419) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (45449) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (45519) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (45549) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (45609) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (45639) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (45699) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (45729) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (45789) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (45819) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (45879) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (45909) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (45969) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (45999) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (46059) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (46089) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (46149) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (46179) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (46239) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (46269) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (46339) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (46369) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (46429) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (46459) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (46519) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (46549) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (46609) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (46639) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (46699) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (46729) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (46789) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (46819) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (46879) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (46909) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (46969) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (46999) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (47059) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (47089) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (47149) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (47179) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (47239) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (47269) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (47329) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (47359) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (47419) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (47449) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (47509) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (47539) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (47599) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (47629) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (47689) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (47719) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (47779) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (47809) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (47869) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (47899) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (47959) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (47989) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (48049) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (48079) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (48139) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (48169) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (48229) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (48259) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (48319) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (48349) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (48409) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (48439) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (48499) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (48529) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (48589) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (48619) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (48679) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (48709) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (48769) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (48799) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (48859) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (48889) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (48949) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (48979) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (49039) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (49069) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (49129) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (49159) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (49219) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (49249) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (49309) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (49339) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (49409) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (49439) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (49499) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (49529) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (49589) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (49619) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (49679) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (49709) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (49769) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (49799) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (49859) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (49889) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (49949) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (49979) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (50039) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (50069) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (50129) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (50159) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (50229) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (50259) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (50319) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (50349) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (50409) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (50439) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (50499) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (50529) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (50589) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (50619) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (50679) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (50709) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (50769) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (50799) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (50859) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (50889) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (50949) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (50979) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (51049) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (51079) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (51139) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (51169) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (51229) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (51259) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (51319) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (51349) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (51409) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (51439) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (51499) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (51529) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (51589) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (51619) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (51679) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (51709) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (51779) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (51809) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (51869) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (51899) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (51969) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (51999) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (52059) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (52089) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (52149) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (52179) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (52239) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (52269) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (52329) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (52359) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (52419) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (52449) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (52509) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (52539) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (52599) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (52629) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (52689) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (52719) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (52789) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (52819) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (52889) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (52919) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (52979) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (53009) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (53069) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (53099) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (53159) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (53189) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (53249) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (53279) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (53339) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (53369) wifi:Set

@@ -1,0 +1,40 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.6.2 on \\.\COM5 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x40017606: ets_delay_us in ROM
+--- 0x4200db9e: wait_for_next_twt_window at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/itwt/main/itwt_main.c:201
+[0m
+[0;33m--- 0x40028192: __retarget_lock_release_recursive in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.4.1/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x40017606: ets_delay_us in ROM
+--- 0x4200db9e: wait_for_next_twt_window at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/itwt/main/itwt_main.c:201
+[0m
+[0;33m--- 0x40028192: __retarget_lock_release_recursive in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.4.1/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- 0x40017604: ets_delay_us in ROM
+--- 0x4200db9e: wait_for_next_twt_window at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/itwt/main/itwt_main.c:201
+[0m
+[0;33m--- 0x40028192: __retarget_lock_release_recursive in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.4.1/esp-idf/components/riscv/vectors_intc.S:54
+[0m

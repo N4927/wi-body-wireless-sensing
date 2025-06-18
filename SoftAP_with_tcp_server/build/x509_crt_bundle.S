@@ -1,4 +1,4 @@
-/* * Data converted from C:/Espressif/Example_Projects/SoftAP_with_tcp_server/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 #if !defined (__APPLE__) && !defined (__linux__)

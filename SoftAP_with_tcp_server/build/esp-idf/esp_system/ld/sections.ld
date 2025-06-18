@@ -1,6 +1,6 @@
 /* Automatically generated file; DO NOT EDIT */
 /* Espressif IoT Development Framework Linker Script */
-/* Generated from: C:\Espressif\Example_Projects\SoftAP_with_tcp_server\build\esp-idf\esp_system\ld\sections.ld.in */
+/* Generated from: C:\Users\albif\OneDrive - ETH Zurich\Thesis\git\SoftAP_with_tcp_server\build\esp-idf\esp_system\ld\sections.ld.in */
 
 /*
 
@@ -24,7 +24,7 @@
 
  * Automatically generated file. DO NOT EDIT.
 
- * Espressif IoT Development Framework (ESP-IDF) 5.3.1 Configuration Header
+ * Espressif IoT Development Framework (ESP-IDF) 5.3.2 Configuration Header
 
  */
        
@@ -519,7 +519,7 @@ SECTIONS
     *(EXCLUDE_FILE(*libnet80211.a *libpp.a) .wifirxiram EXCLUDE_FILE(*libnet80211.a *libpp.a) .wifirxiram.*)
     *(EXCLUDE_FILE(*libnet80211.a *libpp.a) .wifislpiram EXCLUDE_FILE(*libnet80211.a *libpp.a) .wifislpiram.*)
     *(EXCLUDE_FILE(*libnet80211.a *libpp.a) .wifislprxiram EXCLUDE_FILE(*libnet80211.a *libpp.a) .wifislprxiram.*)
-    *libesp_driver_gptimer.a:gptimer.*(.text .text.gptimer_acquire_group_handle .text.gptimer_del_timer .text.gptimer_destroy .text.gptimer_disable .text.gptimer_enable .text.gptimer_get_captured_count .text.gptimer_get_raw_count .text.gptimer_get_resolution .text.gptimer_new_timer .text.gptimer_register_event_callbacks .text.gptimer_register_to_group .text.gptimer_release_group_handle .text.gptimer_select_periph_clock .text.gptimer_set_alarm_action .text.gptimer_set_raw_count .text.gptimer_start .text.gptimer_stop .text.gptimer_unregister_from_group .text.timer_ll_set_clock_prescale .text.timer_ll_set_clock_source)
+    *libesp_driver_gptimer.a:gptimer.*(.text .text.gptimer_del_timer .text.gptimer_destroy .text.gptimer_disable .text.gptimer_enable .text.gptimer_get_captured_count .text.gptimer_get_raw_count .text.gptimer_get_resolution .text.gptimer_new_timer .text.gptimer_register_event_callbacks .text.gptimer_register_to_group .text.gptimer_set_alarm_action .text.gptimer_set_raw_count .text.gptimer_start .text.gptimer_stop .text.gptimer_unregister_from_group)
     *libesp_event.a:default_event_loop.*(.text .text.esp_event_handler_instance_register .text.esp_event_handler_instance_unregister .text.esp_event_handler_register .text.esp_event_handler_unregister .text.esp_event_loop_create_default .text.esp_event_loop_delete_default .text.esp_event_post)
     *libesp_event.a:esp_event.*(.text .text.base_node_add_handler .text.base_node_remove_all_handler .text.base_node_remove_handler .text.esp_event_dump .text.esp_event_handler_instance_register_with .text.esp_event_handler_instance_unregister_with .text.esp_event_handler_register_with .text.esp_event_handler_register_with_internal .text.esp_event_handler_unregister_with .text.esp_event_handler_unregister_with_internal .text.esp_event_loop_create .text.esp_event_loop_delete .text.esp_event_loop_run .text.esp_event_loop_run_task .text.esp_event_post_to .text.handler_execute .text.handler_instances_add .text.handler_instances_remove .text.handler_instances_remove_all .text.loop_node_add_handler .text.loop_node_remove_all_handler .text.loop_node_remove_handler)
     *libesp_hw_support.a:cpu.*(.text .text.esp_cpu_clear_breakpoint .text.esp_cpu_clear_watchpoint .text.esp_cpu_set_breakpoint .text.esp_cpu_set_watchpoint)
@@ -541,7 +541,7 @@ SECTIONS
     *libhal.a:timer_hal.*(.text .text.timer_hal_deinit .text.timer_hal_init .text.timer_hal_set_counter_value)
     *libheap.a:multi_heap.*(.text .text.multi_heap_reset_minimum_free_bytes .text.multi_heap_restore_minimum_free_bytes)
     *libieee802154.a:esp_ieee802154_ack.*(.text .text.ieee802154_add_pending_addr .text.ieee802154_clear_pending_addr .text.ieee802154_reset_pending_table)
-    *libieee802154.a:esp_ieee802154_dev.*(.text .text.enable_rx .text.ieee802154_cca .text.ieee802154_disable .text.ieee802154_enable .text.ieee802154_energy_detect .text.ieee802154_get_recent_lqi .text.ieee802154_get_recent_rssi .text.ieee802154_get_state .text.ieee802154_mac_deinit .text.ieee802154_mac_init .text.ieee802154_receive .text.ieee802154_receive_at .text.ieee802154_receive_done .text.ieee802154_receive_handle_done .text.ieee802154_sleep .text.ieee802154_sleep_deinit .text.ieee802154_sleep_init .text.ieee802154_transmit .text.ieee802154_transmit_at .text.ieee802154_transmit_done .text.ieee802154_transmit_internal .text.isr_handle_timer0_done .text.rx_init .text.set_next_rx_buffer .text.start_ed .text.stop_cca .text.stop_current_operation .text.stop_ed .text.stop_rx .text.stop_rx_ack .text.stop_tx .text.stop_tx_ack .text.stop_tx_cca .text.tx_init)
+    *libieee802154.a:esp_ieee802154_dev.*(.text .text.enable_rx .text.ieee802154_cca .text.ieee802154_disable .text.ieee802154_enable .text.ieee802154_energy_detect .text.ieee802154_get_recent_lqi .text.ieee802154_get_recent_rssi .text.ieee802154_get_state .text.ieee802154_mac_deinit .text.ieee802154_mac_init .text.ieee802154_receive .text.ieee802154_receive_at .text.ieee802154_receive_done .text.ieee802154_receive_handle_done .text.ieee802154_sleep .text.ieee802154_sleep_deinit .text.ieee802154_sleep_init .text.ieee802154_transmit .text.ieee802154_transmit_at .text.ieee802154_transmit_done .text.ieee802154_transmit_internal .text.is_target_time_expired .text.isr_handle_timer0_done .text.rx_init .text.set_next_rx_buffer .text.start_ed .text.stop_cca .text.stop_current_operation .text.stop_ed .text.stop_rx .text.stop_rx_ack .text.stop_tx .text.stop_tx_ack .text.stop_tx_cca .text.tx_init)
     *libieee802154.a:esp_ieee802154_frame.*(.text .text.ieee802154_frame_get_dest_panid .text.ieee802154_frame_get_dst_addr .text.ieee802154_frame_get_ie_field_len .text.ieee802154_frame_get_mic_len .text.ieee802154_frame_get_src_panid .text.ieee802154_frame_get_type .text.ieee802154_frame_get_version .text.ieee802154_frame_ie_header_offset .text.ieee802154_frame_is_ack_required)
     *libieee802154.a:esp_ieee802154_pib.*(.text .text.ieee802154_pib_get_auto_ack_rx .text.ieee802154_pib_get_auto_ack_tx .text.ieee802154_pib_get_cca_mode .text.ieee802154_pib_get_cca_threshold .text.ieee802154_pib_get_channel .text.ieee802154_pib_get_coordinator .text.ieee802154_pib_get_enhance_ack_tx .text.ieee802154_pib_get_power .text.ieee802154_pib_get_promiscuous .text.ieee802154_pib_init .text.ieee802154_pib_is_pending .text.ieee802154_pib_set_auto_ack_rx .text.ieee802154_pib_set_auto_ack_tx .text.ieee802154_pib_set_cca_mode .text.ieee802154_pib_set_cca_threshold .text.ieee802154_pib_set_channel .text.ieee802154_pib_set_coordinator .text.ieee802154_pib_set_enhance_ack_tx .text.ieee802154_pib_set_pending_mode .text.ieee802154_pib_set_power .text.ieee802154_pib_set_promiscuous .text.ieee802154_pib_set_rx_when_idle .text.ieee802154_pib_update .text.ieee802154_txpower_convert)
     *libieee802154.a:esp_ieee802154_sec.*(.text .text.ieee802154_ll_set_security_addr .text.ieee802154_ll_set_security_key)

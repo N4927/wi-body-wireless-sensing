@@ -1,0 +1,38 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\albif\OneDrive - ETH Zurich\Thesis\git\Station_with_tcp_client_time_sync\build\bootloader\esp-idf\esptool_py" && C:\Users\albif\.espressif\python_env\idf5.3_py3.10_env\Scripts\python.exe C:/Users/albif/esp/v5.3.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 "C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/Station_with_tcp_client_time_sync/build/bootloader/bootloader.bin""
+Bootloader binary size 0x56f0 bytes. 0x2910 bytes (32%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/tcp_client_v4.c.obj
+C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/Station_with_tcp_client_time_sync/main/tcp_client_v4.c:36: warning: "BIT64" redefined
+   36 | #define BIT64(x)      (1ULL << (x))
+      | 
+In file included from C:/Users/albif/esp/v5.3.2/esp-idf/components/soc/esp32c6/include/soc/soc.h:14,
+                 from C:/Users/albif/esp/v5.3.2/esp-idf/components/soc/esp32c6/include/soc/assist_debug_reg.h:8,
+                 from C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/include/riscv/rv_utils.h:12,
+                 from C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_hw_support/include/esp_cpu.h:18,
+                 from C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_hw_support/include/spinlock.h:11,
+                 from C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/riscv/include/freertos/portmacro.h:65,
+                 from C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h:57,
+                 from C:/Users/albif/esp/v5.3.2/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:69,
+                 from C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/include/esp_task.h:24,
+                 from C:/Users/albif/esp/v5.3.2/esp-idf/components/lwip/port/include/lwipopts.h:20,
+                 from C:/Users/albif/esp/v5.3.2/esp-idf/components/lwip/lwip/src/include/lwip/opt.h:51,
+                 from C:/Users/albif/esp/v5.3.2/esp-idf/components/lwip/lwip/src/include/lwip/sockets.h:42,
+                 from C:/Users/albif/esp/v5.3.2/esp-idf/components/lwip/include/lwip/sockets.h:8,
+                 from C:/Users/albif/esp/v5.3.2/esp-idf/components/lwip/port/esp32xx/include/sys/socket.h:15,
+                 from C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/Station_with_tcp_client_time_sync/main/tcp_client_v4.c:6:
+C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_common/include/esp_bit_defs.h:82: note: this is the location of the previous definition
+   82 | #define BIT64(nr)               (1ULL << (nr))
+      | 
+[5/9] Linking C static library esp-idf\main\libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable wifi_station.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32c6 image...
+Merged 1 ELF section
+Successfully created esp32c6 image.
+Generated C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/Station_with_tcp_client_time_sync/build/wifi_station.bin
+[9/9] C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\albif\OneDrive - ETH Zurich\Thesis\git\Station_with_tcp_client_time_sync\build\esp-idf\esptool_py" && C:\Users\albif\.espressif\python_env\idf5.3_py3.10_env\Scripts\python.exe C:/Users/albif/esp/v5.3.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/Station_with_tcp_client_time_sync/build/partition_table/partition-table.bin" "C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/Station_with_tcp_client_time_sync/build/wifi_station.bin""
+wifi_station.bin binary size 0xc0c90 bytes. Smallest app partition is 0x100000 bytes. 0x3f370 bytes (25%) free.

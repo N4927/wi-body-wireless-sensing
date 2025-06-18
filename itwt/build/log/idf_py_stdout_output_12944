@@ -1,0 +1,393 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0x3e (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x16b8
+load:0x4086c110,len:0xe84
+load:0x4086e610,len:0x3058
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time May  1 2025 16:56:58[0m
+[0;32mI (24) boot: chip revision: v0.2[0m
+[0;32mI (24) boot: efuse block revision: v0.3[0m
+[0;32mI (27) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (31) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (35) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (39) boot: Enabling RNG early entropy source...[0m
+[0;32mI (43) boot: Partition Table:[0m
+[0;32mI (46) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (52) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (58) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (75) esp_image: segment 0: paddr=00010020 vaddr=42098020 size=20fcch (135116) map[0m
+[0;32mI (107) esp_image: segment 1: paddr=00030ff4 vaddr=40800000 size=07024h ( 28708) load[0m
+[0;32mI (114) esp_image: segment 2: paddr=00038020 vaddr=42000020 size=9468ch (607884) map[0m
+[0;32mI (227) esp_image: segment 3: paddr=000cc6b4 vaddr=40807024 size=15b68h ( 88936) load[0m
+[0;32mI (246) esp_image: segment 4: paddr=000e2224 vaddr=4081cb90 size=03d30h ( 15664) load[0m
+[0;32mI (250) esp_image: segment 5: paddr=000e5f5c vaddr=50000000 size=00050h (    80) load[0m
+[0;32mI (251) esp_image: segment 6: paddr=000e5fb4 vaddr=50000050 size=00020h (    32) load[0m
+[0;32mI (264) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (265) boot: Disabling RNG early entropy source...[0m
+[0;32mI (279) cpu_start: Unicore app[0m
+[0;32mI (288) cpu_start: Pro cpu start user code[0m
+[0;32mI (288) cpu_start: cpu freq: 80000000 Hz[0m
+[0;32mI (288) app_init: Application information:[0m
+[0;32mI (290) app_init: Project name:     itwt[0m
+[0;32mI (295) app_init: App version:      ac3da05a-dirty[0m
+[0;32mI (301) app_init: Compile time:     May  6 2025 14:30:07[0m
+[0;32mI (307) app_init: ELF file SHA256:  4d589cad5...[0m
+[0;32mI (312) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (317) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (321) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (326) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (331) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (338) heap_init: At 40825840 len 00056DD0 (347 KiB): RAM[0m
+[0;32mI (344) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (351) heap_init: At 50000070 len 00003F78 (15 KiB): RTCRAM[0m
+[0;32mI (358) spi_flash: detected chip: generic[0m
+[0;32mI (362) spi_flash: flash io: dio[0m
+[0;33mW (365) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (379) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (386) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (394) sleep_clock: System Power, Clock and Reset sleep retention initialization[0m
+[0;32mI (413) coexist: coex firmware version: e727207[0m
+[0;32mI (413) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (414) main_task: Started on CPU0[0m
+[0;32mI (416) main_task: Calling app_main()[0m
+[0;32mI (440) pm: Frequency switching config: CPU_MAX: 160, APB_MAX: 80, APB_MIN: 40, Light sleep: ENABLED[0m
+[0;32mI (442) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (443) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (450) wifi:wifi driver task: 4083045c, prio:23, stack:6656, core=0[0m
+[0;32mI (455) wifi:wifi firmware version: 79fa3f41ba[0m
+[0;32mI (459) wifi:wifi certification version: v7.0[0m
+[0;32mI (463) wifi:config NVS flash: disabled[0m
+[0;32mI (466) wifi:config nano formatting: disabled[0m
+[0;32mI (470) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band mode:0x1[0m
+[0;32mI (477) wifi:Init data frame dynamic rx buffer num: 38[0m
+[0;32mI (482) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (486) wifi:Init management short buffer num: 32[0m
+[0;32mI (490) wifi:Init dynamic tx buffer num: 35[0m
+[0;32mI (494) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (498) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (504) wifi:Init static rx buffer num: 20[0m
+[0;32mI (508) wifi:Init dynamic rx buffer num: 38[0m
+[0;32mI (512) sleep_clock: Modem Power, Clock and Reset sleep retention initialization[0m
+[0;32mI (521) wifi_init: rx ba win: 20[0m
+[0;32mI (524) wifi_init: accept mbox: 6[0m
+[0;32mI (528) wifi_init: tcpip mbox: 64[0m
+[0;32mI (532) wifi_init: udp mbox: 64[0m
+[0;32mI (536) wifi_init: tcp mbox: 64[0m
+[0;32mI (539) wifi_init: tcp tx win: 30000[0m
+[0;32mI (544) wifi_init: tcp rx win: 34000[0m
+[0;32mI (548) wifi_init: tcp mss: 1440[0m
+[0;32mI (552) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (556) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (561) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;33mW (566) wifi:Password length matches WPA2 standards, authmode threshold changes from OPEN to WPA2[0m
+[0;32mI (575) wifi:ifx:0, phymode(new:7, sta nvs: 7 ap nvs: 3)[0m
+[0;32mI (580) wifi:Set ps type: 1, coexist: 0[0m
+
+[0;32mI (583) itwt: Success to set static ip: 192.168.0.200, netmask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (593) phy_init: phy_version 330,4af1121,Feb  6 2025,14:39:13[0m
+[0;33mW (663) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (663) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (668) wifi:(agc)0x600a7128:0xd2075aba, min.avgNF:0xce->0xd2(dB), RCalCount:0x74, min.RRssi:0xaba(-84.38)[0m
+[0;33mW (678) wifi:(TB)WDEV_PWR_TB_MCS0:19[0m
+[0;33mW (681) wifi:(TB)WDEV_PWR_TB_MCS1:19[0m
+[0;33mW (684) wifi:(TB)WDEV_PWR_TB_MCS2:19[0m
+[0;33mW (687) wifi:(TB)WDEV_PWR_TB_MCS3:19[0m
+[0;33mW (691) wifi:(TB)WDEV_PWR_TB_MCS4:19[0m
+[0;33mW (694) wifi:(TB)WDEV_PWR_TB_MCS5:19[0m
+[0;33mW (697) wifi:(TB)WDEV_PWR_TB_MCS6:18[0m
+[0;33mW (700) wifi:(TB)WDEV_PWR_TB_MCS7:18[0m
+[0;33mW (704) wifi:(TB)WDEV_PWR_TB_MCS8:17[0m
+[0;33mW (707) wifi:(TB)WDEV_PWR_TB_MCS9:15[0m
+[0;33mW (710) wifi:(TB)WDEV_PWR_TB_MCS10:15[0m
+[0;33mW (714) wifi:(TB)WDEV_PWR_TB_MCS11:15[0m
+[0;32mI (717) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;32mI (724) wifi:mode : sta (7c:2c:67:5d:2c:3c)[0m
+[0;32mI (728) wifi:enable tsf[0m
+[0;32mI (731) itwt: sta connect to TP-Link_B5F4[0m
+[0;32mI (737) main_task: Returned from app_main()[0m
+[0;32mI (1465) wifi:(he)max.RxAMPDULenExponentExtension:2, max.RxAMPDUpre-EOFpaddingBytes:4194303(0x3fffff)[0m
+[0;32mI (1465) wifi:(mac)omc_ul_mu_data_disable_rx:1[0m
+[0;32mI (1467) wifi:(phy)ppe_thresholds_present:1, nominal_packet_padding:0[0m
+[0;32mI (1473) wifi:(phy)dcm tx(constellation:0, nss:0), dcm rx(constellation:0, nss:0)[0m
+[0;32mI (1480) wifi:(phy)rx_mcs_map:0xfffa, tx_mcs_map:0xfffa, stbc_tx:0, bfmer(su:1, mu:0), ldpc:1, max_rate:172[0m
+[0;32mI (1490) wifi:(phy)nsts:2, ru_index_bitmap:0x7(242:1, 484:1, 996:1, 2*996:0)[0m
+[0;32mI (1496) wifi:(phy)threshold_bits:36, nsts_num:2, ru_num:3, he_cap->len:28, ppe_threshold_len:6(6,11,4)[0m
+[0;32mI (1506) wifi:(ppe)RU242, NSTS0, PPE16:0, PPE8:7, nominal_packet_padding:2[0m
+[0;32mI (1512) wifi:(opr)len:7, TWT Required:0, VHT Opr Info Present:0, 6GHz Opr Info Present:0, Co-Hosted BSS:0(max_indicator:0), Basic MCS and NSS:0xfffc[0m
+[0;32mI (1525) wifi:(opr)len:7, Default PE Duration:4, TXOP RTS Threshold:0(0 us), ER-SU-Disable:0[0m
+[0;32mI (1533) wifi:(opr)len:7, BSS Color:31, disabled:0, Partial BSS Color:0[0m
+[0;32mI (1841) wifi:new:<7,0>, old:<1,0>, ap:<255,255>, sta:<7,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1842) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3[0m
+[0;32mI (1844) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1859) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1865) wifi:(assoc)RESP, Extended Capabilities length:10, operating_mode_notification:0[0m
+[0;32mI (1865) wifi:(assoc)RESP, Extended Capabilities, MBSSID:0, TWT Responder:0, OBSS Narrow Bandwidth RU In OFDMA Tolerance:0[0m
+[0;32mI (1873) wifi:Extended Capabilities length:10, operating_mode_notification:1[0m
+[0;32mI (1880) wifi:(he)max.RxAMPDULenExponentExtension:2, max.RxAMPDUpre-EOFpaddingBytes:4194303(0x3fffff)[0m
+[0;32mI (1889) wifi:(mac)omc_ul_mu_data_disable_rx:1[0m
+[0;32mI (1893) wifi:(phy)ppe_thresholds_present:1, nominal_packet_padding:0[0m
+[0;32mI (1899) wifi:(phy)dcm tx(constellation:0, nss:0), dcm rx(constellation:0, nss:0)[0m
+[0;32mI (1906) wifi:(phy)rx_mcs_map:0xfffa, tx_mcs_map:0xfffa, stbc_tx:0, bfmer(su:1, mu:0), ldpc:1, max_rate:172[0m
+[0;32mI (1916) wifi:(phy)nsts:2, ru_index_bitmap:0x7(242:1, 484:1, 996:1, 2*996:0)[0m
+[0;32mI (1922) wifi:(phy)threshold_bits:36, nsts_num:2, ru_num:3, he_cap->len:28, ppe_threshold_len:6(6,11,4)[0m
+[0;32mI (1932) wifi:(ppe)RU242, NSTS0, PPE16:0, PPE8:7, nominal_packet_padding:2[0m
+[0;32mI (1938) wifi:(opr)len:7, TWT Required:0, VHT Opr Info Present:0, 6GHz Opr Info Present:0, Co-Hosted BSS:0(max_indicator:0), Basic MCS and NSS:0xfffc[0m
+[0;32mI (1951) wifi:(opr)len:7, Default PE Duration:4, TXOP RTS Threshold:0(0 us), ER-SU-Disable:0[0m
+[0;32mI (1959) wifi:(opr)len:7, BSS Color:31, disabled:0, Partial BSS Color:0[0m
+[0;32mI (1966) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1969) wifi:(he)ppe_thresholds_present:1, nominal_packet_padding(rx:0, cfg:2)[0m
+[0;32mI (1976) wifi:(trc)phytype:CBW20-SGI, snr:55, maxRate:172, highestRateIdx:0[0m
+[0;33mW (1983) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (1992) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:55, ampduState:wait operational[0m
+[0;32mI (2003) wifi:ifidx:0, rssi:-39, nf:-94, phytype(0x3, CBW20-SGI), phymode(0x7, 11ax), max_rate:172, he:1, vht:0, ht:1[0m
+[0;32mI (2013) wifi:(ht)max.RxAMPDULenExponent:3(65535 bytes), MMSS:5(4 us)[0m
+[0;32mI (2034) wifi:(extcap)mbssid:0, enhanced_mbssid_advertise:0, complete_nontxbssid_profiles:0, twt_responder: 1[0m
+[0;32mI (2034) wifi:connected with TP-Link_B5F4, aid = 19, channel 7, BW20, bssid = c0:c9:e3:9e:b5:f3[0m
+[0;32mI (2041) wifi:security: WPA2-PSK, phy:11ax, rssi:-39, cipher(pairwise:0x3, group:0x3), pmf:0, [0m
+[0;32mI (2050) wifi:pm start, type: 1, twt_start:0[0m
+
+[0;32mI (2053) wifi:pm start, type:1, aid:0x13, trans-BSSID:c0:c9:e3:9e:b5:f3, BSSID[5]:0xf3, mbssid(max-indicator:0, index:0), he:1[0m
+[0;32mI (2065) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2073) wifi:set rx beacon pti, rx_bcn_pti: 10, bcn_timeout: 25000, mt_pti: 10, mt_time: 10000[0m
+[0;32mI (2081) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:32, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (2092) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:32, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)[0m
+[0;32mI (2103) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:32, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (2115) esp_netif_handlers: sta ip: 192.168.0.200, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (2115) wifi:[ADDBA]RX addba response, status:0, tid:7/tb:1(0xa1), bufsize:32, batimeout:0, txa_wnd:32[0m
+[0;32mI (2132) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:32, batimeout:0, txa_wnd:32[0m
+[0;32mI (2141) wifi:[ADDBA]RX addba response, status:0, tid:5/tb:1(0xa1), bufsize:32, batimeout:0, txa_wnd:32[0m
+[0;32mI (2150) wifi:AP's beacon interval = 102400 us, DTIM period = 1[0m
+[0;33mW (2161) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100f3b5, TALO:0x9ee3c9c0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;32mI (2178) itwt: <WIFI_EVENT_ITWT_SETUP>twt_id:0, flow_id:0, trigger-enabled, announced, wake_dura:224, wake_dura_unit:0, wake_invl_e:13, wake_invl_m:13[0m
+[0;32mI (2181) itwt: <WIFI_EVENT_ITWT_SETUP>target wake time:19901145088, wake duration:57344 us, service period:106496 us[0m
+[0;32mI (3419) itwt: TCP connected[0m
+[0;32mI (3420) itwt: looooooooooooooooooop[0m
+[0;32mI (3470) itwt: passatoooooooooooooooooooooooooo[0m
+[0;32mI (3470) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3471) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3474) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3478) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3482) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3487) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3492) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3496) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3501) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3505) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3510) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3515) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3519) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3524) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3528) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3533) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3538) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3542) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3547) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3552) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3557) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3561) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3566) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3570) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3575) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3580) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3584) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3589) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3593) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3598) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3602) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3607) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3611) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3616) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3620) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3625) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3630) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3634) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3639) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3643) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3648) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3653) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3658) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3662) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3667) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3671) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3676) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3681) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3685) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3690) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3694) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3699) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3704) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3708) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3713) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3717) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3722) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3726) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3731) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3735) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3740) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3745) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3749) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3754) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3758) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3763) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3768) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (3772) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (8931) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (8931) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (8982) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (8982) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (8983) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (8985) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (8989) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (8994) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (8999) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (9003) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (9008) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (9012) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (9017) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (9022) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (9026) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (9031) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (9035) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (9040) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (9045) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (9049) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (9054) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (9058) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (9063) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (9068) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (9072) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (9076) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (9081) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (9086) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (9090) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (9095) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (9099) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (9104) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (9109) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (9113) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (9118) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (9123) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (9127) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14283) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14284) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14334) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14334) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14334) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14337) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14342) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14346) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14351) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14356) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14360) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14365) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14372) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14376) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14379) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14384) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14389) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14393) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14398) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14403) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14407) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14412) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14417) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14422) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14426) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14431) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14435) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14440) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14445) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14450) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14454) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14459) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14464) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14468) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14473) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14478) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14483) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14487) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14492) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14497) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14501) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14506) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14511) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14515) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14520) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14525) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14529) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14534) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14538) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14543) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14548) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14552) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14559) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14562) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14567) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14572) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14576) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14581) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14586) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14590) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14595) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14600) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14605) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14609) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14614) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14618) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14623) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14628) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14632) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14637) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14642) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14646) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14651) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14656) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14661) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14665) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14670) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14675) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14679) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14684) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14689) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14694) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14698) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14703) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14707) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14712) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14717) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14722) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14726) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14731) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14736) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14740) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14745) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14750) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14754) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14759) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14764) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14769) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14773) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14778) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14783) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14787) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14792) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14797) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14801) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14806) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14811) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14815) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14820) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14825) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14829) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14834) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14839) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14843) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14848) itwt: dentroooooooooooooooooooo[0m
+[0;32mI (14853) itwt: dentroooo

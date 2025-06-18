@@ -1,0 +1,2735 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x18ec
+load:0x4086c110,len:0xe5c
+load:0x4086e610,len:0x2f50
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time May 13 2025 16:34:30[0m
+[0;32mI (24) boot: chip revision: v0.1[0m
+[0;32mI (26) boot: efuse block revision: v0.2[0m
+[0;32mI (31) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (36) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=42098020 size=1c34ch (115532) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=0002c374 vaddr=40800000 size=03ca4h ( 15524) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=93198h (602520) map[0m
+[0;32mI (237) esp_image: segment 3: paddr=000c31c0 vaddr=40803ca4 size=15338h ( 86840) load[0m
+[0;32mI (256) esp_image: segment 4: paddr=000d8500 vaddr=40818fe0 size=03b78h ( 15224) load[0m
+[0;32mI (266) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (266) boot: Disabling RNG early entropy source...[0m
+[0;32mI (278) cpu_start: Unicore app[0m
+[0;32mI (286) cpu_start: Pro cpu start user code[0m
+[0;32mI (286) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (287) app_init: Application information:[0m
+[0;32mI (289) app_init: Project name:     wifi_softAP[0m
+[0;32mI (294) app_init: App version:      ac3da05a-dirty[0m
+[0;32mI (300) app_init: Compile time:     May 13 2025 16:32:53[0m
+[0;32mI (306) app_init: ELF file SHA256:  f5ffac533...[0m
+[0;32mI (311) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (316) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (321) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (326) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (331) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (338) heap_init: At 40822090 len 0005A580 (361 KiB): RAM[0m
+[0;32mI (344) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (350) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (357) spi_flash: detected chip: generic[0m
+[0;32mI (361) spi_flash: flash io: dio[0m
+[0;33mW (365) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (378) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (385) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (392) coexist: coex firmware version: cbb41d7[0m
+[0;32mI (406) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (407) main_task: Started on CPU0[0m
+[0;32mI (407) main_task: Calling app_main()[0m
+[0;32mI (417) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (417) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (427) wifi:wifi driver task: 4082b1a4, prio:23, stack:6656, core=0[0m
+[0;32mI (437) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (437) wifi:wifi certification version: v7.0[0m
+[0;32mI (437) wifi:config NVS flash: enabled[0m
+[0;32mI (437) wifi:config nano formating: disabled[0m
+[0;32mI (437) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band:0x1[0m
+[0;32mI (447) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (447) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (457) wifi:Init management short buffer num: 32[0m
+[0;32mI (457) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (467) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (467) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (477) wifi:Init static rx buffer num: 10[0m
+[0;32mI (477) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (477) wifi_init: rx ba win: 6[0m
+[0;32mI (487) wifi_init: accept mbox: 6[0m
+[0;32mI (487) wifi_init: tcpip mbox: 32[0m
+[0;32mI (497) wifi_init: udp mbox: 6[0m
+[0;32mI (497) wifi_init: tcp mbox: 6[0m
+[0;32mI (497) wifi_init: tcp tx win: 5760[0m
+[0;32mI (507) wifi_init: tcp rx win: 5760[0m
+[0;32mI (507) wifi_init: tcp mss: 1440[0m
+[0;32mI (517) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (517) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (527) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (527) phy_init: phy_version 320,348a293,Sep  3 2024,16:33:12[0m
+[0;33mW (587) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;33mW (607) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (607) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (607) wifi:(agc)0x600a7128:0xd21a69de, min.avgNF:0xce->0xd2(dB), RCalCount:0x1a6, min.RRssi:0x9de(-98.12)[0m
+[0;33mW (617) wifi:(TB)WDEV_PWR_TB_MCS0:19[0m
+[0;33mW (617) wifi:(TB)WDEV_PWR_TB_MCS1:19[0m
+[0;33mW (627) wifi:(TB)WDEV_PWR_TB_MCS2:19[0m
+[0;33mW (627) wifi:(TB)WDEV_PWR_TB_MCS3:19[0m
+[0;33mW (627) wifi:(TB)WDEV_PWR_TB_MCS4:19[0m
+[0;33mW (637) wifi:(TB)WDEV_PWR_TB_MCS5:19[0m
+[0;33mW (637) wifi:(TB)WDEV_PWR_TB_MCS6:18[0m
+[0;33mW (637) wifi:(TB)WDEV_PWR_TB_MCS7:18[0m
+[0;33mW (647) wifi:(TB)WDEV_PWR_TB_MCS8:17[0m
+[0;33mW (647) wifi:(TB)WDEV_PWR_TB_MCS9:15[0m
+[0;33mW (647) wifi:(TB)WDEV_PWR_TB_MCS10:15[0m
+[0;33mW (657) wifi:(TB)WDEV_PWR_TB_MCS11:15[0m
+[0;32mI (657) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;33mW (667) wifi:(he)deattach, ap, phymode:11bgn[0m
+[0;32mI (667) wifi:mode : softAP (40:4c:ca:5c:28:dd)[0m
+[0;32mI (677) wifi:Total power save buffer number: 16[0m
+[0;32mI (677) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (677) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (687) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (697) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (697) AP: Soft‑AP avviata: SSID=myssid, chan=1[0m
+[0;32mI (707) AP: TCP server listening on port 3333[0m
+[0;32mI (707) main_task: Returned from app_main()[0m
+[0;32mI (41877) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (41877) wifi:(trc)phytype:CBW20-SGI, snr:72, maxRate:0, highestRateIdx:0[0m
+[0;33mW (41887) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (41887) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:72, ampduState:wait operational[0m
+[0;32mI (41907) wifi:ifidx:1, rssi:-27, nf:-99, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (41917) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (41917) wifi:station: f0:f5:bd:07:01:00 join, AID=1, bgn, 20[0m
+[0;32mI (41947) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (41947) wifi:(trc)phytype:CBW20-SGI, snr:76, maxRate:0, highestRateIdx:0[0m
+[0;33mW (41957) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (41967) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:76, ampduState:wait operational[0m
+[0;32mI (41977) wifi:ifidx:1, rssi:-23, nf:-99, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (41987) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (41987) wifi:station: f0:f5:bd:07:05:50 join, AID=2, bgn, 20[0m
+[0;32mI (42007) AP: STA f0:f5:bd:07:01:00 joined, AID=1[0m
+[0;32mI (42047) AP: STA f0:f5:bd:07:05:50 joined, AID=2[0m
+[0;33mW (42077) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (42097) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (42097) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;33mW (42117) wifi:<ba-add>idx:7, ifx:1, tid:0, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;32mI (42127) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (42157) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.3[0m
+[0;32mI (43127) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (43137) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (43157) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (43167) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;31mE (43207) AP: pkt too small (3)[0m
+[0;31mE (43237) AP: pkt too small (3)[0m
+[0;31mE (43267) AP: pkt too small (3)[0m
+[0;31mE (43297) AP: pkt too small (3)[0m
+[0;31mE (43337) AP: pkt too small (3)[0m
+[0;31mE (43367) AP: pkt too small (3)[0m
+[0;31mE (43447) AP: pkt too small (3)[0m
+[0;31mE (43447) AP: pkt too small (3)[0m
+[0;31mE (43507) AP: pkt too small (3)[0m
+[0;31mE (43507) AP: pkt too small (3)[0m
+[0;31mE (43567) AP: pkt too small (3)[0m
+[0;31mE (43627) AP: pkt too small (3)[0m
+[0;31mE (43697) AP: pkt too small (3)[0m
+[0;31mE (43697) AP: pkt too small (3)[0m
+[0;31mE (43757) AP: pkt too small (3)[0m
+[0;31mE (43757) AP: pkt too small (3)[0m
+[0;31mE (43817) AP: pkt too small (3)[0m
+[0;31mE (43827) AP: pkt too small (3)[0m
+[0;31mE (43877) AP: pkt too small (3)[0m
+[0;31mE (43947) AP: pkt too small (3)[0m
+[0;31mE (43947) AP: pkt too small (3)[0m
+[0;31mE (44007) AP: pkt too small (3)[0m
+[0;31mE (44007) AP: pkt too small (3)[0m
+[0;31mE (44067) AP: pkt too small (3)[0m
+[0;31mE (44077) AP: pkt too small (3)[0m
+[0;31mE (44137) AP: pkt too small (3)[0m
+[0;31mE (44197) AP: pkt too small (3)[0m
+[0;31mE (44197) AP: pkt too small (3)[0m
+[0;31mE (44257) AP: pkt too small (3)[0m
+[0;31mE (44257) AP: pkt too small (3)[0m
+[0;31mE (44317) AP: pkt too small (3)[0m
+[0;31mE (44327) AP: pkt too small (3)[0m
+[0;31mE (44387) AP: pkt too small (3)[0m
+[0;31mE (44387) AP: pkt too small (3)[0m
+[0;31mE (44447) AP: pkt too small (3)[0m
+[0;31mE (44447) AP: pkt too small (3)[0m
+[0;31mE (44507) AP: pkt too small (3)[0m
+[0;31mE (44567) AP: pkt too small (3)[0m
+[0;31mE (44577) AP: pkt too small (3)[0m
+[0;31mE (44627) AP: pkt too small (3)[0m
+[0;31mE (44697) AP: pkt too small (3)[0m
+[0;31mE (44757) AP: pkt too small (3)[0m
+[0;31mE (44757) AP: pkt too small (3)[0m
+[0;31mE (44817) AP: pkt too small (3)[0m
+[0;31mE (44827) AP: pkt too small (3)[0m
+[0;31mE (44887) AP: pkt too small (3)[0m
+[0;31mE (44887) AP: pkt too small (3)[0m
+[0;31mE (44947) AP: pkt too small (3)[0m
+[0;31mE (44947) AP: pkt too small (3)[0m
+[0;31mE (45007) AP: pkt too small (3)[0m
+[0;31mE (45007) AP: pkt too small (3)[0m
+[0;31mE (45067) AP: pkt too small (3)[0m
+[0;31mE (45067) AP: pkt too small (3)[0m
+[0;31mE (45137) AP: pkt too small (3)[0m
+[0;31mE (45197) AP: pkt too small (3)[0m
+[0;31mE (45197) AP: pkt too small (3)[0m
+[0;31mE (45257) AP: pkt too small (3)[0m
+[0;31mE (45257) AP: pkt too small (3)[0m
+[0;31mE (45317) AP: pkt too small (3)[0m
+[0;31mE (45327) AP: pkt too small (3)[0m
+[0;31mE (45377) AP: pkt too small (3)[0m
+[0;31mE (45447) AP: pkt too small (3)[0m
+[0;31mE (45447) AP: pkt too small (3)[0m
+[0;31mE (45507) AP: pkt too small (3)[0m
+[0;31mE (45507) AP: pkt too small (3)[0m
+[0;31mE (45567) AP: pkt too small (3)[0m
+[0;31mE (45567) AP: pkt too small (3)[0m
+[0;31mE (45627) AP: pkt too small (3)[0m
+[0;31mE (45637) AP: pkt too small (3)[0m
+[0;31mE (45697) AP: pkt too small (3)[0m
+[0;31mE (45697) AP: pkt too small (3)[0m
+[0;31mE (45757) AP: pkt too small (3)[0m
+[0;31mE (45757) AP: pkt too small (3)[0m
+[0;31mE (45817) AP: pkt too small (3)[0m
+[0;31mE (45817) AP: pkt too small (3)[0m
+[0;31mE (45877) AP: pkt too small (3)[0m
+[0;31mE (45887) AP: pkt too small (3)[0m
+[0;31mE (45947) AP: pkt too small (3)[0m
+[0;31mE (46007) AP: pkt too small (3)[0m
+[0;31mE (46007) AP: pkt too small (3)[0m
+[0;31mE (46067) AP: pkt too small (3)[0m
+[0;31mE (46077) AP: pkt too small (3)[0m
+[0;31mE (46137) AP: pkt too small (3)[0m
+[0;31mE (46197) AP: pkt too small (3)[0m
+[0;31mE (46197) AP: pkt too small (3)[0m
+[0;31mE (46257) AP: pkt too small (3)[0m
+[0;31mE (46267) AP: pkt too small (3)[0m
+[0;31mE (46317) AP: pkt too small (3)[0m
+[0;31mE (46327) AP: pkt too small (3)[0m
+[0;31mE (46377) AP: pkt too small (3)[0m
+[0;31mE (46447) AP: pkt too small (3)[0m
+[0;31mE (46447) AP: pkt too small (3)[0m
+[0;31mE (46507) AP: pkt too small (3)[0m
+[0;31mE (46507) AP: pkt too small (3)[0m
+[0;31mE (46567) AP: pkt too small (3)[0m
+[0;31mE (46567) AP: pkt too small (3)[0m
+[0;31mE (46627) AP: pkt too small (3)[0m
+[0;31mE (46697) AP: pkt too small (3)[0m
+[0;31mE (46697) AP: pkt too small (3)[0m
+[0;31mE (46757) AP: pkt too small (3)[0m
+[0;31mE (46767) AP: pkt too small (3)[0m
+[0;31mE (46827) AP: pkt too small (3)[0m
+[0;31mE (46827) AP: pkt too small (3)[0m
+[0;31mE (46887) AP: pkt too small (3)[0m
+[0;31mE (46947) AP: pkt too small (3)[0m
+[0;31mE (46947) AP: pkt too small (3)[0m
+[0;31mE (47007) AP: pkt too small (3)[0m
+[0;31mE (47007) AP: pkt too small (3)[0m
+[0;31mE (47077) AP: pkt too small (3)[0m
+[0;31mE (47077) AP: pkt too small (3)[0m
+[0;31mE (47137) AP: pkt too small (3)[0m
+[0;31mE (47197) AP: pkt too small (3)[0m
+[0;31mE (47197) AP: pkt too small (3)[0m
+[0;31mE (47257) AP: pkt too small (3)[0m
+[0;31mE (47257) AP: pkt too small (3)[0m
+[0;31mE (47317) AP: pkt too small (3)[0m
+[0;31mE (47327) AP: pkt too small (3)[0m
+[0;31mE (47387) AP: pkt too small (3)[0m
+[0;31mE (47447) AP: pkt too small (3)[0m
+[0;31mE (47447) AP: pkt too small (3)[0m
+[0;31mE (47507) AP: pkt too small (3)[0m
+[0;31mE (47507) AP: pkt too small (3)[0m
+[0;31mE (47567) AP: pkt too small (3)[0m
+[0;31mE (47567) AP: pkt too small (3)[0m
+[0;31mE (47627) AP: pkt too small (3)[0m
+[0;31mE (47637) AP: pkt too small (3)[0m
+[0;31mE (47697) AP: pkt too small (3)[0m
+[0;31mE (47697) AP: pkt too small (3)[0m
+[0;31mE (47767) AP: pkt too small (3)[0m
+[0;31mE (47817) AP: pkt too small (3)[0m
+[0;31mE (47827) AP: pkt too small (3)[0m
+[0;31mE (47877) AP: pkt too small (3)[0m
+[0;31mE (47937) AP: pkt too small (3)[0m
+[0;31mE (47957) AP: pkt too small (3)[0m
+[0;32mI (48007) AP: === TRIGGER board 1 — TSF 47264049 µs ===[0m
+[0;31mE (48007) AP: pkt too small (3)[0m
+[0;31mE (48017) AP: pkt too small (3)[0m
+[0;31mE (48077) AP: pkt too small (3)[0m
+[0;31mE (48077) AP: pkt too small (3)[0m
+[0;31mE (48347) AP: pkt too small (3)[0m
+[0;31mE (48347) AP: pkt too small (3)[0m
+[0;31mE (48447) AP: pkt too small (3)[0m
+[0;31mE (48447) AP: pkt too small (3)[0m
+[0;31mE (48507) AP: pkt too small (3)[0m
+[0;31mE (48507) AP: pkt too small (3)[0m
+[0;31mE (48567) AP: pkt too small (3)[0m
+[0;31mE (48567) AP: pkt too small (3)[0m
+[0;31mE (48627) AP: pkt too small (3)[0m
+[0;31mE (48627) AP: pkt too small (3)[0m
+[0;31mE (48697) AP: pkt too small (3)[0m
+[0;31mE (48697) AP: pkt too small (3)[0m
+[0;31mE (48757) AP: pkt too small (3)[0m
+[0;31mE (48827) AP: pkt too small (3)[0m
+[0;31mE (48827) AP: pkt too small (3)[0m
+[0;31mE (48887) AP: pkt too small (3)[0m
+[0;31mE (48947) AP: pkt too small (3)[0m
+[0;31mE (48947) AP: pkt too small (3)[0m
+[0;31mE (49007) AP: pkt too small (3)[0m
+[0;31mE (49007) AP: pkt too small (3)[0m
+[0;31mE (49067) AP: pkt too small (3)[0m
+[0;31mE (49067) AP: pkt too small (3)[0m
+[0;31mE (49197) AP: pkt too small (3)[0m
+[0;31mE (49207) AP: pkt too small (3)[0m
+[0;31mE (49257) AP: pkt too small (3)[0m
+[0;31mE (49267) AP: pkt too small (3)[0m
+[0;31mE (49327) AP: pkt too small (3)[0m
+[0;31mE (49337) AP: pkt too small (3)[0m
+[0;31mE (49447) AP: pkt too small (3)[0m
+[0;31mE (49457) AP: pkt too small (3)[0m
+[0;31mE (49507) AP: pkt too small (3)[0m
+[0;31mE (49517) AP: pkt too small (3)[0m
+[0;31mE (49567) AP: pkt too small (3)[0m
+[0;31mE (49577) AP: pkt too small (3)[0m
+[0;31mE (49637) AP: pkt too small (3)[0m
+[0;31mE (49697) AP: pkt too small (3)[0m
+[0;31mE (49697) AP: pkt too small (3)[0m
+[0;31mE (49757) AP: pkt too small (3)[0m
+[0;31mE (49757) AP: pkt too small (3)[0m
+[0;31mE (49817) AP: pkt too small (3)[0m
+[0;31mE (49887) AP: pkt too small (3)[0m
+[0;31mE (49947) AP: pkt too small (3)[0m
+[0;31mE (49947) AP: pkt too small (3)[0m
+[0;31mE (50007) AP: pkt too small (3)[0m
+[0;31mE (50017) AP: pkt too small (3)[0m
+[0;31mE (50067) AP: pkt too small (3)[0m
+[0;31mE (50077) AP: pkt too small (3)[0m
+[0;31mE (50137) AP: pkt too small (3)[0m
+[0;31mE (50197) AP: pkt too small (3)[0m
+[0;31mE (50257) AP: pkt too small (3)[0m
+[0;31mE (50267) AP: pkt too small (3)[0m
+[0;31mE (50327) AP: pkt too small (3)[0m
+[0;31mE (50387) AP: pkt too small (3)[0m
+[0;31mE (50447) AP: pkt too small (3)[0m
+[0;31mE (50447) AP: pkt too small (3)[0m
+[0;31mE (50517) AP: pkt too small (3)[0m
+[0;31mE (50517) AP: pkt too small (3)[0m
+[0;31mE (50577) AP: pkt too small (3)[0m
+[0;31mE (50577) AP: pkt too small (3)[0m
+[0;31mE (50637) AP: pkt too small (3)[0m
+[0;31mE (50697) AP: pkt too small (3)[0m
+[0;31mE (50697) AP: pkt too small (3)[0m
+[0;31mE (50757) AP: pkt too small (3)[0m
+[0;31mE (50817) AP: pkt too small (3)[0m
+[0;31mE (50827) AP: pkt too small (3)[0m
+[0;31mE (50887) AP: pkt too small (3)[0m
+[0;31mE (50947) AP: pkt too small (3)[0m
+[0;31mE (50947) AP: pkt too small (3)[0m
+[0;31mE (51017) AP: pkt too small (3)[0m
+[0;31mE (51017) AP: pkt too small (3)[0m
+[0;31mE (51197) AP: pkt too small (3)[0m
+[0;31mE (51197) AP: pkt too small (3)[0m
+[0;31mE (51257) AP: pkt too small (3)[0m
+[0;31mE (51267) AP: pkt too small (3)[0m
+[0;31mE (51317) AP: pkt too small (3)[0m
+[0;31mE (51327) AP: pkt too small (3)[0m
+[0;31mE (51387) AP: pkt too small (3)[0m
+[0;31mE (51447) AP: pkt too small (3)[0m
+[0;31mE (51517) AP: pkt too small (3)[0m
+[0;31mE (51517) AP: pkt too small (3)[0m
+[0;31mE (51577) AP: pkt too small (3)[0m
+[0;31mE (51587) AP: pkt too small (3)[0m
+[0;31mE (51697) AP: pkt too small (3)[0m
+[0;31mE (51697) AP: pkt too small (3)[0m
+[0;31mE (51767) AP: pkt too small (3)[0m
+[0;31mE (51767) AP: pkt too small (3)[0m
+[0;31mE (51827) AP: pkt too small (3)[0m
+[0;31mE (51827) AP: pkt too small (3)[0m
+[0;31mE (51947) AP: pkt too small (3)[0m
+[0;31mE (51947) AP: pkt too small (3)[0m
+[0;31mE (52017) AP: pkt too small (3)[0m
+[0;31mE (52017) AP: pkt too small (3)[0m
+[0;31mE (52077) AP: pkt too small (3)[0m
+[0;31mE (52077) AP: pkt too small (3)[0m
+[0;31mE (52197) AP: pkt too small (3)[0m
+[0;31mE (52197) AP: pkt too small (3)[0m
+[0;31mE (52277) AP: pkt too small (3)[0m
+[0;31mE (52327) AP: pkt too small (3)[0m
+[0;31mE (52337) AP: pkt too small (3)[0m
+[0;31mE (52447) AP: pkt too small (3)[0m
+[0;31mE (52447) AP: pkt too small (3)[0m
+[0;31mE (52507) AP: pkt too small (3)[0m
+[0;31mE (52517) AP: pkt too small (3)[0m
+[0;31mE (52577) AP: pkt too small (3)[0m
+[0;31mE (52577) AP: pkt too small (3)[0m
+[0;31mE (52697) AP: pkt too small (3)[0m
+[0;31mE (52697) AP: pkt too small (3)[0m
+[0;31mE (52767) AP: pkt too small (3)[0m
+[0;31mE (52767) AP: pkt too small (3)[0m
+[0;31mE (52947) AP: pkt too small (3)[0m
+[0;31mE (52957) AP: pkt too small (3)[0m
+[0;32mI (53017) AP: === TRIGGER board 2 — TSF 52268316 µs ===[0m
+[0;31mE (53017) AP: pkt too small (3)[0m
+[0;31mE (53017) AP: pkt too small (3)[0m
+[0;31mE (53077) AP: pkt too small (3)[0m
+[0;31mE (53077) AP: pkt too small (3)[0m
+[0;31mE (53317) AP: pkt too small (3)[0m
+[0;31mE (53317) AP: pkt too small (3)[0m
+[0;31mE (53377) AP: pkt too small (3)[0m
+[0;31mE (53377) AP: pkt too small (3)[0m
+[0;31mE (53447) AP: pkt too small (3)[0m
+[0;31mE (53447) AP: pkt too small (3)[0m
+[0;31mE (53507) AP: pkt too small (3)[0m
+[0;31mE (53507) AP: pkt too small (3)[0m
+[0;31mE (53567) AP: pkt too small (3)[0m
+[0;31mE (53567) AP: pkt too small (3)[0m
+[0;31mE (53637) AP: pkt too small (3)[0m
+[0;31mE (53637) AP: pkt too small (3)[0m
+[0;31mE (53697) AP: pkt too small (3)[0m
+[0;31mE (53697) AP: pkt too small (3)[0m
+[0;31mE (53767) AP: pkt too small (3)[0m
+[0;31mE (53767) AP: pkt too small (3)[0m
+[0;31mE (53827) AP: pkt too small (3)[0m
+[0;31mE (53837) AP: pkt too small (3)[0m
+[0;31mE (53947) AP: pkt too small (3)[0m
+[0;31mE (53947) AP: pkt too small (3)[0m
+[0;31mE (54017) AP: pkt too small (3)[0m
+[0;31mE (54017) AP: pkt too small (3)[0m
+[0;31mE (54077) AP: pkt too small (3)[0m
+[0;31mE (54077) AP: pkt too small (3)[0m
+[0;31mE (54197) AP: pkt too small (3)[0m
+[0;31mE (54207) AP: pkt too small (3)[0m
+[0;31mE (54267) AP: pkt too small (3)[0m
+[0;31mE (54267) AP: pkt too small (3)[0m
+[0;31mE (54337) AP: pkt too small (3)[0m
+[0;31mE (54337) AP: pkt too small (3)[0m
+[0;31mE (54447) AP: pkt too small (3)[0m
+[0;31mE (54447) AP: pkt too small (3)[0m
+[0;31mE (54517) AP: pkt too small (3)[0m
+[0;31mE (54517) AP: pkt too small (3)[0m
+[0;31mE (54577) AP: pkt too small (3)[0m
+[0;31mE (54577) AP: pkt too small (3)[0m
+[0;31mE (54697) AP: pkt too small (3)[0m
+[0;31mE (54697) AP: pkt too small (3)[0m
+[0;31mE (54757) AP: pkt too small (3)[0m
+[0;31mE (54767) AP: pkt too small (3)[0m
+[0;31mE (54827) AP: pkt too small (3)[0m
+[0;31mE (54827) AP: pkt too small (3)[0m
+[0;31mE (54947) AP: pkt too small (3)[0m
+[0;31mE (54947) AP: pkt too small (3)[0m
+[0;31mE (55007) AP: pkt too small (3)[0m
+[0;31mE (55017) AP: pkt too small (3)[0m
+[0;31mE (55077) AP: pkt too small (3)[0m
+[0;31mE (55077) AP: pkt too small (3)[0m
+[0;31mE (55197) AP: pkt too small (3)[0m
+[0;31mE (55197) AP: pkt too small (3)[0m
+[0;31mE (55257) AP: pkt too small (3)[0m
+[0;31mE (55267) AP: pkt too small (3)[0m
+[0;31mE (55317) AP: pkt too small (3)[0m
+[0;31mE (55327) AP: pkt too small (3)[0m
+[0;31mE (55387) AP: pkt too small (3)[0m
+[0;31mE (55447) AP: pkt too small (3)[0m
+[0;31mE (55447) AP: pkt too small (3)[0m
+[0;31mE (55507) AP: pkt too small (3)[0m
+[0;31mE (55507) AP: pkt too small (3)[0m
+[0;31mE (55577) AP: pkt too small (3)[0m
+[0;31mE (55577) AP: pkt too small (3)[0m
+[0;31mE (55637) AP: pkt too small (3)[0m
+[0;31mE (55697) AP: pkt too small (3)[0m
+[0;31mE (55697) AP: pkt too small (3)[0m
+[0;31mE (55757) AP: pkt too small (3)[0m
+[0;31mE (55757) AP: pkt too small (3)[0m
+[0;31mE (55817) AP: pkt too small (3)[0m
+[0;31mE (55827) AP: pkt too small (3)[0m
+[0;31mE (55887) AP: pkt too small (3)[0m
+[0;31mE (55947) AP: pkt too small (3)[0m
+[0;31mE (55947) AP: pkt too small (3)[0m
+[0;31mE (56007) AP: pkt too small (3)[0m
+[0;31mE (56007) AP: pkt too small (3)[0m
+[0;31mE (56067) AP: pkt too small (3)[0m
+[0;31mE (56077) AP: pkt too small (3)[0m
+[0;31mE (56137) AP: pkt too small (3)[0m
+[0;31mE (56197) AP: pkt too small (3)[0m
+[0;31mE (56197) AP: pkt too small (3)[0m
+[0;31mE (56267) AP: pkt too small (3)[0m
+[0;31mE (56327) AP: pkt too small (3)[0m
+[0;31mE (56327) AP: pkt too small (3)[0m
+[0;31mE (56447) AP: pkt too small (3)[0m
+[0;31mE (56447) AP: pkt too small (3)[0m
+[0;31mE (56507) AP: pkt too small (3)[0m
+[0;31mE (56507) AP: pkt too small (3)[0m
+[0;31mE (56567) AP: pkt too small (3)[0m
+[0;31mE (56577) AP: pkt too small (3)[0m
+[0;31mE (56637) AP: pkt too small (3)[0m
+[0;31mE (56637) AP: pkt too small (3)[0m
+[0;31mE (56697) AP: pkt too small (3)[0m
+[0;31mE (56697) AP: pkt too small (3)[0m
+[0;31mE (56757) AP: pkt too small (3)[0m
+[0;31mE (56757) AP: pkt too small (3)[0m
+[0;31mE (56827) AP: pkt too small (3)[0m
+[0;31mE (56827) AP: pkt too small (3)[0m
+[0;31mE (56947) AP: pkt too small (3)[0m
+[0;31mE (56947) AP: pkt too small (3)[0m
+[0;31mE (57007) AP: pkt too small (3)[0m
+[0;31mE (57007) AP: pkt too small (3)[0m
+[0;31mE (57067) AP: pkt too small (3)[0m
+[0;31mE (57077) AP: pkt too small (3)[0m
+[0;31mE (57137) AP: pkt too small (3)[0m
+[0;31mE (57197) AP: pkt too small (3)[0m
+[0;31mE (57207) AP: pkt too small (3)[0m
+[0;31mE (57257) AP: pkt too small (3)[0m
+[0;31mE (57267) AP: pkt too small (3)[0m
+[0;31mE (57327) AP: pkt too small (3)[0m
+[0;31mE (57327) AP: pkt too small (3)[0m
+[0;31mE (57387) AP: pkt too small (3)[0m
+[0;31mE (57447) AP: pkt too small (3)[0m
+[0;31mE (57447) AP: pkt too small (3)[0m
+[0;31mE (57507) AP: pkt too small (3)[0m
+[0;31mE (57517) AP: pkt too small (3)[0m
+[0;31mE (57577) AP: pkt too small (3)[0m
+[0;31mE (57577) AP: pkt too small (3)[0m
+[0;31mE (57807) AP: pkt too small (3)[0m
+[0;31mE (57867) AP: pkt too small (3)[0m
+[0;31mE (57867) AP: pkt too small (3)[0m
+[0;31mE (57947) AP: pkt too small (3)[0m
+[0;31mE (57947) AP: pkt too small (3)[0m
+[0;31mE (58007) AP: pkt too small (3)[0m
+[0;31mE (58007) AP: pkt too small (3)[0m
+[0;31mE (58067) AP: pkt too small (3)[0m
+[0;31mE (58077) AP: pkt too small (3)[0m
+[0;31mE (58307) AP: pkt too small (3)[0m
+[0;31mE (58307) AP: pkt too small (3)[0m
+[0;31mE (58377) AP: pkt too small (3)[0m
+[0;31mE (58377) AP: pkt too small (3)[0m
+[0;31mE (58447) AP: pkt too small (3)[0m
+[0;31mE (58447) AP: pkt too small (3)[0m
+[0;31mE (58507) AP: pkt too small (3)[0m
+[0;31mE (58517) AP: pkt too small (3)[0m
+[0;31mE (58567) AP: pkt too small (3)[0m
+[0;31mE (58577) AP: pkt too small (3)[0m
+[0;31mE (58637) AP: pkt too small (3)[0m
+[0;31mE (58697) AP: pkt too small (3)[0m
+[0;31mE (58697) AP: pkt too small (3)[0m
+[0;31mE (58757) AP: pkt too small (3)[0m
+[0;31mE (58757) AP: pkt too small (3)[0m
+[0;31mE (58827) AP: pkt too small (3)[0m
+[0;31mE (58827) AP: pkt too small (3)[0m
+[0;31mE (58887) AP: pkt too small (3)[0m
+[0;31mE (58947) AP: pkt too small (3)[0m
+[0;31mE (58947) AP: pkt too small (3)[0m
+[0;31mE (59007) AP: pkt too small (3)[0m
+[0;31mE (59017) AP: pkt too small (3)[0m
+[0;31mE (59067) AP: pkt too small (3)[0m
+[0;31mE (59077) AP: pkt too small (3)[0m
+[0;31mE (59137) AP: pkt too small (3)[0m
+[0;31mE (59197) AP: pkt too small (3)[0m
+[0;31mE (59207) AP: pkt too small (3)[0m
+[0;31mE (59257) AP: pkt too small (3)[0m
+[0;31mE (59267) AP: pkt too small (3)[0m
+[0;31mE (59327) AP: pkt too small (3)[0m
+[0;31mE (59327) AP: pkt too small (3)[0m
+[0;31mE (59447) AP: pkt too small (3)[0m
+[0;31mE (59447) AP: pkt too small (3)[0m
+[0;31mE (59507) AP: pkt too small (3)[0m
+[0;31mE (59507) AP: pkt too small (3)[0m
+[0;31mE (59567) AP: pkt too small (3)[0m
+[0;31mE (59577) AP: pkt too small (3)[0m
+[0;31mE (59637) AP: pkt too small (3)[0m
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x18ec
+load:0x4086c110,len:0xe5c
+load:0x4086e610,len:0x2f50
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time May 13 2025 16:34:30[0m
+[0;32mI (24) boot: chip revision: v0.1[0m
+[0;32mI (26) boot: efuse block revision: v0.2[0m
+[0;32mI (31) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (36) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=42098020 size=1c34ch (115532) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=0002c374 vaddr=40800000 size=03ca4h ( 15524) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=93198h (602520) map[0m
+[0;32mI (237) esp_image: segment 3: paddr=000c31c0 vaddr=40803ca4 size=15338h ( 86840) load[0m
+[0;32mI (256) esp_image: segment 4: paddr=000d8500 vaddr=40818fe0 size=03b78h ( 15224) load[0m
+[0;32mI (266) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (266) boot: Disabling RNG early entropy source...[0m
+[0;32mI (278) cpu_start: Unicore app[0m
+[0;32mI (286) cpu_start: Pro cpu start user code[0m
+[0;32mI (286) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (287) app_init: Application information:[0m
+[0;32mI (289) app_init: Project name:     wifi_softAP[0m
+[0;32mI (294) app_init: App version:      ac3da05a-dirty[0m
+[0;32mI (300) app_init: Compile time:     May 13 2025 16:32:53[0m
+[0;32mI (306) app_init: ELF file SHA256:  f5ffac533...[0m
+[0;32mI (311) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (316) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (321) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (326) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (331) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (338) heap_init: At 40822090 len 0005A580 (361 KiB): RAM[0m
+[0;32mI (344) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (350) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (357) spi_flash: detected chip: generic[0m
+[0;32mI (361) spi_flash: flash io: dio[0m
+[0;33mW (365) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (378) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (385) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (392) coexist: coex firmware version: cbb41d7[0m
+[0;32mI (406) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (407) main_task: Started on CPU0[0m
+[0;32mI (407) main_task: Calling app_main()[0m
+[0;32mI (417) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (417) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (427) wifi:wifi driver task: 4082b1a4, prio:23, stack:6656, core=0[0m
+[0;32mI (437) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (437) wifi:wifi certification version: v7.0[0m
+[0;32mI (437) wifi:config NVS flash: enabled[0m
+[0;32mI (437) wifi:config nano formating: disabled[0m
+[0;32mI (437) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band:0x1[0m
+[0;32mI (447) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (447) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (457) wifi:Init management short buffer num: 32[0m
+[0;32mI (457) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (467) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (467) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (477) wifi:Init static rx buffer num: 10[0m
+[0;32mI (477) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (477) wifi_init: rx ba win: 6[0m
+[0;32mI (487) wifi_init: accept mbox: 6[0m
+[0;32mI (487) wifi_init: tcpip mbox: 32[0m
+[0;32mI (497) wifi_init: udp mbox: 6[0m
+[0;32mI (497) wifi_init: tcp mbox: 6[0m
+[0;32mI (497) wifi_init: tcp tx win: 5760[0m
+[0;32mI (507) wifi_init: tcp rx win: 5760[0m
+[0;32mI (507) wifi_init: tcp mss: 1440[0m
+[0;32mI (517) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (517) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (527) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (527) phy_init: phy_version 320,348a293,Sep  3 2024,16:33:12[0m
+[0;33mW (587) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (587) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (597) wifi:(agc)0x600a7128:0xd209f9f4, min.avgNF:0xce->0xd2(dB), RCalCount:0x9f, min.RRssi:0x9f4(-96.75)[0m
+[0;33mW (597) wifi:(TB)WDEV_PWR_TB_MCS0:19[0m
+[0;33mW (607) wifi:(TB)WDEV_PWR_TB_MCS1:19[0m
+[0;33mW (607) wifi:(TB)WDEV_PWR_TB_MCS2:19[0m
+[0;33mW (607) wifi:(TB)WDEV_PWR_TB_MCS3:19[0m
+[0;33mW (617) wifi:(TB)WDEV_PWR_TB_MCS4:19[0m
+[0;33mW (617) wifi:(TB)WDEV_PWR_TB_MCS5:19[0m
+[0;33mW (617) wifi:(TB)WDEV_PWR_TB_MCS6:18[0m
+[0;33mW (627) wifi:(TB)WDEV_PWR_TB_MCS7:18[0m
+[0;33mW (627) wifi:(TB)WDEV_PWR_TB_MCS8:17[0m
+[0;33mW (627) wifi:(TB)WDEV_PWR_TB_MCS9:15[0m
+[0;33mW (637) wifi:(TB)WDEV_PWR_TB_MCS10:15[0m
+[0;33mW (637) wifi:(TB)WDEV_PWR_TB_MCS11:15[0m
+[0;32mI (637) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;33mW (647) wifi:(he)deattach, ap, phymode:11bgn[0m
+[0;32mI (647) wifi:mode : softAP (40:4c:ca:5c:28:dd)[0m
+[0;32mI (657) wifi:Total power save buffer number: 16[0m
+[0;32mI (657) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (667) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (667) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (677) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (677) AP: Soft‑AP avviata: SSID=myssid, chan=1[0m
+[0;32mI (687) AP: TCP server listening on port 3333[0m
+[0;32mI (687) main_task: Returned from app_main()[0m
+[0;32mI (3567) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3567) wifi:(trc)phytype:CBW20-SGI, snr:67, maxRate:0, highestRateIdx:0[0m
+[0;33mW (3567) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (3577) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:67, ampduState:wait operational[0m
+[0;32mI (3587) wifi:ifidx:1, rssi:-31, nf:-98, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (3597) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (3607) wifi:station: f0:f5:bd:07:01:00 join, AID=1, bgn, 20[0m
+[0;32mI (3627) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3627) wifi:(trc)phytype:CBW20-SGI, snr:70, maxRate:0, highestRateIdx:0[0m
+[0;33mW (3627) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (3637) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:70, ampduState:wait operational[0m
+[0;32mI (3647) wifi:ifidx:1, rssi:-28, nf:-98, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (3657) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (3667) wifi:station: f0:f5:bd:07:05:50 join, AID=2, bgn, 20[0m
+[0;32mI (3687) AP: STA f0:f5:bd:07:01:00 joined, AID=1[0m
+[0;32mI (3717) AP: STA f0:f5:bd:07:05:50 joined, AID=2[0m
+[0;33mW (3757) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (3757) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (3767) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;33mW (3787) wifi:<ba-add>idx:7, ifx:1, tid:0, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;32mI (3807) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (3827) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.3[0m
+[0;32mI (4807) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (4817) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (4837) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (4847) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;31mE (4887) AP: pkt too small (3)[0m
+[0;31mE (4917) AP: pkt too small (3)[0m
+[0;31mE (4947) AP: pkt too small (3)[0m
+[0;31mE (4977) AP: pkt too small (3)[0m
+[0;31mE (5007) AP: pkt too small (3)[0m
+[0;31mE (5037) AP: pkt too small (3)[0m
+[0;31mE (5127) AP: pkt too small (3)[0m
+[0;31mE (5187) AP: pkt too small (3)[0m
+[0;31mE (5197) AP: pkt too small (3)[0m
+[0;31mE (5247) AP: pkt too small (3)[0m
+[0;31mE (5257) AP: pkt too small (3)[0m
+[0;31mE (5307) AP: pkt too small (3)[0m
+[0;31mE (5377) AP: pkt too small (3)[0m
+[0;31mE (5377) AP: pkt too small (3)[0m
+[0;31mE (5437) AP: pkt too small (3)[0m
+[0;31mE (5437) AP: pkt too small (3)[0m
+[0;31mE (5497) AP: pkt too small (3)[0m
+[0;31mE (5497) AP: pkt too small (3)[0m
+[0;31mE (5557) AP: pkt too small (3)[0m
+[0;31mE (5627) AP: pkt too small (3)[0m
+[0;31mE (5627) AP: pkt too small (3)[0m
+[0;31mE (5697) AP: pkt too small (3)[0m
+[0;31mE (5697) AP: pkt too small (3)[0m
+[0;31mE (5747) AP: pkt too small (3)[0m
+[0;31mE (5757) AP: pkt too small (3)[0m
+[0;31mE (5817) AP: pkt too small (3)[0m
+[0;31mE (5877) AP: pkt too small (3)[0m
+[0;31mE (5877) AP: pkt too small (3)[0m
+[0;31mE (5937) AP: pkt too small (3)[0m
+[0;31mE (5947) AP: pkt too small (3)[0m
+[0;31mE (5997) AP: pkt too small (3)[0m
+[0;31mE (6007) AP: pkt too small (3)[0m
+[0;31mE (6057) AP: pkt too small (3)[0m
+[0;31mE (6127) AP: pkt too small (3)[0m
+[0;31mE (6127) AP: pkt too small (3)[0m
+[0;31mE (6187) AP: pkt too small (3)[0m
+[0;31mE (6187) AP: pkt too small (3)[0m
+[0;31mE (6247) AP: pkt too small (3)[0m
+[0;31mE (6247) AP: pkt too small (3)[0m
+[0;31mE (6307) AP: pkt too small (3)[0m
+[0;31mE (6317) AP: pkt too small (3)[0m
+[0;31mE (6377) AP: pkt too small (3)[0m
+[0;31mE (6377) AP: pkt too small (3)[0m
+[0;31mE (6437) AP: pkt too small (3)[0m
+[0;31mE (6437) AP: pkt too small (3)[0m
+[0;31mE (6497) AP: pkt too small (3)[0m
+[0;31mE (6507) AP: pkt too small (3)[0m
+[0;31mE (6567) AP: pkt too small (3)[0m
+[0;31mE (6627) AP: pkt too small (3)[0m
+[0;31mE (6627) AP: pkt too small (3)[0m
+[0;31mE (6687) AP: pkt too small (3)[0m
+[0;31mE (6687) AP: pkt too small (3)[0m
+[0;31mE (6747) AP: pkt too small (3)[0m
+[0;31mE (6757) AP: pkt too small (3)[0m
+[0;31mE (6807) AP: pkt too small (3)[0m
+[0;31mE (6877) AP: pkt too small (3)[0m
+[0;31mE (6887) AP: pkt too small (3)[0m
+[0;31mE (6947) AP: pkt too small (3)[0m
+[0;31mE (6947) AP: pkt too small (3)[0m
+[0;31mE (7007) AP: pkt too small (3)[0m
+[0;31mE (7007) AP: pkt too small (3)[0m
+[0;31mE (7127) AP: pkt too small (3)[0m
+[0;31mE (7187) AP: pkt too small (3)[0m
+[0;31mE (7187) AP: pkt too small (3)[0m
+[0;31mE (7247) AP: pkt too small (3)[0m
+[0;31mE (7257) AP: pkt too small (3)[0m
+[0;31mE (7307) AP: pkt too small (3)[0m
+[0;31mE (7317) AP: pkt too small (3)[0m
+[0;31mE (7377) AP: pkt too small (3)[0m
+[0;31mE (7437) AP: pkt too small (3)[0m
+[0;31mE (7447) AP: pkt too small (3)[0m
+[0;31mE (7497) AP: pkt too small (3)[0m
+[0;31mE (7507) AP: pkt too small (3)[0m
+[0;31mE (7567) AP: pkt too small (3)[0m
+[0;31mE (7627) AP: pkt too small (3)[0m
+[0;31mE (7627) AP: pkt too small (3)[0m
+[0;31mE (7687) AP: pkt too small (3)[0m
+[0;31mE (7687) AP: pkt too small (3)[0m
+[0;31mE (7747) AP: pkt too small (3)[0m
+[0;31mE (7747) AP: pkt too small (3)[0m
+[0;31mE (7817) AP: pkt too small (3)[0m
+[0;31mE (7817) AP: pkt too small (3)[0m
+[0;31mE (7877) AP: pkt too small (3)[0m
+[0;31mE (7877) AP: pkt too small (3)[0m
+[0;31mE (8007) AP: pkt too small (3)[0m
+[0;31mE (8007) AP: pkt too small (3)[0m
+[0;31mE (8127) AP: pkt too small (3)[0m
+[0;31mE (8127) AP: pkt too small (3)[0m
+[0;31mE (8187) AP: pkt too small (3)[0m
+[0;31mE (8187) AP: pkt too small (3)[0m
+[0;31mE (8257) AP: pkt too small (3)[0m
+[0;31mE (8257) AP: pkt too small (3)[0m
+[0;31mE (8317) AP: pkt too small (3)[0m
+[0;31mE (8377) AP: pkt too small (3)[0m
+[0;31mE (8377) AP: pkt too small (3)[0m
+[0;31mE (8437) AP: pkt too small (3)[0m
+[0;31mE (8437) AP: pkt too small (3)[0m
+[0;31mE (8497) AP: pkt too small (3)[0m
+[0;31mE (8507) AP: pkt too small (3)[0m
+[0;31mE (8557) AP: pkt too small (3)[0m
+[0;31mE (8627) AP: pkt too small (3)[0m
+[0;31mE (8627) AP: pkt too small (3)[0m
+[0;31mE (8687) AP: pkt too small (3)[0m
+[0;31mE (8687) AP: pkt too small (3)[0m
+[0;31mE (8747) AP: pkt too small (3)[0m
+[0;31mE (8757) AP: pkt too small (3)[0m
+[0;31mE (8817) AP: pkt too small (3)[0m
+[0;31mE (8877) AP: pkt too small (3)[0m
+[0;31mE (8937) AP: pkt too small (3)[0m
+[0;31mE (8947) AP: pkt too small (3)[0m
+[0;31mE (8997) AP: pkt too small (3)[0m
+[0;31mE (9007) AP: pkt too small (3)[0m
+[0;31mE (9067) AP: pkt too small (3)[0m
+[0;31mE (9127) AP: pkt too small (3)[0m
+[0;31mE (9127) AP: pkt too small (3)[0m
+[0;31mE (9187) AP: pkt too small (3)[0m
+[0;31mE (9187) AP: pkt too small (3)[0m
+[0;31mE (9247) AP: pkt too small (3)[0m
+[0;31mE (9247) AP: pkt too small (3)[0m
+[0;31mE (9307) AP: pkt too small (3)[0m
+[0;31mE (9317) AP: pkt too small (3)[0m
+[0;31mE (9377) AP: pkt too small (3)[0m
+[0;31mE (9437) AP: pkt too small (3)[0m
+[0;31mE (9447) AP: pkt too small (3)[0m
+[0;31mE (9497) AP: pkt too small (3)[0m
+[0;31mE (9507) AP: pkt too small (3)[0m
+[0;31mE (9557) AP: pkt too small (3)[0m
+[0;31mE (9627) AP: pkt too small (3)[0m
+[0;31mE (9627) AP: pkt too small (3)[0m
+[0;31mE (9687) AP: pkt too small (3)[0m
+[0;31mE (9687) AP: pkt too small (3)[0m
+[0;31mE (9747) AP: pkt too small (3)[0m
+[0;31mE (9747) AP: pkt too small (3)[0m
+[0;31mE (9817) AP: pkt too small (3)[0m
+[0;31mE (10017) AP: pkt too small (3)[0m
+[0;31mE (10027) AP: pkt too small (3)[0m
+[0;31mE (10127) AP: pkt too small (3)[0m
+[0;31mE (10127) AP: pkt too small (3)[0m
+[0;31mE (10187) AP: pkt too small (3)[0m
+[0;31mE (10187) AP: pkt too small (3)[0m
+[0;31mE (10247) AP: pkt too small (3)[0m
+[0;31mE (10247) AP: pkt too small (3)[0m
+[0;31mE (10307) AP: pkt too small (3)[0m
+[0;31mE (10307) AP: pkt too small (3)[0m
+[0;31mE (10377) AP: pkt too small (3)[0m
+[0;31mE (10377) AP: pkt too small (3)[0m
+[0;31mE (10437) AP: pkt too small (3)[0m
+[0;31mE (10437) AP: pkt too small (3)[0m
+[0;31mE (10497) AP: pkt too small (3)[0m
+[0;31mE (10507) AP: pkt too small (3)[0m
+[0;31mE (10557) AP: pkt too small (3)[0m
+[0;31mE (10567) AP: pkt too small (3)[0m
+[0;31mE (10627) AP: pkt too small (3)[0m
+[0;31mE (10627) AP: pkt too small (3)[0m
+[0;31mE (10687) AP: pkt too small (3)[0m
+[0;31mE (10687) AP: pkt too small (3)[0m
+[0;31mE (10747) AP: pkt too small (3)[0m
+[0;31mE (10757) AP: pkt too small (3)[0m
+[0;31mE (10817) AP: pkt too small (3)[0m
+[0;31mE (10877) AP: pkt too small (3)[0m
+[0;31mE (10877) AP: pkt too small (3)[0m
+[0;31mE (10937) AP: pkt too small (3)[0m
+[0;31mE (10947) AP: pkt too small (3)[0m
+[0;31mE (10997) AP: pkt too small (3)[0m
+[0;31mE (11007) AP: pkt too small (3)[0m
+[0;31mE (11057) AP: pkt too small (3)[0m
+[0;31mE (11127) AP: pkt too small (3)[0m
+[0;31mE (11127) AP: pkt too small (3)[0m
+[0;31mE (11187) AP: pkt too small (3)[0m
+[0;31mE (11187) AP: pkt too small (3)[0m
+[0;31mE (11247) AP: pkt too small (3)[0m
+[0;31mE (11247) AP: pkt too small (3)[0m
+[0;31mE (11307) AP: pkt too small (3)[0m
+[0;31mE (11317) AP: pkt too small (3)[0m
+[0;31mE (11377) AP: pkt too small (3)[0m
+[0;31mE (11377) AP: pkt too small (3)[0m
+[0;31mE (11437) AP: pkt too small (3)[0m
+[0;31mE (11437) AP: pkt too small (3)[0m
+[0;31mE (11497) AP: pkt too small (3)[0m
+[0;31mE (11497) AP: pkt too small (3)[0m
+[0;31mE (11567) AP: pkt too small (3)[0m
+[0;31mE (11567) AP: pkt too small (3)[0m
+[0;31mE (11627) AP: pkt too small (3)[0m
+[0;31mE (11687) AP: pkt too small (3)[0m
+[0;31mE (11697) AP: pkt too small (3)[0m
+[0;31mE (11747) AP: pkt too small (3)[0m
+[0;31mE (11757) AP: pkt too small (3)[0m
+[0;31mE (11817) AP: pkt too small (3)[0m
+[0;31mE (11877) AP: pkt too small (3)[0m
+[0;31mE (11877) AP: pkt too small (3)[0m
+[0;31mE (11937) AP: pkt too small (3)[0m
+[0;31mE (11937) AP: pkt too small (3)[0m
+[0;31mE (11997) AP: pkt too small (3)[0m
+[0;31mE (12007) AP: pkt too small (3)[0m
+[0;31mE (12067) AP: pkt too small (3)[0m
+[0;31mE (12117) AP: pkt too small (3)[0m
+[0;31mE (12127) AP: pkt too small (3)[0m
+[0;31mE (12187) AP: pkt too small (3)[0m
+[0;31mE (12187) AP: pkt too small (3)[0m
+[0;31mE (12247) AP: pkt too small (3)[0m
+[0;31mE (12247) AP: pkt too small (3)[0m
+[0;31mE (12377) AP: pkt too small (3)[0m
+[0;31mE (12377) AP: pkt too small (3)[0m
+[0;31mE (12447) AP: pkt too small (3)[0m
+[0;31mE (12507) AP: pkt too small (3)[0m
+[0;31mE (12507) AP: pkt too small (3)[0m
+[0;31mE (12567) AP: pkt too small (3)[0m
+[0;31mE (12627) AP: pkt too small (3)[0m
+[0;31mE (12627) AP: pkt too small (3)[0m
+[0;31mE (12687) AP: pkt too small (3)[0m
+[0;31mE (12687) AP: pkt too small (3)[0m
+[0;31mE (12757) AP: pkt too small (3)[0m
+[0;31mE (12757) AP: pkt too small (3)[0m
+[0;31mE (12817) AP: pkt too small (3)[0m
+[0;31mE (12877) AP: pkt too small (3)[0m
+[0;31mE (12877) AP: pkt too small (3)[0m
+[0;31mE (12937) AP: pkt too small (3)[0m
+[0;31mE (12947) AP: pkt too small (3)[0m
+[0;31mE (12997) AP: pkt too small (3)[0m
+[0;31mE (13007) AP: pkt too small (3)[0m
+[0;31mE (13127) AP: pkt too small (3)[0m
+[0;31mE (13137) AP: pkt too small (3)[0m
+[0;31mE (13187) AP: pkt too small (3)[0m
+[0;31mE (13197) AP: pkt too small (3)[0m
+[0;31mE (13257) AP: pkt too small (3)[0m
+[0;31mE (13257) AP: pkt too small (3)[0m
+[0;31mE (13317) AP: pkt too small (3)[0m
+[0;31mE (13377) AP: pkt too small (3)[0m
+[0;31mE (13377) AP: pkt too small (3)[0m
+[0;31mE (13437) AP: pkt too small (3)[0m
+[0;31mE (13437) AP: pkt too small (3)[0m
+[0;31mE (13507) AP: pkt too small (3)[0m
+[0;31mE (13627) AP: pkt too small (3)[0m
+[0;31mE (13627) AP: pkt too small (3)[0m
+[0;31mE (13687) AP: pkt too small (3)[0m
+[0;31mE (13687) AP: pkt too small (3)[0m
+[0;31mE (13747) AP: pkt too small (3)[0m
+[0;31mE (13957) AP: pkt too small (3)[0m
+[0;31mE (13957) AP: pkt too small (3)[0m
+[0;31mE (14017) AP: pkt too small (3)[0m
+[0;31mE (14027) AP: pkt too small (3)[0m
+[0;31mE (14127) AP: pkt too small (3)[0m
+[0;31mE (14127) AP: pkt too small (3)[0m
+[0;31mE (14257) AP: pkt too small (3)[0m
+[0;31mE (14257) AP: pkt too small (3)[0m
+[0;31mE (14377) AP: pkt too small (3)[0m
+[0;31mE (14377) AP: pkt too small (3)[0m
+[0;31mE (14437) AP: pkt too small (3)[0m
+[0;31mE (14447) AP: pkt too small (3)[0m
+[0;31mE (14507) AP: pkt too small (3)[0m
+[0;31mE (14507) AP: pkt too small (3)[0m
+[0;31mE (14627) AP: pkt too small (3)[0m
+[0;31mE (14627) AP: pkt too small (3)[0m
+[0;31mE (14687) AP: pkt too small (3)[0m
+[0;31mE (14687) AP: pkt too small (3)[0m
+[0;31mE (14747) AP: pkt too small (3)[0m
+[0;31mE (14757) AP: pkt too small (3)[0m
+[0;31mE (14987) AP: pkt too small (3)[0m
+[0;31mE (14987) AP: pkt too small (3)[0m
+[0;31mE (15047) AP: pkt too small (3)[0m
+[0;31mE (15047) AP: pkt too small (3)[0m
+[0;31mE (15127) AP: pkt too small (3)[0m
+[0;31mE (15187) AP: pkt too small (3)[0m
+[0;31mE (15197) AP: pkt too small (3)[0m
+[0;31mE (15247) AP: pkt too small (3)[0m
+[0;31mE (15257) AP: pkt too small (3)[0m
+[0;31mE (15317) AP: pkt too small (3)[0m
+[0;31mE (15377) AP: pkt too small (3)[0m
+[0;31mE (15437) AP: pkt too small (3)[0m
+[0;31mE (15447) AP: pkt too small (3)[0m
+[0;31mE (15507) AP: pkt too small (3)[0m
+[0;31mE (15507) AP: pkt too small (3)[0m
+[0;31mE (15627) AP: pkt too small (3)[0m
+[0;31mE (15627) AP: pkt too small (3)[0m
+[0;31mE (15687) AP: pkt too small (3)[0m
+[0;31mE (15687) AP: pkt too small (3)[0m
+[0;31mE (15747) AP: pkt too small (3)[0m
+[0;31mE (15747) AP: pkt too small (3)[0m
+[0;31mE (15877) AP: pkt too small (3)[0m
+[0;31mE (15877) AP: pkt too small (3)[0m
+[0;31mE (15937) AP: pkt too small (3)[0m
+[0;31mE (15937) AP: pkt too small (3)[0m
+[0;31mE (16007) AP: pkt too small (3)[0m
+[0;31mE (16007) AP: pkt too small (3)[0m
+[0;32mI (16067) AP: === TRIGGER board 2 — TSF 15340849 µs ===[0m
+[0;32mI (16067) AP: === TRIGGER board 1 — TSF 15342461 µs ===[0m
+[0;31mE (16127) AP: pkt too small (3)[0m
+[0;31mE (16127) AP: pkt too small (3)[0m
+[0;31mE (16187) AP: pkt too small (3)[0m
+[0;31mE (16187) AP: pkt too small (3)[0m
+[0;31mE (16247) AP: pkt too small (3)[0m
+[0;31mE (16247) AP: pkt too small (3)[0m
+[0;31mE (16317) AP: pkt too small (3)[0m
+[0;31mE (16377) AP: pkt too small (3)[0m
+[0;31mE (16377) AP: pkt too small (3)[0m
+[0;31mE (16507) AP: pkt too small (3)[0m
+[0;31mE (16507) AP: pkt too small (3)[0m
+[0;31mE (16627) AP: pkt too small (3)[0m
+[0;31mE (16627) AP: pkt too small (3)[0m
+[0;31mE (16687) AP: pkt too small (3)[0m
+[0;31mE (16687) AP: pkt too small (3)[0m
+[0;31mE (16757) AP: pkt too small (3)[0m
+[0;31mE (16877) AP: pkt too small (3)[0m
+[0;31mE (16877) AP: pkt too small (3)[0m
+[0;31mE (16937) AP: pkt too small (3)[0m
+[0;31mE (16937) AP: pkt too small (3)[0m
+[0;31mE (17007) AP: pkt too small (3)[0m
+[0;31mE (17127) AP: pkt too small (3)[0m
+[0;31mE (17127) AP: pkt too small (3)[0m
+[0;31mE (17187) AP: pkt too small (3)[0m
+[0;31mE (17187) AP: pkt too small (3)[0m
+[0;31mE (17247) AP: pkt too small (3)[0m
+[0;31mE (17257) AP: pkt too small (3)[0m
+[0;31mE (17317) AP: pkt too small (3)[0m
+[0;31mE (17377) AP: pkt too small (3)[0m
+[0;31mE (17377) AP: pkt too small (3)[0m
+[0;31mE (17437) AP: pkt too small (3)[0m
+[0;31mE (17437) AP: pkt too small (3)[0m
+[0;31mE (17497) AP: pkt too small (3)[0m
+[0;31mE (17507) AP: pkt too small (3)[0m
+[0;31mE (17567) AP: pkt too small (3)[0m
+[0;31mE (17627) AP: pkt too small (3)[0m
+[0;31mE (17627) AP: pkt too small (3)[0m
+[0;31mE (17697) AP: pkt too small (3)[0m
+[0;31mE (17757) AP: pkt too small (3)[0m
+[0;31mE (17757) AP: pkt too small (3)[0m
+[0;31mE (17877) AP: pkt too small (3)[0m
+[0;31mE (17877) AP: pkt too small (3)[0m
+[0;31mE (17937) AP: pkt too small (3)[0m
+[0;31mE (17947) AP: pkt too small (3)[0m
+[0;31mE (18007) AP: pkt too small (3)[0m
+[0;31mE (18127) AP: pkt too small (3)[0m
+[0;31mE (18127) AP: pkt too small (3)[0m
+[0;31mE (18187) AP: pkt too small (3)[0m
+[0;31mE (18197) AP: pkt too small (3)[0m
+[0;31mE (18257) AP: pkt too small (3)[0m
+[0;31mE (18257) AP: pkt too small (3)[0m
+[0;31mE (18317) AP: pkt too small (3)[0m
+[0;31mE (18377) AP: pkt too small (3)[0m
+[0;31mE (18377) AP: pkt too small (3)[0m
+[0;31mE (18437) AP: pkt too small (3)[0m
+[0;31mE (18437) AP: pkt too small (3)[0m
+[0;31mE (18497) AP: pkt too small (3)[0m
+[0;31mE (18507) AP: pkt too small (3)[0m
+[0;31mE (18567) AP: pkt too small (3)[0m
+[0;31mE (18567) AP: pkt too small (3)[0m
+[0;31mE (18627) AP: pkt too small (3)[0m
+[0;31mE (18697) AP: pkt too small (3)[0m
+[0;31mE (18697) AP: pkt too small (3)[0m
+[0;31mE (18757) AP: pkt too small (3)[0m
+[0;31mE (18877) AP: pkt too small (3)[0m
+[0;31mE (18877) AP: pkt too small (3)[0m
+[0;31mE (18937) AP: pkt too small (3)[0m
+[0;31mE (18947) AP: pkt too small (3)[0m
+[0;31mE (19007) AP: pkt too small (3)[0m
+[0;31mE (19017) AP: pkt too small (3)[0m
+[0;31mE (19127) AP: pkt too small (3)[0m
+[0;31mE (19127) AP: pkt too small (3)[0m
+[0;31mE (19187) AP: pkt too small (3)[0m
+[0;31mE (19187) AP: pkt too small (3)[0m
+[0;31mE (19247) AP: pkt too small (3)[0m
+[0;31mE (19257) AP: pkt too small (3)[0m
+[0;31mE (19317) AP: pkt too small (3)[0m
+[0;31mE (19377) AP: pkt too small (3)[0m
+[0;31mE (19377) AP: pkt too small (3)[0m
+[0;31mE (19437) AP: pkt too small (3)[0m
+[0;31mE (19437) AP: pkt too small (3)[0m
+[0;31mE (19507) AP: pkt too small (3)[0m
+[0;31mE (19507) AP: pkt too small (3)[0m
+[0;31mE (19627) AP: pkt too small (3)[0m
+[0;31mE (19627) AP: pkt too small (3)[0m
+[0;31mE (19687) AP: pkt too small (3)[0m
+[0;31mE (19687) AP: pkt too small (3)[0m
+[0;31mE (19747) AP: pkt too small (3)[0m
+[0;31mE (19747) AP: pkt too small (3)[0m
+[0;31mE (19927) AP: pkt too small (3)[0m
+[0;31mE (19987) AP: pkt too small (3)[0m
+[0;31mE (19997) AP: pkt too small (3)[0m
+[0;31mE (20057) AP: pkt too small (3)[0m
+[0;31mE (20057) AP: pkt too small (3)[0m
+[0;31mE (20137) AP: pkt too small (3)[0m
+[0;31mE (20187) AP: pkt too small (3)[0m
+[0;31mE (20197) AP: pkt too small (3)[0m
+[0;31mE (20257) AP: pkt too small (3)[0m
+[0;31mE (20257) AP: pkt too small (3)[0m
+[0;31mE (20377) AP: pkt too small (3)[0m
+[0;31mE (20377) AP: pkt too small (3)[0m
+[0;31mE (20437) AP: pkt too small (3)[0m
+[0;31mE (20437) AP: pkt too small (3)[0m
+[0;31mE (20497) AP: pkt too small (3)[0m
+[0;31mE (20497) AP: pkt too small (3)[0m
+[0;31mE (20567) AP: pkt too small (3)[0m
+[0;31mE (20627) AP: pkt too small (3)[0m
+[0;31mE (20627) AP: pkt too small (3)[0m
+[0;31mE (20687) AP: pkt too small (3)[0m
+[0;31mE (20687) AP: pkt too small (3)[0m
+[0;31mE (20747) AP: pkt too small (3)[0m
+[0;31mE (20757) AP: pkt too small (3)[0m
+[0;31mE (20817) AP: pkt too small (3)[0m
+[0;31mE (20877) AP: pkt too small (3)[0m
+[0;31mE (20877) AP: pkt too small (3)[0m
+[0;31mE (20937) AP: pkt too small (3)[0m
+[0;31mE (20947) AP: pkt too small (3)[0m
+[0;31mE (21007) AP: pkt too small (3)[0m
+[0;31mE (21007) AP: pkt too small (3)[0m
+[0;31mE (21067) AP: pkt too small (3)[0m
+[0;31mE (21127) AP: pkt too small (3)[0m
+[0;31mE (21127) AP: pkt too small (3)[0m
+[0;31mE (21187) AP: pkt too small (3)[0m
+[0;31mE (21197) AP: pkt too small (3)[0m
+[0;32mI (21257) AP: === TRIGGER board 1 — TSF 20525708 µs ===[0m
+[0;31mE (21257) AP: pkt too small (3)[0m
+[0;31mE (21257) AP: pkt too small (3)[0m
+[0;31mE (21377) AP: pkt too small (3)[0m
+[0;31mE (21377) AP: pkt too small (3)[0m
+[0;31mE (21437) AP: pkt too small (3)[0m
+[0;31mE (21497) AP: pkt too small (3)[0m
+[0;31mE (21507) AP: pkt too small (3)[0m
+[0;31mE (21567) AP: pkt too small (3)[0m
+[0;31mE (21627) AP: pkt too small (3)[0m
+[0;31mE (21627) AP: pkt too small (3)[0m
+[0;31mE (21687) AP: pkt too small (3)[0m
+[0;31mE (21687) AP: pkt too small (3)[0m
+[0;31mE (21747) AP: pkt too small (3)[0m
+[0;31mE (21757) AP: pkt too small (3)[0m
+[0;31mE (21817) AP: pkt too small (3)[0m
+[0;31mE (21877) AP: pkt too small (3)[0m
+[0;31mE (21887) AP: pkt too small (3)[0m
+[0;31mE (21947) AP: pkt too small (3)[0m
+[0;31mE (21957) AP: pkt too small (3)[0m
+[0;31mE (22007) AP: pkt too small (3)[0m
+[0;31mE (22017) AP: pkt too small (3)[0m
+[0;31mE (22127) AP: pkt too small (3)[0m
+[0;31mE (22127) AP: pkt too small (3)[0m
+[0;31mE (22197) AP: pkt too small (3)[0m
+[0;31mE (22197) AP: pkt too small (3)[0m
+[0;31mE (22257) AP: pkt too small (3)[0m
+[0;31mE (22257) AP: pkt too small (3)[0m
+[0;31mE (22377) AP: pkt too small (3)[0m
+[0;31mE (22447) AP: pkt too small (3)[0m
+[0;31mE (22447) AP: pkt too small (3)[0m
+[0;31mE (22507) AP: pkt too small (3)[0m
+[0;31mE (22517) AP: pkt too small (3)[0m
+[0;31mE (22627) AP: pkt too small (3)[0m
+[0;31mE (22627) AP: pkt too small (3)[0m
+[0;31mE (22697) AP: pkt too small (3)[0m
+[0;31mE (22757) AP: pkt too small (3)[0m
+[0;31mE (22767) AP: pkt too small (3)[0m
+[0;31mE (22877) AP: pkt too small (3)[0m
+[0;31mE (22887) AP: pkt too small (3)[0m
+[0;31mE (22937) AP: pkt too small (3)[0m
+[0;31mE (22947) AP: pkt too small (3)[0m
+[0;31mE (23007) AP: pkt too small (3)[0m
+[0;31mE (23007) AP: pkt too small (3)[0m
+[0;31mE (23127) AP: pkt too small (3)[0m
+[0;31mE (23137) AP: pkt too small (3)[0m
+[0;31mE (23197) AP: pkt too small (3)[0m
+[0;31mE (23257) AP: pkt too small (3)[0m
+[0;31mE (23267) AP: pkt too small (3)[0m
+[0;31mE (23377) AP: pkt too small (3)[0m
+[0;31mE (23377) AP: pkt too small (3)[0m
+[0;31mE (23447) AP: pkt too small (3)[0m
+[0;31mE (23447) AP: pkt too small (3)[0m
+[0;31mE (23507) AP: pkt too small (3)[0m
+[0;31mE (23507) AP: pkt too small (3)[0m
+[0;31mE (23637) AP: pkt too small (3)[0m
+[0;31mE (23637) AP: pkt too small (3)[0m
+[0;31mE (23697) AP: pkt too small (3)[0m
+[0;31mE (23697) AP: pkt too small (3)[0m
+[0;31mE (23757) AP: pkt too small (3)[0m
+[0;31mE (23757) AP: pkt too small (3)[0m
+[0;31mE (23877) AP: pkt too small (3)[0m
+[0;31mE (23877) AP: pkt too small (3)[0m
+[0;31mE (23937) AP: pkt too small (3)[0m
+[0;31mE (23947) AP: pkt too small (3)[0m
+[0;31mE (23997) AP: pkt too small (3)[0m
+[0;31mE (24007) AP: pkt too small (3)[0m
+[0;31mE (24067) AP: pkt too small (3)[0m
+[0;31mE (24127) AP: pkt too small (3)[0m
+[0;31mE (24127) AP: pkt too small (3)[0m
+[0;31mE (24187) AP: pkt too small (3)[0m
+[0;31mE (24197) AP: pkt too small (3)[0m
+[0;31mE (24247) AP: pkt too small (3)[0m
+[0;31mE (24257) AP: pkt too small (3)[0m
+[0;31mE (24317) AP: pkt too small (3)[0m
+[0;31mE (24377) AP: pkt too small (3)[0m
+[0;31mE (24377) AP: pkt too small (3)[0m
+[0;31mE (24437) AP: pkt too small (3)[0m
+[0;31mE (24437) AP: pkt too small (3)[0m
+[0;31mE (24507) AP: pkt too small (3)[0m
+[0;31mE (24627) AP: pkt too small (3)[0m
+[0;31mE (24627) AP: pkt too small (3)[0m
+[0;31mE (24757) AP: pkt too small (3)[0m
+[0;31mE (24767) AP: pkt too small (3)[0m
+[0;31mE (24987) AP: pkt too small (3)[0m
+[0;31mE (24987) AP: pkt too small (3)[0m
+[0;31mE (25047) AP: pkt too small (3)[0m
+[0;31mE (25047) AP: pkt too small (3)[0m
+[0;31mE (25127) AP: pkt too small (3)[0m
+[0;31mE (25127) AP: pkt too small (3)[0m
+[0;31mE (25187) AP: pkt too small (3)[0m
+[0;31mE (25187) AP: pkt too small (3)[0m
+[0;31mE (25257) AP: pkt too small (3)[0m
+[0;31mE (25257) AP: pkt too small (3)[0m
+[0;31mE (25377) AP: pkt too small (3)[0m
+[0;31mE (25377) AP: pkt too small (3)[0m
+[0;31mE (25437) AP: pkt too small (3)[0m
+[0;31mE (25437) AP: pkt too small (3)[0m
+[0;31mE (25497) AP: pkt too small (3)[0m
+[0;31mE (25507) AP: pkt too small (3)[0m
+[0;31mE (25567) AP: pkt too small (3)[0m
+[0;31mE (25627) AP: pkt too small (3)[0m
+[0;31mE (25627) AP: pkt too small (3)[0m
+[0;31mE (25687) AP: pkt too small (3)[0m
+[0;31mE (25687) AP: pkt too small (3)[0m
+[0;31mE (25747) AP: pkt too small (3)[0m
+[0;31mE (25757) AP: pkt too small (3)[0m
+[0;31mE (25817) AP: pkt too small (3)[0m
+[0;31mE (25877) AP: pkt too small (3)[0m
+[0;31mE (25887) AP: pkt too small (3)[0m
+[0;31mE (25937) AP: pkt too small (3)[0m
+[0;31mE (25947) AP: pkt too small (3)[0m
+[0;31mE (25997) AP: pkt too small (3)[0m
+[0;31mE (26007) AP: pkt too small (3)[0m
+[0;31mE (26067) AP: pkt too small (3)[0m
+[0;31mE (26127) AP: pkt too small (3)[0m
+[0;31mE (26127) AP: pkt too small (3)[0m
+[0;31mE (26187) AP: pkt too small (3)[0m
+[0;31mE (26197) AP: pkt too small (3)[0m
+[0;31mE (26257) AP: pkt too small (3)[0m
+[0;31mE (26257) AP: pkt too small (3)[0m
+[0;31mE (26377) AP: pkt too small (3)[0m
+[0;31mE (26377) AP: pkt too small (3)[0m
+[0;31mE (26437) AP: pkt too small (3)[0m
+[0;31mE (26437) AP: pkt too small (3)[0m
+[0;31mE (26507) AP: pkt too small (3)[0m
+[0;31mE (26627) AP: pkt too small (3)[0m
+[0;31mE (26627) AP: pkt too small (3)[0m
+[0;31mE (26687) AP: pkt too small (3)[0m
+[0;31mE (26687) AP: pkt too small (3)[0m
+[0;31mE (26757) AP: pkt too small (3)[0m
+[0;31mE (26757) AP: pkt too small (3)[0m
+[0;31mE (26877) AP: pkt too small (3)[0m
+[0;31mE (26877) AP: pkt too small (3)[0m
+[0;31mE (26937) AP: pkt too small (3)[0m
+[0;31mE (26937) AP: pkt too small (3)[0m
+[0;31mE (27007) AP: pkt too small (3)[0m
+[0;31mE (27127) AP: pkt too small (3)[0m
+[0;31mE (27127) AP: pkt too small (3)[0m
+[0;31mE (27197) AP: pkt too small (3)[0m
+[0;31mE (27257) AP: pkt too small (3)[0m
+[0;31mE (27257) AP: pkt too small (3)[0m
+[0;31mE (27377) AP: pkt too small (3)[0m
+[0;31mE (27377) AP: pkt too small (3)[0m
+[0;31mE (27437) AP: pkt too small (3)[0m
+[0;31mE (27437) AP: pkt too small (3)[0m
+[0;31mE (27507) AP: pkt too small (3)[0m
+[0;31mE (27507) AP: pkt too small (3)[0m
+[0;31mE (27567) AP: pkt too small (3)[0m
+[0;31mE (27627) AP: pkt too small (3)[0m
+[0;31mE (27627) AP: pkt too small (3)[0m
+[0;31mE (27687) AP: pkt too small (3)[0m
+[0;31mE (27697) AP: pkt too small (3)[0m
+[0;31mE (27757) AP: pkt too small (3)[0m
+[0;31mE (27757) AP: pkt too small (3)[0m
+[0;31mE (27877) AP: pkt too small (3)[0m
+[0;31mE (27887) AP: pkt too small (3)[0m
+[0;31mE (28017) AP: pkt too small (3)[0m
+[0;31mE (28027) AP: pkt too small (3)[0m
+[0;31mE (28127) AP: pkt too small (3)[0m
+[0;31mE (28127) AP: pkt too small (3)[0m
+[0;31mE (28187) AP: pkt too small (3)[0m
+[0;31mE (28187) AP: pkt too small (3)[0m
+[0;31mE (28257) AP: pkt too small (3)[0m
+[0;31mE (28377) AP: pkt too small (3)[0m
+[0;31mE (28387) AP: pkt too small (3)[0m
+[0;31mE (28437) AP: pkt too small (3)[0m
+[0;31mE (28447) AP: pkt too small (3)[0m
+[0;31mE (28507) AP: pkt too small (3)[0m
+[0;31mE (28507) AP: pkt too small (3)[0m
+[0;31mE (28567) AP: pkt too small (3)[0m
+[0;31mE (28697) AP: pkt too small (3)[0m
+[0;31mE (28697) AP: pkt too small (3)[0m
+[0;31mE (28757) AP: pkt too small (3)[0m
+[0;31mE (28757) AP: pkt too small (3)[0m
+[0;31mE (28877) AP: pkt too small (3)[0m
+[0;31mE (28877) AP: pkt too small (3)[0m
+[0;31mE (28947) AP: pkt too small (3)[0m
+[0;31mE (28947) AP: pkt too small (3)[0m
+[0;31mE (28997) AP: pkt too small (3)[0m
+[0;31mE (29007) AP: pkt too small (3)[0m
+[0;31mE (29067) AP: pkt too small (3)[0m
+[0;31mE (29127) AP: pkt too small (3)[0m
+[0;31mE (29127) AP: pkt too small (3)[0m
+[0;31mE (29187) AP: pkt too small (3)[0m
+[0;31mE (29187) AP: pkt too small (3)[0m
+[0;31mE (29257) AP: pkt too small (3)[0m
+[0;31mE (29257) AP: pkt too small (3)[0m
+[0;31mE (29377) AP: pkt too small (3)[0m
+[0;31mE (29377) AP: pkt too small (3)[0m
+[0;31mE (29437) AP: pkt too small (3)[0m
+[0;31mE (29507) AP: pkt too small (3)[0m
+[0;31mE (29507) AP: pkt too small (3)[0m
+[0;31mE (29627) AP: pkt too small (3)[0m
+[0;31mE (29627) AP: pkt too small (3)[0m
+[0;31mE (29687) AP: pkt too small (3)[0m
+[0;31mE (29687) AP: pkt too small (3)[0m
+[0;31mE (29987) AP: pkt too small (3)[0m
+[0;31mE (29997) AP: pkt too small (3)[0m
+[0;31mE (30047) AP: pkt too small (3)[0m
+[0;31mE (30127) AP: pkt too small (3)[0m
+[0;31mE (30127) AP: pkt too small (3)[0m
+[0;31mE (30187) AP: pkt too small (3)[0m
+[0;31mE (30257) AP: pkt too small (3)[0m
+[0;31mE (30267) AP: pkt too small (3)[0m
+[0;31mE (30317) AP: pkt too small (3)[0m
+[0;31mE (30377) AP: pkt too small (3)[0m
+[0;31mE (30377) AP: pkt too small (3)[0m
+[0;31mE (30437) AP: pkt too small (3)[0m
+[0;31mE (30437) AP: pkt too small (3)[0m
+[0;31mE (30497) AP: pkt too small (3)[0m
+[0;31mE (30507) AP: pkt too small (3)[0m
+[0;31mE (30567) AP: pkt too small (3)[0m
+[0;31mE (30627) AP: pkt too small (3)[0m
+[0;31mE (30687) AP: pkt too small (3)[0m
+[0;31mE (30697) AP: pkt too small (3)[0m
+[0;31mE (30757) AP: pkt too small (3)[0m
+[0;31mE (30757) AP: pkt too small (3)[0m
+[0;31mE (30877) AP: pkt too small (3)[0m
+[0;31mE (30877) AP: pkt too small (3)[0m
+[0;31mE (30937) AP: pkt too small (3)[0m
+[0;31mE (30947) AP: pkt too small (3)[0m
+[0;31mE (31007) AP: pkt too small (3)[0m
+[0;31mE (31007) AP: pkt too small (3)[0m
+[0;31mE (31067) AP: pkt too small (3)[0m
+[0;31mE (31127) AP: pkt too small (3)[0m
+[0;31mE (31127) AP: pkt too small (3)[0m
+[0;31mE (31187) AP: pkt too small (3)[0m
+[0;31mE (31257) AP: pkt too small (3)[0m
+[0;31mE (31257) AP: pkt too small (3)[0m
+[0;31mE (31377) AP: pkt too small (3)[0m
+[0;31mE (31377) AP: pkt too small (3)[0m
+[0;31mE (31437) AP: pkt too small (3)[0m
+[0;31mE (31497) AP: pkt too small (3)[0m
+[0;31mE (31507) AP: pkt too small (3)[0m
+[0;31mE (31567) AP: pkt too small (3)[0m
+[0;31mE (31627) AP: pkt too small (3)[0m
+[0;31mE (31627) AP: pkt too small (3)[0m
+[0;31mE (31687) AP: pkt too small (3)[0m
+[0;31mE (31697) AP: pkt too small (3)[0m
+[0;31mE (31757) AP: pkt too small (3)[0m
+[0;31mE (31757) AP: pkt too small (3)[0m
+[0;31mE (31877) AP: pkt too small (3)[0m
+[0;31mE (31877) AP: pkt too small (3)[0m
+[0;31mE (31937) AP: pkt too small (3)[0m
+[0;31mE (31947) AP: pkt too small (3)[0m
+[0;31mE (31997) AP: pkt too small (3)[0m
+[0;31mE (32007) AP: pkt too small (3)[0m
+[0;31mE (32067) AP: pkt too small (3)[0m
+[0;31mE (32127) AP: pkt too small (3)[0m
+[0;31mE (32127) AP: pkt too small (3)[0m
+[0;31mE (32187) AP: pkt too small (3)[0m
+[0;31mE (32197) AP: pkt too small (3)[0m
+[0;31mE (32257) AP: pkt too small (3)[0m
+[0;31mE (32377) AP: pkt too small (3)[0m
+[0;31mE (32377) AP: pkt too small (3)[0m
+[0;31mE (32437) AP: pkt too small (3)[0m
+[0;31mE (32507) AP: pkt too small (3)[0m
+[0;31mE (32507) AP: pkt too small (3)[0m
+[0;31mE (32627) AP: pkt too small (3)[0m
+[0;31mE (32627) AP: pkt too small (3)[0m
+[0;31mE (32687) AP: pkt too small (3)[0m
+[0;31mE (32697) AP: pkt too small (3)[0m
+[0;31mE (32747) AP: pkt too small (3)[0m
+[0;31mE (32757) AP: pkt too small (3)[0m
+[0;31mE (32817) AP: pkt too small (3)[0m
+[0;31mE (32877) AP: pkt too small (3)[0m
+[0;31mE (32877) AP: pkt too small (3)[0m
+[0;31mE (32947) AP: pkt too small (3)[0m
+[0;31mE (33007) AP: pkt too small (3)[0m
+[0;31mE (33007) AP: pkt too small (3)[0m
+[0;31mE (33127) AP: pkt too small (3)[0m
+[0;31mE (33137) AP: pkt too small (3)[0m
+[0;31mE (33187) AP: pkt too small (3)[0m
+[0;31mE (33187) AP: pkt too small (3)[0m
+[0;31mE (33247) AP: pkt too small (3)[0m
+[0;31mE (33257) AP: pkt too small (3)[0m
+[0;31mE (33317) AP: pkt too small (3)[0m
+[0;31mE (33377) AP: pkt too small (3)[0m
+[0;31mE (33377) AP: pkt too small (3)[0m
+[0;31mE (33437) AP: pkt too small (3)[0m
+[0;31mE (33447) AP: pkt too small (3)[0m
+[0;31mE (33497) AP: pkt too small (3)[0m
+[0;31mE (33507) AP: pkt too small (3)[0m
+[0;31mE (33627) AP: pkt too small (3)[0m
+[0;31mE (33687) AP: pkt too small (3)[0m
+[0;31mE (33687) AP: pkt too small (3)[0m
+[0;31mE (33747) AP: pkt too small (3)[0m
+[0;31mE (33757) AP: pkt too small (3)[0m
+[0;31mE (33877) AP: pkt too small (3)[0m
+[0;31mE (33887) AP: pkt too small (3)[0m
+[0;31mE (33937) AP: pkt too small (3)[0m
+[0;31mE (34007) AP: pkt too small (3)[0m
+[0;31mE (34017) AP: pkt too small (3)[0m
+[0;31mE (34127) AP: pkt too small (3)[0m
+[0;31mE (34127) AP: pkt too small (3)[0m
+[0;31mE (34187) AP: pkt too small (3)[0m
+[0;31mE (34187) AP: pkt too small (3)[0m
+[0;31mE (34377) AP: pkt too small (3)[0m
+[0;31mE (34387) AP: pkt too small (3)[0m
+[0;31mE (34437) AP: pkt too small (3)[0m
+[0;31mE (34447) AP: pkt too small (3)[0m
+[0;31mE (34497) AP: pkt too small (3)[0m
+[0;31mE (34507) AP: pkt too small (3)[0m
+[0;31mE (34567) AP: pkt too small (3)[0m
+[0;31mE (34627) AP: pkt too small (3)[0m
+[0;31mE (34627) AP: pkt too small (3)[0m
+[0;31mE (34687) AP: pkt too small (3)[0m
+[0;31mE (34747) AP: pkt too small (3)[0m
+[0;31mE (34757) AP: pkt too small (3)[0m
+[0;31mE (34987) AP: pkt too small (3)[0m
+[0;31mE (34987) AP: pkt too small (3)[0m
+[0;31mE (35047) AP: pkt too small (3)[0m
+[0;31mE (35047) AP: pkt too small (3)[0m
+[0;31mE (35127) AP: pkt too small (3)[0m
+[0;31mE (35127) AP: pkt too small (3)[0m
+[0;31mE (35187) AP: pkt too small (3)[0m
+[0;31mE (35187) AP: pkt too small (3)[0m
+[0;31mE (35247) AP: pkt too small (3)[0m
+[0;31mE (35257) AP: pkt too small (3)[0m
+[0;31mE (35317) AP: pkt too small (3)[0m
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0x6f (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x18ec
+load:0x4086c110,len:0xe5c
+load:0x4086e610,len:0x2f50
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time May 13 2025 16:34:30[0m
+[0;32mI (24) boot: chip revision: v0.1[0m
+[0;32mI (26) boot: efuse block revision: v0.2[0m
+[0;32mI (31) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (36) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=42098020 size=1c34ch (115532) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=0002c374 vaddr=40800000 size=03ca4h ( 15524) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=93198h (602520) map[0m
+[0;32mI (237) esp_image: segment 3: paddr=000c31c0 vaddr=40803ca4 size=15338h ( 86840) load[0m
+[0;32mI (256) esp_image: segment 4: paddr=000d8500 vaddr=40818fe0 size=03b78h ( 15224) load[0m
+[0;32mI (266) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (266) boot: Disabling RNG early entropy source...[0m
+[0;32mI (278) cpu_start: Unicore app[0m
+[0;32mI (286) cpu_start: Pro cpu start user code[0m
+[0;32mI (287) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (287) app_init: Application information:[0m
+[0;32mI (289) app_init: Project name:     wifi_softAP[0m
+[0;32mI (295) app_init: App version:      ac3da05a-dirty[0m
+[0;32mI (300) app_init: Compile time:     May 13 2025 16:32:53[0m
+[0;32mI (306) app_init: ELF file SHA256:  f5ffac533...[0m
+[0;32mI (311) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (316) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (321) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (326) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (331) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (338) heap_init: At 40822090 len 0005A580 (361 KiB): RAM[0m
+[0;32mI (344) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (350) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (357) spi_flash: detected chip: generic[0m
+[0;32mI (361) spi_flash: flash io: dio[0m
+[0;33mW (365) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (378) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (385) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (392) coexist: coex firmware version: cbb41d7[0m
+[0;32mI (407) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (407) main_task: Started on CPU0[0m
+[0;32mI (407) main_task: Calling app_main()[0m
+[0;32mI (417) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (417) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (427) wifi:wifi driver task: 4082b1a4, prio:23, stack:6656, core=0[0m
+[0;32mI (437) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (437) wifi:wifi certification version: v7.0[0m
+[0;32mI (437) wifi:config NVS flash: enabled[0m
+[0;32mI (437) wifi:config nano formating: disabled[0m
+[0;32mI (437) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band:0x1[0m
+[0;32mI (447) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (447) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (457) wifi:Init management short buffer num: 32[0m
+[0;32mI (457) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (467) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (467) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (477) wifi:Init static rx buffer num: 10[0m
+[0;32mI (477) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (477) wifi_init: rx ba win: 6[0m
+[0;32mI (487) wifi_init: accept mbox: 6[0m
+[0;32mI (487) wifi_init: tcpip mbox: 32[0m
+[0;32mI (497) wifi_init: udp mbox: 6[0m
+[0;32mI (497) wifi_init: tcp mbox: 6[0m
+[0;32mI (497) wifi_init: tcp tx win: 5760[0m
+[0;32mI (507) wifi_init: tcp rx win: 5760[0m
+[0;32mI (507) wifi_init: tcp mss: 1440[0m
+[0;32mI (517) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (517) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (527) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (527) phy_init: phy_version 320,348a293,Sep  3 2024,16:33:12[0m
+[0;33mW (577) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;33mW (597) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (597) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (597) wifi:(agc)0x600a7128:0xd20589d2, min.avgNF:0xce->0xd2(dB), RCalCount:0x58, min.RRssi:0x9d2(-98.88)[0m
+[0;33mW (607) wifi:(TB)WDEV_PWR_TB_MCS0:19[0m
+[0;33mW (607) wifi:(TB)WDEV_PWR_TB_MCS1:19[0m
+[0;33mW (617) wifi:(TB)WDEV_PWR_TB_MCS2:19[0m
+[0;33mW (617) wifi:(TB)WDEV_PWR_TB_MCS3:19[0m
+[0;33mW (617) wifi:(TB)WDEV_PWR_TB_MCS4:19[0m
+[0;33mW (627) wifi:(TB)WDEV_PWR_TB_MCS5:19[0m
+[0;33mW (627) wifi:(TB)WDEV_PWR_TB_MCS6:18[0m
+[0;33mW (627) wifi:(TB)WDEV_PWR_TB_MCS7:18[0m
+[0;33mW (637) wifi:(TB)WDEV_PWR_TB_MCS8:17[0m
+[0;33mW (637) wifi:(TB)WDEV_PWR_TB_MCS9:15[0m
+[0;33mW (637) wifi:(TB)WDEV_PWR_TB_MCS10:15[0m
+[0;33mW (647) wifi:(TB)WDEV_PWR_TB_MCS11:15[0m
+[0;32mI (647) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;33mW (657) wifi:(he)deattach, ap, phymode:11bgn[0m
+[0;32mI (657) wifi:mode : softAP (40:4c:ca:5c:28:dd)[0m
+[0;32mI (667) wifi:Total power save buffer number: 16[0m
+[0;32mI (667) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (667) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (677) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (687) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (687) AP: Soft‑AP avviata: SSID=myssid, chan=1[0m
+[0;32mI (697) AP: TCP server listening on port 3333[0m
+[0;32mI (697) main_task: Returned from app_main()[0m
+[0;32mI (4027) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (4027) wifi:(trc)phytype:CBW20-SGI, snr:70, maxRate:0, highestRateIdx:0[0m
+[0;33mW (4027) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (4037) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:70, ampduState:wait operational[0m
+[0;32mI (4047) wifi:ifidx:1, rssi:-28, nf:-98, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (4057) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (4067) wifi:station: f0:f5:bd:07:01:00 join, AID=1, bgn, 20[0m
+[0;32mI (4097) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (4097) wifi:(trc)phytype:CBW20-SGI, snr:75, maxRate:0, highestRateIdx:0[0m
+[0;33mW (4097) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (4107) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:75, ampduState:wait operational[0m
+[0;32mI (4117) wifi:ifidx:1, rssi:-23, nf:-98, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (4127) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (4137) wifi:station: f0:f5:bd:07:05:50 join, AID=2, bgn, 20[0m
+[0;32mI (4147) AP: STA f0:f5:bd:07:01:00 joined, AID=1[0m
+[0;32mI (4187) AP: STA f0:f5:bd:07:05:50 joined, AID=2[0m
+[0;33mW (4217) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (4237) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (4237) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;33mW (4257) wifi:<ba-add>idx:7, ifx:1, tid:0, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;32mI (4277) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (4297) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.3[0m
+[0;32mI (5267) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (5287) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (5297) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (5317) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;31mE (5357) AP: pkt too small (3)[0m
+[0;31mE (5417) AP: pkt too small (3)[0m
+[0;31mE (5657) AP: pkt too small (3)[0m
+[0;31mE (5677) AP: pkt too small (3)[0m
+[0;31mE (5727) AP: pkt too small (3)[0m
+[0;31mE (5737) AP: pkt too small (3)[0m
+[0;31mE (5787) AP: pkt too small (3)[0m
+[0;31mE (5847) AP: pkt too small (3)[0m
+[0;31mE (5847) AP: pkt too small (3)[0m
+[0;31mE (5907) AP: pkt too small (3)[0m
+[0;31mE (5907) AP: pkt too small (3)[0m
+[0;31mE (5967) AP: pkt too small (3)[0m
+[0;31mE (6027) AP: pkt too small (3)[0m
+[0;31mE (6097) AP: pkt too small (3)[0m
+[0;31mE (6157) AP: pkt too small (3)[0m
+[0;31mE (6167) AP: pkt too small (3)[0m
+[0;31mE (6217) AP: pkt too small (3)[0m
+[0;31mE (6227) AP: pkt too small (3)[0m
+[0;31mE (6347) AP: pkt too small (3)[0m
+[0;31mE (6347) AP: pkt too small (3)[0m
+[0;31mE (6407) AP: pkt too small (3)[0m
+[0;31mE (6417) AP: pkt too small (3)[0m
+[0;31mE (6467) AP: pkt too small (3)[0m
+[0;31mE (6477) AP: pkt too small (3)[0m
+[0;31mE (6527) AP: pkt too small (3)[0m
+[0;31mE (6597) AP: pkt too small (3)[0m
+[0;31mE (6597) AP: pkt too small (3)[0m
+[0;31mE (6657) AP: pkt too small (3)[0m
+[0;31mE (6657) AP: pkt too small (3)[0m
+[0;31mE (6717) AP: pkt too small (3)[0m
+[0;31mE (6727) AP: pkt too small (3)[0m
+[0;31mE (6777) AP: pkt too small (3)[0m
+[0;31mE (6787) AP: pkt too small (3)[0m
+[0;31mE (6847) AP: pkt too small (3)[0m
+[0;31mE (6907) AP: pkt too small (3)[0m
+[0;31mE (6917) AP: pkt too small (3)[0m
+[0;31mE (6967) AP: pkt too small (3)[0m
+[0;31mE (6977) AP: pkt too small (3)[0m
+[0;31mE (7037) AP: pkt too small (3)[0m
+[0;31mE (7097) AP: pkt too small (3)[0m
+[0;31mE (7097) AP: pkt too small (3)[0m
+[0;31mE (7157) AP: pkt too small (3)[0m
+[0;31mE (7227) AP: pkt too small (3)[0m
+[0;31mE (7347) AP: pkt too small (3)[0m
+[0;31mE (7347) AP: pkt too small (3)[0m
+[0;31mE (7407) AP: pkt too small (3)[0m
+[0;31mE (7417) AP: pkt too small (3)[0m
+[0;31mE (7467) AP: pkt too small (3)[0m
+[0;31mE (7477) AP: pkt too small (3)[0m
+[0;31mE (7537) AP: pkt too small (3)[0m
+[0;31mE (7597) AP: pkt too small (3)[0m
+[0;31mE (7597) AP: pkt too small (3)[0m
+[0;31mE (7657) AP: pkt too small (3)[0m
+[0;31mE (7717) AP: pkt too small (3)[0m
+[0;31mE (7727) AP: pkt too small (3)[0m
+[0;31mE (7777) AP: pkt too small (3)[0m
+[0;31mE (7847) AP: pkt too small (3)[0m
+[0;31mE (7907) AP: pkt too small (3)[0m
+[0;31mE (7917) AP: pkt too small (3)[0m
+[0;31mE (7967) AP: pkt too small (3)[0m
+[0;31mE (7977) AP: pkt too small (3)[0m
+[0;31mE (8037) AP: pkt too small (3)[0m
+[0;31mE (8097) AP: pkt too small (3)[0m
+[0;31mE (8097) AP: pkt too small (3)[0m
+[0;31mE (8157) AP: pkt too small (3)[0m
+[0;31mE (8167) AP: pkt too small (3)[0m
+[0;31mE (8217) AP: pkt too small (3)[0m
+[0;31mE (8217) AP: pkt too small (3)[0m
+[0;31mE (8287) AP: pkt too small (3)[0m
+[0;31mE (8347) AP: pkt too small (3)[0m
+[0;31mE (8347) AP: pkt too small (3)[0m
+[0;31mE (8407) AP: pkt too small (3)[0m
+[0;31mE (8407) AP: pkt too small (3)[0m
+[0;31mE (8467) AP: pkt too small (3)[0m
+[0;31mE (8477) AP: pkt too small (3)[0m
+[0;31mE (8527) AP: pkt too small (3)[0m
+[0;31mE (8597) AP: pkt too small (3)[0m
+[0;31mE (8597) AP: pkt too small (3)[0m
+[0;31mE (8657) AP: pkt too small (3)[0m
+[0;31mE (8657) AP: pkt too small (3)[0m
+[0;31mE (8717) AP: pkt too small (3)[0m
+[0;31mE (8717) AP: pkt too small (3)[0m
+[0;31mE (8787) AP: pkt too small (3)[0m
+[0;31mE (8787) AP: pkt too small (3)[0m
+[0;31mE (8847) AP: pkt too small (3)[0m
+[0;31mE (8847) AP: pkt too small (3)[0m
+[0;31mE (8907) AP: pkt too small (3)[0m
+[0;31mE (8907) AP: pkt too small (3)[0m
+[0;31mE (8967) AP: pkt too small (3)[0m
+[0;31mE (8967) AP: pkt too small (3)[0m
+[0;31mE (9027) AP: pkt too small (3)[0m
+[0;31mE (9027) AP: pkt too small (3)[0m
+[0;31mE (9097) AP: pkt too small (3)[0m
+[0;31mE (9097) AP: pkt too small (3)[0m
+[0;31mE (9157) AP: pkt too small (3)[0m
+[0;31mE (9157) AP: pkt too small (3)[0m
+[0;31mE (9217) AP: pkt too small (3)[0m
+[0;31mE (9217) AP: pkt too small (3)[0m
+[0;31mE (9287) AP: pkt too small (3)[0m
+[0;31mE (9287) AP: pkt too small (3)[0m
+[0;31mE (9347) AP: pkt too small (3)[0m
+[0;31mE (9347) AP: pkt too small (3)[0m
+[0;31mE (9407) AP: pkt too small (3)[0m
+[0;31mE (9417) AP: pkt too small (3)[0m
+[0;31mE (9477) AP: pkt too small (3)[0m
+[0;31mE (9477) AP: pkt too small (3)[0m
+[0;31mE (9537) AP: pkt too small (3)[0m
+[0;31mE (9597) AP: pkt too small (3)[0m
+[0;31mE (9657) AP: pkt too small (3)[0m
+[0;31mE (9657) AP: pkt too small (3)[0m
+[0;31mE (9717) AP: pkt too small (3)[0m
+[0;31mE (9727) AP: pkt too small (3)[0m
+[0;31mE (9777) AP: pkt too small (3)[0m
+[0;31mE (9847) AP: pkt too small (3)[0m
+[0;31mE (9847) AP: pkt too small (3)[0m
+[0;31mE (9907) AP: pkt too small (3)[0m
+[0;31mE (9907) AP: pkt too small (3)[0m
+[0;31mE (9967) AP: pkt too small (3)[0m
+[0;31mE (9977) AP: pkt too small (3)[0m
+[0;31mE (10027) AP: pkt too small (3)[0m
+[0;31mE (10037) AP: pkt too small (3)[0m
+[0;31mE (10097) AP: pkt too small (3)[0m
+[0;31mE (10157) AP: pkt too small (3)[0m
+[0;31mE (10167) AP: pkt too small (3)[0m
+[0;31mE (10217) AP: pkt too small (3)[0m
+[0;31mE (10227) AP: pkt too small (3)[0m
+[0;31mE (10347) AP: pkt too small (3)[0m
+[0;31mE (10477) AP: pkt too small (3)[0m
+[0;31mE (10497) AP: pkt too small (3)[0m
+[0;31mE (10597) AP: pkt too small (3)[0m
+[0;31mE (10597) AP: pkt too small (3)[0m
+[0;31mE (10657) AP: pkt too small (3)[0m
+[0;31mE (10717) AP: pkt too small (3)[0m
+[0;31mE (10787) AP: pkt too small (3)[0m
+[0;31mE (10847) AP: pkt too small (3)[0m
+[0;31mE (10847) AP: pkt too small (3)[0m
+[0;31mE (10907) AP: pkt too small (3)[0m
+[0;31mE (10907) AP: pkt too small (3)[0m
+[0;31mE (10967) AP: pkt too small (3)[0m
+[0;31mE (10977) AP: pkt too small (3)[0m
+[0;31mE (11027) AP: pkt too small (3)[0m
+[0;31mE (11097) AP: pkt too small (3)[0m
+[0;31mE (11097) AP: pkt too small (3)[0m
+[0;31mE (11157) AP: pkt too small (3)[0m
+[0;31mE (11157) AP: pkt too small (3)[0m
+[0;31mE (11217) AP: pkt too small (3)[0m
+[0;31mE (11227) AP: pkt too small (3)[0m
+[0;31mE (11287) AP: pkt too small (3)[0m
+[0;31mE (11287) AP: pkt too small (3)[0m
+[0;31mE (11347) AP: pkt too small (3)[0m
+[0;31mE (11357) AP: pkt too small (3)[0m
+[0;31mE (11407) AP: pkt too small (3)[0m
+[0;31mE (11417) AP: pkt too small (3)[0m
+[0;31mE (11467) AP: pkt too small (3)[0m
+[0;31mE (11477) AP: pkt too small (3)[0m
+[0;31mE (11597) AP: pkt too small (3)[0m
+[0;31mE (11657) AP: pkt too small (3)[0m
+[0;31mE (11677) AP: pkt too small (3)[0m
+[0;31mE (11717) AP: pkt too small (3)[0m
+[0;31mE (11747) AP: pkt too small (3)[0m
+[0;31mE (11777) AP: pkt too small (3)[0m
+[0;31mE (11847) AP: pkt too small (3)[0m
+[0;31mE (11847) AP: pkt too small (3)[0m
+[0;31mE (11907) AP: pkt too small (3)[0m
+[0;31mE (11907) AP: pkt too small (3)[0m
+[0;31mE (11967) AP: pkt too small (3)[0m
+[0;31mE (11967) AP: pkt too small (3)[0m
+[0;31mE (12037) AP: pkt too small (3)[0m
+[0;31mE (12037) AP: pkt too small (3)[0m
+[0;31mE (12097) AP: pkt too small (3)[0m
+[0;31mE (12157) AP: pkt too small (3)[0m
+[0;31mE (12157) AP: pkt too small (3)[0m
+[0;31mE (12217) AP: pkt too small (3)[0m
+[0;31mE (12227) AP: pkt too small (3)[0m
+[0;31mE (12277) AP: pkt too small (3)[0m
+[0;31mE (12347) AP: pkt too small (3)[0m
+[0;31mE (12357) AP: pkt too small (3)[0m
+[0;31mE (12407) AP: pkt too small (3)[0m
+[0;31mE (12417) AP: pkt too small (3)[0m
+[0;31mE (12467) AP: pkt too small (3)[0m
+[0;31mE (12477) AP: pkt too small (3)[0m
+[0;31mE (12527) AP: pkt too small (3)[0m
+[0;31mE (12597) AP: pkt too small (3)[0m
+[0;31mE (12597) AP: pkt too small (3)[0m
+[0;31mE (12657) AP: pkt too small (3)[0m
+[0;31mE (12657) AP: pkt too small (3)[0m
+[0;31mE (12717) AP: pkt too small (3)[0m
+[0;31mE (12717) AP: pkt too small (3)[0m
+[0;31mE (12777) AP: pkt too small (3)[0m
+[0;31mE (12787) AP: pkt too small (3)[0m
+[0;31mE (12847) AP: pkt too small (3)[0m
+[0;31mE (12847) AP: pkt too small (3)[0m
+[0;31mE (12907) AP: pkt too small (3)[0m
+[0;31mE (12907) AP: pkt too small (3)[0m
+[0;31mE (13097) AP: pkt too small (3)[0m
+[0;31mE (13097) AP: pkt too small (3)[0m
+[0;31mE (13157) AP: pkt too small (3)[0m
+[0;31mE (13167) AP: pkt too small (3)[0m
+[0;31mE (13227) AP: pkt too small (3)[0m
+[0;31mE (13227) AP: pkt too small (3)[0m
+[0;31mE (13347) AP: pkt too small (3)[0m
+[0;31mE (13357) AP: pkt too small (3)[0m
+[0;31mE (13407) AP: pkt too small (3)[0m
+[0;31mE (13417) AP: pkt too small (3)[0m
+[0;31mE (13467) AP: pkt too small (3)[0m
+[0;31mE (13487) AP: pkt too small (3)[0m
+[0;31mE (13597) AP: pkt too small (3)[0m
+[0;31mE (13597) AP: pkt too small (3)[0m
+[0;31mE (13657) AP: pkt too small (3)[0m
+[0;31mE (13657) AP: pkt too small (3)[0m
+[0;31mE (13727) AP: pkt too small (3)[0m
+[0;31mE (13727) AP: pkt too small (3)[0m
+[0;31mE (13787) AP: pkt too small (3)[0m
+[0;31mE (13787) AP: pkt too small (3)[0m
+[0;31mE (13847) AP: pkt too small (3)[0m
+[0;31mE (13847) AP: pkt too small (3)[0m
+[0;31mE (13917) AP: pkt too small (3)[0m
+[0;31mE (13917) AP: pkt too small (3)[0m
+[0;31mE (13977) AP: pkt too small (3)[0m
+[0;31mE (13977) AP: pkt too small (3)[0m
+[0;31mE (14097) AP: pkt too small (3)[0m
+[0;31mE (14097) AP: pkt too small (3)[0m
+[0;31mE (14157) AP: pkt too small (3)[0m
+[0;31mE (14217) AP: pkt too small (3)[0m
+[0;31mE (14227) AP: pkt too small (3)[0m
+[0;31mE (14287) AP: pkt too small (3)[0m
+[0;31mE (14347) AP: pkt too small (3)[0m
+[0;31mE (14357) AP: pkt too small (3)[0m
+[0;31mE (14407) AP: pkt too small (3)[0m
+[0;31mE (14417) AP: pkt too small (3)[0m
+[0;31mE (14477) AP: pkt too small (3)[0m
+[0;31mE (14477) AP: pkt too small (3)[0m
+[0;31mE (14597) AP: pkt too small (3)[0m
+[0;31mE (14597) AP: pkt too small (3)[0m
+[0;31mE (14657) AP: pkt too small (3)[0m
+[0;31mE (14657) AP: pkt too small (3)[0m
+[0;31mE (14717) AP: pkt too small (3)[0m
+[0;31mE (14717) AP: pkt too small (3)[0m
+[0;31mE (14787) AP: pkt too small (3)[0m
+[0;31mE (14847) AP: pkt too small (3)[0m
+[0;31mE (14847) AP: pkt too small (3)[0m
+[0;31mE (14907) AP: pkt too small (3)[0m
+[0;31mE (14907) AP: pkt too small (3)[0m
+[0;31mE (14967) AP: pkt too small (3)[0m
+[0;31mE (14977) AP: pkt too small (3)[0m
+[0;31mE (15037) AP: pkt too small (3)[0m
+[0;31mE (15097) AP: pkt too small (3)[0m
+[0;31mE (15097) AP: pkt too small (3)[0m
+[0;31mE (15157) AP: pkt too small (3)[0m
+[0;31mE (15157) AP: pkt too small (3)[0m
+[0;31mE (15357) AP: pkt too small (3)[0m
+[0;31mE (15417) AP: pkt too small (3)[0m
+[0;31mE (15457) AP: pkt too small (3)[0m
+[0;31mE (15487) AP: pkt too small (3)[0m
+[0;31mE (15517) AP: pkt too small (3)[0m
+[0;31mE (15597) AP: pkt too small (3)[0m
+[0;31mE (15597) AP: pkt too small (3)[0m
+[0;31mE (15657) AP: pkt too small (3)[0m
+[0;31mE (15727) AP: pkt too small (3)[0m
+[0;31mE (15767) AP: pkt too small (3)[0m
+[0;31mE (15847) AP: pkt too small (3)[0m
+[0;31mE (15847) AP: pkt too small (3)[0m
+[0;31mE (15907) AP: pkt too small (3)[0m
+[0;31mE (15907) AP: pkt too small (3)[0m
+[0;31mE (15977) AP: pkt too small (3)[0m
+[0;31mE (15977) AP: pkt too small (3)[0m
+[0;31mE (16097) AP: pkt too small (3)[0m
+[0;31mE (16097) AP: pkt too small (3)[0m
+[0;31mE (16157) AP: pkt too small (3)[0m
+[0;31mE (16157) AP: pkt too small (3)[0m
+[0;31mE (16217) AP: pkt too small (3)[0m
+[0;31mE (16227) AP: pkt too small (3)[0m
+[0;31mE (16287) AP: pkt too small (3)[0m
+[0;31mE (16357) AP: pkt too small (3)[0m
+[0;31mE (16357) AP: pkt too small (3)[0m
+[0;31mE (16407) AP: pkt too small (3)[0m
+[0;31mE (16417) AP: pkt too small (3)[0m
+[0;31mE (16477) AP: pkt too small (3)[0m
+[0;31mE (16477) AP: pkt too small (3)[0m
+[0;31mE (16597) AP: pkt too small (3)[0m
+[0;31mE (16597) AP: pkt too small (3)[0m
+[0;31mE (16727) AP: pkt too small (3)[0m
+[0;31mE (16847) AP: pkt too small (3)[0m
+[0;31mE (16907) AP: pkt too small (3)[0m
+[0;31mE (16917) AP: pkt too small (3)[0m
+[0;31mE (16977) AP: pkt too small (3)[0m
+[0;31mE (16977) AP: pkt too small (3)[0m
+[0;31mE (17097) AP: pkt too small (3)[0m
+[0;31mE (17097) AP: pkt too small (3)[0m
+[0;31mE (17157) AP: pkt too small (3)[0m
+[0;31mE (17157) AP: pkt too small (3)[0m
+[0;31mE (17227) AP: pkt too small (3)[0m
+[0;31mE (17347) AP: pkt too small (3)[0m
+[0;31mE (17347) AP: pkt too small (3)[0m
+[0;31mE (17407) AP: pkt too small (3)[0m
+[0;31mE (17407) AP: pkt too small (3)[0m
+[0;31mE (17477) AP: pkt too small (3)[0m
+[0;31mE (17477) AP: pkt too small (3)[0m
+[0;31mE (17597) AP: pkt too small (3)[0m
+[0;31mE (17597) AP: pkt too small (3)[0m
+[0;31mE (17657) AP: pkt too small (3)[0m
+[0;31mE (17657) AP: pkt too small (3)[0m
+[0;31mE (17727) AP: pkt too small (3)[0m
+[0;31mE (17727) AP: pkt too small (3)[0m
+[0;31mE (17787) AP: pkt too small (3)[0m
+[0;31mE (17787) AP: pkt too small (3)[0m
+[0;31mE (17847) AP: pkt too small (3)[0m
+[0;31mE (17847) AP: pkt too small (3)[0m
+[0;31mE (17907) AP: pkt too small (3)[0m
+[0;31mE (17917) AP: pkt too small (3)[0m
+[0;31mE (17977) AP: pkt too small (3)[0m
+[0;31mE (17977) AP: pkt too small (3)[0m
+[0;31mE (18097) AP: pkt too small (3)[0m
+[0;31mE (18097) AP: pkt too small (3)[0m
+[0;31mE (18157) AP: pkt too small (3)[0m
+[0;31mE (18157) AP: pkt too small (3)[0m
+[0;31mE (18227) AP: pkt too small (3)[0m
+[0;31mE (18227) AP: pkt too small (3)[0m
+[0;31mE (18347) AP: pkt too small (3)[0m
+[0;31mE (18347) AP: pkt too small (3)[0m
+[0;31mE (18407) AP: pkt too small (3)[0m
+[0;31mE (18417) AP: pkt too small (3)[0m
+[0;31mE (18467) AP: pkt too small (3)[0m
+[0;31mE (18477) AP: pkt too small (3)[0m
+[0;31mE (18537) AP: pkt too small (3)[0m
+[0;31mE (18597) AP: pkt too small (3)[0m
+[0;31mE (18597) AP: pkt too small (3)[0m
+[0;31mE (18657) AP: pkt too small (3)[0m
+[0;31mE (18667) AP: pkt too small (3)[0m
+[0;31mE (18727) AP: pkt too small (3)[0m
+[0;31mE (18727) AP: pkt too small (3)[0m
+[0;31mE (18847) AP: pkt too small (3)[0m
+[0;31mE (18847) AP: pkt too small (3)[0m
+[0;31mE (18977) AP: pkt too small (3)[0m
+[0;31mE (19097) AP: pkt too small (3)[0m
+[0;31mE (19097) AP: pkt too small (3)[0m
+[0;31mE (19157) AP: pkt too small (3)[0m
+[0;31mE (19157) AP: pkt too small (3)[0m
+[0;31mE (19217) AP: pkt too small (3)[0m
+[0;31mE (19227) AP: pkt too small (3)[0m
+[0;31mE (19347) AP: pkt too small (3)[0m
+[0;31mE (19357) AP: pkt too small (3)[0m
+[0;31mE (19417) AP: pkt too small (3)[0m
+[0;31mE (19427) AP: pkt too small (3)[0m
+[0;31mE (19477) AP: pkt too small (3)[0m
+[0;31mE (19487) AP: pkt too small (3)[0m
+[0;31mE (19597) AP: pkt too small (3)[0m
+[0;31mE (19597) AP: pkt too small (3)[0m
+[0;31mE (19657) AP: pkt too small (3)[0m
+[0;31mE (19657) AP: pkt too small (3)[0m
+[0;31mE (19717) AP: pkt too small (3)[0m
+[0;31mE (19727) AP: pkt too small (3)[0m
+[0;31mE (19787) AP: pkt too small (3)[0m
+[0;31mE (19847) AP: pkt too small (3)[0m
+[0;31mE (19847) AP: pkt too small (3)[0m
+[0;31mE (19907) AP: pkt too small (3)[0m
+[0;31mE (19907) AP: pkt too small (3)[0m
+[0;31mE (19977) AP: pkt too small (3)[0m
+[0;31mE (19977) AP: pkt too small (3)[0m
+[0;31mE (20037) AP: pkt too small (3)[0m
+[0;31mE (20097) AP: pkt too small (3)[0m
+[0;31mE (20097) AP: pkt too small (3)[0m
+[0;31mE (20157) AP: pkt too small (3)[0m
+[0;31mE (20157) AP: pkt too small (3)[0m
+[0;31mE (20217) AP: pkt too small (3)[0m
+[0;31mE (20227) AP: pkt too small (3)[0m
+[0;31mE (20287) AP: pkt too small (3)[0m
+[0;31mE (20347) AP: pkt too small (3)[0m
+[0;31mE (20457) AP: pkt too small (3)[0m
+[0;31mE (20487) AP: pkt too small (3)[0m
+[0;31mE (20517) AP: pkt too small (3)[0m
+[0;31mE (20597) AP: pkt too small (3)[0m
+[0;31mE (20597) AP: pkt too small (3)[0m
+[0;31mE (20657) AP: pkt too small (3)[0m
+[0;31mE (20727) AP: pkt too small (3)[0m
+[0;31mE (20767) AP: pkt too small (3)[0m
+[0;31mE (20847) AP: pkt too small (3)[0m
+[0;31mE (20847) AP: pkt too small (3)[0m
+[0;31mE (20907) AP: pkt too small (3)[0m
+[0;31mE (20907) AP: pkt too small (3)[0m
+[0;31mE (20967) AP: pkt too small (3)[0m
+[0;31mE (20967) AP: pkt too small (3)[0m
+[0;31mE (21037) AP: pkt too small (3)[0m
+[0;31mE (21037) AP: pkt too small (3)[0m
+[0;31mE (21097) AP: pkt too small (3)[0m
+[0;31mE (21097) AP: pkt too small (3)[0m
+[0;31mE (21227) AP: pkt too small (3)[0m
+[0;31mE (21227) AP: pkt too small (3)[0m
+[0;31mE (21357) AP: pkt too small (3)[0m
+[0;31mE (21357) AP: pkt too small (3)[0m
+[0;31mE (21417) AP: pkt too small (3)[0m
+[0;31mE (21417) AP: pkt too small (3)[0m
+[0;31mE (21477) AP: pkt too small (3)[0m
+[0;31mE (21477) AP: pkt too small (3)[0m
+[0;31mE (21597) AP: pkt too small (3)[0m
+[0;31mE (21597) AP: pkt too small (3)[0m
+[0;31mE (21657) AP: pkt too small (3)[0m
+[0;31mE (21657) AP: pkt too small (3)[0m
+[0;31mE (21717) AP: pkt too small (3)[0m
+[0;31mE (21727) AP: pkt too small (3)[0m
+[0;31mE (21787) AP: pkt too small (3)[0m
+[0;31mE (21847) AP: pkt too small (3)[0m
+[0;31mE (21847) AP: pkt too small (3)[0m
+[0;31mE (21907) AP: pkt too small (3)[0m
+[0;31mE (21907) AP: pkt too small (3)[0m
+[0;31mE (21967) AP: pkt too small (3)[0m
+[0;31mE (21977) AP: pkt too small (3)[0m
+[0;31mE (22037) AP: pkt too small (3)[0m
+[0;31mE (22097) AP: pkt too small (3)[0m
+[0;31mE (22097) AP: pkt too small (3)[0m
+[0;31mE (22157) AP: pkt too small (3)[0m
+[0;31mE (22157) AP: pkt too small (3)[0m
+[0;31mE (22217) AP: pkt too small (3)[0m
+[0;31mE (22227) AP: pkt too small (3)[0m
+[0;31mE (22347) AP: pkt too small (3)[0m
+[0;31mE (22357) AP: pkt too small (3)[0m
+[0;31mE (22417) AP: pkt too small (3)[0m
+[0;31mE (22417) AP: pkt too small (3)[0m
+[0;31mE (22477) AP: pkt too small (3)[0m
+[0;31mE (22487) AP: pkt too small (3)[0m
+[0;31mE (22597) AP: pkt too small (3)[0m
+[0;31mE (22597) AP: pkt too small (3)[0m
+[0;31mE (22657) AP: pkt too small (3)[0m
+[0;31mE (22717) AP: pkt too small (3)[0m
+[0;31mE (22727) AP: pkt too small (3)[0m
+[0;31mE (22847) AP: pkt too small (3)[0m
+[0;31mE (22847) AP: pkt too small (3)[0m
+[0;31mE (22907) AP: pkt too small (3)[0m
+[0;31mE (22917) AP: pkt too small (3)[0m
+[0;31mE (22977) AP: pkt too small (3)[0m
+[0;31mE (22977) AP: pkt too small (3)[0m
+[0;31mE (23097) AP: pkt too small (3)[0m
+[0;31mE (23097) AP:ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0x7e (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x18ec
+load:0x4086c110,len:0xe5c
+load:0x4086e610,len:0x2f50
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time May 13 2025 16:34:30[0m
+[0;32mI (24) boot: chip revision: v0.1[0m
+[0;32mI (26) boot: efuse block revision: v0.2[0m
+[0;32mI (31) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (36) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=42098020 size=1c34ch (115532) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=0002c374 vaddr=40800000 size=03ca4h ( 15524) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=93198h (602520) map[0m
+[0;32mI (237) esp_image: segment 3: paddr=000c31c0 vaddr=40803ca4 size=15338h ( 86840) load[0m
+[0;32mI (256) esp_image: segment 4: paddr=000d8500 vaddr=40818fe0 size=03b78h ( 15224) load[0m
+[0;32mI (266) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (266) boot: Disabling RNG early entropy source...[0m
+[0;32mI (278) cpu_start: Unicore app[0m
+[0;32mI (286) cpu_start: Pro cpu start user code[0m
+[0;32mI (287) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (287) app_init: Application information:[0m
+[0;32mI (289) app_init: Project name:     wifi_softAP[0m
+[0;32mI (295) app_init: App version:      ac3da05a-dirty[0m
+[0;32mI (300) app_init: Compile time:     May 13 2025 16:32:53[0m
+[0;32mI (306) app_init: ELF file SHA256:  f5ffac533...[0m
+[0;32mI (311) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (316) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (321) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (326) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (331) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (338) heap_init: At 40822090 len 0005A580 (361 KiB): RAM[0m
+[0;32mI (344) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (350) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (357) spi_flash: detected chip: generic[0m
+[0;32mI (361) spi_flash: flash io: dio[0m
+[0;33mW (365) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (378) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (385) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (392) coexist: coex firmware version: cbb41d7[0m
+[0;32mI (407) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (407) main_task: Started on CPU0[0m
+[0;32mI (407) main_task: Calling app_main()[0m
+[0;32mI (417) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (417) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (427) wifi:wifi driver task: 4082b1a4, prio:23, stack:6656, core=0[0m
+[0;32mI (437) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (437) wifi:wifi certification version: v7.0[0m
+[0;32mI (437) wifi:config NVS flash: enabled[0m
+[0;32mI (437) wifi:config nano formating: disabled[0m
+[0;32mI (437) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band:0x1[0m
+[0;32mI (447) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (447) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (457) wifi:Init management short buffer num: 32[0m
+[0;32mI (457) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (467) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (467) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (477) wifi:Init static rx buffer num: 10[0m
+[0;32mI (477) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (477) wifi_init: rx ba win: 6[0m
+[0;32mI (487) wifi_init: accept mbox: 6[0m
+[0;32mI (487) wifi_init: tcpip mbox: 32[0m
+[0;32mI (497) wifi_init: udp mbox: 6[0m
+[0;32mI (497) wifi_init: tcp mbox: 6[0m
+[0;32mI (497) wifi_init: tcp tx win: 5760[0m
+[0;32mI (507) wifi_init: tcp rx win: 5760[0m
+[0;32mI (507) wifi_init: tcp mss: 1440[0m
+[0;32mI (517) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (517) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (527) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (527) phy_init: phy_version 320,348a293,Sep  3 2024,16:33:12[0m
+[0;33mW (587) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;33mW (647) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (647) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (657) wifi:(agc)0x600a7128:0xd20a99ca, min.avgNF:0xce->0xd2(dB), RCalCount:0xa9, min.RRssi:0x9ca(-99.38)[0m
+[0;33mW (667) wifi:(TB)WDEV_PWR_TB_MCS0:19[0m
+[0;33mW (667) wifi:(TB)WDEV_PWR_TB_MCS1:19[0m
+[0;33mW (667) wifi:(TB)WDEV_PWR_TB_MCS2:19[0m
+[0;33mW (677) wifi:(TB)WDEV_PWR_TB_MCS3:19[0m
+[0;33mW (677) wifi:(TB)WDEV_PWR_TB_MCS4:19[0m
+[0;33mW (677) wifi:(TB)WDEV_PWR_TB_MCS5:19[0m
+[0;33mW (687) wifi:(TB)WDEV_PWR_TB_MCS6:18[0m
+[0;33mW (687) wifi:(TB)WDEV_PWR_TB_MCS7:18[0m
+[0;33mW (687) wifi:(TB)WDEV_PWR_TB_MCS8:17[0m
+[0;33mW (697) wifi:(TB)WDEV_PWR_TB_MCS9:15[0m
+[0;33mW (697) wifi:(TB)WDEV_PWR_TB_MCS10:15[0m
+[0;33mW (697) wifi:(TB)WDEV_PWR_TB_MCS11:15[0m
+[0;32mI (707) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;33mW (707) wifi:(he)deattach, ap, phymode:11bgn[0m
+[0;32mI (717) wifi:mode : softAP (40:4c:ca:5c:28:dd)[0m
+[0;32mI (717) wifi:Total power save buffer number: 16[0m
+[0;32mI (717) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (727) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (727) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (737) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (747) AP: Soft‑AP avviata: SSID=myssid, chan=1[0m
+[0;32mI (747) AP: TCP server listening on port 3333[0m
+[0;32mI (757) main_task: Returned from app_main()[0m
+[0;32mI (3707) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (3707) wifi:(trc)phytype:CBW20-SGI, snr:65, maxRate:0, highestRateIdx:0[0m
+[0;33mW (3707) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (3717) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:65, ampduState:wait operational[0m
+[0;32mI (3727) wifi:ifidx:1, rssi:-33, nf:-98, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (3737) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (3747) wifi:station: f0:f5:bd:07:05:50 join, AID=1, bgn, 20[0m
+[0;32mI (3807) AP: STA f0:f5:bd:07:05:50 joined, AID=1[0m
+[0;33mW (3877) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (3877) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (3887) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (3927) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (4887) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (4907) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (7737) AP: === TRIGGER board 2 — TSF 7008039 µs ===[0m
+[0;32mI (8447) AP: === TRIGGER board 2 — TSF 7718018 µs ===[0m
+[0;32mI (8797) AP: === TRIGGER board 2 — TSF 8068032 µs ===[0m
+[0;32mI (9057) AP: === TRIGGER board 2 — TSF 8328019 µs ===[0m
+[0;32mI (9287) AP: === TRIGGER board 2 — TSF 8558019 µs ===[0m
+[0;32mI (9517) AP: === TRIGGER board 2 — TSF 8788032 µs ===[0m
+[0;32mI (9757) AP: === TRIGGER board 2 — TSF 9028045 µs ===[0m
+[0;32mI (9977) AP: === TRIGGER board 2 — TSF 9248049 µs ===[0m
+[0;32mI (10177) AP: === TRIGGER board 2 — TSF 9448067 µs ===[0m
+[0;32mI (10407) AP: === TRIGGER board 2 — TSF 9673011 µs ===[0m
+[0;32mI (10617) AP: === TRIGGER board 2 — TSF 9888020 µs ===[0m
+[0;32mI (10837) AP: === TRIGGER board 2 — TSF 10108033 µs ===[0m
+[0;32mI (11057) AP: === TRIGGER board 2 — TSF 10328020 µs ===[0m
+[0;32mI (11267) AP: === TRIGGER board 2 — TSF 10538019 µs ===[0m
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0xe (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x18ec
+load:0x4086c110,len:0xe5c
+load:0x4086e610,len:0x2f50
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time May 13 2025 16:34:30[0m
+[0;32mI (24) boot: chip revision: v0.1[0m
+[0;32mI (26) boot: efuse block revision: v0.2[0m
+[0;32mI (31) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (36) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=42098020 size=1c34ch (115532) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=0002c374 vaddr=40800000 size=03ca4h ( 15524) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=93198h (602520) map[0m
+[0;32mI (237) esp_image: segment 3: paddr=000c31c0 vaddr=40803ca4 size=15338h ( 86840) load[0m
+[0;32mI (256) esp_image: segment 4: paddr=000d8500 vaddr=40818fe0 size=03b78h ( 15224) load[0m
+[0;32mI (266) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (266) boot: Disabling RNG early entropy source...[0m
+[0;32mI (278) cpu_start: Unicore app[0m
+[0;32mI (286) cpu_start: Pro cpu start user code[0m
+[0;32mI (286) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (287) app_init: Application information:[0m
+[0;32mI (289) app_init: Project name:     wifi_softAP[0m
+[0;32mI (294) app_init: App version:      ac3da05a-dirty[0m
+[0;32mI (300) app_init: Compile time:     May 13 2025 16:32:53[0m
+[0;32mI (306) app_init: ELF file SHA256:  f5ffac533...[0m
+[0;32mI (311) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (316) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (321) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (326) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (331) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (338) heap_init: At 40822090 len 0005A580 (361 KiB): RAM[0m
+[0;32mI (344) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (350) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (357) spi_flash: detected chip: generic[0m
+[0;32mI (361) spi_flash: flash io: dio[0m
+[0;33mW (365) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (378) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (385) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (392) coexist: coex firmware version: cbb41d7[0m
+[0;32mI (406) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (407) main_task: Started on CPU0[0m
+[0;32mI (407) main_task: Calling app_main()[0m
+[0;32mI (417) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (417) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (427) wifi:wifi driver task: 4082b1a4, prio:23, stack:6656, core=0[0m
+[0;32mI (437) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (437) wifi:wifi certification version: v7.0[0m
+[0;32mI (437) wifi:config NVS flash: enabled[0m
+[0;32mI (437) wifi:config nano formating: disabled[0m
+[0;32mI (437) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band:0x1[0m
+[0;32mI (447) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (447) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (457) wifi:Init management short buffer num: 32[0m
+[0;32mI (457) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (467) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (467) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (477) wifi:Init static rx buffer num: 10[0m
+[0;32mI (477) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (477) wifi_init: rx ba win: 6[0m
+[0;32mI (487) wifi_init: accept mbox: 6[0m
+[0;32mI (487) wifi_init: tcpip mbox: 32[0m
+[0;32mI (497) wifi_init: udp mbox: 6[0m
+[0;32mI (497) wifi_init: tcp mbox: 6[0m
+[0;32mI (497) wifi_init: tcp tx win: 5760[0m
+[0;32mI (507) wifi_init: tcp rx win: 5760[0m
+[0;32mI (507) wifi_init: tcp mss: 1440[0m
+[0;32mI (517) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (517) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (527) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (527) phy_init: phy_version 320,348a293,Sep  3 2024,16:33:12[0m
+[0;33mW (587) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (587) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (587) wifi:(agc)0x600a7128:0xd20ea9d0, min.avgNF:0xce->0xd2(dB), RCalCount:0xea, min.RRssi:0x9d0(-99.00)[0m
+[0;33mW (597) wifi:(TB)WDEV_PWR_TB_MCS0:19[0m
+[0;33mW (597) wifi:(TB)WDEV_PWR_TB_MCS1:19[0m
+[0;33mW (607) wifi:(TB)WDEV_PWR_TB_MCS2:19[0m
+[0;33mW (607) wifi:(TB)WDEV_PWR_TB_MCS3:19[0m
+[0;33mW (607) wifi:(TB)WDEV_PWR_TB_MCS4:19[0m
+[0;33mW (617) wifi:(TB)WDEV_PWR_TB_MCS5:19[0m
+[0;33mW (617) wifi:(TB)WDEV_PWR_TB_MCS6:18[0m
+[0;33mW (617) wifi:(TB)WDEV_PWR_TB_MCS7:18[0m
+[0;33mW (627) wifi:(TB)WDEV_PWR_TB_MCS8:17[0m
+[0;33mW (627) wifi:(TB)WDEV_PWR_TB_MCS9:15[0m
+[0;33mW (627) wifi:(TB)WDEV_PWR_TB_MCS10:15[0m
+[0;33mW (637) wifi:(TB)WDEV_PWR_TB_MCS11:15[0m
+[0;32mI (637) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;33mW (647) wifi:(he)deattach, ap, phymode:11bgn[0m
+[0;32mI (647) wifi:mode : softAP (40:4c:ca:5c:28:dd)[0m
+[0;32mI (657) wifi:Total power save buffer number: 16[0m
+[0;32mI (657) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (657) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (667) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (677) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (677) AP: Soft‑AP avviata: SSID=myssid, chan=1[0m
+[0;32mI (687) AP: TCP server listening on port 3333[0m
+[0;32mI (687) main_task: Returned from app_main()[0m
+[0;32mI (4947) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (4947) wifi:(trc)phytype:CBW20-SGI, snr:61, maxRate:0, highestRateIdx:0[0m
+[0;33mW (4947) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (4957) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:61, ampduState:wait operational[0m
+[0;32mI (4967) wifi:ifidx:1, rssi:-37, nf:-98, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (4977) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (4987) wifi:station: f0:f5:bd:07:05:50 join, AID=1, bgn, 20[0m
+[0;32mI (5047) AP: STA f0:f5:bd:07:05:50 joined, AID=1[0m
+[0;33mW (5117) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (5127) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (5137) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (5167) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (6177) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (6197) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (13797) AP: STA f0:f5:bd:07:05:50 left, AID=1, reason=2[0m
+[0;32mI (13797) wifi:starting SA query procedure with STA(f0:f5:bd:07:05:50)[0m
+[0;32mI (13797) wifi:Send SA Query req with transaction id f051[0m
+[0;32mI (13997) wifi:Send SA Query req with transaction id f052[0m
+[0;32mI (14197) wifi:Send SA Query req with transaction id f053[0m
+[0;32mI (14397) wifi:Send SA Query req with transaction id f054[0m
+[0;32mI (14597) wifi:Send SA Query req with transaction id f055[0m
+[0;32mI (14797) wifi:Send SA Query req with transaction id f056[0m
+[0;32mI (14827) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (14827) wifi:station: f0:f5:bd:07:05:50 leave, AID = 1, reason = 209, bss_flags is 691299, bss:0x408242c0[0m
+[0;32mI (14827) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (14837) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (14837) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (14847) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (14847) AP: STA f0:f5:bd:07:05:50 left, AID=1, reason=209[0m
+[0;32mI (15447) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (15447) wifi:(trc)phytype:CBW20-SGI, snr:68, maxRate:0, highestRateIdx:0[0m
+[0;33mW (15447) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (15457) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:68, ampduState:wait operational[0m
+[0;32mI (15467) wifi:ifidx:1, rssi:-28, nf:-96, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (15477) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (15487) wifi:station: f0:f5:bd:07:05:50 join, AID=1, bgn, 20[0m
+[0;32mI (15547) AP: STA f0:f5:bd:07:05:50 joined, AID=1[0m
+[0;33mW (15617) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (15617) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (15627) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (15657) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (16647) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (16667) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (20367) AP: STA f0:f5:bd:07:05:50 left, AID=1, reason=2[0m
+[0;32mI (20377) wifi:starting SA query procedure with STA(f0:f5:bd:07:05:50)[0m
+[0;32mI (20377) wifi:Send SA Query req with transaction id b82f[0m
+[0;32mI (20577) wifi:Send SA Query req with transaction id b830[0m
+[0;32mI (20777) wifi:Send SA Query req with transaction id b831[0m
+[0;32mI (20977) wifi:Send SA Query req with transaction id b832[0m
+[0;32mI (21177) wifi:Send SA Query req with transaction id b833[0m
+[0;32mI (21377) wifi:Send SA Query req with transaction id b834[0m
+[0;32mI (21397) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (21407) wifi:station: f0:f5:bd:07:05:50 leave, AID = 1, reason = 209, bss_flags is 691299, bss:0x408242c0[0m
+[0;32mI (21407) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (21417) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (21417) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (21417) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (21427) AP: STA f0:f5:bd:07:05:50 left, AID=1, reason=209[0m
+[0;32mI (22017) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (22027) wifi:(trc)phytype:CBW20-SGI, snr:64, maxRate:0, highestRateIdx:0[0m
+[0;33mW (22027) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (22037) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:64, ampduState:wait operational[0m
+[0;32mI (22047) wifi:ifidx:1, rssi:-32, nf:-96, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (22057) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (22067) wifi:station: f0:f5:bd:07:05:50 join, AID=1, bgn, 20[0m
+[0;32mI (22117) AP: STA f0:f5:bd:07:05:50 joined, AID=1[0m
+[0;33mW (22187) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (22187) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (22207) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (22237) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (23257) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (23277) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0x1c (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x18ec
+load:0x4086c110,len:0xe5c
+load:0x4086e610,len:0x2f50
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time May 13 2025 16:34:30[0m
+[0;32mI (24) boot: chip revision: v0.1[0m
+[0;32mI (26) boot: efuse block revision: v0.2[0m
+[0;32mI (31) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (36) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=42098020 size=1c34ch (115532) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=0002c374 vaddr=40800000 size=03ca4h ( 15524) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=93198h (602520) map[0m
+[0;32mI (237) esp_image: segment 3: paddr=000c31c0 vaddr=40803ca4 size=15338h ( 86840) load[0m
+[0;32mI (256) esp_image: segment 4: paddr=000d8500 vaddr=40818fe0 size=03b78h ( 15224) load[0m
+[0;32mI (266) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (266) boot: Disabling RNG early entropy source...[0m
+[0;32mI (278) cpu_start: Unicore app[0m
+[0;32mI (286) cpu_start: Pro cpu start user code[0m
+[0;32mI (287) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (287) app_init: Application information:[0m
+[0;32mI (289) app_init: Project name:     wifi_softAP[0m
+[0;32mI (295) app_init: App version:      ac3da05a-dirty[0m
+[0;32mI (300) app_init: Compile time:     May 13 2025 16:32:53[0m
+[0;32mI (306) app_init: ELF file SHA256:  f5ffac533...[0m
+[0;32mI (311) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (316) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (321) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (326) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (331) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (338) heap_init: At 40822090 len 0005A580 (361 KiB): RAM[0m
+[0;32mI (344) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (350) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (357) spi_flash: detected chip: generic[0m
+[0;32mI (361) spi_flash: flash io: dio[0m
+[0;33mW (365) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (378) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (385) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (392) coexist: coex firmware version: cbb41d7[0m
+[0;32mI (407) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (407) main_task: Started on CPU0[0m
+[0;32mI (407) main_task: Calling app_main()[0m
+[0;32mI (417) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (417) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (427) wifi:wifi driver task: 4082b1a4, prio:23, stack:6656, core=0[0m
+[0;32mI (437) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (437) wifi:wifi certification version: v7.0[0m
+[0;32mI (437) wifi:config NVS flash: enabled[0m
+[0;32mI (437) wifi:config nano formating: disabled[0m
+[0;32mI (437) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band:0x1[0m
+[0;32mI (447) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (447) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (457) wifi:Init management short buffer num: 32[0m
+[0;32mI (457) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (467) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (467) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (477) wifi:Init static rx buffer num: 10[0m
+[0;32mI (477) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (477) wifi_init: rx ba win: 6[0m
+[0;32mI (487) wifi_init: accept mbox: 6[0m
+[0;32mI (487) wifi_init: tcpip mbox: 32[0m
+[0;32mI (497) wifi_init: udp mbox: 6[0m
+[0;32mI (497) wifi_init: tcp mbox: 6[0m
+[0;32mI (497) wifi_init: tcp tx win: 5760[0m
+[0;32mI (507) wifi_init: tcp rx win: 5760[0m
+[0;32mI (507) wifi_init: tcp mss: 1440[0m
+[0;32mI (517) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (517) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (527) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (527) phy_init: phy_version 320,348a293,Sep  3 2024,16:33:12[0m
+[0;33mW (597) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;33mW (617) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (617) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (617) wifi:(agc)0x600a7128:0xd21859ee, min.avgNF:0xce->0xd2(dB), RCalCount:0x185, min.RRssi:0x9ee(-97.12)[0m
+[0;33mW (627) wifi:(TB)WDEV_PWR_TB_MCS0:19[0m
+[0;33mW (627) wifi:(TB)WDEV_PWR_TB_MCS1:19[0m
+[0;33mW (637) wifi:(TB)WDEV_PWR_TB_MCS2:19[0m
+[0;33mW (637) wifi:(TB)WDEV_PWR_TB_MCS3:19[0m
+[0;33mW (637) wifi:(TB)WDEV_PWR_TB_MCS4:19[0m
+[0;33mW (647) wifi:(TB)WDEV_PWR_TB_MCS5:19[0m
+[0;33mW (647) wifi:(TB)WDEV_PWR_TB_MCS6:18[0m
+[0;33mW (647) wifi:(TB)WDEV_PWR_TB_MCS7:18[0m
+[0;33mW (657) wifi:(TB)WDEV_PWR_TB_MCS8:17[0m
+[0;33mW (657) wifi:(TB)WDEV_PWR_TB_MCS9:15[0m
+[0;33mW (657) wifi:(TB)WDEV_PWR_TB_MCS10:15[0m
+[0;33mW (667) wifi:(TB)WDEV_PWR_TB_MCS11:15[0m
+[0;32mI (667) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;33mW (677) wifi:(he)deattach, ap, phymode:11bgn[0m
+[0;32mI (677) wifi:mode : softAP (40:4c:ca:5c:28:dd)[0m
+[0;32mI (687) wifi:Total power save buffer number: 16[0m
+[0;32mI (687) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (687) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (697) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (707) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (707) AP: Soft‑AP avviata: SSID=myssid, chan=1[0m
+[0;32mI (717) AP: TCP server listening on port 3333[0m
+[0;32mI (717) main_task: Returned from app_main()[0m
+[0;32mI (12527) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (12527) wifi:(trc)phytype:CBW20-SGI, snr:66, maxRate:0, highestRateIdx:0[0m
+[0;33mW (12527) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (12537) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:66, ampduState:wait operational[0m
+[0;32mI (12547) wifi:ifidx:1, rssi:-33, nf:-99, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (12557) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (12567) wifi:station: f0:f5:bd:07:05:50 join, AID=1, bgn, 20[0m
+[0;32mI (12627) AP: STA f0:f5:bd:07:05:50 joined, AID=1[0m
+[0;33mW (12697) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (12707) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (12717) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (12747) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (13747) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (13767) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (50077) AP: === TRIGGER board 2 — TSF 49376557 µs ===[0m
+[0;32mI (51637) AP: === TRIGGER board 2 — TSF 50929841 µs ===[0m
+[0;32mI (58517) AP: === TRIGGER board 2 — TSF 57807440 µs ===[0m
+[0;32mI (60017) AP: === TRIGGER board 2 — TSF 58069641 µs ===[0m
+[0;32mI (60017) AP: === TRIGGER board 2 — TSF 59305646 µs ===[0m
+[0;32mI (65507) AP: === TRIGGER board 2 — TSF 63571054 µs ===[0m
+[0;32mI (67077) AP: === TRIGGER board 2 — TSF 66376735 µs ===[0m
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x18ec
+load:0x4086c110,len:0xe5c
+load:0x4086e610,len:0x2f50
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time May 13 2025 16:34:30[0m
+[0;32mI (24) boot: chip revision: v0.1[0m
+[0;32mI (26) boot: efuse block revision: v0.2[0m
+[0;32mI (31) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (36) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=42098020 size=1c34ch (115532) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=0002c374 vaddr=40800000 size=03ca4h ( 15524) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=93198h (602520) map[0m
+[0;32mI (237) esp_image: segment 3: paddr=000c31c0 vaddr=40803ca4 size=15338h ( 86840) load[0m
+[0;32mI (256) esp_image: segment 4: paddr=000d8500 vaddr=40818fe0 size=03b78h ( 15224) load[0m
+[0;32mI (266) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (266) boot: Disabling RNG early entropy source...[0m
+[0;32mI (278) cpu_start: Unicore app[0m
+[0;32mI (286) cpu_start: Pro cpu start user code[0m
+[0;32mI (286) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (287) app_init: Application information:[0m
+[0;32mI (289) app_init: Project name:     wifi_softAP[0m
+[0;32mI (294) app_init: App version:      ac3da05a-dirty[0m
+[0;32mI (300) app_init: Compile time:     May 13 2025 16:32:53[0m
+[0;32mI (306) app_init: ELF file SHA256:  f5ffac533...[0m
+[0;32mI (311) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (316) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (321) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (326) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (331) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (338) heap_init: At 40822090 len 0005A580 (361 KiB): RAM[0m
+[0;32mI (344) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (350) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (357) spi_flash: detected chip: generic[0m
+[0;32mI (361) spi_flash: flash io: dio[0m
+[0;33mW (365) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (378) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (385) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (392) coexist: coex firmware version: cbb41d7[0m
+[0;32mI (406) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (407) main_task: Started on CPU0[0m
+[0;32mI (407) main_task: Calling app_main()[0m
+[0;32mI (417) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (417) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (427) wifi:wifi driver task: 4082b1a4, prio:23, stack:6656, core=0[0m
+[0;32mI (437) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (437) wifi:wifi certification version: v7.0[0m
+[0;32mI (437) wifi:config NVS flash: enabled[0m
+[0;32mI (437) wifi:config nano formating: disabled[0m
+[0;32mI (437) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band:0x1[0m
+[0;32mI (447) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (447) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (457) wifi:Init management short buffer num: 32[0m
+[0;32mI (457) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (467) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (467) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (477) wifi:Init static rx buffer num: 10[0m
+[0;32mI (477) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (477) wifi_init: rx ba win: 6[0m
+[0;32mI (487) wifi_init: accept mbox: 6[0m
+[0;32mI (487) wifi_init: tcpip mbox: 32[0m
+[0;32mI (497) wifi_init: udp mbox: 6[0m
+[0;32mI (497) wifi_init: tcp mbox: 6[0m
+[0;32mI (497) wifi_init: tcp tx win: 5760[0m
+[0;32mI (507) wifi_init: tcp rx win: 5760[0m
+[0;32mI (507) wifi_init: tcp mss: 1440[0m
+[0;32mI (517) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (517) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (527) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (527) phy_init: phy_version 320,348a293,Sep  3 2024,16:33:12[0m
+[0;33mW (587) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;33mW (647) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (647) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (657) wifi:(agc)0x600a7128:0xd20de800, min.avgNF:0xce->0xd2(dB), RCalCount:0xde, min.RRssi:0x800(-128.00)[0m
+[0;33mW (667) wifi:(TB)WDEV_PWR_TB_MCS0:19[0m
+[0;33mW (667) wifi:(TB)WDEV_PWR_TB_MCS1:19[0m
+[0;33mW (667) wifi:(TB)WDEV_PWR_TB_MCS2:19[0m
+[0;33mW (677) wifi:(TB)WDEV_PWR_TB_MCS3:19[0m
+[0;33mW (677) wifi:(TB)WDEV_PWR_TB_MCS4:19[0m
+[0;33mW (677) wifi:(TB)WDEV_PWR_TB_MCS5:19[0m
+[0;33mW (687) wifi:(TB)WDEV_PWR_TB_MCS6:18[0m
+[0;33mW (687) wifi:(TB)WDEV_PWR_TB_MCS7:18[0m
+[0;33mW (687) wifi:(TB)WDEV_PWR_TB_MCS8:17[0m
+[0;33mW (697) wifi:(TB)WDEV_PWR_TB_MCS9:15[0m
+[0;33mW (697) wifi:(TB)WDEV_PWR_TB_MCS10:15[0m
+[0;33mW (697) wifi:(TB)WDEV_PWR_TB_MCS11:15[0m
+[0;32mI (707) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;33mW (707) wifi:(he)deattach, ap, phymode:11bgn[0m
+[0;32mI (717) wifi:mode : softAP (40:4c:ca:5c:28:dd)[0m
+[0;32mI (727) wifi:Total power save buffer number: 16[0m
+[0;32mI (727) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (727) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (737) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (737) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (747) AP: Soft‑AP avviata: SSID=myssid, chan=1[0m
+[0;32mI (747) AP: TCP server listening on port 3333[0m
+[0;32mI (757) main_task: Returned from app_main()[0m
+[0;32mI (13977) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (13977) wifi:(trc)phytype:CBW20-SGI, snr:66, maxRate:0, highestRateIdx:0[0m
+[0;33mW (13987) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (13987) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:66, ampduState:wait operational[0m
+[0;32mI (14007) wifi:ifidx:1, rssi:-33, nf:-99, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (14017) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (14017) wifi:station: f0:f5:bd:07:05:50 join, AID=1, bgn, 20[0m
+[0;32mI (14077) AP: STA f0:f5:bd:07:05:50 joined, AID=1[0m
+[0;33mW (14147) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (14167) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (14177) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (14197) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (15207) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (15217) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (19527) AP: === TRIGGER board 2 — TSF 18795565 µs ===[0m
+[0;32mI (19727) AP: === TRIGGER board 2 — TSF 18995023 µs ===[0m
+[0;32mI (19927) AP: === TRIGGER board 2 — TSF 19194467 µs ===[0m
+[0;32mI (20127) AP: === TRIGGER board 2 — TSF 19393927 µs ===[0m
+[0;32mI (20377) AP: === TRIGGER board 2 — TSF 19640399 µs ===[0m
+[0;32mI (20527) AP: === TRIGGER board 2 — TSF 19795374 µs ===[0m
+[0;32mI (20727) AP: === TRIGGER board 2 — TSF 19994857 µs ===[0m
+[0;32mI (20927) AP: === TRIGGER board 2 — TSF 20194301 µs ===[0m
+[0;32mI (21127) AP: === TRIGGER board 2 — TSF 20393776 µs ===[0m
+[0;32mI (21327) AP: === TRIGGER board 2 — TSF 20597745 µs ===[0m
+[0;32mI (21527) AP: === TRIGGER board 2 — TSF 20797215 µs ===[0m
+[0;32mI (21727) AP: === TRIGGER board 2 — TSF 20996687 µs ===[0m
+[0;32mI (21927) AP: === TRIGGER board 2 — TSF 21196112 µs ===[0m
+[0;32mI (22127) AP: === TRIGGER board 2 — TSF 21395568 µs ===[0m
+[0;32mI (22327) AP: === TRIGGER board 2 — TSF 21593989 µs ===[0m
+[0;32mI (22527) AP: === TRIGGER board 2 — TSF 21793449 µs ===[0m
+[0;32mI (26157) AP: === TRIGGER board 2 — TSF 25424601 µs ===[0m
+[0;32mI (27017) AP: === TRIGGER board 2 — TSF 26280606 µs ===[0m
+[0;32mI (27687) AP: === TRIGGER board 2 — TSF 26950423 µs ===[0m
+[0;32mI (28237) AP: === TRIGGER board 2 — TSF 27501741 µs ===[0m
+[0;32mI (28717) AP: === TRIGGER board 2 — TSF 27986426 µs ===[0m
+[0;32mI (29207) AP: === TRIGGER board 2 — TSF 28470068 µs ===[0m
+[0;32mI (29677) AP: === TRIGGER board 2 — TSF 28949095 µs ===[0m
+[0;32mI (30367) AP: === TRIGGER board 2 — TSF 29632536 µs ===[0m
+[0;32mI (30797) AP: === TRIGGER board 2 — TSF 30060783 µs ===[0m
+[0;32mI (31157) AP: === TRIGGER board 2 — TSF 30426986 µs ===[0m
+[0;32mI (31487) AP: === TRIGGER board 2 — TSF 30758289 µs ===[0m
+[0;32mI (31827) AP: === TRIGGER board 2 — TSF 31090635 µs ===[0m
+[0;32mI (32137) AP: === TRIGGER board 2 — TSF 31400413 µs ===[0m
+[0;32mI (32537) AP: === TRIGGER board 2 — TSF 31805048 µs ===[0m
+[0;32mI (32897) AP: === TRIGGER board 2 — TSF 32165604 µs ===[0m
+[0;32mI (33187) AP: === TRIGGER board 2 — TSF 32458465 µs ===[0m
+[0;32mI (33447) AP: === TRIGGER board 2 — TSF 32710789 µs ===[0m
+[0;32mI (37407) AP: === TRIGGER board 2 — TSF 36674616 µs ===[0m
+[0;32mI (37747) AP: === TRIGGER board 2 — TSF 37018244 µs ===[0m
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x18ec
+load:0x4086c110,len:0xe5c
+load:0x4086e610,len:0x2f50
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time May 13 2025 16:34:30[0m
+[0;32mI (24) boot: chip revision: v0.1[0m
+[0;32mI (26) boot: efuse block revision: v0.2[0m
+[0;32mI (31) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (36) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=42098020 size=1c34ch (115532) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=0002c374 vaddr=40800000 size=03ca4h ( 15524) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=93198h (602520) map[0m
+[0;32mI (237) esp_image: segment 3: paddr=000c31c0 vaddr=40803ca4 size=15338h ( 86840) load[0m
+[0;32mI (256) esp_image: segment 4: paddr=000d8500 vaddr=40818fe0 size=03b78h ( 15224) load[0m
+[0;32mI (266) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (266) boot: Disabling RNG early entropy source...[0m
+[0;32mI (278) cpu_start: Unicore app[0m
+[0;32mI (286) cpu_start: Pro cpu start user code[0m
+[0;32mI (286) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (287) app_init: Application information:[0m
+[0;32mI (289) app_init: Project name:     wifi_softAP[0m
+[0;32mI (294) app_init: App version:      ac3da05a-dirty[0m
+[0;32mI (300) app_init: Compile time:     May 13 2025 16:32:53[0m
+[0;32mI (306) app_init: ELF file SHA256:  f5ffac533...[0m
+[0;32mI (311) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (316) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (321) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (326) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (331) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (338) heap_init: At 40822090 len 0005A580 (361 KiB): RAM[0m
+[0;32mI (344) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (350) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (357) spi_flash: detected chip: generic[0m
+[0;32mI (361) spi_flash: flash io: dio[0m
+[0;33mW (365) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (378) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (385) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (392) coexist: coex firmware version: cbb41d7[0m
+[0;32mI (406) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (407) main_task: Started on CPU0[0m
+[0;32mI (407) main_task: Calling app_main()[0m
+[0;32mI (417) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (417) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (427) wifi:wifi driver task: 4082b1a4, prio:23, stack:6656, core=0[0m
+[0;32mI (437) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (437) wifi:wifi certification version: v7.0[0m
+[0;32mI (437) wifi:config NVS flash: enabled[0m
+[0;32mI (437) wifi:config nano formating: disabled[0m
+[0;32mI (437) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band:0x1[0m
+[0;32mI (447) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (447) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (457) wifi:Init management short buffer num: 32[0m
+[0;32mI (457) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (467) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (467) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (477) wifi:Init static rx buffer num: 10[0m
+[0;32mI (477) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (477) wifi_init: rx ba win: 6[0m
+[0;32mI (487) wifi_init: accept mbox: 6[0m
+[0;32mI (487) wifi_init: tcpip mbox: 32[0m
+[0;32mI (497) wifi_init: udp mbox: 6[0m
+[0;32mI (497) wifi_init: tcp mbox: 6[0m
+[0;32mI (497) wifi_init: tcp tx win: 5760[0m
+[0;32mI (507) wifi_init: tcp rx win: 5760[0m
+[0;32mI (507) wifi_init: tcp mss: 1440[0m
+[0;32mI (517) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (517) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (527) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (527) phy_init: phy_version 320,348a293,Sep  3 2024,16:33:12[0m
+[0;33mW (587) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (587) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (587) wifi:(agc)0x600a7128:0xd201e800, min.avgNF:0xce->0xd2(dB), RCalCount:0x1e, min.RRssi:0x800(-128.00)[0m
+[0;33mW (597) wifi:(TB)WDEV_PWR_TB_MCS0:19[0m
+[0;33mW (597) wifi:(TB)WDEV_PWR_TB_MCS1:19[0m
+[0;33mW (607) wifi:(TB)WDEV_PWR_TB_MCS2:19[0m
+[0;33mW (607) wifi:(TB)WDEV_PWR_TB_MCS3:19[0m
+[0;33mW (607) wifi:(TB)WDEV_PWR_TB_MCS4:19[0m
+[0;33mW (617) wifi:(TB)WDEV_PWR_TB_MCS5:19[0m
+[0;33mW (617) wifi:(TB)WDEV_PWR_TB_MCS6:18[0m
+[0;33mW (617) wifi:(TB)WDEV_PWR_TB_MCS7:18[0m
+[0;33mW (627) wifi:(TB)WDEV_PWR_TB_MCS8:17[0m
+[0;33mW (627) wifi:(TB)WDEV_PWR_TB_MCS9:15[0m
+[0;33mW (627) wifi:(TB)WDEV_PWR_TB_MCS10:15[0m
+[0;33mW (637) wifi:(TB)WDEV_PWR_TB_MCS11:15[0m
+[0;32mI (637) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;33mW (647) wifi:(he)deattach, ap, phymode:11bgn[0m
+[0;32mI (647) wifi:mode : softAP (40:4c:ca:5c:28:dd)[0m
+[0;32mI (657) wifi:Total power save buffer number: 16[0m
+[0;32mI (657) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (657) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (667) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (677) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (677) AP: Soft‑AP avviata: SSID=myssid, chan=1[0m
+[0;32mI (687) AP: TCP server listening on port 3333[0m
+[0;32mI (687) main_task: Returned from app_main()[0m
+[0;32mI (6337) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (6337) wifi:(trc)phytype:CBW20-SGI, snr:64, maxRate:0, highestRateIdx:0[0m
+[0;33mW (6347) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (6347) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:64, ampduState:wait operational[0m
+[0;32mI (6367) wifi:ifidx:1, rssi:-34, nf:-98, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (6377) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (6377) wifi:station: f0:f5:bd:07:01:00 join, AID=1, bgn, 20[0m
+[0;32mI (6397) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (6397) wifi:(trc)phytype:CBW20-SGI, snr:56, maxRate:0, highestRateIdx:0[0m
+[0;33mW (6397) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (6407) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:56, ampduState:wait operational[0m
+[0;32mI (6417) wifi:ifidx:1, rssi:-42, nf:-98, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (6427) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (643

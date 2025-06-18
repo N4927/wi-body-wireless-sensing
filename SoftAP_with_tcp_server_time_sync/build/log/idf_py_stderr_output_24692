@@ -1,0 +1,655 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM11 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM11 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmp43o3cc59"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmp43o3cc59': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpb0_ebgf8"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpb0_ebgf8': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpsx8iya5z"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpsx8iya5z': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpp7n95vhe"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpp7n95vhe': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpibdvliz8"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpibdvliz8': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpilkq2qel"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpilkq2qel': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- To exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmp4bgjh6h_"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmp4bgjh6h_': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpjr0ca365"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpjr0ca365': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpqulfzfzy"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpqulfzfzy': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmp2sju_398"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmp2sju_398': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpb564n1jr"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpb564n1jr': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpsdnlnij0"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpsdnlnij0': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpsx04qa6a"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpsx04qa6a': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpfcoiec13"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpfcoiec13': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmp3b3i6mmf"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmp3b3i6mmf': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpbwk0nzhw"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpbwk0nzhw': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpr56m23_u"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpr56m23_u': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpawxyyrob"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpawxyyrob': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmp6cxgyhta"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmp6cxgyhta': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpx793ylin"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpx793ylin': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmp38w4dovv"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmp38w4dovv': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpr7_ip5re"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpr7_ip5re': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmptj1e81yc"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmptj1e81yc': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmphilinybq"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmphilinybq': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpkmcku5sh"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpkmcku5sh': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpx7illyya"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpx7illyya': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpb4cmzg4q"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpb4cmzg4q': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpnb238ucy"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpnb238ucy': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpnj6g60zf"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpnj6g60zf': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpl6gmp2rg"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpl6gmp2rg': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpmr62p32f"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpmr62p32f': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpq3_9jz46"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpq3_9jz46': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpao_cqcxw"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpao_cqcxw': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmp1yk9lryi"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmp1yk9lryi': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpiusp35sg"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpiusp35sg': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpsw95db9b"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpsw95db9b': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmp7kx7rzdo"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmp7kx7rzdo': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmp7e84yxwv"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmp7e84yxwv': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpkihudr_b"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpkihudr_b': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpg1hu9c6r"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpg1hu9c6r': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- 0x4200bec6: init_filesystem at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/SoftAP_with_tcp_server_time_sync/main/AP_main.c:65 (discriminator 1)
+[0m
+[0;33m--- 0x408076ef: _esp_error_check_failed at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x408008a6: panic_abort at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/panic.c:463
+0x408076fa: __ubsan_include at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/ubsan.c:311
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\SoftAP_with_tcp_server_time_sync\\build\\wifi_softAP.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpvd9abtxa"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarni

@@ -1,0 +1,91 @@
+[1/5] C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\albif\OneDrive - ETH Zurich\Thesis\git\Station_with_tcp_client_modem\build\esp-idf\esptool_py" && C:\Users\albif\.espressif\python_env\idf5.3_py3.10_env\Scripts\python.exe C:/Users/albif/esp/v5.3.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/Station_with_tcp_client_modem/build/partition_table/partition-table.bin" "C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/Station_with_tcp_client_modem/build/wifi_station.bin""
+wifi_station.bin binary size 0xbf1c0 bytes. Smallest app partition is 0x100000 bytes. 0x40e40 bytes (25%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\albif\OneDrive - ETH Zurich\Thesis\git\Station_with_tcp_client_modem\build\bootloader\esp-idf\esptool_py" && C:\Users\albif\.espressif\python_env\idf5.3_py3.10_env\Scripts\python.exe C:/Users/albif/esp/v5.3.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 "C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/Station_with_tcp_client_modem/build/bootloader/bootloader.bin""
+Bootloader binary size 0x56f0 bytes. 0x2910 bytes (32%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\albif\esp\v5.3.2\esp-idf\components\esptool_py && C:\Users\albif\.espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Users/albif/esp/v5.3.2/esp-idf -D SERIAL_TOOL=C:/Users/albif/.espressif/python_env/idf5.3_py3.10_env/Scripts/python.exe;;C:/Users/albif/esp/v5.3.2/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32c6 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D "WORKING_DIRECTORY=C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/Station_with_tcp_client_modem/build" -P C:/Users/albif/esp/v5.3.2/esp-idf/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32c6 -p COM5 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 wifi_station.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port COM5
+Connecting....
+Chip is ESP32-C6FH4 (QFN32) (revision v0.2)
+Features: WiFi 6, BT 5, IEEE802.15.4
+Crystal is 40MHz
+MAC: 7c:2c:67:ff:fe:5d:2c:3c
+BASE MAC: 7c:2c:67:5d:2c:3c
+MAC_EXT: ff:fe
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x000cffff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 22256 bytes to 13313...
+Writing at 0x00000000... (100 %)
+Wrote 22256 bytes (13313 compressed) at 0x00000000 in 0.5 seconds (effective 365.9 kbit/s)...
+Hash of data verified.
+Compressed 782784 bytes to 451038...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001cc20... (7 %)
+Writing at 0x0002593e... (10 %)
+Writing at 0x0002ebb1... (14 %)
+Writing at 0x000359aa... (17 %)
+Writing at 0x0003da19... (21 %)
+Writing at 0x00044ba5... (25 %)
+Writing at 0x0004b5ef... (28 %)
+Writing at 0x000529d6... (32 %)
+Writing at 0x00059c4a... (35 %)
+Writing at 0x00060818... (39 %)
+Writing at 0x00066c90... (42 %)
+Writing at 0x0006d339... (46 %)
+Writing at 0x000738f5... (50 %)
+Writing at 0x000799d1... (53 %)
+
+Lost connection, retrying...
+Waiting for the chip to reconnect
+Connecting...
+Stub is already running. No upload is necessary.
+Compressed 782784 bytes to 451038...
+Writing at 0x00010000... (3 %)
+Writing at 0x0001cc20... (7 %)
+Writing at 0x0002593e... (10 %)
+Writing at 0x0002ebb1... (14 %)
+Writing at 0x000359aa... (17 %)
+Writing at 0x0003da19... (21 %)
+Writing at 0x00044ba5... (25 %)
+Writing at 0x0004b5ef... (28 %)
+Writing at 0x000529d6... (32 %)
+Writing at 0x00059c4a... (35 %)
+Writing at 0x00060818... (39 %)
+Writing at 0x00066c90... (42 %)
+Writing at 0x0006d339... (46 %)
+Writing at 0x000738f5... (50 %)
+Writing at 0x000799d1... (53 %)
+Writing at 0x0007f9db... (57 %)
+Writing at 0x000860b4... (60 %)
+Writing at 0x0008bfdd... (64 %)
+Writing at 0x00092104... (67 %)
+Writing at 0x00097efc... (71 %)
+Writing at 0x0009e59f... (75 %)
+Writing at 0x000a460a... (78 %)
+Writing at 0x000aada7... (82 %)
+Writing at 0x000b0ae1... (85 %)
+Writing at 0x000b7605... (89 %)
+Writing at 0x000be717... (92 %)
+Writing at 0x000c414a... (96 %)
+Writing at 0x000c9f65... (100 %)
+Wrote 782784 bytes (451038 compressed) at 0x00010000 in 10.7 seconds (effective 583.2 kbit/s)...
+File  md5: d92ab1c705438368c21bd20fab1f0833
+Flash md5: 7a1d31fc26b1804e27a96a13163a447b
+MD5 of 0xFF is a881289a1e7e5dc3c207b405de3b3309
+
+A fatal error occurred: MD5 of file does not match data in flash!
+FAILED: CMakeFiles/flash C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/Station_with_tcp_client_modem/build/CMakeFiles/flash 
+C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\albif\esp\v5.3.2\esp-idf\components\esptool_py && C:\Users\albif\.espressif\tools\cmake\3.30.2\bin\cmake.exe -D IDF_PATH=C:/Users/albif/esp/v5.3.2/esp-idf -D SERIAL_TOOL=C:/Users/albif/.espressif/python_env/idf5.3_py3.10_env/Scripts/python.exe;;C:/Users/albif/esp/v5.3.2/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32c6 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D "WORKING_DIRECTORY=C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/Station_with_tcp_client_modem/build" -P C:/Users/albif/esp/v5.3.2/esp-idf/components/esptool_py/run_serial_tool.cmake"
+ninja: build stopped: subcommand failed.

@@ -1,0 +1,141 @@
+#code for power supply
+menu "Example Configuration"
+
+    choice EXAMPLE_LATENCY_SCENARIO
+        prompt "Select latency scenario"
+        default EXAMPLE_LATENCY_SPORT
+        help
+            Select the latency scenario for light sleep testing.
+            
+        config EXAMPLE_LATENCY_HMI
+            bool "HMI (100ms)"
+            help
+                Human-Machine Interface scenario with 100ms latency.
+                
+        config EXAMPLE_LATENCY_SPORT
+            bool "Sport monitoring (1s)"
+            help
+                Sport activity monitoring with 1 second latency.
+                
+        config EXAMPLE_LATENCY_BIO
+            bool "Biological storage (100s)"
+            help
+                Biological data storage with 100 seconds latency.
+    endchoice
+
+    config EXAMPLE_ESP_WIFI_SSID
+        string "WiFi SSID"
+        default "myssid"
+        help
+            SSID (network name) to connect to.
+
+    config EXAMPLE_ESP_WIFI_PASSWORD
+        string "WiFi Password"
+        default "mypassword"
+        help
+            WiFi password (WPA or WPA2) to use.
+
+    config EXAMPLE_MAXIMUM_RETRY
+        int "Maximum retry"
+        default 5
+        help
+            Set the Maximum retry count.
+
+    config ESP_MAXIMUM_RETRY
+        int "Maximum WiFi Connection Retries"
+        default 5
+        help
+            Set the maximum number of retries the station will attempt to connect to the AP.
+
+    config EXAMPLE_WIFI_LISTEN_INTERVAL
+        int "WiFi Listen Interval"
+        default 3
+        help
+            Interval (in beacon intervals) for the station to listen for beacons from the AP.
+
+    config EXAMPLE_WIFI_BEACON_TIMEOUT
+        int "WiFi Beacon Timeout (seconds)"
+        default 6
+        range 6 30
+        help
+            For a station, the time in seconds after which it will disconnect if no beacon frames are received from the connected AP.
+
+    choice EXAMPLE_POWER_SAVE_MODE
+        prompt "WiFi Power Save Mode"
+        default EXAMPLE_POWER_SAVE_NONE
+        help
+            Configure the Wi-Fi power save mode.
+
+        config EXAMPLE_POWER_SAVE_NONE
+            bool "No Power Save"
+        config EXAMPLE_POWER_SAVE_MIN_MODEM
+            bool "Minimum Modem Power Save"
+        config EXAMPLE_POWER_SAVE_MAX_MODEM
+            bool "Maximum Modem Power Save"
+    endchoice
+
+    # Nuova sezione Power Management
+    menu "Power Management Configuration"
+        config EXAMPLE_PM_ENABLE
+            bool "Enable Power Management"
+            default y
+            help
+                Enable ESP32 power management to reduce power consumption.
+
+        config EXAMPLE_LIGHT_SLEEP_ENABLE
+            bool "Enable Light Sleep"
+            depends on EXAMPLE_PM_ENABLE
+            default y
+            help
+                Put the chip into light sleep mode when idle to save power.
+
+        config EXAMPLE_AUTO_LIGHT_SLEEP
+            bool "Enter Light Sleep Automatically"
+            depends on EXAMPLE_LIGHT_SLEEP_ENABLE
+            default y
+            help
+                Automatically enter light sleep when the CPU is idle.
+
+        config EXAMPLE_SLEEP_DURATION_SEC
+            int "Light Sleep Duration (seconds)"
+            depends on EXAMPLE_LIGHT_SLEEP_ENABLE
+            default 30
+            range 1 3600
+            help
+                Duration of light sleep between wakeups.
+
+        choice EXAMPLE_WAKEUP_SOURCE
+            prompt "Wakeup Source"
+            depends on EXAMPLE_LIGHT_SLEEP_ENABLE
+            default EXAMPLE_TIMER_WAKEUP
+
+            config EXAMPLE_TIMER_WAKEUP
+                bool "Timer Wakeup"
+                help
+                    Wake up periodically using the internal RTC timer.
+
+            config EXAMPLE_GPIO_WAKEUP
+                bool "GPIO Wakeup"
+                help
+                    Wake up using external GPIO interrupt.
+        endchoice
+
+        config EXAMPLE_WAKEUP_GPIO_NUM
+            int "Wakeup GPIO Number"
+            depends on EXAMPLE_GPIO_WAKEUP
+            default 4
+            range 0 39
+            help
+                GPIO number to use for wakeup (0-39).
+
+        config EXAMPLE_WAKEUP_GPIO_LEVEL
+            int "Wakeup GPIO Level"
+            depends on EXAMPLE_GPIO_WAKEUP
+            default 0
+            range 0 1
+            help
+                GPIO trigger level (0=Low, 1=High).
+    endmenu
+
+endmenu
+

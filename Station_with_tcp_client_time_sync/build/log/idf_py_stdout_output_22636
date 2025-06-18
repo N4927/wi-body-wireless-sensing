@@ -1,0 +1,702 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x18ec
+load:0x4086c110,len:0xe5c
+load:0x4086e610,len:0x2f50
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time May 13 2025 16:48:27[0m
+[0;32mI (24) boot: chip revision: v0.1[0m
+[0;32mI (26) boot: efuse block revision: v0.2[0m
+[0;32mI (31) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (36) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=42088020 size=1bac8h (113352) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=0002baf0 vaddr=40800000 size=04528h ( 17704) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=8768ch (554636) map[0m
+[0;32mI (228) esp_image: segment 3: paddr=000b76b4 vaddr=40804528 size=14bb0h ( 84912) load[0m
+[0;32mI (246) esp_image: segment 4: paddr=000cc26c vaddr=408190e0 size=03b98h ( 15256) load[0m
+[0;32mI (256) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (256) boot: Disabling RNG early entropy source...[0m
+[0;32mI (268) cpu_start: Unicore app[0m
+[0;32mI (277) cpu_start: Pro cpu start user code[0m
+[0;32mI (277) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (277) app_init: Application information:[0m
+[0;32mI (280) app_init: Project name:     wifi_station[0m
+[0;32mI (285) app_init: App version:      ac3da05a-dirty[0m
+[0;32mI (291) app_init: Compile time:     May 13 2025 16:46:35[0m
+[0;32mI (297) app_init: ELF file SHA256:  930501b76...[0m
+[0;32mI (302) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (307) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (311) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (316) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (321) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (328) heap_init: At 40822150 len 0005A4C0 (361 KiB): RAM[0m
+[0;32mI (334) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (341) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (348) spi_flash: detected chip: generic[0m
+[0;32mI (352) spi_flash: flash io: dio[0m
+[0;33mW (355) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (369) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (375) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (383) coexist: coex firmware version: cbb41d7[0m
+[0;32mI (397) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (398) main_task: Started on CPU0[0m
+[0;32mI (398) main_task: Calling app_main()[0m
+[0;32mI (408) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (408) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (418) wifi:wifi driver task: 4082b160, prio:23, stack:6656, core=0[0m
+[0;32mI (418) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (418) wifi:wifi certification version: v7.0[0m
+[0;32mI (418) wifi:config NVS flash: enabled[0m
+[0;32mI (428) wifi:config nano formating: disabled[0m
+[0;32mI (428) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band:0x1[0m
+[0;32mI (438) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (438) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (448) wifi:Init management short buffer num: 32[0m
+[0;32mI (448) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (448) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (458) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (458) wifi:Init static rx buffer num: 10[0m
+[0;32mI (468) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (468) wifi_init: rx ba win: 6[0m
+[0;32mI (478) wifi_init: accept mbox: 6[0m
+[0;32mI (478) wifi_init: tcpip mbox: 32[0m
+[0;32mI (478) wifi_init: udp mbox: 6[0m
+[0;32mI (488) wifi_init: tcp mbox: 6[0m
+[0;32mI (488) wifi_init: tcp tx win: 5760[0m
+[0;32mI (498) wifi_init: tcp rx win: 5760[0m
+[0;32mI (498) wifi_init: tcp mss: 1440[0m
+[0;32mI (498) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (508) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (508) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (568) phy_init: phy_version 320,348a293,Sep  3 2024,16:33:12[0m
+[0;33mW (618) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (618) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (618) wifi:(agc)0x600a7128:0xd20c59ea, min.avgNF:0xce->0xd2(dB), RCalCount:0xc5, min.RRssi:0x9ea(-97.38)[0m
+[0;33mW (628) wifi:(TB)WDEV_PWR_TB_MCS0:19[0m
+[0;33mW (638) wifi:(TB)WDEV_PWR_TB_MCS1:19[0m
+[0;33mW (638) wifi:(TB)WDEV_PWR_TB_MCS2:19[0m
+[0;33mW (638) wifi:(TB)WDEV_PWR_TB_MCS3:19[0m
+[0;33mW (648) wifi:(TB)WDEV_PWR_TB_MCS4:19[0m
+[0;33mW (648) wifi:(TB)WDEV_PWR_TB_MCS5:19[0m
+[0;33mW (648) wifi:(TB)WDEV_PWR_TB_MCS6:18[0m
+[0;33mW (658) wifi:(TB)WDEV_PWR_TB_MCS7:18[0m
+[0;33mW (658) wifi:(TB)WDEV_PWR_TB_MCS8:17[0m
+[0;33mW (658) wifi:(TB)WDEV_PWR_TB_MCS9:15[0m
+[0;33mW (668) wifi:(TB)WDEV_PWR_TB_MCS10:15[0m
+[0;33mW (668) wifi:(TB)WDEV_PWR_TB_MCS11:15[0m
+[0;32mI (668) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;33mW (678) wifi:(he)attach, station, phymode:11ax[0m
+[0;32mI (678) wifi:mode : sta (f0:f5:bd:07:01:00)[0m
+[0;32mI (688) wifi:enable tsf[0m
+[0;32mI (688) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1008) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1008) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3[0m
+[0;32mI (1008) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1018) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1028) wifi:Association refused temporarily time 1500, comeback time 1600 (TUs)[0m
+[0;32mI (2668) wifi:state: assoc -> assoc (0x0)[0m
+[0;32mI (2718) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (2718) wifi:(trc)phytype:CBW20-SGI, snr:85, maxRate:144, highestRateIdx:0[0m
+[0;33mW (2718) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (2728) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:85, ampduState:wait operational[0m
+[0;32mI (2738) wifi:ifidx:0, rssi:-12, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:144, he:0, vht:0, ht:1[0m
+[0;32mI (2748) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (2768) wifi:connected with myssid, aid = 2, channel 1, BW20, bssid = 40:4c:ca:5c:28:dd[0m
+[0;32mI (2768) wifi:security: WPA2-PSK, phy:11bgn, rssi:-12, cipher(pairwise:0x3, group:0x3), pmf:1, [0m
+[0;32mI (2778) wifi:pm start, type: 0, twt_start:0[0m
+
+[0;32mI (2778) wifi:pm start, type:0, aid:0x2, trans-BSSID:40:4c:ca:5c:28:dd, BSSID[5]:0xdd, mbssid(max-indicator:0, index:0), he:0[0m
+[0;32mI (2788) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2798) wifi:set rx beacon pti, rx_bcn_pti: 10, bcn_timeout: 25000, mt_pti: 10, mt_time: 10000[0m
+[0;32mI (2798) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (2818) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)[0m
+[0;32mI (2828) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (2838) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (2838) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (2848) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (2858) wifi:[ADDBA]RX addba response, status:1[0m
+[0;32mI (2858) wifi:[ADDBA]RX addba response, status:1[0m
+[0;32mI (3868) esp_netif_handlers: sta ip: 192.168.4.3, mask: 255.255.255.0, gw: 192.168.4.1[0m
+[0;32mI (3868) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:1 [0m
+[0;32mI (3868) WIFI_SETUP: TSF = 134613570 µs[0m
+[0;32mI (3878) main_task: Returned from app_main()[0m
+[0;33mW (3878) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100dd28, TALO:0x5cca4c40, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;32mI (4188) TCP_TASK: Connected[0m
+[0;32mI (4188) TCP_TASK: Full payload sent[0m
+[0;32mI (4868) WIFI_SETUP: TSF = 135613519 µs[0m
+[0;32mI (5188) TCP_TASK: Full payload sent[0m
+[0;32mI (5868) WIFI_SETUP: TSF = 136613533 µs[0m
+[0;32mI (6188) TCP_TASK: Full payload sent[0m
+[0;32mI (6868) WIFI_SETUP: TSF = 137613513 µs[0m
+[0;32mI (7188) TCP_TASK: Full payload sent[0m
+[0;32mI (7868) WIFI_SETUP: TSF = 138613523 µs[0m
+[0;32mI (8188) TCP_TASK: Full payload sent[0m
+[0;32mI (8868) WIFI_SETUP: TSF = 139613535 µs[0m
+[0;32mI (9188) TCP_TASK: Full payload sent[0m
+[0;32mI (9868) WIFI_SETUP: TSF = 140613534 µs[0m
+[0;32mI (10188) TCP_TASK: Full payload sent[0m
+[0;32mI (10868) WIFI_SETUP: TSF = 141613536 µs[0m
+[0;32mI (11188) TCP_TASK: Full payload sent[0m
+[0;32mI (11868) WIFI_SETUP: TSF = 142613532 µs[0m
+[0;32mI (12188) TCP_TASK: Full payload sent[0m
+[0;32mI (12868) WIFI_SETUP: TSF = 143613529 µs[0m
+[0;32mI (13188) TCP_TASK: Full payload sent[0m
+[0;32mI (13868) WIFI_SETUP: TSF = 144613508 µs[0m
+[0;32mI (14188) TCP_TASK: Full payload sent[0m
+[0;32mI (14868) WIFI_SETUP: TSF = 145613519 µs[0m
+[0;32mI (15188) TCP_TASK: Full payload sent[0m
+[0;32mI (15868) WIFI_SETUP: TSF = 146613514 µs[0m
+[0;32mI (16188) TCP_TASK: Full payload sent[0m
+[0;32mI (16868) WIFI_SETUP: TSF = 147613534 µs[0m
+[0;32mI (17188) TCP_TASK: Full payload sent[0m
+[0;32mI (17868) WIFI_SETUP: TSF = 148613536 µs[0m
+[0;32mI (18188) TCP_TASK: Full payload sent[0m
+[0;32mI (18868) WIFI_SETUP: TSF = 149613537 µs[0m
+[0;32mI (19188) TCP_TASK: Full payload sent[0m
+[0;32mI (19868) WIFI_SETUP: TSF = 150613543 µs[0m
+[0;32mI (20188) TCP_TASK: Full payload sent[0m
+[0;32mI (20868) WIFI_SETUP: TSF = 151613537 µs[0m
+[0;32mI (21868) WIFI_SETUP: TSF = 152613531 µs[0m
+[0;32mI (22868) WIFI_SETUP: TSF = 153613515 µs[0m
+[0;32mI (23868) WIFI_SETUP: TSF = 154613512 µs[0m
+[0;32mI (24868) WIFI_SETUP: TSF = 155613514 µs[0m
+[0;32mI (25868) WIFI_SETUP: TSF = 156613540 µs[0m
+[0;32mI (26868) WIFI_SETUP: TSF = 157613544 µs[0m
+[0;32mI (27868) WIFI_SETUP: TSF = 158613545 µs[0m
+[0;32mI (28868) WIFI_SETUP: TSF = 159613549 µs[0m
+[0;32mI (29868) WIFI_SETUP: TSF = 160613547 µs[0m
+[0;32mI (30868) WIFI_SETUP: TSF = 161613538 µs[0m
+[0;32mI (31868) WIFI_SETUP: TSF = 162613524 µs[0m
+[0;32mI (32868) WIFI_SETUP: TSF = 163613521 µs[0m
+[0;32mI (33868) WIFI_SETUP: TSF = 164613525 µs[0m
+[0;32mI (34868) WIFI_SETUP: TSF = 165613549 µs[0m
+[0;32mI (35868) WIFI_SETUP: TSF = 166613551 µs[0m
+[0;32mI (36868) WIFI_SETUP: TSF = 167613551 µs[0m
+[0;32mI (37868) WIFI_SETUP: TSF = 168613558 µs[0m
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x18ec
+load:0x4086c110,len:0xe5c
+load:0x4086e610,len:0x2f50
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time May 13 2025 16:48:27[0m
+[0;32mI (24) boot: chip revision: v0.1[0m
+[0;32mI (26) boot: efuse block revision: v0.2[0m
+[0;32mI (31) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (36) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=42088020 size=1bac8h (113352) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=0002baf0 vaddr=40800000 size=04528h ( 17704) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=8768ch (554636) map[0m
+[0;32mI (228) esp_image: segment 3: paddr=000b76b4 vaddr=40804528 size=14bb0h ( 84912) load[0m
+[0;32mI (246) esp_image: segment 4: paddr=000cc26c vaddr=408190e0 size=03b98h ( 15256) load[0m
+[0;32mI (256) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (256) boot: Disabling RNG early entropy source...[0m
+[0;32mI (268) cpu_start: Unicore app[0m
+[0;32mI (277) cpu_start: Pro cpu start user code[0m
+[0;32mI (277) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (277) app_init: Application information:[0m
+[0;32mI (280) app_init: Project name:     wifi_station[0m
+[0;32mI (285) app_init: App version:      ac3da05a-dirty[0m
+[0;32mI (291) app_init: Compile time:     May 13 2025 16:46:35[0m
+[0;32mI (297) app_init: ELF file SHA256:  930501b76...[0m
+[0;32mI (302) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (307) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (311) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (316) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (321) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (328) heap_init: At 40822150 len 0005A4C0 (361 KiB): RAM[0m
+[0;32mI (334) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (341) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (348) spi_flash: detected chip: generic[0m
+[0;32mI (352) spi_flash: flash io: dio[0m
+[0;33mW (355) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (369) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (375) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (383) coexist: coex firmware version: cbb41d7[0m
+[0;32mI (397) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (398) main_task: Started on CPU0[0m
+[0;32mI (398) main_task: Calling app_main()[0m
+[0;32mI (408) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (408) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (418) wifi:wifi driver task: 4082b160, prio:23, stack:6656, core=0[0m
+[0;32mI (418) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (418) wifi:wifi certification version: v7.0[0m
+[0;32mI (418) wifi:config NVS flash: enabled[0m
+[0;32mI (428) wifi:config nano formating: disabled[0m
+[0;32mI (428) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band:0x1[0m
+[0;32mI (438) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (438) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (448) wifi:Init management short buffer num: 32[0m
+[0;32mI (448) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (448) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (458) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (458) wifi:Init static rx buffer num: 10[0m
+[0;32mI (468) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (468) wifi_init: rx ba win: 6[0m
+[0;32mI (478) wifi_init: accept mbox: 6[0m
+[0;32mI (478) wifi_init: tcpip mbox: 32[0m
+[0;32mI (478) wifi_init: udp mbox: 6[0m
+[0;32mI (488) wifi_init: tcp mbox: 6[0m
+[0;32mI (488) wifi_init: tcp tx win: 5760[0m
+[0;32mI (498) wifi_init: tcp rx win: 5760[0m
+[0;32mI (498) wifi_init: tcp mss: 1440[0m
+[0;32mI (498) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (508) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (508) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (518) phy_init: phy_version 320,348a293,Sep  3 2024,16:33:12[0m
+[0;33mW (568) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;33mW (638) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (638) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (648) wifi:(agc)0x600a7128:0xd20e8a48, min.avgNF:0xce->0xd2(dB), RCalCount:0xe8, min.RRssi:0xa48(-91.50)[0m
+[0;33mW (658) wifi:(TB)WDEV_PWR_TB_MCS0:19[0m
+[0;33mW (658) wifi:(TB)WDEV_PWR_TB_MCS1:19[0m
+[0;33mW (658) wifi:(TB)WDEV_PWR_TB_MCS2:19[0m
+[0;33mW (668) wifi:(TB)WDEV_PWR_TB_MCS3:19[0m
+[0;33mW (668) wifi:(TB)WDEV_PWR_TB_MCS4:19[0m
+[0;33mW (668) wifi:(TB)WDEV_PWR_TB_MCS5:19[0m
+[0;33mW (678) wifi:(TB)WDEV_PWR_TB_MCS6:18[0m
+[0;33mW (678) wifi:(TB)WDEV_PWR_TB_MCS7:18[0m
+[0;33mW (678) wifi:(TB)WDEV_PWR_TB_MCS8:17[0m
+[0;33mW (688) wifi:(TB)WDEV_PWR_TB_MCS9:15[0m
+[0;33mW (688) wifi:(TB)WDEV_PWR_TB_MCS10:15[0m
+[0;33mW (688) wifi:(TB)WDEV_PWR_TB_MCS11:15[0m
+[0;32mI (698) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;33mW (698) wifi:(he)attach, station, phymode:11ax[0m
+[0;32mI (708) wifi:mode : sta (f0:f5:bd:07:01:00)[0m
+[0;32mI (708) wifi:enable tsf[0m
+[0;32mI (708) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (1028) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1028) wifi:(connect)dot11_authmode:0x3, pairwise_cipher:0x3, group_cipher:0x3[0m
+[0;32mI (1028) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1038) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1048) wifi:Association refused temporarily time 1500, comeback time 1600 (TUs)[0m
+[0;32mI (2688) wifi:state: assoc -> assoc (0x0)[0m
+[0;32mI (2738) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (2738) wifi:(trc)phytype:CBW20-SGI, snr:77, maxRate:144, highestRateIdx:0[0m
+[0;33mW (2738) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (2748) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:77, ampduState:wait operational[0m
+[0;32mI (2758) wifi:ifidx:0, rssi:-20, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:144, he:0, vht:0, ht:1[0m
+[0;32mI (2768) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (2788) wifi:connected with myssid, aid = 2, channel 1, BW20, bssid = 40:4c:ca:5c:28:dd[0m
+[0;32mI (2788) wifi:security: WPA2-PSK, phy:11bgn, rssi:-20, cipher(pairwise:0x3, group:0x3), pmf:1, [0m
+[0;32mI (2798) wifi:pm start, type: 0, twt_start:0[0m
+
+[0;32mI (2798) wifi:pm start, type:0, aid:0x2, trans-BSSID:40:4c:ca:5c:28:dd, BSSID[5]:0xdd, mbssid(max-indicator:0, index:0), he:0[0m
+[0;32mI (2808) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2818) wifi:set rx beacon pti, rx_bcn_pti: 10, bcn_timeout: 25000, mt_pti: 10, mt_time: 10000[0m
+[0;32mI (2828) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (2838) wifi:[ADDBA]TX addba request, tid:7, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x20)[0m
+[0;32mI (2848) wifi:[ADDBA]TX addba request, tid:5, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (2858) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (2868) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (2868) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (2878) wifi:[ADDBA]RX addba response, status:1[0m
+[0;32mI (2878) wifi:[ADDBA]RX addba response, status:1[0m
+[0;32mI (3888) esp_netif_handlers: sta ip: 192.168.4.3, mask: 255.255.255.0, gw: 192.168.4.1[0m
+[0;32mI (3888) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:1 [0m
+[0;32mI (3888) WIFI_SETUP: TSF = 176710662 µs[0m
+[0;32mI (3898) main_task: Returned from app_main()[0m
+[0;33mW (3898) wifi:<ba-add>idx:0, ifx:0, tid:0, TAHI:0x100dd28, TALO:0x5cca4c40, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;32mI (3918) TCP_TASK: Connected[0m
+[0;32mI (4888) WIFI_SETUP: TSF = 177710593 µs[0m
+[0;32mI (5888) WIFI_SETUP: TSF = 178710621 µs[0m
+[0;32mI (6888) WIFI_SETUP: TSF = 179710615 µs[0m
+[0;32mI (7888) WIFI_SETUP: TSF = 180710621 µs[0m
+[0;32mI (8888) WIFI_SETUP: TSF = 181710626 µs[0m
+[0;32mI (9888) WIFI_SETUP: TSF = 182710627 µs[0m
+[0;32mI (10888) WIFI_SETUP: TSF = 183710628 µs[0m
+[0;32mI (11888) WIFI_SETUP: TSF = 184710621 µs[0m
+[0;32mI (12888) WIFI_SETUP: TSF = 185710619 µs[0m
+[0;32mI (13888) WIFI_SETUP: TSF = 186710597 µs[0m
+[0;32mI (14888) WIFI_SETUP: TSF = 187710626 µs[0m
+[0;32mI (15888) WIFI_SETUP: TSF = 188710622 µs[0m
+[0;32mI (16888) WIFI_SETUP: TSF = 189710630 µs[0m
+[0;32mI (17888) WIFI_SETUP: TSF = 190710629 µs[0m
+[0;32mI (18888) WIFI_SETUP: TSF = 191710628 µs[0m
+[0;32mI (19888) WIFI_SETUP: TSF = 192710634 µs[0m
+[0;32mI (20888) WIFI_SETUP: TSF = 193710629 µs[0m
+[0;32mI (21888) WIFI_SETUP: TSF = 194710632 µs[0m
+[0;32mI (21918) TCP_TASK: Full payload sent[0m
+[0;32mI (22888) WIFI_SETUP: TSF = 195710612 µs[0m
+[0;32mI (22918) TCP_TASK: Full payload sent[0m
+[0;32mI (23888) WIFI_SETUP: TSF = 196710628 µs[0m
+[0;32mI (23918) TCP_TASK: Full payload sent[0m
+[0;32mI (24888) WIFI_SETUP: TSF = 197710621 µs[0m
+[0;32mI (24918) TCP_TASK: Full payload sent[0m
+[0;32mI (25888) WIFI_SETUP: TSF = 198710636 µs[0m
+[0;32mI (25918) TCP_TASK: Full payload sent[0m
+[0;32mI (26888) WIFI_SETUP: TSF = 199710636 µs[0m
+[0;32mI (26918) TCP_TASK: Full payload sent[0m
+[0;32mI (27888) WIFI_SETUP: TSF = 200710635 µs[0m
+[0;32mI (27918) TCP_TASK: Full payload sent[0m
+[0;32mI (28888) WIFI_SETUP: TSF = 201710644 µs[0m
+[0;32mI (28918) TCP_TASK: Full payload sent[0m
+[0;32mI (29888) WIFI_SETUP: TSF = 202710634 µs[0m
+[0;32mI (30888) WIFI_SETUP: TSF = 203710639 µs[0m
+[0;32mI (31888) WIFI_SETUP: TSF = 204710615 µs[0m
+[0;32mI (32888) WIFI_SETUP: TSF = 205710640 µs[0m
+[0;32mI (33888) WIFI_SETUP: TSF = 206710632 µs[0m
+[0;32mI (34888) WIFI_SETUP: TSF = 207710643 µs[0m
+[0;32mI (35888) WIFI_SETUP: TSF = 208710643 µs[0m
+[0;32mI (36888) WIFI_SETUP: TSF = 209710641 µs[0m
+[0;32mI (37888) WIFI_SETUP: TSF = 210710647 µs[0m
+[0;32mI (38888) WIFI_SETUP: TSF = 211710640 µs[0m
+[0;32mI (39888) WIFI_SETUP: TSF = 212710644 µs[0m
+[0;32mI (40888) WIFI_SETUP: TSF = 213710622 µs[0m
+[0;32mI (41888) WIFI_SETUP: TSF = 214710647 µs[0m
+[0;32mI (42888) WIFI_SETUP: TSF = 215710648 µs[0m
+[0;32mI (43888) WIFI_SETUP: TSF = 216710649 µs[0m
+[0;32mI (44888) WIFI_SETUP: TSF = 217710649 µs[0m
+[0;32mI (45888) WIFI_SETUP: TSF = 218710648 µs[0m
+[0;32mI (46888) WIFI_SETUP: TSF = 219710654 µs[0m
+[0;32mI (47888) WIFI_SETUP: TSF = 220710647 µs[0m
+[0;32mI (48888) WIFI_SETUP: TSF = 221710652 µs[0m
+[0;32mI (49888) WIFI_SETUP: TSF = 222710629 µs[0m
+[0;32mI (50888) WIFI_SETUP: TSF = 223710654 µs[0m
+[0;32mI (51888) WIFI_SETUP: TSF = 224710647 µs[0m
+[0;32mI (52888) WIFI_SETUP: TSF = 225710656 µs[0m
+[0;32mI (53888) WIFI_SETUP: TSF = 226710656 µs[0m
+[0;32mI (54888) WIFI_SETUP: TSF = 227710655 µs[0m
+[0;32mI (55888) WIFI_SETUP: TSF = 228710662 µs[0m
+[0;32mI (55918) TCP_TASK: Full payload sent[0m
+[0;32mI (56888) WIFI_SETUP: TSF = 229710657 µs[0m
+[0;32mI (56918) TCP_TASK: Full payload sent[0m
+[0;32mI (57888) WIFI_SETUP: TSF = 230710659 µs[0m
+[0;32mI (57918) TCP_TASK: Full payload sent[0m
+[0;32mI (58888) WIFI_SETUP: TSF = 231710636 µs[0m
+[0;32mI (58918) TCP_TASK: Full payload sent[0m
+[0;32mI (59888) WIFI_SETUP: TSF = 232710663 µs[0m
+[0;32mI (59918) TCP_TASK: Full payload sent[0m
+[0;32mI (60888) WIFI_SETUP: TSF = 233710660 µs[0m
+[0;32mI (60918) TCP_TASK: Full payload sent[0m
+[0;32mI (61888) WIFI_SETUP: TSF = 234710667 µs[0m
+[0;32mI (61918) TCP_TASK: Full payload sent[0m
+[0;32mI (62888) WIFI_SETUP: TSF = 235710663 µs[0m
+[0;32mI (62918) TCP_TASK: Full payload sent[0m
+[0;32mI (63888) WIFI_SETUP: TSF = 236710664 µs[0m
+[0;32mI (63918) TCP_TASK: Full payload sent[0m
+[0;32mI (64888) WIFI_SETUP: TSF = 237710661 µs[0m
+[0;32mI (65888) WIFI_SETUP: TSF = 238710664 µs[0m
+[0;32mI (66888) WIFI_SETUP: TSF = 239710644 µs[0m
+[0;32mI (67888) WIFI_SETUP: TSF = 240710642 µs[0m
+[0;32mI (68888) WIFI_SETUP: TSF = 241710668 µs[0m
+[0;32mI (69888) WIFI_SETUP: TSF = 242710672 µs[0m
+[0;32mI (70888) WIFI_SETUP: TSF = 243710670 µs[0m
+[0;32mI (71888) WIFI_SETUP: TSF = 244710670 µs[0m
+[0;32mI (72888) WIFI_SETUP: TSF = 245710675 µs[0m
+[0;32mI (73888) WIFI_SETUP: TSF = 246710667 µs[0m
+[0;32mI (74888) WIFI_SETUP: TSF = 247710676 µs[0m
+[0;32mI (75888) WIFI_SETUP: TSF = 248710650 µs[0m
+[0;32mI (76888) WIFI_SETUP: TSF = 249710649 µs[0m
+[0;32mI (77888) WIFI_SETUP: TSF = 250710672 µs[0m
+[0;32mI (78888) WIFI_SETUP: TSF = 251710680 µs[0m
+[0;32mI (79888) WIFI_SETUP: TSF = 252710678 µs[0m
+[0;32mI (80888) WIFI_SETUP: TSF = 253710679 µs[0m
+[0;32mI (81888) WIFI_SETUP: TSF = 254710680 µs[0m
+[0;32mI (82888) WIFI_SETUP: TSF = 255710674 µs[0m
+[0;32mI (83888) WIFI_SETUP: TSF = 256710681 µs[0m
+[0;32mI (84888) WIFI_SETUP: TSF = 257710650 µs[0m
+[0;32mI (85888) WIFI_SETUP: TSF = 258710685 µs[0m
+[0;32mI (86888) WIFI_SETUP: TSF = 259710672 µs[0m
+[0;32mI (87888) WIFI_SETUP: TSF = 260710687 µs[0m
+[0;32mI (88888) WIFI_SETUP: TSF = 261710682 µs[0m
+[0;32mI (89888) WIFI_SETUP: TSF = 262710686 µs[0m
+[0;32mI (90888) WIFI_SETUP: TSF = 263710686 µs[0m
+[0;32mI (91888) WIFI_SETUP: TSF = 264710681 µs[0m
+[0;32mI (92888) WIFI_SETUP: TSF = 265710686 µs[0m
+[0;32mI (93888) WIFI_SETUP: TSF = 266710663 µs[0m
+[0;32mI (94888) WIFI_SETUP: TSF = 267710689 µs[0m
+[0;32mI (95888) WIFI_SETUP: TSF = 268710683 µs[0m
+[0;32mI (96888) WIFI_SETUP: TSF = 269710691 µs[0m
+[0;32mI (97888) WIFI_SETUP: TSF = 270710692 µs[0m
+[0;32mI (98888) WIFI_SETUP: TSF = 271710691 µs[0m
+[0;32mI (99888) WIFI_SETUP: TSF = 272710697 µs[0m
+[0;32mI (100888) WIFI_SETUP: TSF = 273710686 µs[0m
+[0;32mI (101888) WIFI_SETUP: TSF = 274710691 µs[0m
+[0;32mI (101918) TCP_TASK: Full payload sent[0m
+[0;32mI (102888) WIFI_SETUP: TSF = 275710678 µs[0m
+[0;32mI (102918) TCP_TASK: Full payload sent[0m
+[0;32mI (103888) WIFI_SETUP: TSF = 276710699 µs[0m
+[0;32mI (103918) TCP_TASK: Full payload sent[0m
+[0;32mI (104888) WIFI_SETUP: TSF = 277710687 µs[0m
+[0;32mI (104918) TCP_TASK: Full payload sent[0m
+[0;32mI (105888) WIFI_SETUP: TSF = 278710703 µs[0m
+[0;32mI (105918) TCP_TASK: Full payload sent[0m
+[0;32mI (106888) WIFI_SETUP: TSF = 279710698 µs[0m
+[0;32mI (106918) TCP_TASK: Full payload sent[0m
+[0;32mI (107888) WIFI_SETUP: TSF = 280710701 µs[0m
+[0;32mI (107918) TCP_TASK: Full payload sent[0m
+[0;32mI (108888) WIFI_SETUP: TSF = 281710702 µs[0m
+[0;32mI (108918) TCP_TASK: Full payload sent[0m
+[0;32mI (109888) WIFI_SETUP: TSF = 282710696 µs[0m
+[0;32mI (109918) TCP_TASK: Full payload sent[0m
+[0;32mI (110888) WIFI_SETUP: TSF = 283710703 µs[0m
+[0;32mI (110918) TCP_TASK: Full payload sent[0m
+[0;32mI (111888) WIFI_SETUP: TSF = 284710683 µs[0m
+[0;32mI (111918) TCP_TASK: Full payload sent[0m
+[0;32mI (112888) WIFI_SETUP: TSF = 285710707 µs[0m
+[0;32mI (112918) TCP_TASK: Full payload sent[0m
+[0;32mI (113888) WIFI_SETUP: TSF = 286710695 µs[0m
+[0;32mI (113918) TCP_TASK: Full payload sent[0m
+[0;32mI (114888) WIFI_SETUP: TSF = 287710709 µs[0m
+[0;32mI (114918) TCP_TASK: Full payload sent[0m
+[0;32mI (115888) WIFI_SETUP: TSF = 288710705 µs[0m
+[0;32mI (115918) TCP_TASK: Full payload sent[0m
+[0;32mI (116888) WIFI_SETUP: TSF = 289710708 µs[0m
+[0;32mI (116918) TCP_TASK: Full payload sent[0m
+[0;32mI (117888) WIFI_SETUP: TSF = 290710709 µs[0m
+[0;32mI (117918) TCP_TASK: Full payload sent[0m
+[0;32mI (118888) WIFI_SETUP: TSF = 291710710 µs[0m
+[0;32mI (118918) TCP_TASK: Full payload sent[0m
+[0;32mI (119888) WIFI_SETUP: TSF = 292710709 µs[0m
+[0;32mI (119918) TCP_TASK: Full payload sent[0m
+[0;32mI (120888) WIFI_SETUP: TSF = 293710688 µs[0m
+[0;32mI (120918) TCP_TASK: Full payload sent[0m
+[0;32mI (121888) WIFI_SETUP: TSF = 294710715 µs[0m
+[0;32mI (122888) WIFI_SETUP: TSF = 295710703 µs[0m
+[0;32mI (123888) WIFI_SETUP: TSF = 296710716 µs[0m
+[0;32mI (124888) WIFI_SETUP: TSF = 297710713 µs[0m
+[0;32mI (125888) WIFI_SETUP: TSF = 298710716 µs[0m
+[0;32mI (126888) WIFI_SETUP: TSF = 299710717 µs[0m
+[0;32mI (127888) WIFI_SETUP: TSF = 300710716 µs[0m
+[0;32mI (128888) WIFI_SETUP: TSF = 301710717 µs[0m
+[0;32mI (129888) WIFI_SETUP: TSF = 302710698 µs[0m
+[0;32mI (130888) WIFI_SETUP: TSF = 303710723 µs[0m
+[0;32mI (131888) WIFI_SETUP: TSF = 304710711 µs[0m
+[0;32mI (132888) WIFI_SETUP: TSF = 305710725 µs[0m
+[0;32mI (133888) WIFI_SETUP: TSF = 306710722 µs[0m
+[0;32mI (134888) WIFI_SETUP: TSF = 307710725 µs[0m
+[0;32mI (135888) WIFI_SETUP: TSF = 308710726 µs[0m
+[0;32mI (136888) WIFI_SETUP: TSF = 309710726 µs[0m
+[0;32mI (137888) WIFI_SETUP: TSF = 310710725 µs[0m
+[0;32mI (138888) WIFI_SETUP: TSF = 311710706 µs[0m
+[0;32mI (139888) WIFI_SETUP: TSF = 312710731 µs[0m
+[0;32mI (140888) WIFI_SETUP: TSF = 313710719 µs[0m
+[0;32mI (141888) WIFI_SETUP: TSF = 314710733 µs[0m
+[0;32mI (142888) WIFI_SETUP: TSF = 315710730 µs[0m
+[0;32mI (143888) WIFI_SETUP: TSF = 316710734 µs[0m
+[0;32mI (144888) WIFI_SETUP: TSF = 317710734 µs[0m
+[0;32mI (145888) WIFI_SETUP: TSF = 318710733 µs[0m
+[0;32mI (146888) WIFI_SETUP: TSF = 319710734 µs[0m
+[0;32mI (147888) WIFI_SETUP: TSF = 320710715 µs[0m
+[0;32mI (148888) WIFI_SETUP: TSF = 321710739 µs[0m
+[0;32mI (149888) WIFI_SETUP: TSF = 322710731 µs[0m
+[0;32mI (150888) WIFI_SETUP: TSF = 323710739 µs[0m
+[0;32mI (151888) WIFI_SETUP: TSF = 324710740 µs[0m
+[0;32mI (152888) WIFI_SETUP: TSF = 325710737 µs[0m
+[0;32mI (153888) WIFI_SETUP: TSF = 326710744 µs[0m
+[0;32mI (154888) WIFI_SETUP: TSF = 327710736 µs[0m
+[0;32mI (155888) WIFI_SETUP: TSF = 328710744 µs[0m
+[0;32mI (156888) WIFI_SETUP: TSF = 329710721 µs[0m
+[0;32mI (157888) WIFI_SETUP: TSF = 330710747 µs[0m
+[0;32mI (158888) WIFI_SETUP: TSF = 331710739 µs[0m
+[0;32mI (159888) WIFI_SETUP: TSF = 332710745 µs[0m
+[0;32mI (160888) WIFI_SETUP: TSF = 333710748 µs[0m
+[0;32mI (161888) WIFI_SETUP: TSF = 334710745 µs[0m
+[0;32mI (162888) WIFI_SETUP: TSF = 335710753 µs[0m
+[0;32mI (163888) WIFI_SETUP: TSF = 336710745 µs[0m
+[0;32mI (164888) WIFI_SETUP: TSF = 337710735 µs[0m
+[0;32mI (165888) WIFI_SETUP: TSF = 338710730 µs[0m
+[0;32mI (166888) WIFI_SETUP: TSF = 339710750 µs[0m
+[0;32mI (166918) TCP_TASK: Full payload sent[0m
+[0;32mI (167888) WIFI_SETUP: TSF = 340710753 µs[0m
+[0;32mI (167918) TCP_TASK: Full payload sent[0m
+[0;32mI (168888) WIFI_SETUP: TSF = 341710755 µs[0m
+[0;32mI (168918) TCP_TASK: Full payload sent[0m
+[0;32mI (169888) WIFI_SETUP: TSF = 342710755 µs[0m
+[0;32mI (169918) TCP_TASK: Full payload sent[0m
+[0;32mI (170888) WIFI_SETUP: TSF = 343710758 µs[0m
+[0;32mI (170918) TCP_TASK: Full payload sent[0m
+[0;32mI (171888) WIFI_SETUP: TSF = 344710749 µs[0m
+[0;32mI (171918) TCP_TASK: Full payload sent[0m
+[0;32mI (172888) WIFI_SETUP: TSF = 345710755 µs[0m
+[0;32mI (173888) WIFI_SETUP: TSF = 346710738 µs[0m
+[0;32mI (174888) WIFI_SETUP: TSF = 347710740 µs[0m
+[0;32mI (175888) WIFI_SETUP: TSF = 348710759 µs[0m
+[0;32mI (176888) WIFI_SETUP: TSF = 349710759 µs[0m
+[0;32mI (177888) WIFI_SETUP: TSF = 350710764 µs[0m
+[0;32mI (178888) WIFI_SETUP: TSF = 351710762 µs[0m
+[0;32mI (178918) TCP_TASK: Full payload sent[0m
+[0;32mI (179888) WIFI_SETUP: TSF = 352710768 µs[0m
+[0;32mI (179918) TCP_TASK: Full payload sent[0m
+[0;32mI (180888) WIFI_SETUP: TSF = 353710758 µs[0m
+[0;32mI (180918) TCP_TASK: Full payload sent[0m
+[0;32mI (181888) WIFI_SETUP: TSF = 354710772 µs[0m
+[0;32mI (181918) TCP_TASK: Full payload sent[0m
+[0;32mI (182888) WIFI_SETUP: TSF = 355710741 µs[0m
+[0;32mI (182918) TCP_TASK: Full payload sent[0m
+[0;32mI (183888) WIFI_SETUP: TSF = 356710772 µs[0m
+[0;32mI (183918) TCP_TASK: Full payload sent[0m
+[0;32mI (184888) WIFI_SETUP: TSF = 357710764 µs[0m
+[0;32mI (184918) TCP_TASK: Full payload sent[0m
+[0;32mI (185888) WIFI_SETUP: TSF = 358710770 µs[0m
+[0;32mI (185918) TCP_TASK: Full payload sent[0m
+[0;32mI (186888) WIFI_SETUP: TSF = 359710773 µs[0m
+[0;32mI (186918) TCP_TASK: Full payload sent[0m
+[0;32mI (187888) WIFI_SETUP: TSF = 360710770 µs[0m
+[0;32mI (187918) TCP_TASK: Full payload sent[0m
+[0;32mI (188888) WIFI_SETUP: TSF = 361710778 µs[0m
+[0;32mI (188918) TCP_TASK: Full payload sent[0m
+[0;32mI (189888) WIFI_SETUP: TSF = 362710766 µs[0m
+[0;32mI (189918) TCP_TASK: Full payload sent[0m
+[0;32mI (190888) WIFI_SETUP: TSF = 363710777 µs[0m
+[0;32mI (190918) TCP_TASK: Full payload sent[0m
+[0;32mI (191888) WIFI_SETUP: TSF = 364710750 µs[0m
+[0;32mI (191918) TCP_TASK: Full payload sent[0m
+[0;32mI (192888) WIFI_SETUP: TSF = 365710781 µs[0m
+[0;32mI (192918) TCP_TASK: Full payload sent[0m
+[0;32mI (193888) WIFI_SETUP: TSF = 366710773 µs[0m
+[0;32mI (193918) TCP_TASK: Full payload sent[0m
+[0;32mI (194888) WIFI_SETUP: TSF = 367710778 µs[0m
+[0;32mI (194918) TCP_TASK: Full payload sent[0m
+[0;32mI (195888) WIFI_SETUP: TSF = 368710781 µs[0m
+[0;32mI (195918) TCP_TASK: Full payload sent[0m
+[0;32mI (196888) WIFI_SETUP: TSF = 369710779 µs[0m
+[0;32mI (196918) TCP_TASK: Full payload sent[0m
+[0;32mI (197888) WIFI_SETUP: TSF = 370710786 µs[0m
+[0;32mI (197918) TCP_TASK: Full payload sent[0m
+[0;32mI (198888) WIFI_SETUP: TSF = 371710775 µs[0m
+[0;32mI (198918) TCP_TASK: Full payload sent[0m
+[0;32mI (199888) WIFI_SETUP: TSF = 372710786 µs[0m
+[0;32mI (199918) TCP_TASK: Full payload sent[0m
+[0;32mI (200888) WIFI_SETUP: TSF = 373710763 µs[0m
+[0;32mI (200918) TCP_TASK: Full payload sent[0m
+[0;32mI (201888) WIFI_SETUP: TSF = 374710790 µs[0m
+[0;32mI (201918) TCP_TASK: Full payload sent[0m
+[0;32mI (202888) WIFI_SETUP: TSF = 375710782 µs[0m
+[0;32mI (202918) TCP_TASK: Full payload sent[0m
+[0;32mI (203888) WIFI_SETUP: TSF = 376710787 µs[0m
+[0;32mI (203918) TCP_TASK: Full payload sent[0m
+[0;32mI (204888) WIFI_SETUP: TSF = 377710791 µs[0m
+[0;32mI (204918) TCP_TASK: Full payload sent[0m
+[0;32mI (205888) WIFI_SETUP: TSF = 378710788 µs[0m
+[0;32mI (205918) TCP_TASK: Full payload sent[0m
+[0;32mI (206888) WIFI_SETUP: TSF = 379710794 µs[0m
+[0;32mI (206918) TCP_TASK: Full payload sent[0m
+[0;32mI (207888) WIFI_SETUP: TSF = 380710783 µs[0m
+[0;32mI (207918) TCP_TASK: Full payload sent[0m
+[0;32mI (208888) WIFI_SETUP: TSF = 381710795 µs[0m
+[0;32mI (208918) TCP_TASK: Full payload sent[0m
+[0;32mI (209888) WIFI_SETUP: TSF = 382710772 µs[0m
+[0;32mI (209918) TCP_TASK: Full payload sent[0m
+[0;32mI (210888) WIFI_SETUP: TSF = 383710799 µs[0m
+[0;32mI (210918) TCP_TASK: Full payload sent[0m
+[0;32mI (211888) WIFI_SETUP: TSF = 384710794 µs[0m
+[0;32mI (211918) TCP_TASK: Full payload sent[0m
+[0;32mI (212888) WIFI_SETUP: TSF = 385710801 µs[0m
+[0;32mI (212918) TCP_TASK: Full payload sent[0m
+[0;32mI (213888) WIFI_SETUP: TSF = 386710795 µs[0m
+[0;32mI (213918) TCP_TASK: Full payload sent[0m
+[0;32mI (214888) WIFI_SETUP: TSF = 387710803 µs[0m
+[0;32mI (214918) TCP_TASK: Full payload sent[0m
+[0;32mI (215888) WIFI_SETUP: TSF = 388710800 µs[0m
+[0;32mI (215918) TCP_TASK: Full payload sent[0m
+[0;32mI (216888) WIFI_SETUP: TSF = 389710796 µs[0m
+[0;32mI (216918) TCP_TASK: Full payload sent[0m
+[0;32mI (217888) WIFI_SETUP: TSF = 390710801 µs[0m
+[0;32mI (217918) TCP_TASK: Full payload sent[0m
+[0;32mI (218888) WIFI_SETUP: TSF = 391710786 µs[0m
+[0;32mI (218918) TCP_TASK: Full payload sent[0m
+[0;32mI (219888) WIFI_SETUP: TSF = 392710808 µs[0m
+[0;32mI (219918) TCP_TASK: Full payload sent[0m
+[0;32mI (220888) WIFI_SETUP: TSF = 393710816 µs[0m
+[0;32mI (220918) TCP_TASK: Full payload sent[0m
+[0;32mI (221888) WIFI_SETUP: TSF = 394710805 µs[0m
+[0;32mI (221918) TCP_TASK: Full payload sent[0m
+[0;32mI (222888) WIFI_SETUP: TSF = 395710809 µs[0m
+[0;32mI (222918) TCP_TASK: Full payload sent[0m
+[0;32mI (223888) WIFI_SETUP: TSF = 396710806 µs[0m
+[0;32mI (223918) TCP_TASK: Full payload sent[0m
+[0;32mI (224888) WIFI_SETUP: TSF = 397710813 µs[0m
+[0;32mI (224918) TCP_TASK: Full payload sent[0m
+[0;32mI (225888) WIFI_SETUP: TSF = 398710841 µs[0m
+[0;32mI (225918) TCP_TASK: Full payload sent[0m
+[0;32mI (226888) WIFI_SETUP: TSF = 399710819 µs[0m
+[0;32mI (226918) TCP_TASK: Full payload sent[0m
+[0;32mI (227888) WIFI_SETUP: TSF = 400710789 µs[0m
+[0;32mI (227918) TCP_TASK: Full payload sent[0m
+[0;32mI (228888) WIFI_SETUP: TSF = 401710816 µs[0m
+[0;32mI (228918) TCP_TASK: Full payload sent[0m
+[0;32mI (229888) WIFI_SETUP: TSF = 402710808 µs[0m
+[0;32mI (229918) TCP_TASK: Full payload sent[0m
+[0;32mI (230888) WIFI_SETUP: TSF = 403710814 µs[0m
+[0;32mI (230918) TCP_TASK: Full payload sent[0m
+[0;32mI (231888) WIFI_SETUP: TSF = 404710817 µs[0m
+[0;32mI (231918) TCP_TASK: Full payload sent[0m
+[0;32mI (232888) WIFI_SETUP: TSF = 405710814 µs[0m
+[0;32mI (232918) TCP_TASK: Full payload sent[0m
+[0;32mI (233888) WIFI_SETUP: TSF = 406710820 µs[0m
+[0;32mI (233918) TCP_TASK: Full payload sent[0m
+[0;32mI (234888) WIFI_SETUP: TSF = 407710815 µs[0m
+[0;32mI (234918) TCP_TASK: Full payload sent[0m
+[0;32mI (235888) WIFI_SETUP: TSF = 408710821 µs[0m
+[0;32mI (235918) TCP_TASK: Full payload sent[0m
+[0;32mI (236888) WIFI_SETUP: TSF = 409710798 µs[0m
+[0;32mI (236918) TCP_TASK: Full payload sent[0m
+[0;32mI (237888) WIFI_SETUP: TSF = 410710821 µs[0m
+[0;32mI (237918) TCP_TASK: Full payload sent[0m
+[0;32mI (238888) WIFI_SETUP: TSF = 411710817 µs[0m
+[0;32mI (238918) TCP_TASK: Full payload sent[0m
+[0;32mI (239888) WIFI_SETUP: TSF = 412710823 µs[0m
+[0;32mI (239918) TCP_TASK: Full payload sent[0m
+[0;32mI (240888) WIFI_SETUP: TSF = 413710822 µs[0m
+[0;32mI (240918) TCP_TASK: Full payload sent[0m
+[0;32mI (241888) WIFI_SETUP: TSF = 414710823 µs[0m
+[0;32mI (241918) TCP_TASK: Full payload sent[0m
+[0;32mI (242888) WIFI_SETUP: TSF = 415710830 µs[0m
+[0;32mI (242918) TCP_TASK: Full payload sent[0m
+[0;32mI (243888) WIFI_SETUP: TSF = 416710824 µs[0m
+[0;32mI (243918) TCP_TASK: Full payload sent[0m
+[0;32mI (244888) WIFI_SETUP: TSF = 417710829 µs[0m
+[0;32mI (244918) TCP_TASK: Full payload sent[0m
+[0;32mI (245888) WIFI_SETUP: TSF = 418710806 µs[0m
+[0;32mI (245918) TCP_TASK: Full payload sent[0m
+[0;32mI (246888) WIFI_SETUP: TSF = 419710833 µs[0m
+[0;32mI (246918) TCP_TASK: Full payload sent[0m
+[0;32mI (247888) WIFI_SETUP: TSF = 420710825 µs[0m
+[0;32mI (247918) TCP_TASK: Full payload sent[0m
+[0;32mI (248888) WIFI_SETUP: TSF = 421710832 µs[0m
+[0;32mI (248918) TCP_TASK: Full payload sent[0m
+[0;32mI (249888) WIFI_SETUP: TSF = 422710834 µs[0m
+[0;32mI (249918) TCP_TASK: Full payload sent[0m
+[0;32mI (250888) WIFI_SETUP: TSF = 423710831 µs[0m
+[0;32mI (250918) TCP_TASK: Full payload sent[0m
+[0;32mI (251888) WIFI_SETUP: TSF = 424710838 µs[0m
+[0;32mI (251918) TCP_TASK: Full payload sent[0m
+[0;32mI (252888) WIFI_SETUP: TSF = 425710830 µs[0m
+[0;32mI (252918) TCP_TASK: Full payload sent[0m
+[0;32mI (253888) WIFI_SETUP: TSF = 426710838 µs[0m
+[0;32mI (253918) TCP_TASK: Full payload sent[0m
+[0;32mI (254888) WIFI_SETUP: TSF = 427710815 µs[0m
+[0;32mI (254918) TCP_TASK: Full payload sent[0m
+[0;32mI (255888) WIFI_SETUP: TSF = 428710841 µs[0m
+[0;32mI (255918) TCP_TASK: Full payload sent[0m
+[0;32mI (256888) WIFI_SETUP: TSF = 429710834 µs[0m

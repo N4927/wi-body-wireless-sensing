@@ -1,0 +1,1164 @@
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x18ec
+load:0x4086c110,len:0xe5c
+load:0x4086e610,len:0x2f50
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time May 13 2025 16:34:30[0m
+[0;32mI (24) boot: chip revision: v0.1[0m
+[0;32mI (26) boot: efuse block revision: v0.2[0m
+[0;32mI (31) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (36) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=42098020 size=1c34ch (115532) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=0002c374 vaddr=40800000 size=03ca4h ( 15524) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=93198h (602520) map[0m
+[0;32mI (237) esp_image: segment 3: paddr=000c31c0 vaddr=40803ca4 size=15338h ( 86840) load[0m
+[0;32mI (256) esp_image: segment 4: paddr=000d8500 vaddr=40818fe0 size=03b78h ( 15224) load[0m
+[0;32mI (266) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (266) boot: Disabling RNG early entropy source...[0m
+[0;32mI (278) cpu_start: Unicore app[0m
+[0;32mI (286) cpu_start: Pro cpu start user code[0m
+[0;32mI (286) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (287) app_init: Application information:[0m
+[0;32mI (289) app_init: Project name:     wifi_softAP[0m
+[0;32mI (294) app_init: App version:      ac3da05a-dirty[0m
+[0;32mI (300) app_init: Compile time:     May 13 2025 16:32:53[0m
+[0;32mI (306) app_init: ELF file SHA256:  f5ffac533...[0m
+[0;32mI (311) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (316) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (321) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (326) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (331) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (338) heap_init: At 40822090 len 0005A580 (361 KiB): RAM[0m
+[0;32mI (344) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (350) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (357) spi_flash: detected chip: generic[0m
+[0;32mI (361) spi_flash: flash io: dio[0m
+[0;33mW (365) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (378) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (385) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (392) coexist: coex firmware version: cbb41d7[0m
+[0;32mI (406) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (407) main_task: Started on CPU0[0m
+[0;32mI (407) main_task: Calling app_main()[0m
+[0;32mI (417) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (417) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (427) wifi:wifi driver task: 4082b1a4, prio:23, stack:6656, core=0[0m
+[0;32mI (437) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (437) wifi:wifi certification version: v7.0[0m
+[0;32mI (437) wifi:config NVS flash: enabled[0m
+[0;32mI (437) wifi:config nano formating: disabled[0m
+[0;32mI (437) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band:0x1[0m
+[0;32mI (447) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (447) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (457) wifi:Init management short buffer num: 32[0m
+[0;32mI (457) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (467) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (467) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (477) wifi:Init static rx buffer num: 10[0m
+[0;32mI (477) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (477) wifi_init: rx ba win: 6[0m
+[0;32mI (487) wifi_init: accept mbox: 6[0m
+[0;32mI (487) wifi_init: tcpip mbox: 32[0m
+[0;32mI (497) wifi_init: udp mbox: 6[0m
+[0;32mI (497) wifi_init: tcp mbox: 6[0m
+[0;32mI (497) wifi_init: tcp tx win: 5760[0m
+[0;32mI (507) wifi_init: tcp rx win: 5760[0m
+[0;32mI (507) wifi_init: tcp mss: 1440[0m
+[0;32mI (517) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (517) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (527) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (527) phy_init: phy_version 320,348a293,Sep  3 2024,16:33:12[0m
+[0;33mW (577) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+[0;33mW (637) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (637) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (647) wifi:(agc)0x600a7128:0xd204e800, min.avgNF:0xce->0xd2(dB), RCalCount:0x4e, min.RRssi:0x800(-128.00)[0m
+[0;33mW (657) wifi:(TB)WDEV_PWR_TB_MCS0:19[0m
+[0;33mW (657) wifi:(TB)WDEV_PWR_TB_MCS1:19[0m
+[0;33mW (667) wifi:(TB)WDEV_PWR_TB_MCS2:19[0m
+[0;33mW (667) wifi:(TB)WDEV_PWR_TB_MCS3:19[0m
+[0;33mW (667) wifi:(TB)WDEV_PWR_TB_MCS4:19[0m
+[0;33mW (677) wifi:(TB)WDEV_PWR_TB_MCS5:19[0m
+[0;33mW (677) wifi:(TB)WDEV_PWR_TB_MCS6:18[0m
+[0;33mW (677) wifi:(TB)WDEV_PWR_TB_MCS7:18[0m
+[0;33mW (687) wifi:(TB)WDEV_PWR_TB_MCS8:17[0m
+[0;33mW (687) wifi:(TB)WDEV_PWR_TB_MCS9:15[0m
+[0;33mW (687) wifi:(TB)WDEV_PWR_TB_MCS10:15[0m
+[0;33mW (697) wifi:(TB)WDEV_PWR_TB_MCS11:15[0m
+[0;32mI (697) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;33mW (707) wifi:(he)deattach, ap, phymode:11bgn[0m
+[0;32mI (707) wifi:mode : softAP (40:4c:ca:5c:28:dd)[0m
+[0;32mI (717) wifi:Total power save buffer number: 16[0m
+[0;32mI (717) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (717) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (727) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (737) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (737) AP: Soft‑AP avviata: SSID=myssid, chan=1[0m
+[0;32mI (747) AP: TCP server listening on port 3333[0m
+[0;32mI (747) main_task: Returned from app_main()[0m
+[0;32mI (1807) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1807) wifi:(trc)phytype:CBW20-SGI, snr:56, maxRate:0, highestRateIdx:0[0m
+[0;33mW (1807) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (1817) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:56, ampduState:wait operational[0m
+[0;32mI (1827) wifi:ifidx:1, rssi:-41, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (1837) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (1847) wifi:station: f0:f5:bd:07:01:00 join, AID=1, bgn, 20[0m
+[0;32mI (1867) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1867) wifi:(trc)phytype:CBW20-SGI, snr:63, maxRate:0, highestRateIdx:0[0m
+[0;33mW (1867) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (1877) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:63, ampduState:wait operational[0m
+[0;32mI (1887) wifi:ifidx:1, rssi:-34, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (1897) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (1907) wifi:station: f0:f5:bd:07:05:50 join, AID=2, bgn, 20[0m
+[0;32mI (1917) AP: STA f0:f5:bd:07:01:00 joined, AID=1[0m
+[0;32mI (1957) AP: STA f0:f5:bd:07:05:50 joined, AID=2[0m
+[0;33mW (1987) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (2007) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (2017) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;33mW (2027) wifi:<ba-add>idx:7, ifx:1, tid:0, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;32mI (2037) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (2057) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.3[0m
+[0;32mI (3047) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (3047) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (3057) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (3067) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (4667) AP: STA f0:f5:bd:07:01:00 left, AID=1, reason=2[0m
+[0;32mI (4667) wifi:starting SA query procedure with STA(f0:f5:bd:07:01:00)[0m
+[0;32mI (4667) wifi:Send SA Query req with transaction id 7580[0m
+[0;32mI (4727) AP: STA f0:f5:bd:07:05:50 left, AID=2, reason=2[0m
+[0;32mI (4727) wifi:starting SA query procedure with STA(f0:f5:bd:07:05:50)[0m
+[0;32mI (4727) wifi:Send SA Query req with transaction id 50d1[0m
+[0;32mI (4867) wifi:Send SA Query req with transaction id 7581[0m
+[0;32mI (4927) wifi:Send SA Query req with transaction id 50d2[0m
+[0;32mI (5067) wifi:Send SA Query req with transaction id 7582[0m
+[0;32mI (5127) wifi:Send SA Query req with transaction id 50d3[0m
+[0;32mI (5267) wifi:Send SA Query req with transaction id 7583[0m
+[0;32mI (5327) wifi:Send SA Query req with transaction id 50d4[0m
+[0;32mI (5467) wifi:Send SA Query req with transaction id 7584[0m
+[0;32mI (5527) wifi:Send SA Query req with transaction id 50d5[0m
+[0;32mI (5667) wifi:Send SA Query req with transaction id 7585[0m
+[0;32mI (5687) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (5687) wifi:station: f0:f5:bd:07:01:00 leave, AID = 1, reason = 209, bss_flags is 691299, bss:0x408242c0[0m
+[0;32mI (5697) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (5707) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (5707) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (5707) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (5717) AP: STA f0:f5:bd:07:01:00 left, AID=1, reason=209[0m
+[0;32mI (5727) wifi:Send SA Query req with transaction id 50d6[0m
+[0;32mI (5747) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (5757) wifi:station: f0:f5:bd:07:05:50 leave, AID = 2, reason = 209, bss_flags is 691299, bss:0x40824e04[0m
+[0;32mI (5757) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (5767) wifi:<ba-del>idx:7, tid:0[0m
+[0;32mI (5767) AP: STA f0:f5:bd:07:05:50 left, AID=2, reason=209[0m
+[0;32mI (6317) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (6317) wifi:(trc)phytype:CBW20-SGI, snr:56, maxRate:0, highestRateIdx:0[0m
+[0;33mW (6317) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (6327) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:56, ampduState:wait operational[0m
+[0;32mI (6337) wifi:ifidx:1, rssi:-41, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (6347) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (6357) wifi:station: f0:f5:bd:07:01:00 join, AID=1, bgn, 20[0m
+[0;32mI (6377) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (6377) wifi:(trc)phytype:CBW20-SGI, snr:64, maxRate:0, highestRateIdx:0[0m
+[0;33mW (6377) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (6387) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:64, ampduState:wait operational[0m
+[0;32mI (6397) wifi:ifidx:1, rssi:-33, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (6407) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (6417) wifi:station: f0:f5:bd:07:05:50 join, AID=2, bgn, 20[0m
+[0;32mI (6437) AP: STA f0:f5:bd:07:01:00 joined, AID=1[0m
+[0;32mI (6467) AP: STA f0:f5:bd:07:05:50 joined, AID=2[0m
+[0;33mW (6497) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (6517) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (6527) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;33mW (6537) wifi:<ba-add>idx:7, ifx:1, tid:0, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;32mI (6547) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (6577) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.3[0m
+[0;32mI (7557) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (7567) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (7577) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:4, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (7587) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (9237) AP: STA f0:f5:bd:07:01:00 left, AID=1, reason=2[0m
+[0;32mI (9237) AP: STA f0:f5:bd:07:05:50 left, AID=2, reason=2[0m
+[0;32mI (9237) wifi:starting SA query procedure with STA(f0:f5:bd:07:01:00)[0m
+[0;32mI (9237) wifi:Send SA Query req with transaction id a7be[0m
+[0;32mI (9247) wifi:starting SA query procedure with STA(f0:f5:bd:07:05:50)[0m
+[0;32mI (9247) wifi:Send SA Query req with transaction id 5fb9[0m
+[0;32mI (9437) wifi:Send SA Query req with transaction id a7bf[0m
+[0;32mI (9447) wifi:Send SA Query req with transaction id 5fba[0m
+[0;32mI (9637) wifi:Send SA Query req with transaction id a7c0[0m
+[0;32mI (9647) wifi:Send SA Query req with transaction id 5fbb[0m
+[0;32mI (9837) wifi:Send SA Query req with transaction id a7c1[0m
+[0;32mI (9847) wifi:Send SA Query req with transaction id 5fbc[0m
+[0;32mI (10037) wifi:Send SA Query req with transaction id a7c2[0m
+[0;32mI (10047) wifi:Send SA Query req with transaction id 5fbd[0m
+[0;32mI (10237) wifi:Send SA Query req with transaction id a7c3[0m
+[0;32mI (10247) wifi:Send SA Query req with transaction id 5fbe[0m
+[0;32mI (10267) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (10267) wifi:station: f0:f5:bd:07:01:00 leave, AID = 1, reason = 209, bss_flags is 691299, bss:0x408242c0[0m
+[0;32mI (10267) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (10277) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (10277) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (10287) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (10287) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (10297) AP: STA f0:f5:bd:07:01:00 left, AID=1, reason=209[0m
+[0;32mI (10297) wifi:station: f0:f5:bd:07:05:50 leave, AID = 2, reason = 209, bss_flags is 691299, bss:0x40824e04[0m
+[0;32mI (10307) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (10317) wifi:<ba-del>idx:7, tid:0[0m
+[0;32mI (10327) AP: STA f0:f5:bd:07:05:50 left, AID=2, reason=209[0m
+[0;32mI (10887) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (10887) wifi:(trc)phytype:CBW20-SGI, snr:56, maxRate:0, highestRateIdx:0[0m
+[0;33mW (10887) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (10897) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:56, ampduState:wait operational[0m
+[0;32mI (10907) wifi:ifidx:1, rssi:-41, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (10917) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (10927) wifi:station: f0:f5:bd:07:01:00 join, AID=1, bgn, 20[0m
+[0;32mI (10937) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (10937) wifi:(trc)phytype:CBW20-SGI, snr:63, maxRate:0, highestRateIdx:0[0m
+[0;33mW (10947) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (10957) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:63, ampduState:wait operational[0m
+[0;32mI (10967) wifi:ifidx:1, rssi:-34, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (10977) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (10987) wifi:station: f0:f5:bd:07:05:50 join, AID=2, bgn, 20[0m
+[0;32mI (11007) AP: STA f0:f5:bd:07:01:00 joined, AID=1[0m
+[0;32mI (11037) AP: STA f0:f5:bd:07:05:50 joined, AID=2[0m
+[0;33mW (11077) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (11087) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (11097) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;33mW (11107) wifi:<ba-add>idx:7, ifx:1, tid:0, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;32mI (11127) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (11147) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.3[0m
+[0;32mI (12127) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:5, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (12137) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (12157) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:6, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (12167) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (13777) AP: STA f0:f5:bd:07:05:50 left, AID=2, reason=2[0m
+[0;32mI (13777) wifi:starting SA query procedure with STA(f0:f5:bd:07:05:50)[0m
+[0;32mI (13777) wifi:Send SA Query req with transaction id 18[0m
+[0;32mI (13797) AP: STA f0:f5:bd:07:01:00 left, AID=1, reason=2[0m
+[0;32mI (13797) wifi:starting SA query procedure with STA(f0:f5:bd:07:01:00)[0m
+[0;32mI (13797) wifi:Send SA Query req with transaction id 57c9[0m
+[0;32mI (13977) wifi:Send SA Query req with transaction id 19[0m
+[0;32mI (13997) wifi:Send SA Query req with transaction id 57ca[0m
+[0;32mI (14177) wifi:Send SA Query req with transaction id 1a[0m
+[0;32mI (14197) wifi:Send SA Query req with transaction id 57cb[0m
+[0;32mI (14377) wifi:Send SA Query req with transaction id 1b[0m
+[0;32mI (14397) wifi:Send SA Query req with transaction id 57cc[0m
+[0;32mI (14577) wifi:Send SA Query req with transaction id 1c[0m
+[0;32mI (14597) wifi:Send SA Query req with transaction id 57cd[0m
+[0;32mI (14777) wifi:Send SA Query req with transaction id 1d[0m
+[0;32mI (14797) wifi:Send SA Query req with transaction id 57ce[0m
+[0;32mI (14807) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (14807) wifi:station: f0:f5:bd:07:05:50 leave, AID = 2, reason = 209, bss_flags is 691299, bss:0x40824e04[0m
+[0;32mI (14807) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (14817) wifi:<ba-del>idx:7, tid:0[0m
+[0;32mI (14817) AP: STA f0:f5:bd:07:05:50 left, AID=2, reason=209[0m
+[0;32mI (14827) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (14837) wifi:station: f0:f5:bd:07:01:00 leave, AID = 1, reason = 209, bss_flags is 691299, bss:0x4083a13c[0m
+[0;32mI (14847) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (14857) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (14857) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (14857) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (14867) AP: STA f0:f5:bd:07:01:00 left, AID=1, reason=209[0m
+[0;32mI (15427) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (15427) wifi:(trc)phytype:CBW20-SGI, snr:64, maxRate:0, highestRateIdx:0[0m
+[0;33mW (15427) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (15437) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:64, ampduState:wait operational[0m
+[0;32mI (15447) wifi:ifidx:1, rssi:-33, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (15457) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (15467) wifi:station: f0:f5:bd:07:05:50 join, AID=2, bgn, 20[0m
+[0;32mI (15477) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (15477) wifi:(trc)phytype:CBW20-SGI, snr:53, maxRate:0, highestRateIdx:0[0m
+[0;33mW (15487) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (15497) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:53, ampduState:wait operational[0m
+[0;32mI (15507) wifi:ifidx:1, rssi:-44, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (15517) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (15527) wifi:station: f0:f5:bd:07:01:00 join, AID=1, bgn, 20[0m
+[0;32mI (15547) AP: STA f0:f5:bd:07:05:50 joined, AID=2[0m
+[0;32mI (15577) AP: STA f0:f5:bd:07:01:00 joined, AID=1[0m
+[0;33mW (15617) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (15627) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (15637) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;33mW (15647) wifi:<ba-add>idx:7, ifx:1, tid:0, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;32mI (15657) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.3[0m
+[0;32mI (15677) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (16667) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:7, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (16677) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (16687) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:8, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (16697) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (18327) AP: STA f0:f5:bd:07:05:50 left, AID=2, reason=2[0m
+[0;32mI (18337) wifi:starting SA query procedure with STA(f0:f5:bd:07:05:50)[0m
+[0;32mI (18337) wifi:Send SA Query req with transaction id 2e42[0m
+[0;32mI (18347) AP: STA f0:f5:bd:07:01:00 left, AID=1, reason=2[0m
+[0;32mI (18347) wifi:starting SA query procedure with STA(f0:f5:bd:07:01:00)[0m
+[0;32mI (18347) wifi:Send SA Query req with transaction id f03f[0m
+[0;32mI (18537) wifi:Send SA Query req with transaction id 2e43[0m
+[0;32mI (18547) wifi:Send SA Query req with transaction id f040[0m
+[0;32mI (18737) wifi:Send SA Query req with transaction id 2e44[0m
+[0;32mI (18747) wifi:Send SA Query req with transaction id f041[0m
+[0;32mI (18937) wifi:Send SA Query req with transaction id 2e45[0m
+[0;32mI (18947) wifi:Send SA Query req with transaction id f042[0m
+[0;32mI (19137) wifi:Send SA Query req with transaction id 2e46[0m
+[0;32mI (19147) wifi:Send SA Query req with transaction id f043[0m
+[0;32mI (19337) wifi:Send SA Query req with transaction id 2e47[0m
+[0;32mI (19347) wifi:Send SA Query req with transaction id f044[0m
+[0;32mI (19357) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (19357) wifi:station: f0:f5:bd:07:05:50 leave, AID = 2, reason = 209, bss_flags is 691299, bss:0x40824e04[0m
+[0;32mI (19367) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (19377) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (19377) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (19377) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (19387) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (19397) AP: STA f0:f5:bd:07:05:50 left, AID=2, reason=209[0m
+[0;32mI (19397) wifi:station: f0:f5:bd:07:01:00 leave, AID = 1, reason = 209, bss_flags is 691299, bss:0x4083c638[0m
+[0;32mI (19407) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (19417) wifi:<ba-del>idx:7, tid:0[0m
+[0;32mI (19417) AP: STA f0:f5:bd:07:01:00 left, AID=1, reason=209[0m
+[0;32mI (19987) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (19987) wifi:(trc)phytype:CBW20-SGI, snr:62, maxRate:0, highestRateIdx:0[0m
+[0;33mW (19987) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (19997) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:62, ampduState:wait operational[0m
+[0;32mI (20007) wifi:ifidx:1, rssi:-35, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (20017) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (20027) wifi:station: f0:f5:bd:07:05:50 join, AID=2, bgn, 20[0m
+[0;32mI (20027) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (20037) wifi:(trc)phytype:CBW20-SGI, snr:54, maxRate:0, highestRateIdx:0[0m
+[0;33mW (20047) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (20047) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:54, ampduState:wait operational[0m
+[0;32mI (20067) wifi:ifidx:1, rssi:-43, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (20077) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (20077) wifi:station: f0:f5:bd:07:01:00 join, AID=1, bgn, 20[0m
+[0;32mI (20097) AP: STA f0:f5:bd:07:05:50 joined, AID=2[0m
+[0;32mI (20137) AP: STA f0:f5:bd:07:01:00 joined, AID=1[0m
+[0;33mW (20167) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (20167) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (20177) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;33mW (20207) wifi:<ba-add>idx:7, ifx:1, tid:0, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;32mI (20217) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.3[0m
+[0;32mI (20247) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (21177) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:9, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (21197) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (21237) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:10, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (21257) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;31mE (21267) AP: accept errno 23[0m
+[0;32mI (22807) AP: STA f0:f5:bd:07:05:50 left, AID=2, reason=2[0m
+[0;32mI (22807) wifi:starting SA query procedure with STA(f0:f5:bd:07:05:50)[0m
+[0;32mI (22807) wifi:Send SA Query req with transaction id 55fb[0m
+[0;32mI (22867) AP: STA f0:f5:bd:07:01:00 left, AID=1, reason=2[0m
+[0;32mI (22867) wifi:starting SA query procedure with STA(f0:f5:bd:07:01:00)[0m
+[0;32mI (22867) wifi:Send SA Query req with transaction id 1375[0m
+[0;32mI (23007) wifi:Send SA Query req with transaction id 55fc[0m
+[0;32mI (23067) wifi:Send SA Query req with transaction id 1376[0m
+[0;32mI (23207) wifi:Send SA Query req with transaction id 55fd[0m
+[0;32mI (23267) wifi:Send SA Query req with transaction id 1377[0m
+[0;32mI (23407) wifi:Send SA Query req with transaction id 55fe[0m
+[0;32mI (23467) wifi:Send SA Query req with transaction id 1378[0m
+[0;32mI (23607) wifi:Send SA Query req with transaction id 55ff[0m
+[0;32mI (23667) wifi:Send SA Query req with transaction id 1379[0m
+[0;32mI (23807) wifi:Send SA Query req with transaction id 5600[0m
+[0;32mI (23837) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (23837) wifi:station: f0:f5:bd:07:05:50 leave, AID = 2, reason = 209, bss_flags is 691299, bss:0x4083ec00[0m
+[0;32mI (23837) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (23847) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (23847) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (23857) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (23857) AP: STA f0:f5:bd:07:05:50 left, AID=2, reason=209[0m
+[0;32mI (23867) wifi:Send SA Query req with transaction id 137a[0m
+[0;32mI (23887) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (23897) wifi:station: f0:f5:bd:07:01:00 leave, AID = 1, reason = 209, bss_flags is 691299, bss:0x40824e04[0m
+[0;32mI (23897) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (23907) wifi:<ba-del>idx:7, tid:0[0m
+[0;32mI (23907) AP: STA f0:f5:bd:07:01:00 left, AID=1, reason=209[0m
+[0;32mI (24457) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (24457) wifi:(trc)phytype:CBW20-SGI, snr:62, maxRate:0, highestRateIdx:0[0m
+[0;33mW (24457) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (24467) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:62, ampduState:wait operational[0m
+[0;32mI (24477) wifi:ifidx:1, rssi:-34, nf:-96, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (24487) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (24497) wifi:station: f0:f5:bd:07:05:50 join, AID=2, bgn, 20[0m
+[0;32mI (24517) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (24517) wifi:(trc)phytype:CBW20-SGI, snr:57, maxRate:0, highestRateIdx:0[0m
+[0;33mW (24517) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (24527) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:57, ampduState:wait operational[0m
+[0;32mI (24537) wifi:ifidx:1, rssi:-39, nf:-96, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (24547) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (24557) wifi:station: f0:f5:bd:07:01:00 join, AID=1, bgn, 20[0m
+[0;32mI (24577) AP: STA f0:f5:bd:07:05:50 joined, AID=2[0m
+[0;32mI (24617) AP: STA f0:f5:bd:07:01:00 joined, AID=1[0m
+[0;33mW (24647) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (24657) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (24667) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;33mW (24687) wifi:<ba-add>idx:7, ifx:1, tid:0, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;32mI (24697) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.3[0m
+[0;32mI (24717) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (25697) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:11, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (25697) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:12, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (25707) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (25717) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;31mE (25727) AP: accept errno 23[0m
+[0;31mE (26947) AP: accept errno 23[0m
+[0;32mI (27357) AP: STA f0:f5:bd:07:01:00 left, AID=1, reason=2[0m
+[0;32mI (27367) wifi:starting SA query procedure with STA(f0:f5:bd:07:01:00)[0m
+[0;32mI (27367) wifi:Send SA Query req with transaction id 5ef4[0m
+[0;32mI (27567) wifi:Send SA Query req with transaction id 5ef5[0m
+[0;32mI (27767) wifi:Send SA Query req with transaction id 5ef6[0m
+[0;32mI (27967) wifi:Send SA Query req with transaction id 5ef7[0m
+[0;32mI (28167) wifi:Send SA Query req with transaction id 5ef8[0m
+[0;32mI (28367) wifi:Send SA Query req with transaction id 5ef9[0m
+[0;32mI (28387) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (28387) wifi:station: f0:f5:bd:07:01:00 leave, AID = 1, reason = 209, bss_flags is 691299, bss:0x408405ec[0m
+[0;32mI (28397) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (28407) wifi:<ba-del>idx:7, tid:0[0m
+[0;32mI (28407) AP: STA f0:f5:bd:07:01:00 left, AID=1, reason=209[0m
+[0;32mI (28547) AP: STA f0:f5:bd:07:05:50 left, AID=2, reason=2[0m
+[0;32mI (28547) wifi:starting SA query procedure with STA(f0:f5:bd:07:05:50)[0m
+[0;32mI (28547) wifi:Send SA Query req with transaction id 2a07[0m
+[0;32mI (28747) wifi:Send SA Query req with transaction id 2a08[0m
+[0;32mI (28947) wifi:Send SA Query req with transaction id 2a09[0m
+[0;32mI (29017) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (29017) wifi:(trc)phytype:CBW20-SGI, snr:56, maxRate:0, highestRateIdx:0[0m
+[0;33mW (29017) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (29027) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:56, ampduState:wait operational[0m
+[0;32mI (29037) wifi:ifidx:1, rssi:-40, nf:-96, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (29047) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (29057) wifi:station: f0:f5:bd:07:01:00 join, AID=1, bgn, 20[0m
+[0;32mI (29107) AP: STA f0:f5:bd:07:01:00 joined, AID=1[0m
+[0;32mI (29147) wifi:Send SA Query req with transaction id 2a0a[0m
+[0;33mW (29177) wifi:<ba-add>idx:7, ifx:1, tid:0, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;32mI (29217) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (29347) wifi:Send SA Query req with transaction id 2a0b[0m
+[0;32mI (29547) wifi:Send SA Query req with transaction id 2a0c[0m
+[0;32mI (29577) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (29577) wifi:station: f0:f5:bd:07:05:50 leave, AID = 2, reason = 209, bss_flags is 691299, bss:0x408400f8[0m
+[0;32mI (29577) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (29587) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (29587) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (29597) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (29597) AP: STA f0:f5:bd:07:05:50 left, AID=2, reason=209[0m
+[0;32mI (30197) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (30197) wifi:(trc)phytype:CBW20-SGI, snr:60, maxRate:0, highestRateIdx:0[0m
+[0;33mW (30197) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (30207) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:60, ampduState:wait operational[0m
+[0;32mI (30217) wifi:ifidx:1, rssi:-36, nf:-96, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (30227) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (30237) wifi:station: f0:f5:bd:07:05:50 join, AID=2, bgn, 20[0m
+[0;32mI (30247) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:13, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (30257) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;31mE (30267) AP: accept errno 23[0m
+[0;32mI (30287) AP: STA f0:f5:bd:07:05:50 joined, AID=2[0m
+[0;33mW (30367) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (30377) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (30387) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (30407) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.3[0m
+[0;32mI (31417) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:14, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (31427) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;31mE (31427) AP: accept errno 23[0m
+[0;32mI (31867) AP: STA f0:f5:bd:07:01:00 left, AID=1, reason=2[0m
+[0;32mI (31867) wifi:starting SA query procedure with STA(f0:f5:bd:07:01:00)[0m
+[0;32mI (31867) wifi:Send SA Query req with transaction id 7a96[0m
+[0;32mI (32067) wifi:Send SA Query req with transaction id 7a97[0m
+[0;32mI (32267) wifi:Send SA Query req with transaction id 7a98[0m
+[0;32mI (32467) wifi:Send SA Query req with transaction id 7a99[0m
+[0;32mI (32667) wifi:Send SA Query req with transaction id 7a9a[0m
+[0;32mI (32867) wifi:Send SA Query req with transaction id 7a9b[0m
+[0;32mI (32897) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (32897) wifi:station: f0:f5:bd:07:01:00 leave, AID = 1, reason = 209, bss_flags is 691299, bss:0x408405ec[0m
+[0;32mI (32897) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (32907) wifi:<ba-del>idx:7, tid:0[0m
+[0;32mI (32907) AP: STA f0:f5:bd:07:01:00 left, AID=1, reason=209[0m
+[0;32mI (33087) AP: STA f0:f5:bd:07:05:50 left, AID=2, reason=2[0m
+[0;32mI (33087) wifi:starting SA query procedure with STA(f0:f5:bd:07:05:50)[0m
+[0;32mI (33087) wifi:Send SA Query req with transaction id 4c94[0m
+[0;32mI (33287) wifi:Send SA Query req with transaction id 4c95[0m
+[0;32mI (33487) wifi:Send SA Query req with transaction id 4c96[0m
+[0;32mI (33517) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (33517) wifi:(trc)phytype:CBW20-SGI, snr:55, maxRate:0, highestRateIdx:0[0m
+[0;33mW (33517) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (33527) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:55, ampduState:wait operational[0m
+[0;32mI (33537) wifi:ifidx:1, rssi:-41, nf:-96, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (33547) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (33557) wifi:station: f0:f5:bd:07:01:00 join, AID=1, bgn, 20[0m
+[0;32mI (33617) AP: STA f0:f5:bd:07:01:00 joined, AID=1[0m
+[0;33mW (33687) wifi:<ba-add>idx:7, ifx:1, tid:0, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;32mI (33687) wifi:Send SA Query req with transaction id 4c97[0m
+[0;32mI (33727) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (33887) wifi:Send SA Query req with transaction id 4c98[0m
+[0;32mI (34087) wifi:Send SA Query req with transaction id 4c99[0m
+[0;32mI (34117) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (34117) wifi:station: f0:f5:bd:07:05:50 leave, AID = 2, reason = 209, bss_flags is 691299, bss:0x40840ae0[0m
+[0;32mI (34117) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (34127) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (34127) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (34137) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (34137) AP: STA f0:f5:bd:07:05:50 left, AID=2, reason=209[0m
+[0;32mI (34727) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:15, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (34737) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (34737) wifi:(trc)phytype:CBW20-SGI, snr:60, maxRate:0, highestRateIdx:0[0m
+[0;33mW (34737) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (34747) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:60, ampduState:wait operational[0m
+[0;32mI (34757) wifi:ifidx:1, rssi:-36, nf:-96, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (34767) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (34777) wifi:station: f0:f5:bd:07:05:50 join, AID=2, bgn, 20[0m
+[0;32mI (34787) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;31mE (34797) AP: accept errno 23[0m
+[0;32mI (34837) AP: STA f0:f5:bd:07:05:50 joined, AID=2[0m
+[0;33mW (34907) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (34907) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (34917) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (34947) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.3[0m
+[0;32mI (35927) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:16, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (35937) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;31mE (35937) AP: accept errno 23[0m
+[0;32mI (36397) AP: STA f0:f5:bd:07:01:00 left, AID=1, reason=2[0m
+[0;32mI (36397) wifi:starting SA query procedure with STA(f0:f5:bd:07:01:00)[0m
+[0;32mI (36397) wifi:Send SA Query req with transaction id 2afc[0m
+[0;32mI (36597) wifi:Send SA Query req with transaction id 2afd[0m
+[0;32mI (36797) wifi:Send SA Query req with transaction id 2afe[0m
+[0;32mI (36997) wifi:Send SA Query req with transaction id 2aff[0m
+[0;32mI (37197) wifi:Send SA Query req with transaction id 2b00[0m
+[0;32mI (37397) wifi:Send SA Query req with transaction id 2b01[0m
+[0;32mI (37427) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (37427) wifi:station: f0:f5:bd:07:01:00 leave, AID = 1, reason = 209, bss_flags is 691299, bss:0x408400f8[0m
+[0;32mI (37427) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (37437) wifi:<ba-del>idx:7, tid:0[0m
+[0;32mI (37447) AP: STA f0:f5:bd:07:01:00 left, AID=1, reason=209[0m
+[0;32mI (37547) AP: STA f0:f5:bd:07:05:50 left, AID=2, reason=2[0m
+[0;32mI (37547) wifi:starting SA query procedure with STA(f0:f5:bd:07:05:50)[0m
+[0;32mI (37547) wifi:Send SA Query req with transaction id d86d[0m
+[0;32mI (37747) wifi:Send SA Query req with transaction id d86e[0m
+[0;32mI (37947) wifi:Send SA Query req with transaction id d86f[0m
+[0;32mI (38047) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (38047) wifi:(trc)phytype:CBW20-SGI, snr:49, maxRate:0, highestRateIdx:0[0m
+[0;33mW (38047) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (38057) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:49, ampduState:wait operational[0m
+[0;32mI (38067) wifi:ifidx:1, rssi:-48, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (38077) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (38087) wifi:station: f0:f5:bd:07:01:00 join, AID=1, bgn, 20[0m
+[0;32mI (38147) AP: STA f0:f5:bd:07:01:00 joined, AID=1[0m
+[0;32mI (38147) wifi:Send SA Query req with transaction id d870[0m
+[0;33mW (38217) wifi:<ba-add>idx:7, ifx:1, tid:0, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;32mI (38247) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (38347) wifi:Send SA Query req with transaction id d871[0m
+[0;32mI (38547) wifi:Send SA Query req with transaction id d872[0m
+[0;32mI (38577) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (38577) wifi:station: f0:f5:bd:07:05:50 leave, AID = 2, reason = 209, bss_flags is 691299, bss:0x408405ec[0m
+[0;32mI (38577) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (38587) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (38587) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (38597) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (38597) AP: STA f0:f5:bd:07:05:50 left, AID=2, reason=209[0m
+[0;32mI (39197) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (39197) wifi:(trc)phytype:CBW20-SGI, snr:60, maxRate:0, highestRateIdx:0[0m
+[0;33mW (39197) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (39207) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:60, ampduState:wait operational[0m
+[0;32mI (39217) wifi:ifidx:1, rssi:-37, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (39227) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (39237) wifi:station: f0:f5:bd:07:05:50 join, AID=2, bgn, 20[0m
+[0;32mI (39257) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:17, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (39267) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;31mE (39267) AP: accept errno 23[0m
+[0;32mI (39297) AP: STA f0:f5:bd:07:05:50 joined, AID=2[0m
+[0;33mW (39367) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (39367) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (39377) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (39407) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.3[0m
+[0;32mI (40417) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:18, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (40427) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;31mE (40427) AP: accept errno 23[0m
+[0;32mI (40907) AP: STA f0:f5:bd:07:01:00 left, AID=1, reason=2[0m
+[0;32mI (40907) wifi:starting SA query procedure with STA(f0:f5:bd:07:01:00)[0m
+[0;32mI (40907) wifi:Send SA Query req with transaction id c5a8[0m
+[0;32mI (41107) wifi:Send SA Query req with transaction id c5a9[0m
+[0;32mI (41307) wifi:Send SA Query req with transaction id c5aa[0m
+[0;32mI (41507) wifi:Send SA Query req with transaction id c5ab[0m
+[0;32mI (41707) wifi:Send SA Query req with transaction id c5ac[0m
+[0;32mI (41907) wifi:Send SA Query req with transaction id c5ad[0m
+[0;32mI (41937) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (41937) wifi:station: f0:f5:bd:07:01:00 leave, AID = 1, reason = 209, bss_flags is 691299, bss:0x40840ae0[0m
+[0;32mI (41937) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (41947) wifi:<ba-del>idx:7, tid:0[0m
+[0;32mI (41947) AP: STA f0:f5:bd:07:01:00 left, AID=1, reason=209[0m
+[0;32mI (42077) AP: STA f0:f5:bd:07:05:50 left, AID=2, reason=2[0m
+[0;32mI (42077) wifi:starting SA query procedure with STA(f0:f5:bd:07:05:50)[0m
+[0;32mI (42077) wifi:Send SA Query req with transaction id fa5[0m
+[0;32mI (42277) wifi:Send SA Query req with transaction id fa6[0m
+[0;32mI (42477) wifi:Send SA Query req with transaction id fa7[0m
+[0;32mI (42557) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (42557) wifi:(trc)phytype:CBW20-SGI, snr:46, maxRate:0, highestRateIdx:0[0m
+[0;33mW (42557) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (42567) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:46, ampduState:wait operational[0m
+[0;32mI (42577) wifi:ifidx:1, rssi:-51, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (42587) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (42597) wifi:station: f0:f5:bd:07:01:00 join, AID=1, bgn, 20[0m
+[0;32mI (42657) AP: STA f0:f5:bd:07:01:00 joined, AID=1[0m
+[0;32mI (42677) wifi:Send SA Query req with transaction id fa8[0m
+[0;33mW (42727) wifi:<ba-add>idx:7, ifx:1, tid:0, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;32mI (42767) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (42877) wifi:Send SA Query req with transaction id fa9[0m
+[0;32mI (43077) wifi:Send SA Query req with transaction id faa[0m
+[0;32mI (43107) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (43107) wifi:station: f0:f5:bd:07:05:50 leave, AID = 2, reason = 209, bss_flags is 691299, bss:0x408400f8[0m
+[0;32mI (43107) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (43117) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (43117) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (43127) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (43127) AP: STA f0:f5:bd:07:05:50 left, AID=2, reason=209[0m
+[0;32mI (43727) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (43727) wifi:(trc)phytype:CBW20-SGI, snr:59, maxRate:0, highestRateIdx:0[0m
+[0;33mW (43727) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (43737) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:59, ampduState:wait operational[0m
+[0;32mI (43747) wifi:ifidx:1, rssi:-38, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (43757) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (43767) wifi:station: f0:f5:bd:07:05:50 join, AID=2, bgn, 20[0m
+[0;32mI (43777) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:19, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (43787) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;31mE (43797) AP: accept errno 23[0m
+[0;32mI (43827) AP: STA f0:f5:bd:07:05:50 joined, AID=2[0m
+[0;33mW (43897) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (43907) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (43917) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (43947) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.3[0m
+[0;32mI (44947) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:20, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (44957) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;31mE (44957) AP: accept errno 23[0m
+[0;32mI (45397) AP: STA f0:f5:bd:07:01:00 left, AID=1, reason=2[0m
+[0;32mI (45397) wifi:starting SA query procedure with STA(f0:f5:bd:07:01:00)[0m
+[0;32mI (45397) wifi:Send SA Query req with transaction id df81[0m
+[0;32mI (45597) wifi:Send SA Query req with transaction id df82[0m
+[0;32mI (45797) wifi:Send SA Query req with transaction id df83[0m
+[0;32mI (45997) wifi:Send SA Query req with transaction id df84[0m
+[0;32mI (46197) wifi:Send SA Query req with transaction id df85[0m
+[0;32mI (46397) wifi:Send SA Query req with transaction id df86[0m
+[0;32mI (46427) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (46427) wifi:station: f0:f5:bd:07:01:00 leave, AID = 1, reason = 209, bss_flags is 691299, bss:0x408405ec[0m
+[0;32mI (46427) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (46437) wifi:<ba-del>idx:7, tid:0[0m
+[0;32mI (46437) AP: STA f0:f5:bd:07:01:00 left, AID=1, reason=209[0m
+[0;32mI (46567) AP: STA f0:f5:bd:07:05:50 left, AID=2, reason=2[0m
+[0;32mI (46567) wifi:starting SA query procedure with STA(f0:f5:bd:07:05:50)[0m
+[0;32mI (46567) wifi:Send SA Query req with transaction id e21d[0m
+[0;32mI (46767) wifi:Send SA Query req with transaction id e21e[0m
+[0;32mI (46967) wifi:Send SA Query req with transaction id e21f[0m
+[0;32mI (47047) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (47047) wifi:(trc)phytype:CBW20-SGI, snr:54, maxRate:0, highestRateIdx:0[0m
+[0;33mW (47057) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (47057) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:54, ampduState:wait operational[0m
+[0;32mI (47077) wifi:ifidx:1, rssi:-43, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (47087) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (47087) wifi:station: f0:f5:bd:07:01:00 join, AID=1, bgn, 20[0m
+[0;32mI (47147) AP: STA f0:f5:bd:07:01:00 joined, AID=1[0m
+[0;32mI (47167) wifi:Send SA Query req with transaction id e220[0m
+[0;33mW (47217) wifi:<ba-add>idx:7, ifx:1, tid:0, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;32mI (47257) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (47367) wifi:Send SA Query req with transaction id e221[0m
+[0;32mI (47567) wifi:Send SA Query req with transaction id e222[0m
+[0;32mI (47597) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (47597) wifi:station: f0:f5:bd:07:05:50 leave, AID = 2, reason = 209, bss_flags is 691299, bss:0x40840ae0[0m
+[0;32mI (47597) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (47607) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (47607) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (47617) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (47617) AP: STA f0:f5:bd:07:05:50 left, AID=2, reason=209[0m
+[0;32mI (48217) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (48217) wifi:(trc)phytype:CBW20-SGI, snr:60, maxRate:0, highestRateIdx:0[0m
+[0;33mW (48217) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (48227) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:60, ampduState:wait operational[0m
+[0;32mI (48237) wifi:ifidx:1, rssi:-37, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (48247) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (48257) wifi:station: f0:f5:bd:07:05:50 join, AID=2, bgn, 20[0m
+[0;32mI (48267) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:21, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (48277) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;31mE (48287) AP: accept errno 23[0m
+[0;32mI (48307) AP: STA f0:f5:bd:07:05:50 joined, AID=2[0m
+[0;33mW (48377) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (48397) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (48407) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (48427) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.3[0m
+[0;32mI (49437) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:22, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (49447) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;31mE (49457) AP: accept errno 23[0m
+[0;32mI (49927) AP: STA f0:f5:bd:07:01:00 left, AID=1, reason=2[0m
+[0;32mI (49927) wifi:starting SA query procedure with STA(f0:f5:bd:07:01:00)[0m
+[0;32mI (49927) wifi:Send SA Query req with transaction id e515[0m
+[0;32mI (50127) wifi:Send SA Query req with transaction id e516[0m
+[0;32mI (50327) wifi:Send SA Query req with transaction id e517[0m
+[0;32mI (50527) wifi:Send SA Query req with transaction id e518[0m
+[0;32mI (50727) wifi:Send SA Query req with transaction id e519[0m
+[0;32mI (50927) wifi:Send SA Query req with transaction id e51a[0m
+[0;32mI (50957) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (50957) wifi:station: f0:f5:bd:07:01:00 leave, AID = 1, reason = 209, bss_flags is 691299, bss:0x408400f8[0m
+[0;32mI (50957) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (50967) wifi:<ba-del>idx:7, tid:0[0m
+[0;32mI (50967) AP: STA f0:f5:bd:07:01:00 left, AID=1, reason=209[0m
+[0;32mI (51107) AP: STA f0:f5:bd:07:05:50 left, AID=2, reason=2[0m
+[0;32mI (51117) wifi:starting SA query procedure with STA(f0:f5:bd:07:05:50)[0m
+[0;32mI (51117) wifi:Send SA Query req with transaction id d005[0m
+[0;32mI (51317) wifi:Send SA Query req with transaction id d006[0m
+[0;32mI (51517) wifi:Send SA Query req with transaction id d007[0m
+[0;32mI (51577) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (51577) wifi:(trc)phytype:CBW20-SGI, snr:52, maxRate:0, highestRateIdx:0[0m
+[0;33mW (51577) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (51587) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:52, ampduState:wait operational[0m
+[0;32mI (51597) wifi:ifidx:1, rssi:-45, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (51607) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (51617) wifi:station: f0:f5:bd:07:01:00 join, AID=1, bgn, 20[0m
+[0;32mI (51667) AP: STA f0:f5:bd:07:01:00 joined, AID=1[0m
+[0;32mI (51717) wifi:Send SA Query req with transaction id d008[0m
+[0;33mW (51737) wifi:<ba-add>idx:7, ifx:1, tid:0, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;32mI (51777) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (51917) wifi:Send SA Query req with transaction id d009[0m
+[0;32mI (52117) wifi:Send SA Query req with transaction id d00a[0m
+[0;32mI (52137) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (52137) wifi:station: f0:f5:bd:07:05:50 leave, AID = 2, reason = 209, bss_flags is 691299, bss:0x408405ec[0m
+[0;32mI (52147) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (52157) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (52157) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (52157) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (52167) AP: STA f0:f5:bd:07:05:50 left, AID=2, reason=209[0m
+[0;32mI (52757) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (52757) wifi:(trc)phytype:CBW20-SGI, snr:59, maxRate:0, highestRateIdx:0[0m
+[0;33mW (52757) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (52767) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:59, ampduState:wait operational[0m
+[0;32mI (52777) wifi:ifidx:1, rssi:-38, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (52787) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (52797) wifi:station: f0:f5:bd:07:05:50 join, AID=2, bgn, 20[0m
+[0;32mI (52807) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:23, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (52817) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;31mE (52827) AP: accept errno 23[0m
+[0;32mI (52857) AP: STA f0:f5:bd:07:05:50 joined, AID=2[0m
+[0;33mW (52927) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (52927) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (52937) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (52967) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.3[0m
+[0;32mI (53937) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:24, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (53947) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;31mE (54247) AP: accept errno 23[0m
+[0;32mI (54427) AP: STA f0:f5:bd:07:01:00 left, AID=1, reason=2[0m
+[0;32mI (54427) wifi:starting SA query procedure with STA(f0:f5:bd:07:01:00)[0m
+[0;32mI (54427) wifi:Send SA Query req with transaction id e4e6[0m
+[0;32mI (54627) wifi:Send SA Query req with transaction id e4e7[0m
+[0;32mI (54827) wifi:Send SA Query req with transaction id e4e8[0m
+[0;32mI (55027) wifi:Send SA Query req with transaction id e4e9[0m
+[0;32mI (55227) wifi:Send SA Query req with transaction id e4ea[0m
+[0;32mI (55427) wifi:Send SA Query req with transaction id e4eb[0m
+[0;32mI (55457) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (55457) wifi:station: f0:f5:bd:07:01:00 leave, AID = 1, reason = 209, bss_flags is 691299, bss:0x40840ae0[0m
+[0;32mI (55457) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (55467) wifi:<ba-del>idx:7, tid:0[0m
+[0;32mI (55467) AP: STA f0:f5:bd:07:01:00 left, AID=1, reason=209[0m
+[0;32mI (55857) AP: STA f0:f5:bd:07:05:50 left, AID=2, reason=2[0m
+[0;32mI (55857) wifi:starting SA query procedure with STA(f0:f5:bd:07:05:50)[0m
+[0;32mI (55857) wifi:Send SA Query req with transaction id 183e[0m
+[0;32mI (56057) wifi:Send SA Query req with transaction id 183f[0m
+[0;32mI (56077) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (56077) wifi:(trc)phytype:CBW20-SGI, snr:50, maxRate:0, highestRateIdx:0[0m
+[0;33mW (56077) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (56087) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:50, ampduState:wait operational[0m
+[0;32mI (56097) wifi:ifidx:1, rssi:-47, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (56107) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (56117) wifi:station: f0:f5:bd:07:01:00 join, AID=1, bgn, 20[0m
+[0;32mI (56167) AP: STA f0:f5:bd:07:01:00 joined, AID=1[0m
+[0;33mW (56237) wifi:<ba-add>idx:7, ifx:1, tid:0, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;32mI (56257) wifi:Send SA Query req with transaction id 1840[0m
+[0;32mI (56277) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (56457) wifi:Send SA Query req with transaction id 1841[0m
+[0;32mI (56657) wifi:Send SA Query req with transaction id 1842[0m
+[0;32mI (56857) wifi:Send SA Query req with transaction id 1843[0m
+[0;32mI (56887) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (56887) wifi:station: f0:f5:bd:07:05:50 leave, AID = 2, reason = 209, bss_flags is 691299, bss:0x408400f8[0m
+[0;32mI (56887) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (56897) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (56897) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (56907) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (56907) AP: STA f0:f5:bd:07:05:50 left, AID=2, reason=209[0m
+[0;32mI (57287) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:25, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (57297) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;31mE (57297) AP: accept errno 23[0m
+[0;32mI (57507) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (57507) wifi:(trc)phytype:CBW20-SGI, snr:57, maxRate:0, highestRateIdx:0[0m
+[0;33mW (57507) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (57517) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:57, ampduState:wait operational[0m
+[0;32mI (57527) wifi:ifidx:1, rssi:-40, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (57537) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (57547) wifi:station: f0:f5:bd:07:05:50 join, AID=2, bgn, 20[0m
+[0;32mI (57607) AP: STA f0:f5:bd:07:05:50 joined, AID=2[0m
+[0;33mW (57677) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (57677) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (57687) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (57717) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.3[0m
+[0;32mI (58727) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:26, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (58737) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;31mE (58747) AP: accept errno 23[0m
+[0;32mI (58947) AP: STA f0:f5:bd:07:01:00 left, AID=1, reason=2[0m
+[0;32mI (58947) wifi:starting SA query procedure with STA(f0:f5:bd:07:01:00)[0m
+[0;32mI (58947) wifi:Send SA Query req with transaction id 1c46[0m
+[0;32mI (59147) wifi:Send SA Query req with transaction id 1c47[0m
+[0;32mI (59347) wifi:Send SA Query req with transaction id 1c48[0m
+[0;32mI (59547) wifi:Send SA Query req with transaction id 1c49[0m
+[0;32mI (59747) wifi:Send SA Query req with transaction id 1c4a[0m
+[0;32mI (59947) wifi:Send SA Query req with transaction id 1c4b[0m
+[0;32mI (59967) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (59977) wifi:station: f0:f5:bd:07:01:00 leave, AID = 1, reason = 209, bss_flags is 691299, bss:0x408405ec[0m
+[0;32mI (59977) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (59987) wifi:<ba-del>idx:7, tid:0[0m
+[0;32mI (59987) AP: STA f0:f5:bd:07:01:00 left, AID=1, reason=209[0m
+[0;32mI (60397) AP: STA f0:f5:bd:07:05:50 left, AID=2, reason=2[0m
+[0;32mI (60397) wifi:starting SA query procedure with STA(f0:f5:bd:07:05:50)[0m
+[0;32mI (60397) wifi:Send SA Query req with transaction id 14fd[0m
+[0;32mI (60597) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (60597) wifi:(trc)phytype:CBW20-SGI, snr:53, maxRate:0, highestRateIdx:0[0m
+[0;33mW (60597) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (60607) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:53, ampduState:wait operational[0m
+[0;32mI (60617) wifi:ifidx:1, rssi:-44, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (60627) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (60637) wifi:station: f0:f5:bd:07:01:00 join, AID=1, bgn, 20[0m
+[0;32mI (60637) wifi:Send SA Query req with transaction id 14fe[0m
+[0;32mI (60687) AP: STA f0:f5:bd:07:01:00 joined, AID=1[0m
+[0;33mW (60757) wifi:<ba-add>idx:7, ifx:1, tid:0, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;32mI (60797) wifi:Send SA Query req with transaction id 14ff[0m
+[0;32mI (60797) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (60997) wifi:Send SA Query req with transaction id 1500[0m
+[0;32mI (61197) wifi:Send SA Query req with transaction id 1501[0m
+[0;32mI (61397) wifi:Send SA Query req with transaction id 1502[0m
+[0;32mI (61417) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (61427) wifi:station: f0:f5:bd:07:05:50 leave, AID = 2, reason = 209, bss_flags is 691299, bss:0x40840ae0[0m
+[0;32mI (61427) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (61437) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (61437) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (61437) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (61447) AP: STA f0:f5:bd:07:05:50 left, AID=2, reason=209[0m
+[0;32mI (61807) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:27, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (61817) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (62047) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (62047) wifi:(trc)phytype:CBW20-SGI, snr:56, maxRate:0, highestRateIdx:0[0m
+[0;33mW (62047) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (62057) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:56, ampduState:wait operational[0m
+[0;32mI (62067) wifi:ifidx:1, rssi:-41, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (62077) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (62087) wifi:station: f0:f5:bd:07:05:50 join, AID=2, bgn, 20[0m
+[0;31mE (62117) AP: accept errno 23[0m
+[0;32mI (62137) AP: STA f0:f5:bd:07:05:50 joined, AID=2[0m
+[0;33mW (62207) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (62227) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (62237) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (62257) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.3[0m
+[0;32mI (63267) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:28, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (63277) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;31mE (63277) AP: accept errno 23[0m
+[0;32mI (63717) AP: STA f0:f5:bd:07:01:00 left, AID=1, reason=2[0m
+[0;32mI (63717) wifi:starting SA query procedure with STA(f0:f5:bd:07:01:00)[0m
+[0;32mI (63717) wifi:Send SA Query req with transaction id d2d9[0m
+[0;32mI (63917) wifi:Send SA Query req with transaction id d2da[0m
+[0;32mI (64117) wifi:Send SA Query req with transaction id d2db[0m
+[0;32mI (64317) wifi:Send SA Query req with transaction id d2dc[0m
+[0;32mI (64517) wifi:Send SA Query req with transaction id d2dd[0m
+[0;32mI (64717) wifi:Send SA Query req with transaction id d2de[0m
+[0;32mI (64747) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (64747) wifi:station: f0:f5:bd:07:01:00 leave, AID = 1, reason = 209, bss_flags is 691299, bss:0x408400f8[0m
+[0;32mI (64747) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (64757) wifi:<ba-del>idx:7, tid:0[0m
+[0;32mI (64757) AP: STA f0:f5:bd:07:01:00 left, AID=1, reason=209[0m
+[0;32mI (64887) AP: STA f0:f5:bd:07:05:50 left, AID=2, reason=2[0m
+[0;32mI (64887) wifi:starting SA query procedure with STA(f0:f5:bd:07:05:50)[0m
+[0;32mI (64887) wifi:Send SA Query req with transaction id ebd3[0m
+[0;32mI (65087) wifi:Send SA Query req with transaction id ebd4[0m
+[0;32mI (65287) wifi:Send SA Query req with transaction id ebd5[0m
+[0;32mI (65367) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (65367) wifi:(trc)phytype:CBW20-SGI, snr:53, maxRate:0, highestRateIdx:0[0m
+[0;33mW (65367) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (65377) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:53, ampduState:wait operational[0m
+[0;32mI (65387) wifi:ifidx:1, rssi:-44, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (65397) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (65407) wifi:station: f0:f5:bd:07:01:00 join, AID=1, bgn, 20[0m
+[0;32mI (65457) AP: STA f0:f5:bd:07:01:00 joined, AID=1[0m
+[0;32mI (65487) wifi:Send SA Query req with transaction id ebd6[0m
+[0;33mW (65527) wifi:<ba-add>idx:7, ifx:1, tid:0, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;32mI (65567) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (65687) wifi:Send SA Query req with transaction id ebd7[0m
+[0;32mI (65887) wifi:Send SA Query req with transaction id ebd8[0m
+[0;32mI (65917) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (65917) wifi:station: f0:f5:bd:07:05:50 leave, AID = 2, reason = 209, bss_flags is 691299, bss:0x408405ec[0m
+[0;32mI (65917) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (65927) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (65927) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (65937) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (65937) AP: STA f0:f5:bd:07:05:50 left, AID=2, reason=209[0m
+[0;32mI (66537) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (66537) wifi:(trc)phytype:CBW20-SGI, snr:59, maxRate:0, highestRateIdx:0[0m
+[0;33mW (66537) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (66547) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:59, ampduState:wait operational[0m
+[0;32mI (66557) wifi:ifidx:1, rssi:-38, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (66567) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (66577) wifi:station: f0:f5:bd:07:05:50 join, AID=2, bgn, 20[0m
+[0;32mI (66587) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:29, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (66597) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;31mE (66607) AP: accept errno 23[0m
+[0;32mI (66637) AP: STA f0:f5:bd:07:05:50 joined, AID=2[0m
+[0;33mW (66707) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (66717) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (66727) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (66757) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.3[0m
+[0;32mI (67757) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:30, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (67767) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;31mE (67777) AP: accept errno 23[0m
+[0;32mI (68207) AP: STA f0:f5:bd:07:01:00 left, AID=1, reason=2[0m
+[0;32mI (68207) wifi:starting SA query procedure with STA(f0:f5:bd:07:01:00)[0m
+[0;32mI (68207) wifi:Send SA Query req with transaction id 3bd0[0m
+[0;32mI (68407) wifi:Send SA Query req with transaction id 3bd1[0m
+[0;32mI (68607) wifi:Send SA Query req with transaction id 3bd2[0m
+[0;32mI (68807) wifi:Send SA Query req with transaction id 3bd3[0m
+[0;32mI (69007) wifi:Send SA Query req with transaction id 3bd4[0m
+[0;32mI (69207) wifi:Send SA Query req with transaction id 3bd5[0m
+[0;32mI (69237) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (69237) wifi:station: f0:f5:bd:07:01:00 leave, AID = 1, reason = 209, bss_flags is 691299, bss:0x40840ae0[0m
+[0;32mI (69237) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (69247) wifi:<ba-del>idx:7, tid:0[0m
+[0;32mI (69247) AP: STA f0:f5:bd:07:01:00 left, AID=1, reason=209[0m
+[0;32mI (69437) AP: STA f0:f5:bd:07:05:50 left, AID=2, reason=2[0m
+[0;32mI (69437) wifi:starting SA query procedure with STA(f0:f5:bd:07:05:50)[0m
+[0;32mI (69437) wifi:Send SA Query req with transaction id 1a2c[0m
+[0;32mI (69637) wifi:Send SA Query req with transaction id 1a2d[0m
+[0;32mI (69837) wifi:Send SA Query req with transaction id 1a2e[0m
+[0;32mI (69857) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (69857) wifi:(trc)phytype:CBW20-SGI, snr:57, maxRate:0, highestRateIdx:0[0m
+[0;33mW (69857) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (69867) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:57, ampduState:wait operational[0m
+[0;32mI (69877) wifi:ifidx:1, rssi:-40, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (69887) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (69897) wifi:station: f0:f5:bd:07:01:00 join, AID=1, bgn, 20[0m
+[0;32mI (69947) AP: STA f0:f5:bd:07:01:00 joined, AID=1[0m
+[0;33mW (70027) wifi:<ba-add>idx:7, ifx:1, tid:0, TAHI:0x1010001, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;32mI (70037) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (70037) wifi:Send SA Query req with transaction id 1a2f[0m
+[0;32mI (70237) wifi:Send SA Query req with transaction id 1a30[0m
+[0;32mI (70437) wifi:Send SA Query req with transaction id 1a31[0m
+[0;32mI (70467) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (70467) wifi:station: f0:f5:bd:07:05:50 leave, AID = 2, reason = 209, bss_flags is 691299, bss:0x408400f8[0m
+[0;32mI (70467) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (70477) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (70487) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (70487) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (70487) AP: STA f0:f5:bd:07:05:50 left, AID=2, reason=209[0m
+ESP-ROM:esp32c6-20220919
+Build:Sep 19 2022
+rst:0x1 (POWERON),boot:0xc (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:2
+load:0x40875720,len:0x18ec
+load:0x4086c110,len:0xe5c
+load:0x4086e610,len:0x2f50
+entry 0x4086c11a
+[0;32mI (23) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time May 13 2025 16:34:30[0m
+[0;32mI (24) boot: chip revision: v0.1[0m
+[0;32mI (26) boot: efuse block revision: v0.2[0m
+[0;32mI (31) boot.esp32c6: SPI Speed      : 80MHz[0m
+[0;32mI (36) boot.esp32c6: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32c6: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (54) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (61) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (69) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (76) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (84) boot: End of partition table[0m
+[0;32mI (88) esp_image: segment 0: paddr=00010020 vaddr=42098020 size=1c34ch (115532) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=0002c374 vaddr=40800000 size=03ca4h ( 15524) load[0m
+[0;32mI (122) esp_image: segment 2: paddr=00030020 vaddr=42000020 size=93198h (602520) map[0m
+[0;32mI (237) esp_image: segment 3: paddr=000c31c0 vaddr=40803ca4 size=15338h ( 86840) load[0m
+[0;32mI (256) esp_image: segment 4: paddr=000d8500 vaddr=40818fe0 size=03b78h ( 15224) load[0m
+[0;32mI (266) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (266) boot: Disabling RNG early entropy source...[0m
+[0;32mI (278) cpu_start: Unicore app[0m
+[0;32mI (286) cpu_start: Pro cpu start user code[0m
+[0;32mI (286) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (287) app_init: Application information:[0m
+[0;32mI (289) app_init: Project name:     wifi_softAP[0m
+[0;32mI (294) app_init: App version:      ac3da05a-dirty[0m
+[0;32mI (300) app_init: Compile time:     May 13 2025 16:32:53[0m
+[0;32mI (306) app_init: ELF file SHA256:  f5ffac533...[0m
+[0;32mI (311) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (316) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (321) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (326) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (331) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (338) heap_init: At 40822090 len 0005A580 (361 KiB): RAM[0m
+[0;32mI (344) heap_init: At 4087C610 len 00002F54 (11 KiB): RAM[0m
+[0;32mI (350) heap_init: At 50000000 len 00003FE8 (15 KiB): RTCRAM[0m
+[0;32mI (357) spi_flash: detected chip: generic[0m
+[0;32mI (361) spi_flash: flash io: dio[0m
+[0;33mW (365) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (378) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (385) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (392) coexist: coex firmware version: cbb41d7[0m
+[0;32mI (406) coexist: coexist rom version 5b8dcfa[0m
+[0;32mI (407) main_task: Started on CPU0[0m
+[0;32mI (407) main_task: Calling app_main()[0m
+[0;32mI (417) pp: pp rom version: 5b8dcfa[0m
+[0;32mI (417) net80211: net80211 rom version: 5b8dcfa[0m
+[0;32mI (427) wifi:wifi driver task: 4082b1a4, prio:23, stack:6656, core=0[0m
+[0;32mI (437) wifi:wifi firmware version: b0fd6006b[0m
+[0;32mI (437) wifi:wifi certification version: v7.0[0m
+[0;32mI (437) wifi:config NVS flash: enabled[0m
+[0;32mI (437) wifi:config nano formating: disabled[0m
+[0;32mI (437) wifi:mac_version:HAL_MAC_ESP32AX_761,ut_version:N, band:0x1[0m
+[0;32mI (447) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (447) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (457) wifi:Init management short buffer num: 32[0m
+[0;32mI (457) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (467) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (467) wifi:Init static rx buffer size: 1700 (rxctrl:92, csi:512)[0m
+[0;32mI (477) wifi:Init static rx buffer num: 10[0m
+[0;32mI (477) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (487) wifi_init: rx ba win: 6[0m
+[0;32mI (487) wifi_init: accept mbox: 6[0m
+[0;32mI (487) wifi_init: tcpip mbox: 32[0m
+[0;32mI (497) wifi_init: udp mbox: 6[0m
+[0;32mI (497) wifi_init: tcp mbox: 6[0m
+[0;32mI (497) wifi_init: tcp tx win: 5760[0m
+[0;32mI (507) wifi_init: tcp rx win: 5760[0m
+[0;32mI (507) wifi_init: tcp mss: 1440[0m
+[0;32mI (517) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (517) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (527) wifi_init: WiFi SLP IRAM OP enabled[0m
+[0;32mI (527) phy_init: phy_version 320,348a293,Sep  3 2024,16:33:12[0m
+[0;33mW (577) wifi:ACK_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (587) wifi:CTS_TAB0   :0x   90a0b, QAM16:0x9 (24Mbps), QPSK:0xa (12Mbps), BPSK:0xb (6Mbps)[0m
+[0;33mW (587) wifi:(agc)0x600a7128:0xd204b800, min.avgNF:0xce->0xd2(dB), RCalCount:0x4b, min.RRssi:0x800(-128.00)[0m
+[0;33mW (597) wifi:(TB)WDEV_PWR_TB_MCS0:19[0m
+[0;33mW (597) wifi:(TB)WDEV_PWR_TB_MCS1:19[0m
+[0;33mW (607) wifi:(TB)WDEV_PWR_TB_MCS2:19[0m
+[0;33mW (607) wifi:(TB)WDEV_PWR_TB_MCS3:19[0m
+[0;33mW (607) wifi:(TB)WDEV_PWR_TB_MCS4:19[0m
+[0;33mW (617) wifi:(TB)WDEV_PWR_TB_MCS5:19[0m
+[0;33mW (617) wifi:(TB)WDEV_PWR_TB_MCS6:18[0m
+[0;33mW (617) wifi:(TB)WDEV_PWR_TB_MCS7:18[0m
+[0;33mW (627) wifi:(TB)WDEV_PWR_TB_MCS8:17[0m
+[0;33mW (627) wifi:(TB)WDEV_PWR_TB_MCS9:15[0m
+[0;33mW (627) wifi:(TB)WDEV_PWR_TB_MCS10:15[0m
+[0;33mW (637) wifi:(TB)WDEV_PWR_TB_MCS11:15[0m
+[0;32mI (637) wifi:11ax coex: WDEVAX_PTI0(0x55777555), WDEVAX_PTI1(0x00003377).[0m
+
+[0;33mW (647) wifi:(he)deattach, ap, phymode:11bgn[0m
+[0;32mI (647) wifi:mode : softAP (40:4c:ca:5c:28:dd)[0m
+[0;32mI (657) wifi:Total power save buffer number: 16[0m
+[0;32mI (657) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (657) wifi:Init max length of beacon: 752/752[0m
+[0;32mI (667) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+[0;32mI (677) wifi:Set ps type: 0, coexist: 0[0m
+
+[0;32mI (677) AP: Soft‑AP avviata: SSID=myssid, chan=1[0m
+[0;32mI (687) AP: TCP server listening on port 3333[0m
+[0;32mI (687) main_task: Returned from app_main()[0m
+[0;32mI (2877) wifi:new:<1,0>, old:<1,1>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (2877) wifi:(trc)phytype:CBW20-SGI, snr:59, maxRate:0, highestRateIdx:0[0m
+[0;33mW (2877) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (2887) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:59, ampduState:wait operational[0m
+[0;32mI (2897) wifi:ifidx:1, rssi:-38, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (2907) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (2917) wifi:station: f0:f5:bd:07:05:50 join, AID=1, bgn, 20[0m
+[0;32mI (2977) AP: STA f0:f5:bd:07:05:50 joined, AID=1[0m
+[0;33mW (3047) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (3047) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (3057) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (3097) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (4097) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:1, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (4107) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (5717) AP: STA f0:f5:bd:07:05:50 left, AID=1, reason=2[0m
+[0;32mI (5717) wifi:starting SA query procedure with STA(f0:f5:bd:07:05:50)[0m
+[0;32mI (5717) wifi:Send SA Query req with transaction id 7e87[0m
+[0;32mI (5917) wifi:Send SA Query req with transaction id 7e88[0m
+[0;32mI (6117) wifi:Send SA Query req with transaction id 7e89[0m
+[0;32mI (6317) wifi:Send SA Query req with transaction id 7e8a[0m
+[0;32mI (6517) wifi:Send SA Query req with transaction id 7e8b[0m
+[0;32mI (6717) wifi:Send SA Query req with transaction id 7e8c[0m
+[0;32mI (6747) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (6747) wifi:station: f0:f5:bd:07:05:50 leave, AID = 1, reason = 209, bss_flags is 691299, bss:0x408242c0[0m
+[0;32mI (6757) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (6757) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (6767) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (6767) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (6767) AP: STA f0:f5:bd:07:05:50 left, AID=1, reason=209[0m
+[0;32mI (7367) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (7367) wifi:(trc)phytype:CBW20-SGI, snr:58, maxRate:0, highestRateIdx:0[0m
+[0;33mW (7367) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (7377) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:58, ampduState:wait operational[0m
+[0;32mI (7387) wifi:ifidx:1, rssi:-39, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (7397) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (7407) wifi:station: f0:f5:bd:07:05:50 join, AID=1, bgn, 20[0m
+[0;32mI (7467) AP: STA f0:f5:bd:07:05:50 joined, AID=1[0m
+[0;33mW (7537) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (7547) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (7557) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (7587) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (8587) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:2, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (8597) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (10247) AP: STA f0:f5:bd:07:05:50 left, AID=1, reason=2[0m
+[0;32mI (10247) wifi:starting SA query procedure with STA(f0:f5:bd:07:05:50)[0m
+[0;32mI (10247) wifi:Send SA Query req with transaction id d341[0m
+[0;32mI (10447) wifi:Send SA Query req with transaction id d342[0m
+[0;32mI (10647) wifi:Send SA Query req with transaction id d343[0m
+[0;32mI (10847) wifi:Send SA Query req with transaction id d344[0m
+[0;32mI (11047) wifi:Send SA Query req with transaction id d345[0m
+[0;32mI (11247) wifi:Send SA Query req with transaction id d346[0m
+[0;32mI (11277) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (11277) wifi:station: f0:f5:bd:07:05:50 leave, AID = 1, reason = 209, bss_flags is 691299, bss:0x40824eb4[0m
+[0;32mI (11277) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (11287) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (11287) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (11297) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (11297) AP: STA f0:f5:bd:07:05:50 left, AID=1, reason=209[0m
+[0;32mI (11897) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (11897) wifi:(trc)phytype:CBW20-SGI, snr:58, maxRate:0, highestRateIdx:0[0m
+[0;33mW (11897) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (11907) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:58, ampduState:wait operational[0m
+[0;32mI (11917) wifi:ifidx:1, rssi:-39, nf:-97, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (11927) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (11937) wifi:station: f0:f5:bd:07:05:50 join, AID=1, bgn, 20[0m
+[0;32mI (11997) AP: STA f0:f5:bd:07:05:50 joined, AID=1[0m
+[0;33mW (12067) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (12077) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (12087) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (12107) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (13107) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:3, bufsize:64, A-MSDU:0(not supported), policy:1(IMR), ssn:0(0x0)[0m
+[0;32mI (13117) wifi:[ADDBA]RX addba response, status:0, tid:0/tb:1(0xa1), bufsize:6, batimeout:0, txa_wnd:6[0m
+[0;32mI (14727) AP: STA f0:f5:bd:07:05:50 left, AID=1, reason=2[0m
+[0;32mI (14737) wifi:starting SA query procedure with STA(f0:f5:bd:07:05:50)[0m
+[0;32mI (14737) wifi:Send SA Query req with transaction id 6357[0m
+[0;32mI (14937) wifi:Send SA Query req with transaction id 6358[0m
+[0;32mI (15137) wifi:Send SA Query req with transaction id 6359[0m
+[0;32mI (15337) wifi:Send SA Query req with transaction id 635a[0m
+[0;32mI (15537) wifi:Send SA Query req with transaction id 635b[0m
+[0;32mI (15737) wifi:Send SA Query req with transaction id 635c[0m
+[0;32mI (15757) wifi:STA not responded to 6 SA Query attempts, Reset connection sending disassoc[0m
+[0;32mI (15757) wifi:station: f0:f5:bd:07:05:50 leave, AID = 1, reason = 209, bss_flags is 691299, bss:0x40824eb4[0m
+[0;32mI (15767) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (15767) wifi:<ba-del>idx:4, tid:0[0m
+[0;32mI (15777) wifi:<ba-del>idx:6, tid:5[0m
+[0;32mI (15777) wifi:<ba-del>idx:5, tid:7[0m
+[0;32mI (15777) AP: STA f0:f5:bd:07:05:50 left, AID=1, reason=209[0m
+[0;32mI (16377) wifi:new:<1,0>, old:<1,0>, ap:<1,1>, sta:<255,255>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (16377) wifi:(trc)phytype:CBW20-SGI, snr:58, maxRate:0, highestRateIdx:0[0m
+[0;33mW (16377) wifi:(trc)band:2G, phymode:3, highestRateIdx:0, lowestRateIdx:11, dataSchedTableSize:14[0m
+[0;32mI (16387) wifi:(trc)band:2G, rate(S-MCS7, rateIdx:0), ampdu(rate:S-MCS7, schedIdx(0, stop:8)), snr:58, ampduState:wait operational[0m
+[0;32mI (16397) wifi:ifidx:1, rssi:-38, nf:-96, phytype(0x3, CBW20-SGI), phymode(0x3, 11bgn), max_rate:0, he:0, vht:0, ht:1[0m
+[0;32mI (16407) wifi:(ht)max.RxAMPDULenExponent:0(8191 bytes), MMSS:0(no restriction)[0m
+[0;32mI (16417) wifi:station: f0:f5:bd:07:05:50 join, AID=1, bgn, 20[0m
+[0;32mI (16477) AP: STA f0:f5:bd:07:05:50 joined, AID=1[0m
+[0;33mW (16547) wifi:<ba-add>idx:4, ifx:1, tid:0, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0000005[0m
+[0;33mW (16547) wifi:<ba-add>idx:5, ifx:1, tid:7, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:2, win:64, cur_ssn:2), CONF:0xc0007005[0m
+[0;33mW (16557) wifi:<ba-add>idx:6, ifx:1, tid:5, TAHI:0x1015005, TALO:0x7bdf5f0, (ssn:0, win:64, cur_ssn:0), CONF:0xc0005005[0m
+[0;32mI (16587) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.4.2[0m
+[0;32mI (17597) wifi:[ADDBA]TX addba request, tid:0, dialogtoken:4, bufsize:64, A-MSDU:0(not supp

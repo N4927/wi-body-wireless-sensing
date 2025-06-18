@@ -1,0 +1,83 @@
+[0;33m--- Warning: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.5.0 on \\.\COM5 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x4001974a: software_reset in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x42010566: esp_task_wdt_init at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/task_wdt/task_wdt.c:514 (discriminator 2)
+0x4200d6f6: app_main at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/Station_with_tcp_client_light_sleep/main/station_example_main.c:225 (discriminator 1)
+[0m
+[0;33m--- 0x40028192: __retarget_lock_release_recursive in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\Station_with_tcp_client_light_sleep\\build\\wifi_station.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmp72u8wc3w"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmp72u8wc3w': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x42010566: esp_task_wdt_init at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/task_wdt/task_wdt.c:514 (discriminator 2)
+0x4200d6f6: app_main at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/Station_with_tcp_client_light_sleep/main/station_example_main.c:225 (discriminator 1)
+[0m
+[0;33m--- 0x40028192: __retarget_lock_release_recursive in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\Station_with_tcp_client_light_sleep\\build\\wifi_station.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmprmlnunoz"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmprmlnunoz': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x42010566: esp_task_wdt_init at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/task_wdt/task_wdt.c:514 (discriminator 2)
+0x4200d6f6: app_main at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/Station_with_tcp_client_light_sleep/main/station_example_main.c:225 (discriminator 1)
+[0m
+[0;33m--- 0x40028192: __retarget_lock_release_recursive in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\Station_with_tcp_client_light_sleep\\build\\wifi_station.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmppehy6vy6"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmppehy6vy6': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x42010566: esp_task_wdt_init at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/task_wdt/task_wdt.c:514 (discriminator 2)
+0x4200d6f6: app_main at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/Station_with_tcp_client_light_sleep/main/station_example_main.c:225 (discriminator 1)
+[0m
+[0;33m--- 0x40028192: __retarget_lock_release_recursive in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\Station_with_tcp_client_light_sleep\\build\\wifi_station.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpgo13fkht"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpgo13fkht': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x42010566: esp_task_wdt_init at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/task_wdt/task_wdt.c:514 (discriminator 2)
+0x4200d6f6: app_main at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/Station_with_tcp_client_light_sleep/main/station_example_main.c:225 (discriminator 1)
+[0m
+[0;33m--- 0x40028192: __retarget_lock_release_recursive in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.3.2/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m--- Warning: Failed to run gdb_panic_server.py script: Command '['riscv32-esp-elf-gdb', '--batch', '-n', 'C:\\Users\\albif\\OneDrive - ETH Zurich\\Thesis\\git\\Station_with_tcp_client_light_sleep\\build\\wifi_station.elf', '-ex', 'target remote | "C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe" -m esp_idf_panic_decoder --target esp32c6 "C:\\Users\\albif\\AppData\\Local\\Temp\\tmpxzbjmnim"', '-ex', 'bt']' returned non-zero exit status 1.
+b"\r\nwarning: could not convert 'main' from the host encoding (CP1252) to UTF-32.\r\nThis normally should not happen, please file a bug report.\r\nerror starting child process 'C:\\Users\\albif\\.espressif\\python_env\\idf5.3_py3.10_env\\Scripts\\python.exe -m esp_idf_panic_decoder --target esp32c6 C:\\Users\\albif\\AppData\\Local\\Temp\\tmpxzbjmnim': CreateProcess: No such file or directory\r\nNo stack.\r\n"
+
+[0m
+[0;33m--- 0x4001975a: software_reset_cpu in ROM
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x42010566: esp_task_wdt_init at C:/Users/albif/esp/v5.3.2/esp-idf/components/esp_system/task_wdt/task_wdt.c:514 (discriminator 2)
+0x4200d6f6: app_main at C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/Station_with_tcp_client_light_sleep/main/station_example_main.c:225 (discriminator 1)
+[0m
+[0;33m--- 0x40028192: __retarget_lock_release_recursive in ROM
+[0m
+[0;33m--- 0x40800001: _vector_table at C:/Users/albif/esp/v5.
