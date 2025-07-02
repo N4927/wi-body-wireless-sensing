@@ -1,121 +1,110 @@
+
+# Wi-Fi Station TCP Client with GPIO-Triggered TSF Timestamping
+
 | Supported Targets | ESP32 | ESP32-C2 | ESP32-C3 | ESP32-C6 | ESP32-S2 | ESP32-S3 |
 | ----------------- | ----- | -------- | -------- | -------- | -------- | -------- |
 
-# Wi-Fi Station Example
+This example demonstrates how to build a TCP client that captures **TSF timestamps** when triggered by a GPIO rising edge and sends this information over a TCP connection. This is useful for synchronization applications, multi-board experiments, and real-time event marking.
 
-(See the README.md file in the upper level 'examples' directory for more information about examples.)
+---
 
-This example shows how to use the Wi-Fi Station functionality of the Wi-Fi driver of ESP for connecting to an Access Point.
+## Features
 
-## How to use example
+- Runs in **Wi-Fi Station (STA)** mode
+- Connects to a configurable SoftAP (e.g., ESP32 SoftAP server)
+- Captures TSF (Timing Synchronization Function) timestamp via:
+  - GPIO rising edge interrupt (default: GPIO18)
+  - Periodic polling fallback
+- Sends packets over TCP to server
+- Differentiates "triggered" packets via payload byte
+- Displays TSF logs periodically (optional)
 
-### Configure the project
+---
 
-Open the project configuration menu (`idf.py menuconfig`).
+## Packet Format
 
-In the `Example Configuration` menu:
-
-* Set the Wi-Fi configuration.
-    * Set `WiFi SSID`.
-    * Set `WiFi Password`.
-
-Optional: If you need, change the other options according to your requirements.
-
-### Build and Flash
-
-Build the project and flash it to the board, then run the monitor tool to view the serial output:
-
-Run `idf.py -p PORT flash monitor` to build, flash and monitor the project.
-
-(To exit the serial monitor, type ``Ctrl-]``.)
-
-See the Getting Started Guide for all the steps to configure and use the ESP-IDF to build projects.
-
-* [ESP-IDF Getting Started Guide on ESP32](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html)
-* [ESP-IDF Getting Started Guide on ESP32-S2](https://docs.espressif.com/projects/esp-idf/en/latest/esp32s2/get-started/index.html)
-* [ESP-IDF Getting Started Guide on ESP32-C3](https://docs.espressif.com/projects/esp-idf/en/latest/esp32c3/get-started/index.html)
-
-## Example Output
-Note that the output, in particular the order of the output, may vary depending on the environment.
-
-Console output if station connects to AP successfully:
-```
-I (589) wifi station: ESP_WIFI_MODE_STA
-I (599) wifi: wifi driver task: 3ffc08b4, prio:23, stack:3584, core=0
-I (599) system_api: Base MAC address is not set, read default base MAC address from BLK0 of EFUSE
-I (599) system_api: Base MAC address is not set, read default base MAC address from BLK0 of EFUSE
-I (629) wifi: wifi firmware version: 2d94f02
-I (629) wifi: config NVS flash: enabled
-I (629) wifi: config nano formating: disabled
-I (629) wifi: Init dynamic tx buffer num: 32
-I (629) wifi: Init data frame dynamic rx buffer num: 32
-I (639) wifi: Init management frame dynamic rx buffer num: 32
-I (639) wifi: Init management short buffer num: 32
-I (649) wifi: Init static rx buffer size: 1600
-I (649) wifi: Init static rx buffer num: 10
-I (659) wifi: Init dynamic rx buffer num: 32
-I (759) phy: phy_version: 4180, cb3948e, Sep 12 2019, 16:39:13, 0, 0
-I (769) wifi: mode : sta (30:ae:a4:d9:bc:c4)
-I (769) wifi station: wifi_init_sta finished.
-I (889) wifi: new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
-I (889) wifi: state: init -> auth (b0)
-I (899) wifi: state: auth -> assoc (0)
-I (909) wifi: state: assoc -> run (10)
-I (939) wifi: connected with #!/bin/test, aid = 1, channel 6, BW20, bssid = ac:9e:17:7e:31:40
-I (939) wifi: security type: 3, phy: bgn, rssi: -68
-I (949) wifi: pm start, type: 1
-
-I (1029) wifi: AP's beacon interval = 102400 us, DTIM period = 3
-I (2089) esp_netif_handlers: sta ip: 192.168.77.89, mask: 255.255.255.0, gw: 192.168.77.1
-I (2089) wifi station: got ip:192.168.77.89
-I (2089) wifi station: connected to ap SSID:myssid password:mypassword
+```c
+typedef struct {
+    uint8_t  board_id;
+    uint32_t sequence;
+    uint16_t length;
+    uint64_t tsf_us;
+} PacketHeader;
 ```
 
-Console output if the station failed to connect to AP:
-```
-I (589) wifi station: ESP_WIFI_MODE_STA
-I (599) wifi: wifi driver task: 3ffc08b4, prio:23, stack:3584, core=0
-I (599) system_api: Base MAC address is not set, read default base MAC address from BLK0 of EFUSE
-I (599) system_api: Base MAC address is not set, read default base MAC address from BLK0 of EFUSE
-I (629) wifi: wifi firmware version: 2d94f02
-I (629) wifi: config NVS flash: enabled
-I (629) wifi: config nano formating: disabled
-I (629) wifi: Init dynamic tx buffer num: 32
-I (629) wifi: Init data frame dynamic rx buffer num: 32
-I (639) wifi: Init management frame dynamic rx buffer num: 32
-I (639) wifi: Init management short buffer num: 32
-I (649) wifi: Init static rx buffer size: 1600
-I (649) wifi: Init static rx buffer num: 10
-I (659) wifi: Init dynamic rx buffer num: 32
-I (759) phy: phy_version: 4180, cb3948e, Sep 12 2019, 16:39:13, 0, 0
-I (759) wifi: mode : sta (30:ae:a4:d9:bc:c4)
-I (769) wifi station: wifi_init_sta finished.
-I (889) wifi: new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
-I (889) wifi: state: init -> auth (b0)
-I (1889) wifi: state: auth -> init (200)
-I (1889) wifi: new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
-I (1889) wifi station: retry to connect to the AP
-I (1899) wifi station: connect to the AP fail
-I (3949) wifi station: retry to connect to the AP
-I (3949) wifi station: connect to the AP fail
-I (4069) wifi: new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
-I (4069) wifi: state: init -> auth (b0)
-I (5069) wifi: state: auth -> init (200)
-I (5069) wifi: new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
-I (5069) wifi station: retry to connect to the AP
-I (5069) wifi station: connect to the AP fail
-I (7129) wifi station: retry to connect to the AP
-I (7129) wifi station: connect to the AP fail
-I (7249) wifi: new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
-I (7249) wifi: state: init -> auth (b0)
-I (8249) wifi: state: auth -> init (200)
-I (8249) wifi: new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
-I (8249) wifi station: retry to connect to the AP
-I (8249) wifi station: connect to the AP fail
-I (10299) wifi station: connect to the AP fail
-I (10299) wifi station: Failed to connect to SSID:myssid, password:mypassword
+The payload follows this header and may be either:
+- `0x01`-filled (triggered)
+- `0x00`-filled (background)
+
+---
+
+## GPIO Trigger
+
+- Input GPIO is configured on pin 18.
+- Rising edge ISR captures the current TSF timestamp via `esp_wifi_get_tsf_time()`.
+- A task is notified to send a “triggered” packet immediately.
+- Between triggers, regular packets are sent with background payload.
+
+---
+
+## How It Works
+
+1. STA connects to the specified AP (`WIFI_SSID`/`WIFI_PASS`)
+2. Periodically logs current TSF (optional)
+3. Establishes a TCP connection to the specified server (`HOST_IP:HOST_PORT`)
+4. On GPIO trigger:
+    - Captures TSF timestamp
+    - Sends a marked packet
+5. Continues sending default packets during idle time
+
+--> need to be used with  acess point time synch
+
+---
+
+## Setup
+
+### Configuration Macros
+
+```c
+#define WIFI_SSID     "myssid"
+#define WIFI_PASS     "mypassword"
+#define HOST_IP       "192.168.4.1"
+#define HOST_PORT     3333
+#define TRIG_GPIO     18
 ```
 
-## Troubleshooting
+### Build and Run
 
-For any technical queries, please open an [issue](https://github.com/espressif/esp-idf/issues) on GitHub. We will get back to you soon.
+```bash
+idf.py build
+idf.py -p PORT flash monitor
+```
+
+---
+
+## Output Example
+
+```text
+I (3256) WIFI_SETUP: TSF = 3912945 µs
+I (4056) TCP_TASK: Connected to 192.168.4.1:3333
+I (5056) TCP_TASK: Triggered packet sent at TSF = 4100000 µs
+```
+
+---
+
+## Notes
+
+- `esp_rom_delay_us(500)` introduces a controlled delay between packets
+- Uses `ulTaskNotifyTake()` for fast ISR-to-task signaling
+- You can disable TSF debug output by commenting `esp_timer_start_periodic(...)`
+
+---
+
+## Applications
+
+- Multi-board synchronization via GPIO + TSF timestamps
+- Benchmarking AP-to-client TSF alignment
+- Trigger-to-TSF latency measurements
+
+---
+
