@@ -37,4 +37,4 @@ To flash the board via UART:
 
 ### Resetting After Flash
 
-- After flashing is complete, press the **reset button** to reboot the board and begin monitoring its output.
+- After flashing is complete, press the **reset button** (the bottom left one) to reboot the board and begin monitoring its output.
