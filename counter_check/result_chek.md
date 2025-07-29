@@ -1,0 +1,1 @@
+checked the two board counter with a python script and there are no sipped number
