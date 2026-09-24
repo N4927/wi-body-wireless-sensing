@@ -22,8 +22,8 @@
 
 #define TRUE                        1          // Boolean True value
 #define TAG                         "AP"       // Tag for logging
-#define WIFI_SSID                   "myssid"   // Wi-Fi SSID
-#define WIFI_PASSWORD               "mypassword" // Wi-Fi password
+#define WIFI_SSID                   "YOUR_WIFI_SSID"   // Wi-Fi SSID
+#define WIFI_PASSWORD               "YOUR_WIFI_PASSWORD" // Wi-Fi password
 #define ESP_WIFI_CHANNEL            1          // Wi-Fi channel
 #define MAX_STA_CONN                8          // Max number of simultaneous station connections
 #define PORT                        3333       // TCP connection port

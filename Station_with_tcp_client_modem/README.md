@@ -23,14 +23,14 @@ This example demonstrates a simple TCP client running in Wi-Fi Station (STA) mod
 ### Wi-Fi Settings
 
 ```c
-#define EXAMPLE_ESP_WIFI_SSID  "TP-Link_B5F4"
-#define EXAMPLE_ESP_WIFI_PASS  "84021472"
+#define EXAMPLE_ESP_WIFI_SSID  "YOUR_WIFI_SSID"
+#define EXAMPLE_ESP_WIFI_PASS  "YOUR_WIFI_PASSWORD"
 ```
 
 ### TCP Server IP and Port
 
 ```c
-#define SERVER_IP      "192.168.0.170"
+#define SERVER_IP      "192.168.4.1"
 #define SERVER_PORT    3333
 ```
 
@@ -61,9 +61,9 @@ This allows full control of how much time the Wi-Fi stays active per cycle (e.g.
 ## Example Log Output
 
 ```text
-I (3000) STA: Connected to AP: TP-Link_B5F4
+I (3000) STA: Connected to AP: YOUR_WIFI_SSID
 I (3010) TCP_CLIENT: Starting tcp_client task
-I (4010) TCP_CLIENT: Connected to 192.168.0.170:3333
+I (4010) TCP_CLIENT: Connected to 192.168.4.1:3333
 ```
 
 ---

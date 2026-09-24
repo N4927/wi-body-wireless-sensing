@@ -11,7 +11,7 @@
  #include "esp_sleep.h"
  
  #define TAG           "TCP_CLIENT"
- #define SERVER_IP     "192.168.4.1"//"192.168.0.170"//"192.168.50.147"//"192.168.4.1"
+ #define SERVER_IP     "192.168.4.1"
  #define SERVER_PORT   3333
  #define BOARD_ID       1
  #define PAYLOAD_SIZE   1440

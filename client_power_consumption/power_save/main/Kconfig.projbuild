@@ -9,14 +9,14 @@ menu "Example Configuration"
 
     config EXAMPLE_WIFI_SSID
         string "WiFi SSID"
-        default "myssid"
+        default "YOUR_WIFI_SSID"
         depends on !EXAMPLE_GET_AP_INFO_FROM_STDIN
         help
             SSID (network name) for the example to connect to.
 
     config EXAMPLE_WIFI_PASSWORD
         string "WiFi Password"
-        default "mypassword"
+        default "YOUR_WIFI_PASSWORD"
         depends on !EXAMPLE_GET_AP_INFO_FROM_STDIN
         help
             WiFi password (WPA or WPA2) for the example to use.

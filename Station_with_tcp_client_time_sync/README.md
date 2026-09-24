@@ -66,8 +66,8 @@ The payload follows this header and may be either:
 ### Configuration Macros
 
 ```c
-#define WIFI_SSID     "myssid"
-#define WIFI_PASS     "mypassword"
+#define WIFI_SSID     "YOUR_WIFI_SSID"
+#define WIFI_PASS     "YOUR_WIFI_PASSWORD"
 #define HOST_IP       "192.168.4.1"
 #define HOST_PORT     3333
 #define TRIG_GPIO     18

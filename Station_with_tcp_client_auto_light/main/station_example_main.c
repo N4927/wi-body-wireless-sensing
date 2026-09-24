@@ -33,8 +33,8 @@ extern void udp_time_synch(void *pvParameters);
 #define MICRO_S_CONVERSION          1000000
 #define TIMER_PERIOD                (MICRO_S_CONVERSION)
 
-#define EXAMPLE_ESP_WIFI_SSID       "myssid"//"wius"//"TP-Link_B5F4"
-#define EXAMPLE_ESP_WIFI_PASS       "mypassword"//"wius-bt24"//"84021472"
+#define EXAMPLE_ESP_WIFI_SSID       "YOUR_WIFI_SSID"
+#define EXAMPLE_ESP_WIFI_PASS       "YOUR_WIFI_PASSWORD"
 #define ESP_MAX_RETRY               50
 #define BUFFER_SIZE                 2048
 

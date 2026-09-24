@@ -68,7 +68,7 @@ I (949) wifi: pm start, type: 1
 I (1029) wifi: AP's beacon interval = 102400 us, DTIM period = 3
 I (2089) esp_netif_handlers: sta ip: 192.168.77.89, mask: 255.255.255.0, gw: 192.168.77.1
 I (2089) wifi station: got ip:192.168.77.89
-I (2089) wifi station: connected to ap SSID:myssid password:mypassword
+I (2089) wifi station: connected to ap SSID:YOUR_WIFI_SSID password:YOUR_WIFI_PASSWORD
 ```
 
 Console output if the station failed to connect to AP:
@@ -113,7 +113,7 @@ I (8249) wifi: new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1
 I (8249) wifi station: retry to connect to the AP
 I (8249) wifi station: connect to the AP fail
 I (10299) wifi station: connect to the AP fail
-I (10299) wifi station: Failed to connect to SSID:myssid, password:mypassword
+I (10299) wifi station: Failed to connect to SSID:YOUR_WIFI_SSID, password:YOUR_WIFI_PASSWORD
 ```
 
 ## Troubleshooting

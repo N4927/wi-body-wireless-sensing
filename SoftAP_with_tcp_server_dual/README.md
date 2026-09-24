@@ -56,7 +56,7 @@ The log will show:
 
 ```text
 I (917) wifi: mode : softAP (30:ae:a4:80:45:69)
-I (917) wifi softAP: wifi_init_softap finished.SSID:myssid password:mypassword
+I (917) wifi softAP: wifi_init_softap finished.SSID:YOUR_WIFI_SSID password:YOUR_WIFI_PASSWORD
 I (26457) wifi: station: 70:ef:00:43:96:67 join, AID=1
 I (27657) esp_netif_lwip: DHCP server assigned IP to a station, IP is: 192.168.4.2
 I (10000000) AP: [AVG 10s] B1=1024000 B/s B2=980000 B/s AVG=1002000 B/s

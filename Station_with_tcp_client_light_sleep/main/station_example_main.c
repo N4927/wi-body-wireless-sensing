@@ -18,8 +18,8 @@
 #define TAG                  "STA"
 #define TIME_SYNCH_ENABLE    0
 #define LIGHT_SLEEP_TIME_MS  5000  
-#define EXAMPLE_ESP_WIFI_SSID  "myssid"
-#define EXAMPLE_ESP_WIFI_PASS  "mypassword"
+#define EXAMPLE_ESP_WIFI_SSID  "YOUR_WIFI_SSID"
+#define EXAMPLE_ESP_WIFI_PASS  "YOUR_WIFI_PASSWORD"
 #define ESP_MAXIMUM_RETRY      5
 
 // Definizione delle latenze per i diversi scenari

@@ -1,40 +1,110 @@
-# WirelessSensingNode
+# WI-Body
 
+Towards an Ultra-Low-Power and High-Throughput Network for Continuous Body Monitoring
 
-## Install the Visual Studio Code ESP-IDF Extension
+This repository contains the work developed for my Bachelor's thesis at ETH Zurich in 2025.
 
-1. Follow the guidelines at: https://github.com/espressif/vscode-esp-idf-extension
+WI-Body investigates a wireless body-area sensing architecture designed to support continuous and energy-efficient transmission from multiple wearable sensing nodes. The project focuses on the development and experimental characterization of the wireless communication system, with particular attention to throughput, power consumption, synchronization, and multi-node operation.
 
-Important: after the installation, make sure that the IDF_PATH is added to your user profile
+## Project Overview
 
-https://docs.espressif.com/projects/esp-idf/en/release-v3.3/get-started-cmake/add-idf_path-to-profile.html
+Wearable sensing systems for continuous body monitoring require reliable wireless communication while operating under strict energy constraints.
 
-## Clone the existing repository
+WI-Body explores a Wi-Fi-based architecture composed of:
 
-```
-cd existing_repo
-git remote add origin https://gitlab.ethz.ch/iis_thesis_bio/wirelesssensingnode.git
-git branch -M main
-git push -uf origin main
-```
-## Physical Board Setup
+- an Access Point (AP) responsible for creating and managing the wireless network;
+- one or more Station nodes responsible for acquiring and transmitting sensor data;
+- firmware mechanisms for communication, synchronization, and power optimization;
+- a custom hardware platform designed for wearable sensing applications.
 
-The board connects to your computer via a UART interface using the following pins: **3.3V**, **GND**, **TX**, and **RX**.
+The system was developed and evaluated using ESP-IDF and ESP32-based devices.
 
-### Wiring Instructions
+## Key Contributions
 
-- Connect **RX (board)** to **TX (UART connector)**
-- Connect **TX (board)** to **RX (UART connector)**
-- Connect **3.3V** and **GND** to their respective counterparts
+The work carried out during the thesis includes:
 
-### Entering Flash Mode
+- development of the Access Point and Station firmware;
+- implementation and testing of TCP-based wireless communication;
+- investigation of multi-node communication;
+- implementation of time-synchronization mechanisms;
+- evaluation of different ESP32 power-saving strategies;
+- characterization of wireless throughput and power consumption;
+- development and testing of a custom Wi-Body hardware platform;
+- experimental analysis of the trade-off between communication performance and energy efficiency.
 
-To flash the board via UART:
+## Repository Structure
 
-1. **Press and hold the upper-right button** on the board.
-2. While holding the button, connect the board via the UART interface.
-3. Once the board is detected, you can release the button.
+The repository contains the different firmware versions and experiments developed throughout the project.
 
-### Resetting After Flash
+Examples include:
 
-- After flashing is complete, press the **reset button** (the bottom left one) to reboot the board and begin monitoring its output.
+- `SoftAP_with_tcp_server` - Access Point implementation with TCP server;
+- `SoftAP_with_tcp_server_dual` - Access Point implementation for multi-node communication;
+- `Station_with_tcp_client_*` - Station implementations and power-saving configurations;
+- `time_synch` - time-synchronization experiments;
+- `power_optimization` - power-consumption optimization experiments;
+- `two_client_througput` - multi-client throughput characterization;
+- `Wi-body` - hardware design files and related project material for the Wi-Body platform.
+
+Some folders represent intermediate experimental implementations retained to document the development and characterization process.
+
+## Development Environment
+
+The firmware was developed using the Espressif IoT Development Framework (ESP-IDF).
+
+### Requirements
+
+- Visual Studio Code
+- ESP-IDF extension
+- ESP-IDF toolchain
+- compatible ESP32 development hardware
+
+Generated build files are intentionally excluded from the repository. When using the firmware on another computer, the corresponding ESP-IDF project may therefore need to be configured and rebuilt locally.
+
+Before flashing any Station firmware, configure Wi-Fi credentials and host addresses locally using ESP-IDF menuconfig or the relevant configuration macros. Do not commit private SSIDs, passwords, tokens, or local machine paths.
+
+## Hardware Setup
+
+The Wi-Body board can be connected to a computer through UART using:
+
+- 3.3 V
+- GND
+- TX
+- RX
+
+To enter flashing mode, hold the corresponding boot button while connecting the board through UART.
+
+After flashing, reset the board to start the firmware.
+
+## Thesis
+
+The complete Bachelor's thesis is intended to be available in the `docs` directory:
+
+[Alberto Fasulo - WI-Body Bachelor Thesis](docs/Alberto_Fasulo_WI-Body_Bachelor_Thesis.pdf)
+
+Alberto Fasulo, "WI-Body: Towards an Ultra-Low-Power and High-Throughput Network for Continuous Body Monitoring", ETH Zurich, 2025.
+
+## Author
+
+Alberto Fasulo
+
+Bachelor's Thesis, ETH Zurich  
+2025
+
+The project was carried out at ETH Zurich with the supervision and support of Giusy Spacone, Sebastian Frey, and Andrea Cossettini.
+
+## Acknowledgements
+
+I would like to thank my supervisors and the Integrated Systems Laboratory at ETH Zurich for their guidance and support throughout the project.
+
+## License
+
+Original software developed as part of this project is released under the [Apache License 2.0](LICENSE), unless otherwise specified.
+
+Original documentation and figures are released under the [Creative Commons Attribution 4.0 International license](docs/LICENSE), unless otherwise specified.
+
+Hardware design files are licensed separately under the [Solderpad Hardware License 2.1](Wi-body/LICENSE), unless otherwise specified.
+
+Third-party software and components retain their respective original licenses.
+
+Copyright (c) 2025 Alberto Fasulo.

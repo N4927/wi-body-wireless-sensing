@@ -1,0 +1,29 @@
+**/build/
+**/CMakeFiles/
+**/esp-idf/
+**/CMakeCache.txt
+**/build.ninja
+**/cmake_install.cmake
+**/compile_commands.json
+**/project_description.json
+**/managed_components/
+**/.pytest_cache/
+**/__pycache__/
+*.pyc
+
+# Local ESP-IDF and machine-specific generated files
+dependencies.lock
+config/
+sdkconfig.old
+flasher_args.json
+flash_args
+flash_args.in
+flash_app_args
+flash_bootloader_args
+flash_project_args
+partition-table-flash_args
+
+# Local secrets and editor state
+.env
+*.env
+.vscode/

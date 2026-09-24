@@ -55,7 +55,7 @@ void tcp_client(void)
 
     ESP_LOGI(TAG, "BEGINNING OF tcp_client");
     char rx_buffer[2048];
-    char host_ip[] = "192.168.0.170";
+    char host_ip[] = "192.168.4.1";
     int addr_family = 0;
     int ip_protocol = 0;
 

@@ -36,8 +36,8 @@ extern void udp_time_synch(void *pvParameters);
 
 //WIFI 
 
-#define EXAMPLE_ESP_WIFI_SSID      "TP-Link_B5F4"
-#define EXAMPLE_ESP_WIFI_PASS      "84021472" //")9kAM9{?V8W9'4bT"
+#define EXAMPLE_ESP_WIFI_SSID      "YOUR_WIFI_SSID"
+#define EXAMPLE_ESP_WIFI_PASS      "YOUR_WIFI_PASSWORD"
 #define ESP_MAX_RETRY  50
 #define BUFFER_SIZE                2048    //Size of RX_Buffer in bytes
 

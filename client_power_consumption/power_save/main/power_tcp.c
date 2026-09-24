@@ -24,8 +24,8 @@
 #include "driver/uart.h"
 
 // Configura qui l'SSID e la Password del tuo AP
-#define EXAMPLE_ESP_WIFI_SSID      "myssid"
-#define EXAMPLE_ESP_WIFI_PASS      "mypassword"
+#define EXAMPLE_ESP_WIFI_SSID      "YOUR_WIFI_SSID"
+#define EXAMPLE_ESP_WIFI_PASS      "YOUR_WIFI_PASSWORD"
 
 // IP e Porta del server TCP (il tuo ESP32 in modalità SoftAP)
 #define HOST_IP_ADDR              "192.168.4.1"

@@ -38,8 +38,8 @@ idf.py menuconfig
 
 Update Wi-Fi SSID and Password if necessary (also defined in the code):
 
-- `WIFI_SSID`: default is `"myssid"`
-- `WIFI_PASSWORD`: default is `"mypassword"`
+- `WIFI_SSID`: default is `"YOUR_WIFI_SSID"`
+- `WIFI_PASSWORD`: default is `"YOUR_WIFI_PASSWORD"`
 
 ### Flash the Board
 
@@ -90,7 +90,7 @@ This allows offline TSF comparison and latency analysis.
 ## Output Example
 
 ```text
-SoftAP started: SSID=myssid, chan=1
+SoftAP started: SSID=YOUR_WIFI_SSID, chan=1
 TCP server listening on port 3333
 STA aa:bb:cc:dd:ee:ff joined, AID=1
 123456789,987654321,192837465

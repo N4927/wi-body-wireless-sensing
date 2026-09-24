@@ -14,8 +14,8 @@
 
 extern void tcp_client(void);
 
-#define EXAMPLE_ESP_WIFI_SSID      "myssid"
-#define EXAMPLE_ESP_WIFI_PASS      "mypassword"
+#define EXAMPLE_ESP_WIFI_SSID      "YOUR_WIFI_SSID"
+#define EXAMPLE_ESP_WIFI_PASS      "YOUR_WIFI_PASSWORD"
 #define EXAMPLE_ESP_MAXIMUM_RETRY  50
 
 #if CONFIG_ESP_WPA3_SAE_PWE_HUNT_AND_PECK

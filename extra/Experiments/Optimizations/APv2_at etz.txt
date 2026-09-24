@@ -104,7 +104,7 @@ I (711) wifi:Total power save buffer number: 16
 I (711) wifi:Init max length of beacon: 752/752
 I (711) wifi:Init max length of beacon: 752/752
 [0;32mI (711) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
-[0;32mI (721) AP: wifi_init_softap finished. SSID:myssid password:mypassword channel:1[0m
+[0;32mI (721) AP: wifi_init_softap finished. SSID:YOUR_WIFI_SSID password:YOUR_WIFI_PASSWORD channel:1[0m
 [0;32mI (731) AP: wifi_init completed[0m
 [0;31mE (731) AP: Socket created: 54[0m
 [0;32mI (731) AP: Socket bound, port 3333[0m
@@ -350,7 +350,7 @@ I (711) wifi:Total power save buffer number: 16
 I (711) wifi:Init max length of beacon: 752/752
 I (711) wifi:Init max length of beacon: 752/752
 [0;32mI (711) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
-[0;32mI (721) AP: wifi_init_softap finished. SSID:myssid password:mypassword channel:1[0m
+[0;32mI (721) AP: wifi_init_softap finished. SSID:YOUR_WIFI_SSID password:YOUR_WIFI_PASSWORD channel:1[0m
 [0;32mI (731) AP: wifi_init completed[0m
 [0;31mE (731) AP: Socket created: 54[0m
 [0;32mI (731) AP: Socket bound, port 3333[0m

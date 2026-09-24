@@ -19,8 +19,8 @@
 #include "esp_attr.h"
 
 #define TAG                        "AP"
-#define EXAMPLE_ESP_WIFI_SSID      "myssid"
-#define EXAMPLE_ESP_WIFI_PASS      "mypassword"
+#define EXAMPLE_ESP_WIFI_SSID      "YOUR_WIFI_SSID"
+#define EXAMPLE_ESP_WIFI_PASS      "YOUR_WIFI_PASSWORD"
 #define EXAMPLE_ESP_WIFI_CHANNEL   1
 #define EXAMPLE_MAX_STA_CONN       8
 #define PORT                        3333

@@ -49,12 +49,9 @@
 static const char *TAG = "itwt";
 #define MAX_PAYLOAD_SIZE 1640
 #define PORT            3333
-/*tp-link:
-TP-Link_B5F4
-84021472
-*/
-static const char *host_ip = "192.168.0.170";//TP link "192.168.0.235";//"192.168.4.1"; // IP SoftAP //ip router "192.168.50.147";
-static const char *board_static_ip = "192.168.50.200" ;//tp-link 192.168.0.200
+/* Configure Wi-Fi credentials through menuconfig before running this example. */
+static const char *host_ip = "192.168.4.1";
+static const char *board_static_ip = "192.168.4.2";
 #define BOARD_ID        1
 static uint32_t sequence = 0; 
 bool CHAR_SELECTED = 1;

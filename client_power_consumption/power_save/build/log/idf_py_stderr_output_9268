@@ -1,1 +1,0 @@
-ninja: error: 'C:/Users/albif/OneDrive - ETH Zurich/Thesis/git/client_power_consumption/power_save/main/power_save_julian.c', needed by 'esp-idf/main/CMakeFiles/__idf_main.dir/power_save_julian.c.obj', missing and no known rule to make it

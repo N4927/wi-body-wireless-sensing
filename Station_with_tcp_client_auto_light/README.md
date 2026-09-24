@@ -47,8 +47,8 @@ typedef struct {
 Edit the following macros in code if needed:
 
 ```c
-#define EXAMPLE_ESP_WIFI_SSID   "myssid"
-#define EXAMPLE_ESP_WIFI_PASS   "mypassword"
+#define EXAMPLE_ESP_WIFI_SSID   "YOUR_WIFI_SSID"
+#define EXAMPLE_ESP_WIFI_PASS   "YOUR_WIFI_PASSWORD"
 #define SERVER_IP               "192.168.4.1"
 #define SERVER_PORT             3333
 ```
@@ -88,7 +88,7 @@ These values can be tuned for use cases such as HMI, BIO, or SPORT timing profil
 ## Example Log Output
 
 ```text
-I (3829) STA: connected to ap SSID:myssid password:mypassword
+I (3829) STA: connected to ap SSID:YOUR_WIFI_SSID password:YOUR_WIFI_PASSWORD
 I (3929) TCP_CLIENT: TCP client task started
 I (3939) TCP_CLIENT: Connected to 192.168.4.1:3333
 ```

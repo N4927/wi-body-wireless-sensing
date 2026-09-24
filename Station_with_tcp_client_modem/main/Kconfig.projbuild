@@ -3,13 +3,13 @@ menu "Example Configuration"
 
     config EXAMPLE_WIFI_SSID
         string "WiFi SSID"
-        default "myssid"
+        default "YOUR_WIFI_SSID"
         help
             SSID (network name) for the example to connect to.
 
     config EXAMPLE_WIFI_PASSWORD
         string "WiFi Password"
-        default "mypassword"
+        default "YOUR_WIFI_PASSWORD"
         help
             WiFi password (WPA or WPA2) for the example to use.
 
@@ -117,13 +117,13 @@ endmenu
 #
  #   config ESP_WIFI_SSID
   #      string "WiFi SSID"
-   #     default "myssid"
+   #     default "YOUR_WIFI_SSID"
     #    help
      #       SSID (network name) for the example to connect to.
 #
  #   config ESP_WIFI_PASSWORD
   #      string "WiFi Password"
-   #     default "mypassword"
+   #     default "YOUR_WIFI_PASSWORD"
     #    help
      #       WiFi password (WPA or WPA2) for the example to use.
 #

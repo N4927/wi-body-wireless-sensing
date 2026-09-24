@@ -14,9 +14,9 @@
 #define TIME_SYNCH_ENABLE    0
 
 // --- Config Wi-Fi ---
-#define EXAMPLE_ESP_WIFI_SSID  "TP-Link_B5F4"//"myssid"
+#define EXAMPLE_ESP_WIFI_SSID  "YOUR_WIFI_SSID"
 
-#define EXAMPLE_ESP_WIFI_PASS  "84021472"//"mypassword"
+#define EXAMPLE_ESP_WIFI_PASS  "YOUR_WIFI_PASSWORD"
 #define ESP_MAXIMUM_RETRY      5
 
 // Event group e bit usati per segnalare la connessione

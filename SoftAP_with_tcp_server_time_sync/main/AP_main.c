@@ -19,8 +19,8 @@
 #include <inttypes.h>
 
 #define TAG                 "AP"
-#define WIFI_SSID           "myssid"
-#define WIFI_PASSWORD       "mypassword"
+#define WIFI_SSID           "YOUR_WIFI_SSID"
+#define WIFI_PASSWORD       "YOUR_WIFI_PASSWORD"
 #define ESP_WIFI_CHANNEL    1
 #define MAX_STA_CONN        8
 #define PORT                3333

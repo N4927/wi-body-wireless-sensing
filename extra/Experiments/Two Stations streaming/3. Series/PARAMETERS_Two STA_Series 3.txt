@@ -35,6 +35,6 @@ Printing Period 10 sec
 
 Duration: 15:21 minutes
 
-In the middle a random connection to another device happened. Probably a student that connected his device with "myssid".
+In the middle a random connection to another device happened. Probably a student that connected his device with "YOUR_WIFI_SSID".
 
 ---

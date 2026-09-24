@@ -105,7 +105,7 @@ I (772) wifi:Total power save buffer number: 16
 I (772) wifi:Init max length of beacon: 752/752
 I (772) wifi:Init max length of beacon: 752/752
 [0;32mI (772) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
-[0;32mI (782) AP: wifi_init_softap finished. SSID:myssid password:mypassword channel:1[0m
+[0;32mI (782) AP: wifi_init_softap finished. SSID:YOUR_WIFI_SSID password:YOUR_WIFI_PASSWORD channel:1[0m
 [0;32mI (792) AP: wifi_init completed[0m
 [0;31mE (792) AP: Socket created: 54[0m
 [0;32mI (792) AP: Socket bound, port 3333[0m

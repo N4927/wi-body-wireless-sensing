@@ -13,8 +13,8 @@
 #include <string.h>
 
 #define TAG                 "WIFI_SETUP"
-#define WIFI_SSID           "myssid"
-#define WIFI_PASS           "mypassword"
+#define WIFI_SSID           "YOUR_WIFI_SSID"
+#define WIFI_PASS           "YOUR_WIFI_PASSWORD"
 #define ESP_MAX_RETRY       50
 
 #define GPIO_TEST_PIN       GPIO_NUM_18

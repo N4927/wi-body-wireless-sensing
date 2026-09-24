@@ -107,7 +107,7 @@ I (732) wifi:Init max length of beacon: 752/752
 [0;32mI (732) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
 I (742) wifi:Set ps type: 0, coexist: 0
 
-[0;32mI (742) AP: wifi_init_softap finished. SSID:myssid password:mypassword channel:1[0m
+[0;32mI (742) AP: wifi_init_softap finished. SSID:YOUR_WIFI_SSID password:YOUR_WIFI_PASSWORD channel:1[0m
 [0;32mI (752) AP: wifi_init completed[0m
 [0;31mE (762) AP: Socket created: 54[0m
 [0;32mI (762) AP: Socket bound, port 3333[0m
